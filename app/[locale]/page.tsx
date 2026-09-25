@@ -210,7 +210,7 @@ export default async function HomePage({ params }: PageProps<'/[locale]'>) {
         </div>
 
         <div className="mx-auto grid max-w-6xl gap-6 px-4 py-12 sm:px-6 sm:py-16 md:grid-cols-2">
-          {[iranPhotos.shazand, iranPhotos.karkheh].map((photo) => (
+          {([iranPhotos.offshore, iranPhotos.karkheh] as IranPhoto[]).map((photo) => (
             <figure key={photo.source}>
               <div className="relative aspect-[3/2] overflow-hidden rounded-[var(--radius-card)] bg-white/5">
                 <Image
@@ -223,7 +223,7 @@ export default async function HomePage({ params }: PageProps<'/[locale]'>) {
               </div>
               <figcaption className="mt-3">
                 <span className="text-sm font-semibold">{photo.title[locale]}</span>
-                <span className="text-sm text-white/70"> · {photo.place[locale]}</span>
+                {photo.place && <span className="text-sm text-white/70"> · {photo.place[locale]}</span>}
                 <span className="mt-1 block text-[11px] text-white/60">
                   <PhotoCredit photo={photo} label={credit(photo)} />
                 </span>
