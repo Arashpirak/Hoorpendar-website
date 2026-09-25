@@ -128,3 +128,49 @@ body {
     scroll-behavior: auto !important;
   }
 }
+
+/* Printing (the catalogue's "Download PDF" button): always light, A4, no site chrome. */
+@page {
+  size: A4;
+  margin: 12mm 10mm;
+}
+
+@media print {
+  :root,
+  :root[data-theme='dark'] {
+    --bg: #ffffff;
+    --surface: #ffffff;
+    --surface-2: #eef2f8;
+    --text: #0f1b2d;
+    --muted: #3f4b5f;
+    --border: #d5dde8;
+    --brand: #0b2c57;
+    --accent: #1d5fae;
+    --accent-contrast: #ffffff;
+    color-scheme: light;
+  }
+
+  body {
+    font-size: 10.5pt;
+  }
+
+  /* The third-party chat widget and the skip link are not part of the document. */
+  body > a[href='#main'],
+  body > div:not(:has(main)),
+  body > iframe {
+    display: none !important;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+}

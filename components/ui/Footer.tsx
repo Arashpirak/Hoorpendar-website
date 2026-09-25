@@ -15,7 +15,7 @@ export async function Footer() {
   const linkClass = 'hover:text-accent focus-visible:outline-2 focus-visible:outline-accent rounded';
 
   return (
-    <footer className="mt-auto border-t border-border bg-surface">
+    <footer className="mt-auto border-t border-border bg-surface print:hidden">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-[1.4fr_1fr_1.2fr]">
         <div className="space-y-4">
           <div className="flex items-center gap-2.5">
