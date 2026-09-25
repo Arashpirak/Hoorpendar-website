@@ -36,7 +36,7 @@
     "instagram": "Instagram",
     "since": "Since {year}",
     "rights": "All rights reserved.",
-    "credits": "Province boundaries: geoBoundaries, © OpenStreetMap contributors (ODbL). Photos: Unsplash."
+    "credits": "Province boundaries: geoBoundaries, © OpenStreetMap contributors (ODbL). Photos: Unsplash and Wikimedia Commons."
   },
   "home": {
     "eyebrow": "Knowledge-based company · Since 1999",
@@ -51,7 +51,16 @@
       "clients": "clients",
       "flameUnits": "flame detection units in service"
     },
-    "mapCta": "All projects"
+    "mapCta": "All projects",
+    "productsEyebrow": "Featured products",
+    "productsTitle": "Built by Hoorpendar, running across Iran's industry",
+    "productsLead": "A few of the products that have been working for years in power plants, refineries and oil and gas stations.",
+    "productMore": "Product details",
+    "productsCta": "All products",
+    "plantsEyebrow": "Iran's power plants and dams",
+    "plantsTitle": "Alongside Iran's power industry",
+    "plantsLead": "Hoorpendar excitation systems, dam level meters, flame detection and alarm systems are installed at hydro and thermal power plants and dams across Iran.",
+    "photoCredit": "Photo: {credit} · {license} · Wikimedia Commons"
   },
   "placeholder": {
     "title": "Coming soon",
