@@ -28,15 +28,15 @@ export const iranPhotos = {
     license: 'CC BY-SA 3.0',
     source: filePage('Karun-3_Dam.JPG'),
   },
-  montazerGhaem: {
-    src: `${commons}/thumb/1/1f/Montazer_Ghaem_Power_Plant_(2025).jpg/1920px-Montazer_Ghaem_Power_Plant_(2025).jpg`,
-    width: 1920,
-    height: 1440,
-    title: { fa: 'نیروگاه منتظر قائم', en: 'Montazer Ghaem power plant' },
-    place: { fa: 'فردیس، البرز', en: 'Fardis, Alborz' },
-    credit: 'Wikimedia Commons',
-    license: 'CC BY-SA 4.0',
-    source: filePage('Montazer_Ghaem_Power_Plant_(2025).jpg'),
+  rajaee: {
+    src: `${commons}/8/85/Rajaei_power_station.jpg`,
+    width: 3172,
+    height: 2448,
+    title: { fa: 'نیروگاه شهید رجایی', en: 'Shahid Rajaee power plant' },
+    place: { fa: 'آبیک، قزوین', en: 'Abyek, Qazvin' },
+    credit: 'Ayda',
+    license: 'CC BY-SA 3.0',
+    source: filePage('Rajaei_power_station.jpg'),
   },
   karkheh: {
     // Percent-encoded because the file name starts in Persian.

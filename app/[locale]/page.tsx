@@ -165,6 +165,23 @@ export default async function HomePage({ params }: PageProps<'/[locale]'>) {
         </div>
       </section>
 
+      {/* Projects map */}
+      <section className="border-b border-border bg-bg py-16 sm:py-20" aria-labelledby="map-title">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <p className="mb-2 text-sm font-semibold text-accent">{tm('eyebrow')}</p>
+          <h2 id="map-title" className="text-2xl font-extrabold text-brand sm:text-4xl">
+            {tm('title')}
+          </h2>
+          <p className="mt-3 mb-8 max-w-3xl leading-8 text-muted">{tm('lead')}</p>
+          <ProjectsMap />
+          <Link
+            href="/projects"
+            className="mt-8 inline-block rounded-full bg-accent px-6 py-3 text-sm font-semibold text-accent-contrast hover:opacity-90"
+          >
+            {t('mapCta')}
+          </Link>
+        </div>
+      </section>
       {/* Iran's dams and power plants: one full-bleed photo, then two side by side. */}
       <section aria-labelledby="plants-title" className="bg-[#0a121e] text-white">
         <div className="relative isolate flex min-h-[min(80vh,720px)] items-end overflow-hidden">
@@ -193,7 +210,7 @@ export default async function HomePage({ params }: PageProps<'/[locale]'>) {
         </div>
 
         <div className="mx-auto grid max-w-6xl gap-6 px-4 py-12 sm:px-6 sm:py-16 md:grid-cols-2">
-          {[iranPhotos.montazerGhaem, iranPhotos.karkheh].map((photo) => (
+          {[iranPhotos.rajaee, iranPhotos.karkheh].map((photo) => (
             <figure key={photo.source}>
               <div className="relative aspect-[3/2] overflow-hidden rounded-[var(--radius-card)] bg-white/5">
                 <Image
@@ -216,23 +233,6 @@ export default async function HomePage({ params }: PageProps<'/[locale]'>) {
         </div>
       </section>
 
-      {/* Projects map */}
-      <section className="border-b border-border bg-bg py-16 sm:py-20" aria-labelledby="map-title">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <p className="mb-2 text-sm font-semibold text-accent">{tm('eyebrow')}</p>
-          <h2 id="map-title" className="text-2xl font-extrabold text-brand sm:text-4xl">
-            {tm('title')}
-          </h2>
-          <p className="mt-3 mb-8 max-w-3xl leading-8 text-muted">{tm('lead')}</p>
-          <ProjectsMap />
-          <Link
-            href="/projects"
-            className="mt-8 inline-block rounded-full bg-accent px-6 py-3 text-sm font-semibold text-accent-contrast hover:opacity-90"
-          >
-            {t('mapCta')}
-          </Link>
-        </div>
-      </section>
     </>
   );
 }
