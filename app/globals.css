@@ -21,6 +21,11 @@
   --power: #1d7fd6;
   --industry: #7c4dcc;
 
+  --map-land: #e3eaf3;
+  --map-land-active: #cad9ec;
+  --map-border: #ffffff;
+  --map-sea-label: #6f8db5;
+
   --logo-fill: var(--brand);
   --logo-ink: var(--surface);
 
@@ -44,6 +49,10 @@ html[lang='fa'] {
     --accent: #5b9be6;
     --accent-contrast: #0a121e;
     --grid-line: rgb(219 230 245 / 0.05);
+    --map-land: #15233a;
+    --map-land-active: #1f3556;
+    --map-border: #0a121e;
+    --map-sea-label: #5f7fa8;
     color-scheme: dark;
   }
 }
@@ -59,6 +68,10 @@ html[lang='fa'] {
   --accent: #5b9be6;
   --accent-contrast: #0a121e;
   --grid-line: rgb(219 230 245 / 0.05);
+  --map-land: #15233a;
+  --map-land-active: #1f3556;
+  --map-border: #0a121e;
+  --map-sea-label: #5f7fa8;
   color-scheme: dark;
 }
 
@@ -76,6 +89,10 @@ html[lang='fa'] {
   --color-oil: var(--oil);
   --color-power: var(--power);
   --color-industry: var(--industry);
+  --color-map-land: var(--map-land);
+  --color-map-land-active: var(--map-land-active);
+  --color-map-border: var(--map-border);
+  --color-map-sea-label: var(--map-sea-label);
   --font-sans: var(--font-stack);
   --radius-card: 14px;
 }

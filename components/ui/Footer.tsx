@@ -92,9 +92,12 @@ export async function Footer() {
 
       <div className="border-t border-border">
         {/* Extra bottom space keeps the chat bubble clear of the footer text. */}
-        <div className="mx-auto flex max-w-6xl flex-col gap-1 px-4 pt-5 pb-24 text-xs text-muted sm:flex-row sm:justify-between sm:px-6">
-          <span>© {company.legalName[locale]}</span>
-          <span>{t('footer.since', { year: since })}</span>
+        <div className="mx-auto max-w-6xl space-y-2 px-4 pt-5 pb-24 text-xs text-muted sm:px-6">
+          <div className="flex flex-col gap-1 sm:flex-row sm:justify-between">
+            <span>© {company.legalName[locale]}</span>
+            <span>{t('footer.since', { year: since })}</span>
+          </div>
+          <p className="text-[11px] opacity-80">{t('footer.credits')}</p>
         </div>
       </div>
     </footer>

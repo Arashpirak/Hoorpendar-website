@@ -35,7 +35,8 @@
     "whatsapp": "WhatsApp",
     "instagram": "Instagram",
     "since": "Since {year}",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "credits": "Province boundaries: geoBoundaries, © OpenStreetMap contributors (ODbL). Photos: Unsplash."
   },
   "home": {
     "eyebrow": "Knowledge-based company · Since 1999",
@@ -49,7 +50,8 @@
       "contracts": "contracts delivered",
       "clients": "clients",
       "flameUnits": "flame detection units in service"
-    }
+    },
+    "mapCta": "All projects"
   },
   "placeholder": {
     "title": "Coming soon",
@@ -63,5 +65,31 @@
   },
   "chat": {
     "hint": "Have a question? Ask our online assistant."
+  },
+  "map": {
+    "eyebrow": "Project map",
+    "title": "Hoorpendar projects across Iran",
+    "lead": "Each circle is a city; its size shows how many projects were delivered there. Select a city to see its projects.",
+    "filterLabel": "Filter projects",
+    "all": "All",
+    "yearFrom": "From",
+    "yearTo": "To",
+    "reset": "Clear filters",
+    "statContracts": "contracts",
+    "statCities": "cities",
+    "statProvinces": "provinces",
+    "statPeriod": "period",
+    "cityList": "Cities",
+    "pick": "Select a city on the map or in the list to see its projects.",
+    "projects": "{count, plural, one {# project} other {# projects}}",
+    "facilities": "Facility types",
+    "viewAll": "View on the projects page",
+    "close": "Close",
+    "noYear": "Undated",
+    "contracts": "{count} contracts",
+    "empty": "No projects match these filters.",
+    "mapLabel": "Map of Iran with project locations",
+    "pinLabel": "{city}, {province}: {count, plural, one {# project} other {# projects}}",
+    "unlocated": "{count, plural, one {# project has} other {# projects have}} no fixed location and {count, plural, one {appears} other {appear}} only in the project list."
   }
 }
