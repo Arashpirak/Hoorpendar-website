@@ -28,15 +28,15 @@ export const iranPhotos = {
     license: 'CC BY-SA 3.0',
     source: filePage('Karun-3_Dam.JPG'),
   },
-  rajaee: {
-    src: `${commons}/8/85/Rajaei_power_station.jpg`,
-    width: 3172,
+  shazand: {
+    src: `${commons}/a/af/Shazand_Thermal_power_plant.JPG`,
+    width: 3264,
     height: 2448,
-    title: { fa: 'نیروگاه شهید رجایی', en: 'Shahid Rajaee power plant' },
-    place: { fa: 'آبیک، قزوین', en: 'Abyek, Qazvin' },
-    credit: 'Ayda',
-    license: 'CC BY-SA 3.0',
-    source: filePage('Rajaei_power_station.jpg'),
+    title: { fa: 'نیروگاه حرارتی شازند', en: 'Shazand thermal power plant' },
+    place: { fa: 'شازند، مرکزی', en: 'Shazand, Markazi' },
+    credit: 'Wikimedia Commons',
+    license: 'CC BY 2.5',
+    source: filePage('Shazand_Thermal_power_plant.JPG'),
   },
   karkheh: {
     // Percent-encoded because the file name starts in Persian.

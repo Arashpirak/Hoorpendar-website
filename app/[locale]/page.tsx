@@ -210,7 +210,7 @@ export default async function HomePage({ params }: PageProps<'/[locale]'>) {
         </div>
 
         <div className="mx-auto grid max-w-6xl gap-6 px-4 py-12 sm:px-6 sm:py-16 md:grid-cols-2">
-          {[iranPhotos.rajaee, iranPhotos.karkheh].map((photo) => (
+          {[iranPhotos.shazand, iranPhotos.karkheh].map((photo) => (
             <figure key={photo.source}>
               <div className="relative aspect-[3/2] overflow-hidden rounded-[var(--radius-card)] bg-white/5">
                 <Image
