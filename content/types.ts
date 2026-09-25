@@ -31,6 +31,23 @@ export type ProductCategorySlug =
   | 'dam-power-infrastructure'
   | 'legacy-renewal';
 
+export type Product = {
+  /** Descriptive slug, the same in both languages (never a model code). */
+  slug: string;
+  category: ProductCategorySlug;
+  /** Hoorpendar's own model codes only. */
+  model?: string;
+  title: L;
+  summary: L;
+  features: { fa: string[]; en: string[] };
+  /** Values stay Latin in both languages (units, codes). */
+  specs?: { label: L; value: string }[];
+  /** Generic application areas, never a brand. */
+  applications: L[];
+  images: { src: string; alt: L }[];
+  relatedProjectIds?: string[];
+};
+
 export type City = {
   id: string;
   name: L;

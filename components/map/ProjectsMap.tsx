@@ -1,21 +1,17 @@
 import { getLocale, getTranslations } from 'next-intl/server';
 import type { Locale } from '@/i18n/routing';
-import { mapSize, pinPositions, provinces, seaLabels } from '@/content/map.generated';
-import { sectors } from '@/content/taxonomy';
-import type { Sector } from '@/content/types';
-import { cityRows, projectRows, projectStats } from '@/lib/project-view';
+import { mapSize, pinPositions } from '@/content/map.generated';
+import { cityRows, projectRows, projectStats, sectorLabels } from '@/lib/project-view';
 import { formatNumber } from '@/lib/format';
 import { MapExplorer } from './MapExplorer';
+import { ProvincesSvg } from './ProvincesSvg';
 
-// Interactive projects map (PLAN.md section 6). Provinces are rendered on the server as plain SVG,
-// so the page ships no map library; only the pins, filters and city panel run in the browser.
+// Interactive projects map for the home page (PLAN.md section 6). Provinces render on the server
+// as plain SVG, so the page ships no map library; only pins, filters and the panel run in the browser.
 export async function ProjectsMap() {
   const locale = (await getLocale()) as Locale;
   const t = await getTranslations('map');
   const stats = projectStats();
-  const sectorLabels = Object.fromEntries(
-    (Object.keys(sectors) as Sector[]).map((s) => [s, sectors[s][locale]]),
-  ) as Record<Sector, string>;
   const year = (sh: number) => formatNumber(locale, locale === 'fa' ? sh : sh + 621);
 
   const facts = [
@@ -41,41 +37,10 @@ export async function ProjectsMap() {
         cities={cityRows(locale)}
         pins={pinPositions}
         size={mapSize}
-        sectorLabels={sectorLabels}
+        sectorLabels={sectorLabels(locale)}
         years={{ from: stats.fromSH, to: stats.toSH }}
       >
-        <svg
-          viewBox={`0 0 ${mapSize.width} ${mapSize.height}`}
-          className="absolute inset-0 h-full w-full"
-          aria-hidden="true"
-        >
-          <g strokeWidth={0.8} strokeLinejoin="round">
-            {provinces.map((p) => (
-              <path
-                key={p.id}
-                d={p.d}
-                fill={p.active ? 'var(--map-land-active)' : 'var(--map-land)'}
-                stroke="var(--map-border)"
-              >
-                <title>{p.name[locale]}</title>
-              </path>
-            ))}
-          </g>
-          {seaLabels.map((s) => (
-            <text
-              key={s.id}
-              x={s.x}
-              y={s.y}
-              textAnchor="middle"
-              fill="var(--map-sea-label)"
-              fontSize={19}
-              fontStyle={locale === 'en' ? 'italic' : undefined}
-              letterSpacing={locale === 'en' ? 1.5 : undefined}
-            >
-              {s.name[locale]}
-            </text>
-          ))}
-        </svg>
+        <ProvincesSvg locale={locale} />
       </MapExplorer>
     </div>
   );

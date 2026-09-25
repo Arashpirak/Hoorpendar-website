@@ -1,8 +1,9 @@
 import type { Locale } from '@/i18n/routing';
 import { cities } from '@/content/cities';
 import { projects } from '@/content/projects';
-import { facilities } from '@/content/taxonomy';
+import { facilities, sectors } from '@/content/taxonomy';
 import type { Sector } from '@/content/types';
+import { bidi } from '@/lib/bidi';
 
 // Compact, single-language project rows for client components (keeps the page payload small).
 export type ProjectRow = {
@@ -21,7 +22,7 @@ export type CityRow = { id: string; name: string; province: string };
 export function projectRows(locale: Locale): ProjectRow[] {
   return projects.map((p) => ({
     id: p.id,
-    title: p.title[locale],
+    title: bidi(locale, p.title[locale]),
     ySH: p.yearSH ?? null,
     sector: p.sector,
     cities: p.cities,
@@ -47,3 +48,6 @@ export function projectStats() {
     toSH: Math.max(...years),
   };
 }
+
+export const sectorLabels = (locale: Locale) =>
+  Object.fromEntries((Object.keys(sectors) as Sector[]).map((s) => [s, sectors[s][locale]])) as Record<Sector, string>;

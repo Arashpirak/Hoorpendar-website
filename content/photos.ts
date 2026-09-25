@@ -55,4 +55,28 @@ export const photos = {
     credit: 'J.f Manzanero',
     source: unsplash('3J2FB7BItdA'),
   },
+  locomotive: {
+    src: '/img/photos/locomotive.jpg',
+    alt: { fa: 'لوکوموتیو در غروب', en: 'Locomotive at sunset' },
+    credit: 'Samuel Fyfe',
+    source: unsplash('Bt-h01XOQu4'),
+  },
+  weatherRadar: {
+    src: '/img/photos/weather-radar.jpg',
+    alt: { fa: 'برج رادار هواشناسی', en: 'Weather radar tower' },
+    credit: 'Henry Lai',
+    source: unsplash('AYYHhtEqOJQ'),
+  },
+  damNight: {
+    src: '/img/photos/dam-night.jpg',
+    alt: { fa: 'سرریز سد در شب', en: 'Dam spillway at night' },
+    credit: 'Jani Brumat',
+    source: unsplash('CJTUbgI1N1s'),
+  },
+  damRelease: {
+    src: '/img/photos/dam-release.jpg',
+    alt: { fa: 'تخلیه‌ی آب از سد', en: 'Water released from a dam' },
+    credit: 'Tahamie Farooqui',
+    source: unsplash('kMHBf1h4pU8'),
+  },
 } satisfies Record<string, Photo>;
