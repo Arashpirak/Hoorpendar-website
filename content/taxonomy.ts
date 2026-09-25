@@ -32,10 +32,10 @@ export const facilities: Record<FacilityKey, L> = {
 
 export const productCategories: Record<ProductCategorySlug, L> = {
   'excitation-governor': { fa: 'سیستم‌های تحریک و کنترل ژنراتور', en: 'Excitation & Governor Systems' },
-  'flame-detection': { fa: 'تشخیص شعله و آتش', en: 'Flame & Fire Detection' },
-  ignition: { fa: 'سیستم‌های جرقه‌زن', en: 'Ignition Systems' },
+  'flame-detection': { fa: 'آشکارسازی شعله و آتش', en: 'Flame & Fire Detection' },
+  ignition: { fa: 'سامانه‌های جرقه‌زن', en: 'Ignition Systems' },
   'turbine-control': { fa: 'کنترل و ابزار دقیق توربین', en: 'Turbine Control & Sensors' },
-  'power-supplies': { fa: 'باطری شارژر و منابع تغذیه', en: 'Battery Chargers & Power Supplies' },
+  'power-supplies': { fa: 'شارژر باتری و منبع تغذیه', en: 'Battery Chargers & Power Supplies' },
   'alarm-safety': { fa: 'اعلام‌گر آلارم و ایمنی فرایند', en: 'Alarm Annunciators & Process Safety' },
   instrumentation: { fa: 'ابزار دقیق و مانیتورینگ فرایند', en: 'Instrumentation & Process Monitoring' },
   'dam-power-infrastructure': {

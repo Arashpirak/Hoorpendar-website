@@ -1,30 +1,53 @@
 type Props = { className?: string; title?: string };
 
-// Vector redraw of the Hoorpendar "HP" oval mark.
+// Vector redraw of the Hoorpendar mark (rounded frame, crescent oval and slanted "hp"),
+// fitted to the logo printed on the SBC-600 front panel. Single color: var(--logo-fill).
 export function Logo({ className, title }: Props) {
   return (
     <svg
-      viewBox="0 0 120 60"
+      viewBox="3.5 6.5 121.5 63.5"
       className={className}
       role={title ? 'img' : undefined}
       aria-hidden={title ? undefined : true}
       aria-label={title}
     >
-      <ellipse cx="60" cy="30" rx="57" ry="27" fill="var(--logo-fill, #0b2c57)" />
-      <path
-        d="M9 41 C 35 20, 75 11, 113 17 C 76 15, 38 25, 9 41 Z"
-        fill="var(--logo-ink, #fff)"
-        opacity="0.9"
+      <LogoMark />
+    </svg>
+  );
+}
+
+function LogoMark() {
+  return (
+    <g fill="var(--logo-fill, #0b2c57)">
+      <rect
+        x="5.75"
+        y="8.7"
+        width="116.9"
+        height="59.1"
+        rx="7.6"
+        fill="none"
+        stroke="var(--logo-fill, #0b2c57)"
+        strokeWidth="4"
       />
-      <g fill="var(--logo-ink, #fff)" transform="translate(6.5 0) skewX(-12)">
-        <rect x="33" y="15" width="7" height="30" rx="1" />
-        <rect x="49" y="15" width="7" height="30" rx="1" />
-        <rect x="33" y="27" width="23" height="6" />
+      <path
+        fillRule="evenodd"
+        d="M18.69 38.3a44.28 27.69 0 1 0 88.56 0a44.28 27.69 0 1 0-88.56 0ZM30.12 51.4a35.3 19.3-21.4 1 0 65.73-25.76a35.3 19.3-21.4 1 0-65.73 25.76Z"
+      />
+      <g transform="matrix(1 0 -0.3 1 11.4 0)">
+        <rect x="43.64" y="23.54" width="7.01" height="29.7" rx="2.17" />
+        <rect x="59.59" y="23.54" width="7.01" height="29.7" rx="2.17" />
+        <rect x="75.2" y="23.54" width="7.01" height="29.7" rx="2.17" />
+        <path d="M49.65 29.81C55.12 28.61 57.12 26.86 60.59 26.86V31.95C57.12 31.95 55.12 33.76 49.65 35.36Z" />
+        <path d="M65.6 25.11H76.2V31.56H68.6C66.6 31.56 65.6 32.16 65.6 32.76Z" />
         <path
           fillRule="evenodd"
-          d="M62 15 h13 a9.5 9.5 0 0 1 0 19 h-6 v11 h-7 z M69 21 v7 h5.5 a3.5 3.5 0 0 0 0 -7 z"
+          d="M76.2 25.11C86.3 25.11 90.3 27.61 90.3 32.83C90.3 38.83 86.3 41.93 81.71 44.43C77.2 46.03 73.54 48.44 70.54 48.44C70.14 46.64 71.54 45.44 77.2 39.33ZM82.71 35.48a0.99 3.4 0 1 0 1.98 0a0.99 3.4 0 1 0-1.98 0Z"
+        />
+        <path
+          fillRule="evenodd"
+          d="M44.44 33.93C39.01 36.93 37.51 41.05 37.51 44.05C37.51 46.41 40.51 48.91 44.44 48.91ZM44.44 39.68C40.16 41.18 40.36 46.04 44.44 47.54Z"
         />
       </g>
-    </svg>
+    </g>
   );
 }

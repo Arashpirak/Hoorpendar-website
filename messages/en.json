@@ -73,7 +73,7 @@
     "back": "Back to home"
   },
   "chat": {
-    "hint": "Have a question? Ask our online assistant."
+    "hint": "Have a question? Ask Atirame, Hoorpendar's AI assistant."
   },
   "map": {
     "eyebrow": "Project map",
@@ -143,14 +143,13 @@
     "applications": "Applications",
     "installedIn": "Installed in",
     "relatedProjects": "Related projects",
-    "inquire": "Send an inquiry",
-    "inquirySubject": "Inquiry: {product}",
-    "customNote": "Need a different voltage, size or interface? Hoorpendar designs and builds to your specification.",
+    "inquire": "Request a quote",
+    "customNote": "Need a different voltage, size or interface? Hoorpendar designs and builds to your specification. To request a quote, send your request through the Atirame chat.",
     "backToCategory": "All {category}",
     "viewProducts": "View products",
     "renewalStepsTitle": "How we renew a legacy system",
     "renewalExamplesTitle": "Examples of renewed equipment",
-    "renewalCta": "Send us the part number or a photo of the unit, and we will assess it.",
+    "renewalCta": "Tell Atirame the part number or model of the unit in the chat, and our engineers will assess it.",
     "noImage": "Photo on request"
   }
 }

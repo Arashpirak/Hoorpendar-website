@@ -6,11 +6,11 @@ import { Link } from '@/i18n/navigation';
 import { routing, type Locale } from '@/i18n/routing';
 import { categories, categoryBySlug, productsIn, renewal } from '@/content/products';
 import type { ProductCategorySlug } from '@/content/types';
-import { company } from '@/content/company';
 import { formatNumber } from '@/lib/format';
 import { Breadcrumbs, PageHero } from '@/components/ui/PageHero';
 import { ProductCard } from '@/components/products/ProductCard';
 import { bidi } from '@/lib/bidi';
+import { ChatInquiryButton } from '@/components/chat/ChatInquiryButton';
 
 export const dynamicParams = false;
 
@@ -82,12 +82,9 @@ export default async function CategoryPage({ params }: PageProps<'/[locale]/prod
               </div>
               <div className="rounded-[var(--radius-card)] border border-border bg-surface-2 p-6">
                 <p className="leading-8 text-text">{t('renewalCta')}</p>
-                <a
-                  href={`mailto:${company.contact.email}?subject=${encodeURIComponent(category.title[locale])}`}
-                  className="mt-4 inline-block rounded-full bg-accent px-6 py-3 text-sm font-semibold text-accent-contrast hover:opacity-90"
-                >
+                <ChatInquiryButton className="mt-4 inline-block rounded-full bg-accent px-6 py-3 text-sm font-semibold text-accent-contrast hover:opacity-90">
                   {t('inquire')}
-                </a>
+                </ChatInquiryButton>
               </div>
             </div>
           </div>

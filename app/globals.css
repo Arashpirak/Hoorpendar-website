@@ -27,14 +27,15 @@
   --map-sea-label: #6f8db5;
 
   --logo-fill: var(--brand);
-  --logo-ink: var(--surface);
 
   --font-stack: var(--font-inter), var(--font-vazirmatn), ui-sans-serif, system-ui, sans-serif;
   color-scheme: light;
 }
 
+/* Latin runs inside Persian text fall through to Inter; symbols B Nazanin lacks (٫ — …) to Vazirmatn. */
 html[lang='fa'] {
-  --font-stack: var(--font-vazirmatn), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-stack: var(--font-nazanin), var(--font-inter), var(--font-vazirmatn), ui-sans-serif, system-ui,
+    sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {

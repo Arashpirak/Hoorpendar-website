@@ -8,16 +8,16 @@ export const alarmSafety: Product[] = [
     model: 'PAL750 · PAL625',
     title: { fa: 'اعلام‌گر آلارم برنامه‌پذیر ماژولار', en: 'Modular programmable alarm annunciator' },
     summary: {
-      fa: 'از باکیفیت‌ترین سیستم‌های آلارم تولید داخل، در حال کار در بسیاری از کارخانه‌های نفت و گاز و نیروگاه‌ها. هر ماژول پردازشگر مستقل دارد (No Master) و ماژول‌ها در هر ترکیب سطر و ستون کنار هم قرار می‌گیرند.',
+      fa: 'یکی از باکیفیت‌ترین اعلام‌گرهای آلارم ساخت داخل که در بسیاری از تأسیسات نفت و گاز و نیروگاه‌ها کار می‌کند. هر ماژول پردازنده‌ی مستقل خود را دارد و به ماژول اصلی (Master) وابسته نیست؛ ماژول‌ها را می‌توان در هر آرایشی از سطر و ستون کنار هم چید.',
       en: 'One of the most reliable annunciators made in Iran, in service at many oil and gas plants and power stations. Every module has its own processor (no master), and modules combine in any row and column layout.',
     },
     features: {
       fa: [
-        '۲ تا ۵۱۲ آلارم؛ ایزولاسیون همه‌ی ورودی‌ها',
+        '۲ تا ۵۱۲ آلارم؛ همه‌ی ورودی‌ها با جداسازی الکتریکی (ایزوله)',
         'سه اندازه‌ی پنجره و پنج رنگ LED',
-        'ترتیب‌های استاندارد ISA S18.1 (A، A4، M، R، F1A، F3A، F2M1) و First-Out',
-        'ارتباط RS-485 با Modbus؛ رله‌ی تکرار آلارم',
-        'IP54/IP65 و محفظه‌ی ضد انفجار',
+        'توالی‌های استاندارد ISA S18.1 (A، A4، M، R، F1A، F3A، F2M1) و First-Out',
+        'ارتباط Modbus روی RS-485؛ رله‌ی تکرار آلارم',
+        'درجه‌ی حفاظت IP54/IP65 و محفظه‌ی ضدانفجار',
       ],
       en: [
         '2 to 512 alarms; all inputs isolated',
@@ -43,11 +43,11 @@ export const alarmSafety: Product[] = [
     model: 'SAL-82',
     title: { fa: 'پنل آلارم جمع‌وجور', en: 'Compact alarm panel' },
     summary: {
-      fa: 'پنل آلارم پنجره‌ای جمع‌وجور برای تابلوهای محلی، با پنجره‌های قابل برچسب‌گذاری و دکمه‌های Test، Acknowledge و Reset.',
+      fa: 'پنل آلارم پنجره‌ای و کم‌حجم برای تابلوهای محلی، با پنجره‌هایی که برچسبشان را می‌توان عوض کرد و دکمه‌های آزمون (Test)، تأیید (Acknowledge) و بازنشانی (Reset).',
       en: 'A compact window-type alarm panel for local control panels, with labelled windows and test, acknowledge and reset buttons.',
     },
     features: {
-      fa: ['پنجره‌های قابل برچسب‌گذاری', 'دکمه‌های Test، Acknowledge و Reset', 'مناسب تابلوهای محلی و تجهیزات'],
+      fa: ['برچسب پنجره‌ها قابل تعویض', 'دکمه‌های Test، Acknowledge و Reset', 'مناسب تابلوهای محلی و کنار تجهیزات'],
       en: ['Labelled alarm windows', 'Test, acknowledge and reset buttons', 'Suited to local and machine panels'],
     },
     applications: [apps.hydro, apps.oilGas, apps.controlRoom],
@@ -58,13 +58,13 @@ export const alarmSafety: Product[] = [
     slug: 'hipps-logic-solver',
     category: 'alarm-safety',
     model: 'HIPPS Logic Solver',
-    title: { fa: 'سیستم حفاظت فشار بالا (HIPPS)', en: 'High-integrity pressure protection system (HIPPS)' },
+    title: { fa: 'سامانه‌ی حفاظت در برابر فشار زیاد (HIPPS)', en: 'High-integrity pressure protection system (HIPPS)' },
     summary: {
-      fa: 'سیستم ایمنی (SIS) برای پروژه‌های بالادستی نفت و گاز. هزینه‌ی پایپینگ پایین‌دست را کاهش می‌دهد و از فلرینگ جلوگیری می‌کند.',
+      fa: 'سامانه‌ی ایمنی ابزاردقیقی (SIS) برای تأسیسات بالادستی نفت و گاز. پیش از آنکه فشار از حد مجاز بگذرد، جریان را قطع می‌کند؛ به همین دلیل لوله‌کشی پایین‌دست را می‌توان سبک‌تر و ارزان‌تر طراحی کرد و گاز کمتری به فلر فرستاده می‌شود.',
       en: 'A safety instrumented system for upstream oil and gas. It reduces downstream piping cost and avoids flaring.',
     },
     features: {
-      fa: ['محاسبات SIL و SIL Verification', 'اتصال به SCADA', 'کار تا 60°C بدون تهویه؛ مصرف انرژی کم', 'قابل توسعه برای BMS و شیرهای LBV'],
+      fa: ['محاسبه و صحه‌گذاری سطح یکپارچگی ایمنی (SIL)', 'اتصال به SCADA', 'کار تا دمای 60°C بدون تهویه؛ مصرف انرژی کم', 'قابل توسعه برای سامانه‌ی مدیریت مشعل (BMS) و شیرهای قطع خط (LBV)'],
       en: ['SIL calculation and verification', 'SCADA connection', 'Runs up to 60 °C without ventilation; low power', 'Expandable for BMS and line-break valve functions'],
     },
     specs: [

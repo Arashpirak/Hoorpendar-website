@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter, Vazirmatn } from 'next/font/google';
+import localFont from 'next/font/local';
 import { notFound } from 'next/navigation';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
@@ -15,6 +16,19 @@ const vazirmatn = Vazirmatn({
   subsets: ['arabic', 'latin'],
   variable: '--font-vazirmatn',
   display: 'swap',
+});
+
+// B Nazanin (Borna Rayaneh) for Persian text. It ships in one weight and has no Latin letters,
+// and its small x-height needs a size boost to read like the Latin fonts beside it. It draws
+// ASCII digits as Persian numerals, so unicode-range leaves 0-9 (model codes, specs) to Inter.
+const nazanin = localFont({
+  src: '../fonts/BNazanin.woff2',
+  variable: '--font-nazanin',
+  display: 'swap',
+  declarations: [
+    { prop: 'size-adjust', value: '118%' },
+    { prop: 'unicode-range', value: 'U+0020-002F, U+003A-0040, U+00A0, U+00AB, U+00BB, U+0600-06FF, U+200C-200F, U+FB50-FDFF, U+FE70-FEFF' },
+  ],
 });
 
 const inter = Inter({
@@ -48,7 +62,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<'/[
     <html
       lang={locale}
       dir={localeDir(locale)}
-      className={`${vazirmatn.variable} ${inter.variable}`}
+      className={`${nazanin.variable} ${vazirmatn.variable} ${inter.variable}`}
       suppressHydrationWarning
     >
       <head>

@@ -8,15 +8,15 @@ export const instrumentation: Product[] = [
     model: 'PI-315 · PIT-315N',
     title: { fa: 'مبدل فشار به جریان (P/I)', en: 'Pressure-to-current (P/I) converter' },
     summary: {
-      fa: 'سیگنال پنوماتیک ابزار دقیق را به جریان الکتریکی تبدیل می‌کند تا ابزارهای پنوماتیک موجود به سیستم‌های کنترل، رکوردرها و نمایشگرهای جدید وصل شوند.',
+      fa: 'سیگنال فشار پنوماتیک را به جریان الکتریکی استاندارد تبدیل می‌کند تا ابزار دقیق پنوماتیک موجود بتواند به سیستم‌های کنترل، ثبات‌ها و نمایشگرهای جدید وصل شود.',
       en: 'Converts pneumatic instrument signals to current so existing pneumatic instruments can connect to modern control systems, recorders and displays.',
     },
     features: {
       fa: [
         'دقت بهتر از ±0.25% FS',
-        'Loop-Powered با تغذیه‌ی 12 تا 32Vdc',
-        'عرض فقط 19mm (مدل N)؛ نصب روی ریل',
-        'تحمل دو برابر فشار نامی',
+        'تغذیه از خود حلقه‌ی جریان (Loop-Powered)، 12 تا 32Vdc',
+        'پهنای فقط 19mm (مدل N)؛ نصب روی ریل',
+        'تحمل تا دو برابر فشار نامی',
       ],
       en: [
         'Accuracy better than ±0.25 % FS',
@@ -41,13 +41,13 @@ export const instrumentation: Product[] = [
     model: 'MCI-870',
     title: { fa: 'مانیتور فرایند ۸ کاناله برای فضای باز', en: '8-channel outdoor process monitor' },
     summary: {
-      fa: 'هشت ورودی آنالوگ ایزوله در جعبه‌ی فلزی IP54، با پردازشگر مستقل برای هر کانال و رله‌های آلارم و تریپ.',
+      fa: 'هشت ورودی آنالوگ با جداسازی الکتریکی در جعبه‌ی فلزی IP54؛ هر کانال پردازنده‌ی مستقل و رله‌های آلارم و قطع (Trip) خود را دارد.',
       en: 'Eight isolated analog inputs in an IP54 metal enclosure, with a processor per channel and alarm and trip relays.',
     },
     features: {
       fa: [
         'ورودی‌ها: RTD، ترموکوپل، mV، 0-10V، 1-5V، 0/4-20mA',
-        'پردازشگر مستقل برای هر کانال؛ دو رله‌ی آلارم و تریپ',
+        'پردازنده‌ی مستقل برای هر کانال؛ دو رله‌ی آلارم و قطع',
         'Modbus روی RS-485/232',
       ],
       en: [
@@ -71,11 +71,11 @@ export const instrumentation: Product[] = [
     model: 'MPS · MCI-6447 · MCI-2420 · MCP-9000',
     title: { fa: 'پایش چندکاناله و دماسنج‌های صنعتی', en: 'Multichannel process and temperature monitors' },
     summary: {
-      fa: 'در نیروگاه‌ها و صنایع نفت گاهی بیش از ۶۰ نقطه‌ی دمایی باید پایش شود. خانواده‌ی MPS تا ۳۲ کانال ورودی دارد و دماسنج‌های ۶۴، ۲۴، ۹ و ۸ کاناله نیز تولید می‌شوند.',
+      fa: 'در نیروگاه‌ها و صنایع نفت گاهی باید دمای بیش از ۶۰ نقطه را هم‌زمان پایش کرد. خانواده‌ی MPS تا ۳۲ کانال ورودی دارد و دماسنج‌های ۶۴، ۲۴، ۹ و ۸ کاناله هم ساخته می‌شوند.',
       en: 'Power plants and oil facilities often need to watch more than 60 temperature points. The MPS family takes up to 32 inputs, and 64-, 24-, 9- and 8-channel temperature monitors are also available.',
     },
     features: {
-      fa: ['ورودی RTD، TC، V و mA', 'نمایشگر MPS-D16 لمسی یا دیجیتال؛ مدهای MNL، AUT و MAX', 'دو رله‌ی خروجی و ارتباط RS-485'],
+      fa: ['ورودی RTD، TC، V و mA', 'نمایشگر لمسی یا دیجیتال MPS-D16؛ حالت‌های MNL، AUT و MAX', 'دو رله‌ی خروجی و ارتباط RS-485'],
       en: ['RTD, TC, V and mA inputs', 'MPS-D16 touch or digital display; MNL, AUT and MAX modes', 'Two output relays and RS-485'],
     },
     specs: [{ label: { fa: 'کانال‌ها', en: 'Channels' }, value: 'up to 32 (MPS), 8 – 64 (monitors)' }],
@@ -92,7 +92,7 @@ export const instrumentation: Product[] = [
     model: 'TSG-500',
     title: { fa: 'تقویت‌کننده‌ی استرین‌گیج', en: 'Strain gauge amplifier' },
     summary: {
-      fa: 'اندازه‌گیری فشار، اختلاف فشار، وزن و سطح با سنسورهای استرین‌گیج، با خروجی 4-20mA و تنظیم Zero و Span.',
+      fa: 'سیگنال سنسورهای کرنش‌سنج (استرین‌گیج) را برای اندازه‌گیری فشار، اختلاف فشار، وزن و سطح تقویت می‌کند؛ با خروجی 4-20mA و تنظیم صفر و دامنه (Zero و Span).',
       en: 'Measures pressure, differential pressure, weight and level from strain-gauge sensors, with a 4–20 mA output and zero and span adjustment.',
     },
     features: {
@@ -105,13 +105,13 @@ export const instrumentation: Product[] = [
   {
     slug: 'paperless-recorders-data-loggers',
     category: 'instrumentation',
-    title: { fa: 'ثبات‌های بدون کاغذ و دیتالاگرها', en: 'Paperless recorders and data loggers' },
+    title: { fa: 'ثبات‌های بدون کاغذ و ثبت‌کننده‌های داده', en: 'Paperless recorders and data loggers' },
     summary: {
-      fa: 'ثبات بدون کاغذ ۱۲ کاناله، درایور ثبات نموداری، دیتالاگر پارامترهای الکتریکی نیروگاه و سیستم‌های جمع‌آوری داده از رله‌های حفاظتی و پاورآنالایزرها.',
+      fa: 'ثبات بدون کاغذ ۱۲ کاناله، راه‌انداز ثبات‌های نموداری، ثبت‌کننده‌ی پارامترهای الکتریکی نیروگاه، و سامانه‌های جمع‌آوری داده از رله‌های حفاظتی و تحلیلگرهای توان.',
       en: 'Twelve-channel paperless recorders, chart recorder drivers, power-plant electrical data loggers, and data acquisition from protection relays and power analyzers.',
     },
     features: {
-      fa: ['ثبات بدون کاغذ ۱۲ کاناله', 'جمع‌آوری داده از رله‌ها و پاورآنالایزرها', 'نرم‌افزار ثبت و گزارش'],
+      fa: ['ثبات بدون کاغذ ۱۲ کاناله', 'جمع‌آوری داده از رله‌ها و تحلیلگرهای توان', 'نرم‌افزار ثبت داده و گزارش‌گیری'],
       en: ['12-channel paperless recorder', 'Data acquisition from relays and power analyzers', 'Logging and reporting software'],
     },
     applications: [apps.thermal, apps.hydro, apps.refinery],
