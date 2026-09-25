@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>رزومه هورپندار</title>
+<meta name="description" content="رزومه و معرفی جامع شرکت دانش‌بنیان صنایع فن‌آوری رایانه هورپندار: طراحی و ساخت سیستم‌های تحریک ژنراتور، تجهیزات توربین گازی، شعله‌یاب، جرقه‌زن، باطری شارژر، اعلام‌گر آلارم، ابزار دقیق و اجرای پروژه‌های کنترل و اتوماسیون صنعتی.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f5f7fb; --surface:#ffffff; --surface-2:#eef2f8; --ink:#0f1d33; --muted:#56657a; --line:#dbe3ee;
+  --brand:#1d5fae; --brand-deep:#0b2c57; --brand-soft:#e3edfa; --accent:#e3a008; --accent-ink:#8a5a00;
+  --oil:#b4540f; --power:#1d5fae; --industry:#6b4bb8; --figure:#f3f6fa;
+  --shadow:0 1px 2px rgba(15,29,51,.06),0 4px 16px rgba(15,29,51,.06);
+  --radius:14px;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0a1120; --surface:#111a2c; --surface-2:#18233a; --ink:#e7eef8; --muted:#9db0c8; --line:#243350;
+    --brand:#6aa6ef; --brand-deep:#08162c; --brand-soft:#16294a; --accent:#f2b73a; --accent-ink:#f2b73a;
+    --oil:#f08a4b; --power:#6aa6ef; --industry:#a98bf0; --figure:#dfe6ef;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 4px 16px rgba(0,0,0,.25);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0a1120; --surface:#111a2c; --surface-2:#18233a; --ink:#e7eef8; --muted:#9db0c8; --line:#243350;
+  --brand:#6aa6ef; --brand-deep:#08162c; --brand-soft:#16294a; --accent:#f2b73a; --accent-ink:#f2b73a;
+  --oil:#f08a4b; --power:#6aa6ef; --industry:#a98bf0; --figure:#dfe6ef;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 4px 16px rgba(0,0,0,.25);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Vazirmatn",Tahoma,sans-serif;font-size:16px;line-height:1.9;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--brand)}
+bdi{unicode-bidi:isolate;white-space:nowrap}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+
+/* ---------- nav ---------- */
+.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--surface) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:18px;height:60px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--ink);text-decoration:none;white-space:nowrap}
+.logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand-deep));color:#fff;display:grid;place-items:center;font:800 14px/1 "Vazirmatn",sans-serif;letter-spacing:.5px;font-style:italic}
+.nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0;overflow-x:auto;scrollbar-width:none}
+.nav ul::-webkit-scrollbar{display:none}
+.nav li a{display:block;padding:6px 12px;border-radius:999px;color:var(--muted);text-decoration:none;font-size:14px;white-space:nowrap}
+.nav li a:hover{background:var(--surface-2);color:var(--ink)}
+.nav .tools{margin-inline-start:auto;display:flex;gap:6px}
+.icon-btn{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:10px;height:36px;padding:0 12px;font:500 14px "Vazirmatn",sans-serif;cursor:pointer;white-space:nowrap}
+.icon-btn:hover{background:var(--surface-2)}
+
+/* ---------- hero ---------- */
+.hero{position:relative;color:#fff;background:
+  radial-gradient(1200px 400px at 85% -10%,rgba(106,166,239,.35),transparent 60%),
+  linear-gradient(160deg,#0b2c57 0%,#123f7a 55%,#0b2c57 100%);overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:
+  linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);
+  background-size:36px 36px;mask-image:linear-gradient(180deg,#000 30%,transparent)}
+.hero .wrap{position:relative;padding-top:72px;padding-bottom:56px}
+.kicker{display:inline-flex;gap:8px;align-items:center;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);padding:4px 14px;border-radius:999px;font-size:14px}
+.kicker b{color:#f2b73a}
+.hero h1{font-size:clamp(30px,5vw,52px);line-height:1.35;margin:18px 0 4px;font-weight:800}
+.hero .en{direction:ltr;text-align:right;font-weight:500;letter-spacing:3px;color:#b9d3f5;font-size:clamp(12px,1.6vw,16px);text-transform:uppercase}
+.hero .lead{max-width:820px;font-size:clamp(16px,1.9vw,19px);color:#dbe7f7;margin:20px 0 28px}
+.cta{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:12px;font-weight:700;text-decoration:none;font-size:15px;border:1px solid transparent;cursor:pointer;font-family:inherit}
+.btn.primary{background:#f2b73a;color:#2b1d00}
+.btn.ghost{border-color:rgba(255,255,255,.35);color:#fff;background:transparent}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:44px}
+.stat{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:var(--radius);padding:16px 18px}
+.stat b{display:block;font-size:clamp(26px,3.4vw,36px);line-height:1.3;color:#fff}
+.stat span{color:#c6d8f0;font-size:14px}
+
+/* ---------- sections ---------- */
+section{padding:64px 0}
+section.alt{background:var(--surface);border-block:1px solid var(--line)}
+.sec-head{display:flex;flex-direction:column;gap:6px;margin-bottom:28px;max-width:860px}
+.eyebrow{color:var(--brand);font-weight:700;font-size:14px;letter-spacing:.3px}
+h2{font-size:clamp(24px,3vw,32px);line-height:1.5;margin:0}
+h3{font-size:20px;margin:0 0 6px}
+.sec-head p{color:var(--muted);margin:0}
+.prose p{margin:0 0 14px;text-align:justify}
+.two{display:grid;grid-template-columns:1.35fr 1fr;gap:32px;align-items:start}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+section.alt .card{background:var(--bg)}
+.pad{padding:22px}
+.checks{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.checks li{position:relative;padding-inline-start:28px}
+.checks li::before{content:"";position:absolute;inset-inline-start:0;top:.55em;width:16px;height:16px;border-radius:5px;background:var(--brand-soft);border:1.5px solid var(--brand)}
+.checks li::after{content:"";position:absolute;inset-inline-start:5px;top:calc(.55em + 3px);width:5px;height:8px;border:solid var(--brand);border-width:0 2px 2px 0;transform:rotate(45deg)}
+
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.feature .num{width:40px;height:40px;border-radius:11px;background:var(--brand-soft);color:var(--brand);display:grid;place-items:center;font-weight:800;margin-bottom:12px}
+.feature ul{margin:8px 0 0;padding-inline-start:18px;color:var(--muted);font-size:15px}
+.feature ul li{margin-bottom:4px}
+
+/* milestones */
+.timeline{position:relative;display:grid;gap:14px}
+.ms{display:grid;grid-template-columns:120px 1fr;gap:18px;align-items:start}
+.ms .yr{font-weight:800;color:var(--brand);font-size:15px;padding-top:18px;text-align:left}
+.ms .card{padding:16px 20px}
+.ms h4{margin:0 0 4px;font-size:17px}
+.ms p{margin:0;color:var(--muted);font-size:15px}
+
+/* products */
+.cat{margin-top:44px}
+.cat:first-of-type{margin-top:0}
+.cat-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;border-bottom:2px solid var(--line);padding-bottom:10px;margin-bottom:18px}
+.cat-head h3{margin:0}
+.cat-head .tag{font-size:13px;color:var(--muted)}
+.prods{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.prod{display:flex;flex-direction:column;overflow:hidden}
+.prod figure{margin:0;aspect-ratio:4/3;background:var(--figure);display:grid;place-items:center;border-bottom:1px solid var(--line)}
+.prod figure{position:relative;overflow:hidden}
+.prod figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+.prod .body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:6px}
+.prod h4{margin:0;font-size:17px;line-height:1.6}
+.model{direction:ltr;text-align:right;font-weight:700;color:var(--accent-ink);font-size:13px;letter-spacing:.3px}
+.prod p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.85}
+.specs{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:4px;font-size:13.5px}
+.specs li{padding-inline-start:14px;position:relative;line-height:1.75}
+.specs li::before{content:"";position:absolute;inset-inline-start:0;top:.75em;width:6px;height:6px;border-radius:2px;background:var(--brand)}
+.prod.wide{grid-column:span 2;flex-direction:row}
+.prod.wide figure{flex:0 0 44%;aspect-ratio:auto;min-height:320px;border-bottom:0;border-inline-end:1px solid var(--line)}
+.prod.text-only{background:var(--surface-2);box-shadow:none;align-self:start}
+.mini{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:8px}
+.mini div{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-size:13.5px}
+.mini b{display:block;direction:ltr;text-align:right;font-size:13px;color:var(--brand)}
+.callout{margin-top:18px;border-inline-start:4px solid var(--accent);background:var(--surface);border-radius:0 var(--radius) var(--radius) 0;padding:16px 20px}
+.callout h4{margin:0 0 6px}
+.callout p{margin:0;color:var(--muted);font-size:15px}
+.kv{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}
+.kv div{background:var(--surface-2);border-radius:10px;padding:8px 12px;font-size:13.5px}
+.kv b{display:block;direction:ltr;text-align:right;color:var(--ink)}
+
+/* reverse eng */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;counter-reset:s;margin:0;padding:0;list-style:none}
+.steps li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px;font-size:14.5px}
+.steps li::before{content:counter(s,persian);display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--brand);color:#fff;font-weight:800;margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 14px;font-size:14px;direction:ltr}
+.chip.fa{direction:rtl}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
+.gallery img{border-radius:12px;border:1px solid var(--line);background:var(--surface-2);width:100%;height:220px;object-fit:cover}
+
+/* clients */
+.clients{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.clients h3{display:flex;align-items:center;gap:8px;font-size:18px}
+.dot{width:10px;height:10px;border-radius:50%;display:inline-block;flex:none}
+.clients ul{margin:10px 0 0;padding-inline-start:18px;color:var(--muted);font-size:15px}
+
+/* projects */
+.p-summary{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:18px}
+.p-summary .card{padding:14px 18px}
+.p-summary b{font-size:26px;display:block;line-height:1.4}
+.p-summary span{color:var(--muted);font-size:14px}
+.toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:14px}
+.filters{display:flex;flex-wrap:wrap;gap:6px}
+.filter{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 14px;font:500 14px "Vazirmatn",sans-serif;cursor:pointer}
+.filter[aria-pressed="true"]{background:var(--brand);border-color:var(--brand);color:#fff}
+.filter .c{opacity:.75;margin-inline-start:4px}
+.search{flex:1;min-width:220px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:12px;height:40px;padding:0 14px;font:400 15px "Vazirmatn",sans-serif}
+.search:focus,.filter:focus-visible,.icon-btn:focus-visible,.btn:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+.tbl-wrap{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--surface)}
+table{width:100%;border-collapse:collapse;font-size:14.5px}
+thead th{background:var(--surface-2);text-align:right;font-weight:700;padding:12px 14px;border-bottom:1px solid var(--line);white-space:nowrap}
+tbody td{padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover td{background:color-mix(in srgb,var(--brand-soft) 45%,transparent)}
+td.n,td.y{white-space:nowrap;color:var(--muted);font-variant-numeric:tabular-nums}
+td.cl{color:var(--muted)}
+.sec-tag{display:inline-flex;align-items:center;gap:6px;font-size:13px;white-space:nowrap}
+.empty{padding:28px;text-align:center;color:var(--muted)}
+.note{color:var(--muted);font-size:14px;margin-top:12px}
+.more-projects{margin-top:36px}
+.more-projects .cols{columns:2;column-gap:32px}
+.more-projects .cols li{break-inside:avoid;margin-bottom:8px}
+
+/* standards + contact */
+.contact{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.contact .card{padding:18px 20px}
+.contact h4{margin:0 0 6px;font-size:14px;color:var(--muted);font-weight:500}
+.contact p{margin:0;font-weight:700;font-size:16px}
+.contact .ltr{direction:ltr;text-align:right}
+footer{padding:28px 0;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* ---------- responsive ---------- */
+@media screen and (max-width:1000px){
+  .prods{grid-template-columns:repeat(2,1fr)}
+  .grid4,.contact,.p-summary{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .clients{grid-template-columns:1fr 1fr}
+  .kv{grid-template-columns:repeat(2,1fr)}
+}
+@media screen and (max-width:760px){
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .two,.grid3,.clients,.gallery{grid-template-columns:1fr}
+  .prods{grid-template-columns:1fr}
+  .prod.wide{grid-column:auto;flex-direction:column}
+  .prod.wide figure{flex:none;aspect-ratio:4/3;border-inline-end:0;border-bottom:1px solid var(--line)}
+  .ms{grid-template-columns:1fr;gap:4px}
+  .ms .yr{padding-top:0;text-align:right}
+  .more-projects .cols{columns:1}
+  .nav .brand span:not(.logo){display:none}
+  section{padding:48px 0}
+  thead{display:none}
+  table,tbody,tr,td{display:block;width:100%}
+  tbody tr{padding:12px 14px;border-bottom:1px solid var(--line)}
+  tbody td{border:0;padding:2px 0}
+  td.n{display:inline;font-weight:700}
+  td.t{font-weight:500}
+  td.y,td.s{display:inline-block;margin-inline-end:12px}
+}
+@media screen and (max-width:420px){
+  .grid4,.contact,.steps,.mini{grid-template-columns:1fr}
+  .p-summary b{font-size:22px}
+}
+
+/* ---------- print (resume) ---------- */
+@page{size:A4;margin:14mm 12mm}
+@media print{
+  :root{--bg:#fff;--surface:#fff;--surface-2:#f1f4f9;--ink:#000;--muted:#333;--line:#cfd8e3;--shadow:none}
+  body{font-size:11pt;line-height:1.75;background:#fff}
+  .nav,.cta,.toolbar,.no-print{display:none!important}
+  .hero{background:#0b2c57!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .hero::before{display:none}
+  .hero .wrap{padding-top:28px;padding-bottom:24px}
+  .stats{margin-top:20px}
+  section{padding:22px 0;break-inside:auto}
+  section.alt{background:#fff}
+  .sec-head{margin-bottom:14px}
+  .card,.prod,.ms,.callout,.steps li,.clients>div,.p-summary .card{break-inside:avoid}
+  .prods{grid-template-columns:repeat(3,1fr);gap:10px}
+  .prod figure{aspect-ratio:16/10}
+  .prod.wide{grid-column:span 3}
+  .prod.wide figure{min-height:200px}
+  .two{display:block}
+  .two>aside,.two>div+div{margin-top:16px}
+  .ms{display:block}
+  .ms .yr{padding-top:0;text-align:right}
+  .prod .body{padding:10px 12px}
+  .grid4{grid-template-columns:repeat(2,1fr)}
+  .clients{grid-template-columns:repeat(3,1fr)}
+  .contact{grid-template-columns:repeat(4,1fr)}
+  .gallery img{height:150px}
+  thead{display:table-header-group}
+  tr{break-inside:avoid}
+  tbody tr:hover td{background:none}
+  table{font-size:9.5pt}
+  tbody td{padding:5px 8px}
+  thead th{padding:6px 8px}
+  a{color:inherit;text-decoration:none}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="ناوبری">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="logo">HP</span><span>هورپندار</span></a>
+    <ul>
+      <li><a href="#about">درباره ما</a></li>
+      <li><a href="#services">حوزه‌های فعالیت</a></li>
+      <li><a href="#milestones">دستاوردها</a></li>
+      <li><a href="#products">محصولات</a></li>
+      <li><a href="#reverse">مهندسی معکوس</a></li>
+      <li><a href="#clients">کارفرمایان</a></li>
+      <li><a href="#projects">پروژه‌ها</a></li>
+      <li><a href="#contact">تماس</a></li>
+    </ul>
+    <div class="tools">
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="تغییر حالت نمایش">◐</button>
+      <button class="icon-btn" type="button" onclick="window.print()">چاپ / PDF</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero" id="top">
+  <div class="wrap">
+    <span class="kicker"><b>●</b> شرکت دانش‌بنیان · تأسیس ۱۳۷۸</span>
+    <h1>صنایع فن‌آوری رایانه هورپندار</h1>
+    <div class="en">Hoorpendar Computer Technology Industries</div>
+    <p class="lead">طراح و سازنده‌ی تجهیزات الکترونیک صنعتی و مجری پروژه‌های ابزار دقیق، کنترل، اتوماسیون و مانیتورینگ اطلاعات. محصولات ما در صنایع نفت، گاز، پتروشیمی، سدها و نیروگاه‌ها کار می‌کنند؛ از سیستم تحریک ژنراتور و گاورنر توربین تا شعله‌یاب، جرقه‌زن، باطری شارژر هوشمند و اعلام‌گر آلارم.</p>
+    <div class="cta">
+      <a class="btn primary" href="#products">مشاهده محصولات</a>
+      <a class="btn ghost" href="#projects">فهرست پروژه‌ها</a>
+      <button class="btn ghost" type="button" onclick="window.print()">دریافت نسخه چاپی رزومه</button>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>+۲۵</b><span>سال تجربه تخصصی</span></div>
+      <div class="stat"><b id="statProjects">۱۳۸</b><span>پروژه و قرارداد ثبت‌شده (۱۳۸۰ تا ۱۴۰۱)</span></div>
+      <div class="stat"><b>+۲۵</b><span>کارفرمای صنعتی و دولتی</span></div>
+      <div class="stat"><b>+۲۰۰</b><span>یونیت تشخیص شعله FDU در حال کار</span></div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="wrap two">
+    <div>
+      <div class="sec-head">
+        <span class="eyebrow">درباره هورپندار</span>
+        <h2>بیش از دو دهه طراحی، ساخت و بومی‌سازی برای صنایع حساس کشور</h2>
+      </div>
+      <div class="prose">
+        <p>شرکت دانش‌بنیان <b>صنایع فن‌آوری رایانه هورپندار</b> از سال ۱۳۷۸ (۱۹۹۹ میلادی) به‌عنوان یک مرکز تخصصی در زمینه‌ی طراحی و تولید تجهیزات الکترونیکی خاص و اجرای پروژه‌های برق، کنترل، اتوماسیون و ابزار دقیق فعالیت می‌کند. این شرکت با تکیه بر توان متخصصان داخلی و فناوری روز دنیا، پروژه‌های متعددی را به‌صورت <bdi>EPC</bdi> در صنایع نفت و گاز، آب و برق و فولاد با موفقیت به پایان رسانده است. در بیشتر این پروژه‌ها، سخت‌افزار مورد نیاز نیز توسط خود شرکت طراحی و ساخته شده است.</p>
+        <p>مشتریان اصلی هورپندار سدها و نیروگاه‌ها، شرکت‌های بهره‌برداری نفت و گاز، سازمان هواشناسی کشور و دیگر صنایع کلیدی هستند. برای این مشتریان یا تجهیزات و سیستم‌های الکترونیکی و میکروپروسسوری اختصاصی طراحی و ساخته شده، یا پروژه‌های کنترل و اتوماسیون صنعتی طراحی و پیاده‌سازی شده است.</p>
+        <p>بیشتر این تجهیزات باید به‌طور دائم و مطمئن در شرایط بسیار سخت کار کنند: دمای بالا، لرزش، رطوبت، میدان‌های مغناطیسی قوی، و اسپارک‌های ناشی از کلیدزنی و صاعقه. به همین دلیل در صنایعی به کار رفته‌اند که توقف آن‌ها از نظر اقتصادی و راهبردی پرهزینه است؛ مانند کنترل نیروگاه‌ها، تأمین آب شرب تهران، و ایستگاه‌ها و کارخانه‌های پمپاژ نفت و گاز.</p>
+        <p>بخش زیادی از پروژه‌های شرکت ماهیت پژوهشی داشته و برای نخستین بار در ایران اجرا شده‌اند؛ از جمله سیستم تحریک ژنراتور نیروگاه، گاورنر دیجیتال توربین، کریدوسکوپ لیزری دومحوره، تجهیزات شبکه‌ی جمع‌آوری اطلاعات صنعتی و سیستم سوئیچینگ اطلاعات مراکز هواشناسی. هورپندار از معدود شرکت‌های ایرانی است که هم پروژه‌های برق، ابزار دقیق و اتوماسیون را اجرا می‌کند و هم تجهیزات الکترونیکی صنعتی را طراحی و به تولید انبوه می‌رساند.</p>
+      </div>
+    </div>
+    <aside class="card pad">
+      <h3>چرا هورپندار؟</h3>
+      <ul class="checks">
+        <li><b>همراهی از صفر تا صد:</b> از بررسی نیاز و طراحی تا ساخت، نصب، راه‌اندازی و پشتیبانی.</li>
+        <li><b>بومی‌سازی در شرایط تحریم:</b> جایگزینی مطمئن برای تجهیزات خارجی که تأمین آن‌ها دشوار یا ناممکن شده است.</li>
+        <li><b>کیفیتی قابل رقابت با نمونه‌های اروپایی و آمریکایی</b>، با قیمت رقابتی.</li>
+        <li><b>تضمین تأمین قطعات یدکی</b> و خدمات پس از فروش مستقیم از سازنده.</li>
+        <li><b>طراحی برای محیط‌های سخت:</b> بدنه‌های ضد انفجار، درجه‌ی حفاظت <bdi>IP54/IP65</bdi> و تحمل دمای کاری تا <bdi>85°C</bdi>.</li>
+        <li><b>سازگاری با سیستم‌های موجود:</b> پروتکل‌های استاندارد <bdi>Modbus RTU/TCP</bdi>، خروجی‌های <bdi>4-20mA</bdi> و اتصال به <bdi>SCADA/DCS</bdi>.</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">حوزه‌های فعالیت</span>
+      <h2>چهار محور اصلی کار هورپندار</h2>
+      <p>فعالیت‌های شرکت در چهار بخش مکمل انجام می‌شود. کارفرما می‌تواند یک تجهیز مشخص سفارش دهد یا اجرای کامل یک سیستم را از طراحی تا راه‌اندازی به شرکت بسپارد.</p>
+    </div>
+    <div class="grid4">
+      <div class="card pad feature">
+        <div class="num">۱</div>
+        <h3>طراحی و تولید تجهیزات</h3>
+        <p class="no-margin" style="margin:0;color:var(--muted);font-size:15px">تجهیزات الکترونیکی پیشرفته، به‌ویژه برای توربین و ژنراتور.</p>
+        <ul>
+          <li>سیستم‌های تحریک و کنترل ژنراتور</li>
+          <li>شعله‌یاب و آشکارساز آتش</li>
+          <li>سیستم‌های جرقه‌زن توربین، بویلر و کوره</li>
+          <li>باطری شارژر و منابع تغذیه صنعتی</li>
+          <li>اعلام‌گر آلارم و ابزار دقیق</li>
+        </ul>
+      </div>
+      <div class="card pad feature">
+        <div class="num">۲</div>
+        <h3>اجرای پروژه‌های صنعتی</h3>
+        <p style="margin:0;color:var(--muted);font-size:15px">طراحی و اجرای پروژه‌ها به‌صورت <bdi>EPC</bdi>.</p>
+        <ul>
+          <li>اتوماسیون و کنترل مبتنی بر <bdi>PLC</bdi></li>
+          <li>مانیتورینگ و جمع‌آوری اطلاعات (<bdi>SCADA/DCS</bdi>)</li>
+          <li>اندازه‌گیری، انتقال اطلاعات و تله‌متری</li>
+          <li>سیستم‌های اعلام آلارم، خطا و حریق</li>
+          <li>شبکه‌ی فیبر نوری و تأسیسات برق و روشنایی</li>
+        </ul>
+      </div>
+      <div class="card pad feature">
+        <div class="num">۳</div>
+        <h3>مهندسی معکوس و بازسازی</h3>
+        <p style="margin:0;color:var(--muted);font-size:15px">احیای تجهیزات قدیمی که قطعه‌ی یدکی ندارند.</p>
+        <ul>
+          <li>شبیه‌سازی کارت‌ها و بردهای الکترونیکی</li>
+          <li>جایگزینی قطعات منسوخ با مدارهای جدید</li>
+          <li>استخراج نقشه‌ی شماتیک و تحلیل عملکرد</li>
+          <li>به‌روزرسانی سیستم‌های تحریک و کنترل قدیمی</li>
+        </ul>
+      </div>
+      <div class="card pad feature">
+        <div class="num">۴</div>
+        <h3>خدمات فنی و مهندسی</h3>
+        <p style="margin:0;color:var(--muted);font-size:15px">خدمات تخصصی در کنار تولید.</p>
+        <ul>
+          <li>تنظیم ضرایب <bdi>PID</bdi> سیستم‌های گاورنر و تحریک</li>
+          <li>تعمیر تجهیزات الکترونیکی خاص</li>
+          <li>تست و کالیبراسیون تجهیزات ابزار دقیق</li>
+          <li>مطالعه و امکان‌سنجی به‌روزرسانی سیستم‌ها</li>
+          <li>نصب، راه‌اندازی و پشتیبانی فنی بلندمدت</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MILESTONES ================= -->
+<section id="milestones">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">نخستین‌ها و دستاوردهای شاخص</span>
+      <h2>کارهایی که برای اولین بار در کشور انجام شد</h2>
+      <p>گزیده‌ای از پروژه‌ها و محصولاتی که جایگاه فنی هورپندار را نشان می‌دهند.</p>
+    </div>
+    <div class="timeline">
+      <div class="ms"><div class="yr">۱۳۸۰</div><div class="card"><h4>نخستین سیستم تحریک استاتیک ساخت داخل</h4><p>طراحی و ساخت یونیت تحریک نیروگاه لتیان. پس از آن، هورپندار به نخستین و تنها سازنده‌ی داخلی سیستم‌های تحریک استاتیک ژنراتورها و موتورهای سنکرون تبدیل شد. سیستم تحریک ۱۲۰۰ آمپری نیروگاه لتیان را نیز همین شرکت طراحی و تولید کرده است.</p></div></div>
+      <div class="ms"><div class="yr">۱۳۸۰–۱۳۸۲</div><div class="card"><h4>کنترل هوشمند آب شرب تهران</h4><p>سیستم کنترل هوشمند <bdi>Full Redundant</bdi> برای تنظیم خودکار دبی آب ارسالی از سد لتیان به تهران (از طریق تونل تلو)، با تجهیزات ساخت شرکت و <bdi>PLC</bdi> توشیبا.</p></div></div>
+      <div class="ms"><div class="yr">۱۳۸۴–۱۳۸۵</div><div class="card"><h4>کریدوسکوپ لیزری اندازه‌گیری انحراف بدنه‌ی سد</h4><p>سیستم لیزری برای نظارت و ثبت دقیق حرکات بدنه‌ی سد سفیدرود، با دقت ۰٫۰۱ میلی‌متر در دو محور <bdi>X</bdi> و <bdi>Y</bdi> و بدون تماس فیزیکی.</p></div></div>
+      <div class="ms"><div class="yr">۱۳۸۶–۱۳۹۰</div><div class="card"><h4>تحریک و <bdi>AVR</bdi> موتورهای سنکرون ۳٫۵ مگاواتی</h4><p>کنترل و راه‌انداز تحریک استاتیک موتورهای سنکرون ایستگاه‌های پمپاژ و تقویت فشار نفت و گاز آغاجاری. در ۱۳۹۶ نیز ۴۰ یونیت کنترل تحریک (کارت <bdi>Synchrite II</bdi>) برای همین موتورها تحویل شد.</p></div></div>
+      <div class="ms"><div class="yr">۱۳۹۱–۱۳۹۲</div><div class="card"><h4>نخستین گاورنر دیجیتال توربین آبی کشور</h4><p>پروژه‌ی پژوهشی طراحی و ساخت سیستم کنترل دیجیتال گاورنر نیروگاه آبی بر پایه‌ی <bdi>PLC</bdi> (مدل <bdi>DHTG-300</bdi>)، با حمایت صندوق حمایت از پژوهشگران. در این پروژه دانش فنی کنترل سرعت توربین، سیستم‌های هیدرولیک و شیرهای <bdi>Servo Valve</bdi> به دست آمد.</p></div></div>
+      <div class="ms"><div class="yr">۱۳۹۲</div><div class="card"><h4>۸۰۰ سیگنال اعلام‌گر آلارم برای گچساران</h4><p>تولید و تحویل ۸۰۰ سیگنال <bdi>Alarm Annunciator</bdi> برای کارخانه‌های مختلف شرکت بهره‌برداری نفت و گاز گچساران.</p></div></div>
+      <div class="ms"><div class="yr">آزمون شبکه</div><div class="card"><h4>موفقیت در آزمون خودراه‌اندازی (<bdi>Black Start</bdi>) آذربایجان</h4><p>در این آزمون بخشی از استان کاملاً بی‌برق شد و نیروگاه سد ارس، مجهز به سیستم تحریک <bdi>SECON-2000</bdi> و گاورنر دیجیتال <bdi>DHTG-300</bdi> ساخت هورپندار، به‌صورت جزیره‌ای و مستقل از شبکه‌ی سراسری آن را برق‌دار کرد. نیروگاه بارهای پله‌ای تا ۲٫۵ مگاوات را با حفظ فرکانس و ولتاژ کنترل کرد و در راه‌اندازی نیروگاه‌های دیگر نقش داشت.</p></div></div>
+      <div class="ms"><div class="yr">۱۳۹۶</div><div class="card"><h4>۱۲۰ مبدل فشار به جریان در یک قرارداد</h4><p>تولید و تحویل ۱۲۰ دستگاه مبدل <bdi>PI-315</bdi> به شرکت بهره‌برداری نفت و گاز مارون، برای اتصال ابزارهای پنوماتیک قدیمی به سیستم‌های کنترل الکترونیکی.</p></div></div>
+      <div class="ms"><div class="yr">۱۳۹۷ به بعد</div><div class="card"><h4>بومی‌سازی سیستم کنترل توربین سولار</h4><p>بیش از ۱۰ مدل از یونیت‌های کنترل توربین سولار، شامل اندازه‌گیری سرعت و دما و کنترل شیر سوخت، به روش مهندسی معکوس برای شرکت ملی مناطق نفت‌خیز جنوب طراحی و تولید شد.</p></div></div>
+      <div class="ms"><div class="yr">۱۴۰۰</div><div class="card"><h4>سنسور گایدون توربین زیمنس <bdi>SGT-200</bdi></h4><p>سنسور <bdi>Contactless</bdi> موقعیت که درون جک هیدرولیک و زیر فشار ۶۰ بار نصب می‌شود و در دمای بالا دقت و سرعت لازم برای کنترل موقعیت را دارد (جزیره سیری).</p></div></div>
+      <div class="ms"><div class="yr">۱۴۰۱</div><div class="card"><h4>سیستم تحریک ژنراتور لوکوموتیو</h4><p>طراحی و ساخت سیستم تحریک ژنراتور لوکوموتیو، همراه با مبدل‌ها و درایورهای سوئیچینگ خاص، برای مپنا لوکوموتیو.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRODUCTS ================= -->
+<section id="products" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">محصولات</span>
+      <h2>سبد محصولات هورپندار</h2>
+      <p>همه‌ی محصولات زیر در هورپندار طراحی و تولید می‌شوند. بیشتر آن‌ها در ولتاژ، ابعاد و مشخصات دلخواه کارفرما قابل سفارش‌اند و برای هر نوع توربین، کوره یا بویلر می‌توان طبق نمونه طراحی و ساخت انجام داد.</p>
+    </div>
+
+    <!-- A. Excitation -->
+    <div class="cat">
+      <div class="cat-head"><h3>سیستم‌های تحریک و کنترل ژنراتور</h3><span class="tag">Excitation · AVR · Governor</span></div>
+      <div class="prods">
+        <article class="card prod wide">
+          <figure><img src="img/secon.jpg" alt="تابلوی سیستم تحریک SECON-2000" loading="lazy"></figure>
+          <div class="body">
+            <div class="model">SECON-2000 Series</div>
+            <h4>سیستم تحریک استاتیک تریستوری با <bdi>AVR</bdi> دیجیتال</h4>
+            <p>سیستم کامل تحریک ژنراتورهای سنکرون، شامل کنترل‌کننده‌ی دیجیتال مبتنی بر <bdi>PLC</bdi>، پل تریستوری، یونیت آتش پالس، ترانسفورماتور تغذیه (<bdi>Shunt Transformer</bdi> یا <bdi>PMG</bdi>)، تجهیزات اندازه‌گیری و <bdi>HMI</bdi> لمسی.</p>
+            <ul class="specs">
+              <li>جریان تحریک تا <bdi>2000A</bdi> و قابل ارائه در ولتاژهای مختلف</li>
+              <li>سه مد کنترل: ولتاژ، ضریب قدرت و توان راکتیو</li>
+              <li>پل یکسوساز شش‌تریستوری ۱۲ پالس تمام‌موج؛ امکان <bdi>Redundancy</bdi> برای بخش کنترل و پل</li>
+              <li><bdi>Crowbar & Field Discharge</bdi> و <bdi>Field Flashing</bdi> با فناوری <bdi>IGBT</bdi></li>
+              <li>حفاظت اضافه‌ولتاژ میدان، محدودکننده‌های تحریک و ظرفیت اضافه‌بار کوتاه‌مدت</li>
+              <li>نمایش و کنترل محلی و از راه دور، تشخیص و ثبت خطا</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card prod text-only">
+          <div class="body">
+            <div class="model">SECON-50 · SECON-30</div>
+            <h4>تحریک موتورها و ژنراتورهای سنکرون <bdi>Brushless</bdi></h4>
+            <p>سیستم‌های تحریک کم‌جریان برای موتورها و ژنراتورهای سنکرون بدون جاروبک و دومرحله‌ای.</p>
+            <div class="mini">
+              <div><b>SECON-50</b>تا ۵۰ آمپر، مدل ترانزیستوری</div>
+              <div><b>SECON-30</b>تا ۳۰ آمپر، مدل تریستوری، مد اتوماتیک و دستی</div>
+            </div>
+            <ul class="specs">
+              <li><bdi>Crowbar</bdi> حفاظت سیم‌پیچ روتور، طبق مشخصات ژنراتور</li>
+              <li>گاورنر دیجیتال توربین آبی <bdi>DHTG-300</bdi></li>
+              <li>بازسازی و به‌روزرسانی سیستم‌های تحریک قدیمی</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+      <div class="callout">
+        <h4>نمونه‌ی اجراشده: سیستم تحریک استاتیک <bdi>SECON-2000</bdi> برای ژنراتور ۱۱ مگاواتی</h4>
+        <p>طراحی مطابق استانداردهای <bdi>IEEE 421.1</bdi> تا <bdi>421.5</bdi>، با کنترل‌کننده‌ی <bdi>PLC Premium</bdi> (۶۴ ورودی و ۳۲ خروجی دیجیتال، ۸ ورودی و ۴ خروجی آنالوگ)، شبکه‌ی <bdi>Modbus TCP</bdi>، <bdi>HMI</bdi> لمسی رنگی و نرم‌افزار مانیتورینگ روی رایانه با ثبت رویداد و منحنی. حفاظت‌ها شامل اضافه‌جریان، توالی و قطع فاز، <bdi>Crowbar</bdi>، دمای ترانسفورماتور و <bdi>SCR</bdi>، <bdi>V/F</bdi>، کم‌تحریکی و اضافه‌ولتاژ است.</p>
+        <div class="kv">
+          <div>استاتور ژنراتور<b>11MW · 10.5kV · 50Hz</b></div>
+          <div>روتور<b>116V · 822A</b></div>
+          <div>ورودی تحریک<b>160V · 1000A · 3Ø</b></div>
+          <div>خروجی تحریک<b>160V · 1200A DC</b></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- B. Flame -->
+    <div class="cat">
+      <div class="cat-head"><h3>تشخیص شعله و آتش</h3><span class="tag">Flame &amp; Fire Detection</span></div>
+      <div class="prods">
+        <article class="card prod">
+          <figure><img src="img/fdu300.jpg" alt="یونیت تشخیص شعله FDU-300" loading="lazy"></figure>
+          <div class="body">
+            <div class="model">FDU-300 · FDU-320</div>
+            <h4>یونیت تشخیص شعله‌ی محفظه‌ی احتراق توربین</h4>
+            <p>شعله‌ی توربین را هم در کارکرد عادی و هم هنگام جرقه‌زنی پایش می‌کند و در صورت خاموشی شعله، با فعال کردن رله‌ی خروجی توربین را تریپ می‌دهد. ویژه‌ی توربین‌های رستون <bdi>TA-1750</bdi> است و بیش از ۲۰۰ دستگاه از آن تحویل شده است.</p>
+            <ul class="specs">
+              <li>قابل نصب روی توربین‌های سولزر، رستون، <bdi>MAN Turbo</bdi> و…</li>
+              <li>طول کابل سنسور تا یونیت: ۵ تا ۱۵ متر، نسوز با روکش فلزی</li>
+              <li>تحمل حرارت تا <bdi>85°C</bdi>، جعبه‌ی آلومینیومی آب‌بندی‌شده</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card prod">
+          <figure><img src="img/fr430e.jpg" alt="رله شعله FR-430E" loading="lazy"></figure>
+          <div class="body">
+            <div class="model">FR-430E · FR-430D</div>
+            <h4>رله‌ی تشخیص شعله <bdi>UV</bdi> و یونیزاسیون</h4>
+            <p>تشخیص شعله در محفظه‌ی توربین، کوره و بویلر. مدل <bdi>E</bdi> با سنسور <bdi>UV</bdi> و مدل <bdi>D</bdi> با سنسور میله‌ای <bdi>ROD</bdi> (اندازه‌گیری یونیزاسیون ناشی از احتراق) کار می‌کند. تعداد زیادی از آن‌ها در شرکت‌های نفت و گاز در حال بهره‌برداری است.</p>
+            <ul class="specs">
+              <li>خروجی کنتاکت رله <bdi>Changeover</bdi></li>
+              <li>تغذیه <bdi>220/115Vac</bdi> (طبق سفارش)</li>
+              <li>مشابه رله‌های هانیول <bdi>R4343E / R4343D</bdi></li>
+            </ul>
+          </div>
+        </article>
+        <article class="card prod">
+          <figure><img src="img/ra890f.jpg" alt="کنترلر ایمنی شعله RA-890F" loading="lazy"></figure>
+          <div class="body">
+            <div class="model">RA-890F · C7012</div>
+            <h4>کنترلر ایمنی شعله (<bdi>Flame Safeguard</bdi>)</h4>
+            <p>با سنسور <bdi>UV</bdi> یا <bdi>ROD</bdi> شعله‌ی پایلوت را تشخیص می‌دهد و اجازه‌ی فرمان به شیر اصلی سوخت را صادر می‌کند. نسخه‌ی مهندسی معکوس مدل <bdi>RA-890F</bdi> هانیول است.</p>
+            <ul class="specs">
+              <li>خروجی دو مرحله رله <bdi>Pilot / Main</bdi></li>
+              <li>یونیت شعله‌یاب <bdi>C7012</bdi> با بدنه‌ی آلومینیومی صنعتی و ضد انفجار</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card prod">
+          <figure><img src="img/ufd760.jpg" alt="آشکارساز آتش UFD-760" loading="lazy"></figure>
+          <div class="body">
+            <div class="model">UFD-760</div>
+            <h4>آشکارساز آتش <bdi>UV</bdi> محیط‌های پرخطر</h4>
+            <p>پایش پیوسته‌ی محیط‌های مستعد آتش‌سوزی مانند کمپرسورهای گاز و توربین‌های گازی. پس از دو سال تحقیق و منطبق بر نمونه‌های <bdi>Det-Tronics</bdi> ساخته شده است.</p>
+            <ul class="specs">
+              <li>تشخیص شعله‌ای به ابعاد ۱ سانتی‌متر مربع از فاصله‌ی ۵ متری</li>
+              <li>مدارات منطقی <bdi>CPLD</bdi>؛ تغذیه‌ی <bdi>18-36Vdc</bdi>؛ دمای کار تا <bdi>85°C</bdi></li>
+              <li>کنتاکت <bdi>NO/NC</bdi> به‌صورت <bdi>Fail-Safe</bdi>؛ غیرحساس به نور خورشید</li>
+              <li>بدنه‌ی ضد انفجار از استیل ضدزنگ یا آلومینیوم آنودایز</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card prod">
+          <figure><img src="img/fms280.jpg" alt="سیستم پایش فلر FMS-280 در مارون ۴" loading="lazy"></figure>
+          <div class="body">
+            <div class="model">FMS-280</div>
+            <h4>پایش بدون تماس فلر و پایلوت</h4>
+            <p>وضعیت و حجم شعله‌ی فلر را از فاصله‌ی دور اندازه می‌گیرد و به اتاق فرمان ارسال می‌کند. در صورت خاموشی، هشدار صوتی و بصری می‌دهد. جایگزین ترموکوپل‌هایی است که به‌سرعت فرسوده می‌شوند. در ایستگاه تقویت فشار مارون ۴ از فاصله‌ی حدود ۴۰۰ متری نصب شده است.</p>
+            <ul class="specs">
+              <li>دو رله‌ی خروجی خاموشی (آنی و تأخیری)</li>
+              <li>خروجی آنالوگ <bdi>4-20mA</bdi>، پورت سریال و نرم‌افزار ثبت</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card prod text-only">
+          <div class="body">
+            <div class="model">KRN-IN320 · UV / IR Sensors</div>
+            <h4>سنسورها و الکترودهای شعله</h4>
+            <p>الکترود میله‌ای (<bdi>ROD</bdi>) یونیزاسیون با بدنه‌ی چینی لعاب‌دار، و سنسورهای <bdi>UV</bdi> و <bdi>IR</bdi> برای تشخیص انواع شعله. در ابعاد و شکل‌های مختلف، مطابق نمونه‌ی کارفرما ساخته می‌شوند.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- C. Ignition -->
+    <div class="cat">
+      <div class="cat-head"><h3>سیستم‌های جرقه‌زن توربین، بویلر و کوره</h3><span class="tag">Ignition Systems</span></div>
+      <p style="color:var(--muted);margin:-6px 0 16px">یونیت، کابل و شمع جرقه‌زن برای توربین‌های گازی سولار، رستون، رولزرویس، ورکسپور، سولزر و <bdi>GE</bdi> و برای بویلرها و کوره‌ها. در صورت نیاز، این تجهیزات درون جعبه‌ی ضد انفجار ارائه می‌شوند.</p>
+      <div class="prods">
+        <article class="card prod">
+          <figure><img src="img/ign-unit.jpg" alt="یونیت جرقه زن IGRU-200" loading="lazy"></figure>
+          <div class="body">
+            <div class="model">IGRU-200</div>
+            <h4>یونیت جرقه‌زن <bdi>Hi-Energy</bdi> توربین رولزرویس</h4>
+            <ul class="specs">
+              <li>ورودی <bdi>24/48/110/220V</bdi>، مستقیم یا متناوب</li>
+              <li>خروجی <bdi>2000Vdc</bdi> با انرژی ۱۲ ژول؛ ۳ تا ۵ جرقه در ثانیه</li>
+              <li>جعبه‌ی ضد انفجار؛ دمای کار تا <bdi>85°C</bdi></li>
+            </ul>
+          </div>
+        </article>
+        <article class="card prod">
+          <figure><img src="img/ign-2krj.jpg" alt="یونیت جرقه زن IGN-2KRJ" loading="lazy"></figure>
+          <div class="body">
+            <div class="model">IGN-2KRJ</div>
+            <h4>اکسایتر جرقه‌ی <bdi>Hi-Energy</bdi> توربین و بویلر</h4>
+            <ul class="specs">
+              <li>ورودی <bdi>230/115Vac</bdi> یا <bdi>+24Vdc</bdi></li>
+              <li>خروجی <bdi>2000Vdc</bdi>، ضربه‌ای ۳ بار در ثانیه</li>
+              <li>بدنه‌ی فلزی پرشده با رزین مخصوص</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card prod">
+          <figure><img src="img/ign-sl10.jpg" alt="اکسایتر جرقه توربین سولار IGN-SL10" loading="lazy"></figure>
+          <div class="body">
+            <div class="model">IGN-SL10</div>
+            <h4>اکسایتر جرقه‌زن توربین سولار</h4>
+            <ul class="specs">
+              <li>ورودی <bdi>24Vdc</bdi>، ولتاژ خروجی <bdi>18kV</bdi></li>
+              <li>جرقه‌ی <bdi>Hi-Energy</bdi>، ۳ تا ۴ بار در ثانیه</li>
+              <li>کاملاً رزین‌شده</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card prod">
+          <figure><img src="img/hup18kd.jpg" alt="جرقه زن قابل حمل HUP-18KD" loading="lazy"></figure>
+          <div class="body">
+            <div class="model">HUP-18KD · HSB-619</div>
+            <h4>جرقه‌زن قابل حمل و ترانس جرقه</h4>
+            <p><bdi>HUP-18KD</bdi> برای روشن کردن دستی مشعل کوره‌ها و بویلرهاست: دسته‌ی ۱۰۰ سانتی‌متری با محافظ برگشت شعله، جرقه‌ی ۳ تا ۴ بار در ثانیه. <bdi>HSB-619</bdi> ترانسفورماتور جرقه با خروجی <bdi>15000Vac</bdi> و جرقه‌ی پیوسته است.</p>
+          </div>
+        </article>
+        <article class="card prod">
+          <figure><img src="img/ign-cable.jpg" alt="کابل جرقه زن توربین" loading="lazy"></figure>
+          <div class="body">
+            <div class="model">IGRC-202 · IGSC-SL18 · IGNC-W72</div>
+            <h4>کابل‌های جرقه‌زن توربین</h4>
+            <ul class="specs">
+              <li>رولزرویس: عایق <bdi>20kV</bdi>، تا <bdi>250°C</bdi>، زره استیل ضدزنگ و اتصالات برنجی با روکش نیکل‌کروم</li>
+              <li>سولار: سیلیکونی ولتاژ بالا تا <bdi>30kV</bdi></li>
+              <li>ورکسپور: روکش تفلون با زره استیل؛ و کابل دوتکه‌ی رستون</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card prod">
+          <figure><img src="img/plug-hed614.jpg" alt="شمع جرقه زن HED614" loading="lazy"></figure>
+          <div class="body">
+            <div class="model">IGRP-120 · HED614 · HSR514 · HNR-100 · HKR-600</div>
+            <h4>شمع‌های جرقه‌زن</h4>
+            <ul class="specs">
+              <li>رولزرویس (<bdi>IGRP-120</bdi>): استیل ضدزنگ، مقاوم تا <bdi>1250°C</bdi></li>
+              <li>سولار (<bdi>HED614</bdi>): اسپارک تا <bdi>20kV</bdi>؛ رستون (<bdi>HSR514</bdi>): تا <bdi>3kV</bdi></li>
+              <li>توربین یا کوره <bdi>Hi-Energy</bdi> (<bdi>HNR-100</bdi>)؛ کوره (<bdi>HKR-600</bdi>): تا <bdi>15kV</bdi></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+      <p class="note">سایر موارد: سیستم کامل جرقه‌زن فلر (<bdi>Pulse Ignition Probe</bdi>)، جرقه‌زن سیار پری‌هیتر واحدهای نمک‌زدایی، سیستم جرقه‌زن توربین <bdi>GE</bdi> و یونیت‌های <bdi>Hi-Energy</bdi> نیروگاه شهید رجایی.</p>
+    </div>
+
+    <!-- D. Turbine control -->
+    <div class="cat">
+      <div class="cat-head"><h3>کنترل و ابزار دقیق توربین گازی</h3><span class="tag">Turbine Control &amp; Sensors</span></div>
+      <div class="prods">
+        <article class="card prod">
+          <figure><img src="img/zb-espm.jpg" alt="مانیتور سرعت ZB-ESPM-440" loading="lazy"></figure>
+          <div class="body">
+            <div class="model">ZB-ESPM-440 · ZB-ETPM-430</div>
+            <h4>مانیتور سرعت و دمای توربین سولار</h4>
+            <p>اندازه‌گیری سرعت با سنسور <bdi>Magnetic Pickup</bdi> (چهار رله) و دمای توربین با ترموکوپل (سه رله). خروجی آنالوگ <bdi>0-5Vdc</bdi> و <bdi>0-200µA</bdi>. به روش مهندسی معکوس و در رنج‌های مختلف ساخته شده‌اند.</p>
+          </div>
+        </article>
+        <article class="card prod">
+          <figure><img src="img/zb-mfac.jpg" alt="کنترل شیر سوخت ZB-MFAC-400" loading="lazy"></figure>
+          <div class="body">
+            <div class="model">ZB-MFAC-400 · RUG-280</div>
+            <h4>کنترل شیر سوخت و مولد رمپ راه‌انداز</h4>
+            <p><bdi>ZB-MFAC-400</bdi> شیر سوخت اصلی توربین سولار را بر اساس سرعت و دما کنترل می‌کند (خروجی <bdi>0-50mA</bdi>). <bdi>RUG-280</bdi> سیگنال راه‌انداز اولیه‌ی توربین را با تغذیه‌ی <bdi>+28Vdc</bdi> تولید می‌کند.</p>
+          </div>
+        </article>
+        <article class="card prod">
+          <figure><img src="img/dt89exi.jpg" alt="ترانسدیوسر موقعیت DT89EXI" loading="lazy"></figure>
+          <div class="body">
+            <div class="model">DT89EXI (TCV · NGV)</div>
+            <h4>ترانسدیوسر موقعیت <bdi>Contactless</bdi></h4>
+            <p>اندازه‌گیری موقعیت شیر سوخت و پره‌های ورودی هوای توربین، بدون استهلاک مکانیکی. نمونه‌هایی برای رولزرویس، سولزر و زیمنس <bdi>SGT-200</bdi> ساخته شده است.</p>
+            <ul class="specs">
+              <li>زاویه‌ی <bdi>±45°</bdi>؛ خروجی <bdi>4-20mA</bdi> با تنظیم <bdi>Zero & Span</bdi></li>
+              <li>تغذیه <bdi>+24Vdc</bdi>؛ آلومینیوم آنودایز ضد انفجار</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+      <p class="note">همچنین: طراحی سنسور <bdi>Magnetic Speed Pickup</bdi> برای توربین و ژنراتور، نمایشگر سرعت توربین، تابلوهای هشدار توربین رستون، و قطعات ابزار دقیق توربین سولزر.</p>
+    </div>
+
+    <!-- E. Battery chargers -->
+    <div class="cat">
+      <div class="cat-head"><h3>باطری شارژر و منابع تغذیه‌ی صنعتی</h3><span class="tag">Battery Chargers &amp; Power Supplies</span></div>
+      <div class="prods">
+        <article class="card prod">
+          <figure><img src="img/sbc600.jpg" alt="کنترلر هوشمند باطری شارژر SBC-600" loading="lazy"></figure>
+          <div class="body">
+            <div class="model">SBC-600 · SBC-620</div>
+            <h4>کنترلر هوشمند باطری شارژر</h4>
+            <p>تنوع زیاد شارژرها و نبود کارت‌های کنترلی یدکی، بسیاری از شارژرهای سالم را از مدار خارج کرده است. این کنترلر روی تمام انواع شارژرهای تریستوری نصب می‌شود و آن‌ها را به یک شارژر جدید و به‌روز تبدیل می‌کند. مدل <bdi>SBC-620</bdi> برای به‌روزرسانی شارژرهای سه‌فاز قدیمی است.</p>
+            <ul class="specs">
+              <li>ولتاژ باطری <bdi>24</bdi> تا <bdi>110Vdc</bdi>؛ پل‌های ۶ و ۳ تریستوری</li>
+              <li><bdi>LCD</bdi> گرافیکی، کنترلر <bdi>PID</bdi>، ثبت خطا با زمان وقوع</li>
+              <li><bdi>Modbus RTU</bdi> روی <bdi>RS-485/232</bdi>؛ <bdi>Load Sharing</bdi>؛ کنترل دیودهای دراپر تا ۴ پله</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card prod">
+          <figure><img src="img/smart128.jpg" alt="باطری شارژر هوشمند SMART-128" loading="lazy"></figure>
+          <div class="body">
+            <div class="model">SMART-128</div>
+            <h4>باطری شارژر هوشمند تک‌فاز و سه‌فاز</h4>
+            <p>مجهز به کنترلر <bdi>HP-PC128</bdi>. منحنی شارژ متناسب با نوع و تعداد باطری را دنبال می‌کند و ولتاژ بار را با دیودهای دراپر چندطبقه کنترل می‌کند.</p>
+            <ul class="specs">
+              <li>حالت‌های <bdi>Float، Boost، Initial</bdi> و <bdi>Manual</bdi></li>
+              <li>شارژ دومرحله‌ای جریان ثابت/ولتاژ ثابت، حفاظت‌های کامل</li>
+              <li>ارسال وضعیت با <bdi>Modbus</bdi>؛ <bdi>Load Sharing</bdi> برای موازی کردن شارژرها</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card prod">
+          <figure><img src="img/psb1000.jpg" alt="باطری شارژر قابل حمل PSB-1000" loading="lazy"></figure>
+          <div class="body">
+            <div class="model">PSB-1000</div>
+            <h4>باطری شارژر سوئیچینگ قابل حمل</h4>
+            <p>شارژ باطری‌های اسیدی و بازی در رنج ۲۴ ولت. طبق استاندارد پتروشیمی ایران برای باطری شارژرها طراحی شده است.</p>
+            <ul class="specs">
+              <li>خروجی <bdi>24-35Vdc</bdi>، حداکثر <bdi>30A</bdi>؛ حفاظت <bdi>IP-54</bdi></li>
+              <li>مدهای <bdi>Initial، Boost، Float</bdi> و منبع تغذیه‌ی دستی</li>
+              <li>ابعاد <bdi>310×290×250mm</bdi>، سبک و قابل حمل</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card prod text-only">
+          <div class="body">
+            <div class="model">RTB-100</div>
+            <h4>باطری شارژر ویژه‌ی توربین رستون</h4>
+            <p>موتور پمپ هیدرولیک توربین رستون <bdi>TA-1750</bdi> هنگام راه‌اندازی حدود <bdi>80A</bdi> جریان می‌کشد و استارت‌های پیاپی باطری‌ها را خالی می‌کند. <bdi>RTB-100</bdi> دو حلقه‌ی کنترل مستقل دارد: جریان شارژ باطری را حداکثر تا <bdi>40A</bdi> تأمین می‌کند و هم‌زمان جریان بار تا <bdi>100A</bdi> را بدون قطع شارژ می‌دهد. همراه با تابلوی باطری فلزی ۳ میلی‌متری و ماژولار عرضه می‌شود.</p>
+          </div>
+        </article>
+        <article class="card prod">
+          <figure><img src="img/stb.jpg" alt="استابلایزر 24 ولت STB" loading="lazy"></figure>
+          <div class="body">
+            <div class="model">STB Series (STB-2408S)</div>
+            <h4>تثبیت‌کننده‌ی ولتاژ ۲۴ ولت غیرایزوله</h4>
+            <p>تغذیه‌ی پایدار برای <bdi>PLC</bdi>، <bdi>HMI</bdi> و تجهیزات حساس اتوماسیون.</p>
+            <ul class="specs">
+              <li>ورودی <bdi>12~36Vdc</bdi>، خروجی رگوله‌ی <bdi>+24Vdc</bdi>، جریان ۲ تا ۱۰ آمپر</li>
+              <li>حفاظت اضافه‌ولتاژ، اضافه‌جریان و اتصال کوتاه؛ نصب روی ریل</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card prod text-only">
+          <div class="body">
+            <div class="model">SDS-120 · Power Supplies</div>
+            <h4>سلکتور باطری و منابع تغذیه‌ی خاص</h4>
+            <p><bdi>SDS-120</bdi> اتصال دو شارژر و دو بانک باطری را مدیریت می‌کند و هر بانک را به دلخواه به هر شارژر وصل می‌کند. همچنین منابع تغذیه‌ی سوئیچینگ لرزه‌سنج، کارت پاور و آمپلی‌فایر <bdi>24Vdc</bdi>، تابلوی سلکتوری <bdi>127VDC</bdi> و کارت‌های <bdi>UPS</bdi> ساخته می‌شوند.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- F. Alarm & safety -->
+    <div class="cat">
+      <div class="cat-head"><h3>اعلام‌گر آلارم و ایمنی فرآیند</h3><span class="tag">Alarm Annunciators · HIPPS</span></div>
+      <div class="prods">
+        <article class="card prod wide">
+          <figure><img src="img/annunciator.jpg" alt="اعلام گر آلارم PAL750" loading="lazy"></figure>
+          <div class="body">
+            <div class="model">PAL750 · PAL625 Series</div>
+            <h4>اعلام‌گر آلارم برنامه‌پذیر ماژولار</h4>
+            <p>از باکیفیت‌ترین سیستم‌های آلارم تولید داخل کشور است و در بسیاری از کارخانه‌های نفت و گاز مناطق نفت‌خیز جنوب و نیروگاه‌های کشور کار می‌کند. هر ماژول پردازشگر مستقل دارد (<bdi>No Master</bdi>) و ماژول‌ها در هر ترکیب سطر و ستون کنار هم قرار می‌گیرند.</p>
+            <ul class="specs">
+              <li>۲ تا ۵۱۲ آلارم؛ ولتاژ ورودی <bdi>24، 48، 110، 125Vdc</bdi>؛ ایزولاسیون همه‌ی ورودی‌ها</li>
+              <li>سه اندازه‌ی پنجره (<bdi>64×64، 64×32، 32×32mm</bdi>) و پنج رنگ <bdi>LED</bdi></li>
+              <li>ترتیب‌های استاندارد <bdi>ISA S18.1</bdi> (<bdi>A، A4، M، R، F1A، F3A، F2M1</bdi>) و <bdi>First-Out</bdi></li>
+              <li>ارتباط <bdi>RS-485</bdi> با <bdi>Modbus</bdi>؛ رله‌ی تکرار آلارم؛ <bdi>IP54/IP65</bdi> و محفظه‌ی ضد انفجار</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card prod">
+          <figure><img src="img/hipps.jpg" alt="تابلوی HIPPS Logic Solver" loading="lazy"></figure>
+          <div class="body">
+            <div class="model">HIPPS Logic Solver</div>
+            <h4>سیستم حفاظت فشار بالا (<bdi>HIPPS</bdi>)</h4>
+            <p>سیستم ایمنی (<bdi>SIS</bdi>) برای پروژه‌های بالادستی نفت و گاز. هزینه‌ی پایپینگ پایین‌دست را کاهش می‌دهد و از فلرینگ جلوگیری می‌کند.</p>
+            <ul class="specs">
+              <li>محاسبات <bdi>SIL</bdi> و <bdi>SIL Verification</bdi>؛ اتصال به <bdi>SCADA</bdi></li>
+              <li>کار تا <bdi>60°C</bdi> بدون تهویه؛ مصرف انرژی کم</li>
+              <li>قابل توسعه برای <bdi>BMS</bdi> و عملکرد شیرهای <bdi>LBV</bdi></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- G. Instrumentation -->
+    <div class="cat">
+      <div class="cat-head"><h3>ابزار دقیق و مانیتورینگ فرآیند</h3><span class="tag">Instrumentation &amp; Process Monitoring</span></div>
+      <div class="prods">
+        <article class="card prod">
+          <figure><img src="img/pit315n.jpg" alt="مبدل فشار به جریان PIT-315N" loading="lazy"></figure>
+          <div class="body">
+            <div class="model">PI-315 · PIT-315N</div>
+            <h4>مبدل فشار به جریان (<bdi>P to I</bdi>)</h4>
+            <p>سیگنال پنوماتیک ابزار دقیق را به جریان الکتریکی تبدیل می‌کند تا ابزارهای پنوماتیک قدیمی به سیستم‌های کنترل، رکوردرها و نمایشگرهای جدید وصل شوند.</p>
+            <ul class="specs">
+              <li>ورودی <bdi>3-15psig</bdi> (یا <bdi>0.2-1bar</bdi> و <bdi>3-27psig</bdi>)؛ خروجی <bdi>4-20mA</bdi></li>
+              <li>دقت بهتر از <bdi>±0.25% FS</bdi>؛ <bdi>Loop-Powered</bdi> با تغذیه‌ی <bdi>12-32Vdc</bdi></li>
+              <li>عرض فقط <bdi>19mm</bdi> (مدل <bdi>N</bdi>)؛ نصب روی ریل؛ تحمل دو برابر فشار نامی</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card prod">
+          <figure><img src="img/mci870.jpg" alt="مانیتور فرآیند ۸ کاناله MCI-870" loading="lazy"></figure>
+          <div class="body">
+            <div class="model">MCI-870</div>
+            <h4>مانیتور فرآیند ۸ کاناله برای فضای باز</h4>
+            <ul class="specs">
+              <li>هشت ورودی آنالوگ ایزوله: <bdi>RTD</bdi>، ترموکوپل، <bdi>mV</bdi>، <bdi>0-10V</bdi>، <bdi>1-5V</bdi>، <bdi>0/4-20mA</bdi></li>
+              <li>پردازشگر مستقل برای هر کانال؛ دو رله‌ی آلارم و تریپ</li>
+              <li><bdi>Modbus</bdi> روی <bdi>RS-485/232</bdi>؛ تغذیه‌ی <bdi>18-36Vdc</bdi>؛ <bdi>IP54</bdi></li>
+            </ul>
+          </div>
+        </article>
+        <article class="card prod">
+          <figure><img src="img/mps.jpg" alt="سیستم پایش فرآیند MPS" loading="lazy"></figure>
+          <div class="body">
+            <div class="model">MPS Series · MCI-6447 · MCI-2420 · MCP-9000</div>
+            <h4>پایش چندکاناله و دماسنج‌های صنعتی</h4>
+            <p>در نیروگاه‌ها و صنایع نفت گاهی بیش از ۶۰ نقطه‌ی دمایی باید پایش شود. خانواده‌ی <bdi>MPS</bdi> تا ۳۲ کانال ورودی (<bdi>RTD، TC، V، mA</bdi>) دارد و دماسنج‌های ۶۴، ۲۴، ۹ و ۸ کاناله نیز تولید می‌شوند.</p>
+            <ul class="specs">
+              <li>نمایشگر <bdi>MPS-D16</bdi> لمسی یا دیجیتال؛ مدهای <bdi>MNL، AUT، MAX</bdi></li>
+              <li>دو رله‌ی خروجی و ارتباط <bdi>RS-485</bdi></li>
+            </ul>
+          </div>
+        </article>
+        <article class="card prod">
+          <figure><img src="img/tsg500.jpg" alt="تقویت کننده استرین گیج TSG-500" loading="lazy"></figure>
+          <div class="body">
+            <div class="model">TSG-500</div>
+            <h4>تقویت‌کننده‌ی استرین‌گیج</h4>
+            <p>اندازه‌گیری فشار، اختلاف فشار، وزن و سطح با سنسورهای استرین‌گیج. خروجی <bdi>4-20mA</bdi> با تنظیم <bdi>Zero & Span</bdi>. الگوبرداری از آمپلی‌فایر <bdi>Westinghouse</bdi>.</p>
+          </div>
+        </article>
+        <article class="card prod text-only">
+          <div class="body">
+            <div class="model">Paperless Recorder · Data Logger</div>
+            <h4>ثبت‌کننده‌ها و دیتالاگرها</h4>
+            <p>رکوردر بدون کاغذ ۱۲ کاناله، <bdi>Chart Driver</bdi>، دیتالاگر پارامترهای الکتریکی نیروگاه و سیستم‌های جمع‌آوری اطلاعات از رله‌های <bdi>GE</bdi> و پاورآنالایزرها.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- H. Dams & power plants -->
+    <div class="cat">
+      <div class="cat-head"><h3>تجهیزات سد، نیروگاه و زیرساخت</h3><span class="tag">Dams · Power Plants · Infrastructure</span></div>
+      <div class="prods">
+        <article class="card prod">
+          <figure><img src="img/lvlm.jpg" alt="ارتفاع سنج دیجیتال HP-LVLM100" loading="lazy"></figure>
+          <div class="body">
+            <div class="model">HP-LVLM100 · LVLM100+ · LVLM20F</div>
+            <h4>ارتفاع‌سنج دیجیتال (شناوری)</h4>
+            <p>اندازه‌گیری سطح آب سدها، ایستگاه‌های هیدرومتری، کانال‌ها و رودخانه‌ها، مخازن سوخت و سیلوهای آرد و سیمان.</p>
+            <ul class="specs">
+              <li>رنج <bdi>0-100m</bdi> با دقت <bdi>±1cm</bdi></li>
+              <li><bdi>RS-485 Modbus</bdi>؛ انتقال اطلاعات تا ۱۶ کیلومتر</li>
+              <li>دیتارکوردر، نمایشگر و نرم‌افزار ثبت و پایش آنلاین</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card prod">
+          <figure><img src="img/blvm.jpg" alt="ارتفاع سنج تزریق هوا BLVM-100" loading="lazy"></figure>
+          <div class="body">
+            <div class="model">BLVM-100</div>
+            <h4>ارتفاع‌سنج تزریق‌کننده‌ی هوا</h4>
+            <p>هوای فشرده را به پایین‌ترین نقطه‌ی اندازه‌گیری تزریق و فشار آن را اندازه می‌گیرد. این فشار با ارتفاع آب متناسب است. برای سدهای خاکی و بتنی بدون نیاز به دسترسی عمودی به سطح آب، و برای پایش هم‌زمان چند چاه مشاهده‌ای مناسب است.</p>
+            <ul class="specs">
+              <li>تا ۱۰۰ متر با دقت سانتی‌متر؛ بدون تماس سنسور با آب</li>
+              <li>بی‌تأثیر از گل‌ولای و جلبک؛ اتصال به رایانه و <bdi>DCS</bdi></li>
+            </ul>
+          </div>
+        </article>
+        <article class="card prod">
+          <figure><img src="img/freq.jpg" alt="فرکانس متر دیجیتال HP-DS400" loading="lazy"></figure>
+          <div class="body">
+            <div class="model">HP-DS400 · HP-DS225 · HP-TF560</div>
+            <h4>فرکانس‌متر دیجیتال و ترانسدیوسر فرکانس</h4>
+            <ul class="specs">
+              <li>بازه‌ی <bdi>5-95Hz</bdi> یا <bdi>5-1000Hz</bdi>؛ دقت <bdi>0.01</bdi> یا <bdi>0.001</bdi></li>
+              <li>ایزولاسیون تا <bdi>1500V</bdi>؛ خروجی <bdi>4-20mA</bdi> یا <bdi>0-5Vdc</bdi></li>
+              <li><bdi>Modbus</bdi> روی <bdi>RS-485/232</bdi>؛ نمایشگر بزرگ برای تابلو، دیوار یا سقف</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card prod">
+          <figure><img src="img/clock.jpg" alt="ساعت مرکزی دیجیتال" loading="lazy"></figure>
+          <div class="body">
+            <div class="model">MCK-307 · LDS-2250 · HP-DSC225</div>
+            <h4>سیستم ساعت مرکزی دیجیتال</h4>
+            <p>هماهنگی زمان در نیروگاه‌ها، کارخانه‌ها و ادارات. یک <bdi>Master Clock</bdi> ساعت و تقویم را برای هر تعداد نمایشگر ارسال می‌کند.</p>
+            <ul class="specs">
+              <li>تنظیم با <bdi>GPS</bdi> یا رایانه؛ <bdi>RS-232، RS-485، CL</bdi></li>
+              <li>ارقام <bdi>1.75″</bdi> تا <bdi>22.5″</bdi>؛ دید از ۵ تا ۱۰۰ متر</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card prod">
+          <figure><img src="img/resistor.jpg" alt="مقاومت چدنی صنعتی" loading="lazy"></figure>
+          <div class="body">
+            <div class="model">Cast Iron Resistors · 10kW – 3MW</div>
+            <h4>مقاومت‌های چدنی صنعتی</h4>
+            <p>مقاومت‌های راه‌انداز، لغزش پیوسته، ترمز، دشارژ، تحریک و حفاظت، و تجهیزات اتصال کوتاه. کارکرد کوتاه‌مدت، متناوب یا پیوسته با ظرفیت اضافه‌بار بالا و عایق دوبل میکا و سرامیک.</p>
+          </div>
+        </article>
+        <article class="card prod text-only">
+          <div class="body">
+            <div class="model">Laser Crydoscope · Gate Position</div>
+            <h4>ابزار پایش ایمنی سد</h4>
+            <p>کریدوسکوپ لیزری دومحوره برای اندازه‌گیری انحراف بدنه‌ی سد با دقت ۰٫۰۱ میلی‌متر، سیستم اندازه‌گیری گشودگی دریچه‌های سرریز و آبگیر (حتی زیر آب)، و سیستم ثبت اطلاعات حدود ۱۰۰۰ سنسور ابزار دقیق بدنه‌ی سد.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= REVERSE ENGINEERING ================= -->
+<section id="reverse">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">مهندسی معکوس و بازسازی تجهیزات الکترونیکی</span>
+      <h2>احیای تجهیزاتی که دیگر قطعه‌ی یدکی ندارند</h2>
+      <p>یکی از مشکلات جدی مراکز صنعتی، خرابی و ازکارافتادگی تجهیزات اندازه‌گیری و الکترونیکی قدیمی است. قدمت ساخت و تحریم‌ها تأمین قطعه‌ی یدکی آن‌ها را ناممکن کرده است. هورپندار با راه‌اندازی بخش بازسازی و تکیه بر دانش <bdi>Reverse Engineering</bdi>، دستگاه‌ها، بردها و کارت‌های قدیمی را بررسی می‌کند و آن‌ها را بازسازی یا با فناوری روز نوسازی می‌کند.</p>
+    </div>
+    <ol class="steps">
+      <li>بررسی نمونه‌ی اصلی و تحلیل عملکرد سیستم</li>
+      <li>استخراج نقشه‌ی شماتیک و مستندسازی</li>
+      <li>طراحی مدار جایگزین با قطعات جدید و در دسترس</li>
+      <li>ساخت و آزمون کامل، مشابه سیستم قبلی</li>
+      <li>نصب، راه‌اندازی و پشتیبانی</li>
+    </ol>
+    <div class="two" style="margin-top:28px">
+      <div class="card pad">
+        <h3>نمونه‌هایی از تجهیزات بازسازی و شبیه‌سازی‌شده</h3>
+        <ul class="checks" style="margin-top:12px">
+          <li>کارت کنترل و راه‌انداز <bdi>Synchrite II</bdi> و یونیت <bdi>Filter Box</bdi> موتور سنکرون ایستگاه‌های ۵۰۰/۳۰۰ (شرکت <bdi>EM</bdi>)</li>
+          <li>حدود ۴۰ کارت الکترونیکی سیستم کنترل ولتاژ تحریک <bdi>ELIN</bdi> نیروگاه لتیان</li>
+          <li>منبع تغذیه‌ی سوئیچینگ لرزه‌سنج <bdi>Bently Nevada</bdi> سری ۷۲۰۰ و کارت‌ها و منبع تغذیه‌ی <bdi>Metrix</bdi></li>
+          <li>یونیت مانیتورینگ دمای <bdi>Rosemount</bdi> و آمپلی‌فایر استرین‌گیج <bdi>Westinghouse</bdi></li>
+          <li>سیستم حفاظت اتصال کوتاه و اضافه‌بار <bdi>General Electric</bdi> و کارت کنترل کلیدهای فشار ضعیف <bdi>GEC Alstom</bdi></li>
+          <li>رله‌ی کاهش ضریب قدرت (<bdi>FMR</bdi>) شرکت <bdi>EM</bdi> و یونیت‌های <bdi>Timing</bdi> فلاشینگ نیروگاه شهید رجایی</li>
+          <li>کارت‌های آلارم <bdi>PanAlarm</bdi>، کارت‌های پروسس مانیتورینگ <bdi>Ronan</bdi>، و منبع تغذیه‌ی رکوردر <bdi>Fuji</bdi></li>
+          <li>زنر بریر هانیول، <bdi>Safety Barrier</bdi>، مبدل‌ها و کارت‌های <bdi>UPS</bdi></li>
+          <li>جایگزینی سیستم‌های سوئیچینگ اطلاعات هواشناسی، دیتالاگرهای نیروگاه دز و اندازه‌گیری لیزری پاندول سد سفیدرود</li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="margin-bottom:12px">برندها و تجهیزاتی که با آن‌ها کار کرده‌ایم</h3>
+        <div class="chips">
+          <span class="chip">Honeywell</span><span class="chip">Det-Tronics</span><span class="chip">General Electric</span><span class="chip">Westinghouse</span>
+          <span class="chip">Bently Nevada</span><span class="chip">Metrix</span><span class="chip">Rosemount</span><span class="chip">ELIN</span>
+          <span class="chip">EM</span><span class="chip">GEC Alstom</span><span class="chip">PanAlarm</span><span class="chip">Ronan</span><span class="chip">Fuji</span>
+          <span class="chip">Solar Turbines</span><span class="chip">Rolls-Royce</span><span class="chip">Siemens SGT-200</span><span class="chip">Ruston TA-1750</span>
+          <span class="chip">Werkspoor</span><span class="chip">Sulzer</span><span class="chip">MAN Turbo</span>
+        </div>
+        <div class="gallery">
+          <img src="img/cards.jpg" alt="کارت‌ها و منابع تغذیه بازسازی‌شده" loading="lazy">
+          <img src="img/control-desk.jpg" alt="میز کنترل و سیستم میکروپروسسوری" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CLIENTS ================= -->
+<section id="clients" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">کارفرمایان</span>
+      <h2>سازمان‌هایی که به هورپندار اعتماد کرده‌اند</h2>
+    </div>
+    <div class="clients">
+      <div class="card pad">
+        <h3><span class="dot" style="background:var(--oil)"></span>نفت، گاز و پالایش</h3>
+        <ul>
+          <li>شرکت ملی مناطق نفت‌خیز جنوب</li>
+          <li>شرکت بهره‌برداری نفت و گاز آغاجاری</li>
+          <li>شرکت بهره‌برداری نفت و گاز مارون</li>
+          <li>شرکت بهره‌برداری نفت و گاز کارون</li>
+          <li>شرکت بهره‌برداری نفت و گاز گچساران</li>
+          <li>شرکت نفت مناطق مرکزی و نفت فلات (جزیره سیری)</li>
+          <li>شرکت خطوط لوله و مخابرات نفت ایران</li>
+          <li>پالایشگاه گاز هاشمیان</li>
+        </ul>
+      </div>
+      <div class="card pad">
+        <h3><span class="dot" style="background:var(--power)"></span>آب، سد و نیروگاه</h3>
+        <ul>
+          <li>شرکت‌های آب منطقه‌ای تهران، گیلان و آذربایجان شرقی</li>
+          <li>سدها و نیروگاه‌های لتیان، امیرکبیر (کرج)، سفیدرود، ارس، دز و شهید عباسپور</li>
+          <li>نیروگاه‌های شهید رجایی، لوشان، کلان و آبادان</li>
+          <li>ارتفاع‌سنج سدهای نهند، درودزن، حسنلو، زاینده‌رود و جیرفت</li>
+          <li>سازمان هواشناسی کشور</li>
+          <li>آب و فاضلاب اهواز</li>
+        </ul>
+      </div>
+      <div class="card pad">
+        <h3><span class="dot" style="background:var(--industry)"></span>پتروشیمی، صنعت و سایر</h3>
+        <ul>
+          <li>پتروشیمی خراسان و پتروشیمی پارس</li>
+          <li>مپنا لوکوموتیو</li>
+          <li>فولاد خوزستان</li>
+          <li>صندوق حمایت از پژوهشگران (انرژی‌های نو)</li>
+          <li>شهرداری تهران (سازمان عمران)</li>
+          <li>شرکت‌های تهران شینه، صنایع فلزی کوشا، نواندیشان، شرکت‌های دلتاکار و پارس تکنو</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">سوابق اجرایی</span>
+      <h2>فهرست پروژه‌ها و قراردادهای انجام‌شده</h2>
+      <p>خلاصه‌ی قراردادهای ثبت‌شده‌ی شرکت از سال ۱۳۸۰ تا ۱۴۰۱. همه‌ی این کارها مستقیماً توسط هورپندار انجام شده و قرارداد و مفاصاحساب هر مورد در صورت درخواست ارائه می‌شود.</p>
+    </div>
+    <div class="p-summary" id="pSummary"></div>
+    <div class="toolbar">
+      <div class="filters" role="group" aria-label="فیلتر حوزه" id="filters"></div>
+      <input class="search" id="search" type="search" placeholder="جستجو در عنوان پروژه یا نام کارفرما…" aria-label="جستجو در پروژه‌ها">
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>ردیف</th><th>عنوان پروژه</th><th>کارفرما</th><th>سال</th><th>حوزه</th></tr></thead>
+        <tbody id="pBody"></tbody>
+      </table>
+      <div class="empty" id="pEmpty" hidden>پروژه‌ای با این مشخصات پیدا نشد.</div>
+    </div>
+    <p class="note" id="pCount"></p>
+
+    <div class="more-projects card pad">
+      <h3>برخی دیگر از پروژه‌های شاخص</h3>
+      <p style="color:var(--muted);margin:0 0 12px;font-size:15px">پروژه‌هایی که در کاتالوگ‌های شرکت معرفی شده‌اند و در جدول بالا نیامده‌اند:</p>
+      <ul class="cols">
+        <li>سیستم جامع جمع‌آوری خودکار و مانیتورینگ اطلاعات سدها و نیروگاه‌های سفیدرود، ارس و درودزن با نرم‌افزار <bdi>WinCC</bdi> به‌صورت <bdi>DCS</bdi> در شبکه‌ی <bdi>Modbus</bdi></li>
+        <li>سیستم جمع‌آوری و سوئیچینگ اطلاعات مراکز هواشناسی کشور با ارتباط <bdi>Online</bdi> بیش از ۲۵۶ ایستگاه به‌صورت هم‌زمان</li>
+        <li>مانیتورینگ اطلاعات موتورهای سنکرون و فیدرهای ایستگاه‌های پمپاژ و تقویت فشار نفت و گاز آغاجاری: شبکه‌ی اطلاعاتی حدود ۳۰ سیستم پرقدرت در چهار سایت دور از هم</li>
+        <li>مانیتورینگ خط ریخته‌گری <bdi>SLAB</bdi> فولاد خوزستان با <bdi>PLC</bdi> تولیدی شرکت و نرم‌افزار اختصاصی</li>
+        <li>نرم‌افزار مانیتورینگ طرح به‌روزرسانی پالایشگاه سرخون به‌صورت <bdi>Redundant</bdi> و مانیتورینگ تصفیه‌خانه و تلمبه‌خانه‌های مهاباد</li>
+        <li>کنترل خودکار و از راه دور دبی آب ارسالی از سد کرج به تهران با <bdi>PLC</bdi> تله‌مکانیک از فاصله‌ی حدود ۳ کیلومتر</li>
+        <li>سیستم کنترل اتوماتیک ولتاژ تحریک استاتیک ژنراتورهای ۱۲۰۰ آمپری نیروگاه لتیان</li>
+        <li>درایور موتورهای الکتریکی لوکوموتیوهای حفاری تونل با کنترل سرعت و حفاظت سریع جریان (موتورهای ۲۵ کیلوواتی)</li>
+        <li>کنترل جریان الکترودهای کوره‌ی قوس الکتریکی فیوز آلومینا با جریان ۵۰۰۰ آمپر</li>
+        <li>اندازه‌گیری، مانیتورینگ و ثبت بلادرنگ پارامترهای الکتریکی ۸ واحد نیروگاه دز، با وظیفه‌ی کنترل فرکانس شبکه‌ی سراسری</li>
+        <li>اندازه‌گیری و ثبت خودکار پارامترهای حدود ۱۰۰۰ سنسور بدنه‌ی سد کرج و انتقال آن به رایانه</li>
+        <li>کنترل نورپردازی مرکزی چراغ‌های <bdi>LED</bdi> و <bdi>Strip</bdi> ساختمان جدید وزارت راه و تنظیم روشنایی و نورپردازی آمفی‌تئاتر و لابی</li>
+        <li>سیستم تست و مانیتورینگ دیجیتال ۶۴ کاناله‌ی خطوط <bdi>Send/Receive</bdi> مراکز هواشناسی</li>
+        <li>کنترل جرثقیل معدنی ۲۵ تنی با اندازه‌گیری <bdi>Online</bdi> وزن بار و کنترل سرعت حرکت</li>
+        <li>سنجش پیوسته‌ی دبی و ارتفاع آب کانال آب‌آور و ارتفاع دریاچه‌ی سد حسنلو و انتقال اطلاعات به دفتر مرکزی</li>
+        <li>اعلام و اطفای حریق <bdi>CO2</bdi> سد و نیروگاه سفیدرود با سه مرکز کنترل</li>
+        <li>طراحی، نصب و آزمایش رله‌های حفاظتی ترانسفورماتور، پست، موتور و ژنراتور (حدود ۲۰ موتور سنکرون ایستگاه‌های پمپاژ آغاجاری)</li>
+        <li>شبکه‌ی فیبر نوری حوزه‌های ستادی آب منطقه‌ای گیلان و اتصال نیروگاه سفیدرود و مدیریت امور سدهای گیلان</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STANDARDS ================= -->
+<section class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">استانداردها و فناوری‌ها</span>
+      <h2>زیرساخت فنی محصولات و پروژه‌ها</h2>
+    </div>
+    <div class="chips">
+      <span class="chip">IEEE 421.1 – 421.5</span><span class="chip">ISA S18.1</span><span class="chip">SIL / SIS</span>
+      <span class="chip">Modbus RTU</span><span class="chip">Modbus TCP</span><span class="chip">RS-485 / RS-232</span><span class="chip">4-20mA Loops</span>
+      <span class="chip">PLC-Based Control</span><span class="chip">SCADA / DCS</span><span class="chip">WinCC</span>
+      <span class="chip">Microprocessor · CPLD · FPGA</span><span class="chip">IGBT / SCR Power Electronics</span>
+      <span class="chip">IP54 / IP65</span><span class="chip">Explosion-proof Enclosures</span><span class="chip">Fiber Optic Networks</span>
+      <span class="chip fa">استاندارد پتروشیمی ایران برای باطری شارژرها</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">ارتباط با ما</span>
+      <h2>برای مشاوره، سفارش یا دریافت کاتالوگ با ما تماس بگیرید</h2>
+      <p>هورپندار آماده است طبق نیاز کارفرما، تجهیزات جدید یا جایگزین را طراحی و تولید کند یا پروژه‌ی مورد نظر را به‌طور کامل اجرا کند.</p>
+    </div>
+    <div class="contact">
+      <div class="card"><h4>نشانی دفتر مرکزی</h4><p>تهران، خیابان دکتر علی شریعتی، پلاک ۳۶۰</p></div>
+      <div class="card"><h4>تلفن</h4><p class="ltr"><a href="tel:+982177609951">021-77609951</a><br>021-77507665 · 021-77508054</p></div>
+      <div class="card"><h4>دورنگار</h4><p class="ltr">021-77603179</p></div>
+      <div class="card"><h4>ایمیل و وب‌سایت</h4><p class="ltr"><a href="mailto:info@hoorpendar.com">info@hoorpendar.com</a><br><a href="https://hoorpendar.com">www.hoorpendar.com</a></p></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© شرکت دانش‌بنیان صنایع فن‌آوری رایانه هورپندار</span>
+    <span dir="ltr">Hoorpendar Computer Technology Industries · Since 1999</span>
+  </div>
+</footer>
+
+<script>
+const PROJECTS = [{"n":1,"t":"طراحی و ساخت یونیت تحریک نیروگاه لتیان","c":"شرکت آب منطقه‌ای تهران","y":1380,"s":"power"},{"n":2,"t":"طراحی و ساخت سیستم کنترل هوشمند Full Redundant تنظیم خودکار دبی آب ارسالی از سد لتیان به تهران","c":"شرکت آب منطقه‌ای تهران","y":1380,"s":"power"},{"n":3,"t":"طراحی و ساخت و پیاده سازی سیستم مانیتورینگ 5 واحد نیروگاه سفید رود","c":"شرکت آب منطقه‌ای گیلان","y":1382,"s":"power"},{"n":4,"t":"طراحی و پیاده‌سازی سیستم اندازه‌گیری گشودگی 11 دریچه سد لتیان فواصل تا 3 کیلومتر و تست و کالیبراسیون تجهیزات ابزار دقیق","c":"شرکت آب منطقه‌ای تهران","y":1383,"s":"power"},{"n":5,"t":"طراحی و پیاده‌سازی سیستم وضعیت گشودگی شش دریچه آبگیر در زیر آب","c":"شرکت آب منطقه‌ای تهران","y":1383,"s":"power"},{"n":6,"t":"طراحی و پیاده‌سازی سیستم ثبت Online تغییرات پارامترهای الکتریکی نیروگاه دز و سیستم اندازه‌گیری تغییرات ارتفاع مخزن","c":"امور بهره‌برداری سد و نیروگاه دز","y":1383,"s":"power"},{"n":7,"t":"طراحی و پیاده‌سازی سیستم جمع آوری و انتقال حدود 600 سیگنال اخباری و اخطاری نیروگاه کلان","c":"امور بهره‌برداری سد لتیان و نیروگاه کلان","y":1383,"s":"power"},{"n":8,"t":"طراحی و پیاده‌سازی سیستم اعلام حریق نیروگاه سفید رود","c":"سد و نیروگاه سفیدرود","y":1384,"s":"power"},{"n":9,"t":"طراحی و ساخت سیستم اندازه‌گیری لیزری کریدوسکوپ ( سیستم اندازه گیری و کنترل دقیق انحراف بدنه سد)","c":"شرکت آب منطقه‌ای گیلان","y":1384,"s":"power"},{"n":10,"t":"طراحی و ساخت و پیاده سازی سیستم مانیتورینگ اطلاعات سد و نیروگاه ارس در دو فاز","c":"شرکت آب منطقه‌ای آذربایجان شرقی","y":1385,"s":"power"},{"n":11,"t":"طراحی و ساخت سیستم کنترل و تایمینگ فلاشینگ برج‌های نیروگاه شهید رجائی","c":"مدیریت نیروگاه برق شهید رجائی","y":1385,"s":"power"},{"n":12,"t":"طراحی و ساخت سیستم اندازه‌گیری ارتفاع مخزن گازوئیل و سیستم فرکانس متر نیروگاه آبادان","c":"شرکت مدیریت تولید جنوب غرب","y":1385,"s":"power"},{"n":13,"t":"طراحی و پیاده‌سازی سیستم کنترل خودکار از راه دور دریچه‌های کشوئی سد کرج و تنظیم خودکار دبی عبوری","c":"شرکت آب منطقه‌ای تهران","y":1386,"s":"power"},{"n":14,"t":"طراحی و پیاده‌سازی سیستم کنترل و راه انداز تحریک موتورهای سنکرون 3.5 MW","c":"شرکت بهره‌برداری نفت و گاز آغاجاری","y":1386,"s":"oil"},{"n":15,"t":"طراحی و ساخت سیستم اعلام‌گر آلارم 25 ایستگاه پمپاژ گاز و تابلوهای وابسته نفت و گاز آغاجاری","c":"شرکت بهره‌برداری نفت و گاز آغاجاری","y":1386,"s":"oil"},{"n":16,"t":"طراحی و پیاده‌سازی سیستم کنترل ولتاژ اتوماتیک سیستم تحریک (AVR) دو واحد نیروگاه سد ارس","c":"شرکت آب منطقه‌ای آذربایجان شرقی","y":1387,"s":"power"},{"n":17,"t":"نصب و راه‌اندازی 20 دستگاه رله حفاظتی موتورهای سنکرون","c":"شرکت بهره‌برداری نفت و گاز آغاجاری","y":1387,"s":"oil"},{"n":18,"t":"طراحی و پیاده‌سازی سیستم کنترل اتوماتیک ولتاژ (AVR) موتورهای سنکرون 3.5 MW","c":"شرکت بهره‌برداری نفت و گاز آغاجاری","y":1388,"s":"oil"},{"n":19,"t":"طراحی و ساخت سیستم اعلام‌گر آلارم PAL625","c":"شرکت بهره‌برداری نفت و گاز گچساران","y":1388,"s":"oil"},{"n":20,"t":"طراحی و ساخت سیستم اعلام‌گر آلارم PAL625","c":"شرکت بهره‌برداری نفت و گاز گچساران","y":1388,"s":"oil"},{"n":21,"t":"طراحی و ساخت سیستم ساعت مادر دیجیتالی","c":"سد و نیروگاه سفیدرود","y":1388,"s":"power"},{"n":22,"t":"سیستم مانیتورینگ فلرهای ایستگاه‌های تزریق گاز و نفت از فواصل دور","c":"شرکت بهره‌برداری نفت و گاز مارون","y":1388,"s":"oil"},{"n":23,"t":"طراحی و ساخت کارت اندازه‌گیر دمای سیستم رزمونت","c":"شرکت بهره‌برداری نفت و گاز آغاجاری","y":1388,"s":"oil"},{"n":24,"t":"طراحی و پیاده‌سازی سیستم مانیتورینگ و جمع آوری اطلاعات از رله‌های GE و پاورآنالایزرها","c":"شرکت بهره‌برداری نفت و گاز آغاجاری","y":1388,"s":"oil"},{"n":25,"t":"طراحی و ساخت دو مدل از کارت‌های کنترل سیستم لرزش","c":"شرکت بهره‌برداری نفت و گاز آغاجاری","y":1388,"s":"oil"},{"n":26,"t":"طراحی و ساخت 20 دستگاه منبع تغذیه سوئیچینگ برای سیستم لرزه سنج آغاجاری","c":"شرکت بهره‌برداری نفت و گاز آغاجاری","y":1388,"s":"oil"},{"n":27,"t":"طراحی و ساخت مقاومت بار","c":"نیروگاه ارس","y":1388,"s":"power"},{"n":28,"t":"طراحی و ساخت منبع تغذیه سیستم لرزش سری 7200","c":"شرکت بهره‌برداری نفت و گاز آغاجاری","y":1388,"s":"oil"},{"n":29,"t":"طراحی و ساخت کارت آلارم شرکت PAN ALARM","c":"شرکت بهره‌برداری نفت و گاز آغاجاری","y":1389,"s":"oil"},{"n":30,"t":"طراحی و پیاده‌سازی سیستم کنترلر شارژر باطری","c":"شرکت بهره‌برداری نفت و گاز آغاجاری","y":1389,"s":"oil"},{"n":31,"t":"سیستم Process Monitor با ورودی‌های متنوع و قابل افزایش تا 64 کانال","c":"شرکت بهره‌برداری نفت و گاز آغاجاری","y":1389,"s":"oil"},{"n":32,"t":"طراحی و ساخت و جایگزینی AVR یک دستگاه ژنراتور 8MW 140v-3.6A","c":"پتروشیمی خراسان","y":1390,"s":"industry"},{"n":33,"t":"طراحی و تولید 5 دستگاه دماسنج 8 کاناله با IP54","c":"شرکت بهره‌برداری نفت و گاز آغاجاری","y":1390,"s":"oil"},{"n":34,"t":"طراحی و تولید یکدستگاه تابلوی Logic Solver Hipps برای نفت مناطق مرکزی سفارش شرکت تهران شینه","c":"شرکت تهران شینه","y":1391,"s":"oil"},{"n":35,"t":"طراحی و تولید مبدل فشار به جریان طی چندین قرارداد","c":"شرکت بهره‌برداری نفت و گاز مارون و کارون","y":1391,"s":"oil"},{"n":36,"t":"پروژه تحقیقاتی طراحی و ساخت سیستم کنترل دیجیتال گاورنر نیروگاه آبی","c":"صندوق حمایت از پژوهشگران (انرژی‌های نو)","y":1391,"s":"power"},{"n":37,"t":"طراحی و ساخت سیستم گاورنر ژنراتور","c":"شرکت ملی مناطق نفت‌خیز جنوب","y":1391,"s":"oil"},{"n":38,"t":"سیستم کنترل اتوماتیک ترمز ژنراتورهای نیروگاه سد کرج","c":"شرکت آب منطقه‌ای تهران","y":1391,"s":"power"},{"n":39,"t":"سیستم تشخیص و اعلام خودکار آلارم نیروگاه سد امیر کبیر","c":"شرکت آب منطقه‌ای تهران","y":1391,"s":"power"},{"n":40,"t":"پروژه تولید 800 سیگنال Alarm Annunciator کارخانجات مختلف شرکت نفت و گاز گچساران","c":"شرکت بهره‌برداری نفت و گاز گچساران","y":1392,"s":"oil"},{"n":41,"t":"اجرای تأسیسات برق فشار ضعیف دریاچه چیتگر","c":"عمران کارکنان شهرداری تهران","y":1392,"s":"industry"},{"n":42,"t":"باطری شارژر سد سفید رود","c":"شرکت آب منطقه‌ای گیلان","y":1392,"s":"power"},{"n":43,"t":"کریدوسکوپ لیزری","c":"شرکت آب منطقه‌ای آذربایجان شرقی","y":1392,"s":"power"},{"n":44,"t":"تأمین، نصب و راه‌اندازی سیستم میکروپروسسوری گشودگی دریچه‌های سرریز سد امیرکبیر","c":"شرکت آب منطقه‌ای تهران","y":1392,"s":"power"},{"n":45,"t":"سیستم تاکوژنراتور و محرک فلای گاورنر نیروگاه امیرکبیر","c":"شرکت آب منطقه‌ای تهران","y":1392,"s":"power"},{"n":46,"t":"Pressure To Current Transmitter","c":"شرکت بهره‌برداری نفت و گاز مارون","y":1393,"s":"oil"},{"n":47,"t":"ساخت کارت پاور 24 ولت DC","c":"شرکت بهره‌برداری نفت و گاز مارون","y":1393,"s":"oil"},{"n":48,"t":"ساخت Converter","c":"شرکت بهره‌برداری نفت و گاز مارون","y":1393,"s":"oil"},{"n":49,"t":"ساخت Safety Barrier","c":"شرکت بهره‌برداری نفت و گاز مارون","y":1393,"s":"oil"},{"n":50,"t":"سیستم اعلام‌گر آلارم","c":"شرکت بهره‌برداری نفت و گاز آغاجاری","y":1393,"s":"oil"},{"n":51,"t":"Pressure To Current","c":"شرکت بهره‌برداری نفت و گاز مارون","y":1393,"s":"oil"},{"n":52,"t":"الکتروموتور آژیر","c":"شرکت بهره‌برداری نفت و گاز مارون","y":1393,"s":"oil"},{"n":53,"t":"سیستم رکوردر بدون کاغذ 12 کاناله","c":"شرکت پتروشیمی پارس","y":1393,"s":"industry"},{"n":54,"t":"سیستم اعلام‌گر آلارم","c":"شرکت بهره‌برداری نفت و گاز آغاجاری","y":1393,"s":"oil"},{"n":55,"t":"Flame Detector","c":"شرکت بهره‌برداری نفت و گاز کارون","y":1393,"s":"oil"},{"n":56,"t":"ساخت کابل P4 و P5","c":"شرکت بهره‌برداری نفت و گاز مارون","y":1393,"s":"oil"},{"n":57,"t":"کنترل باطری شارژر","c":"شرکت بهره‌برداری نفت و گاز مارون","y":1393,"s":"oil"},{"n":58,"t":"ساخت کارت کنترل کلیدهای فشار ضعیف جی ای سی آلستوم","c":"شرکت بهره‌برداری نفت و گاز مارون","y":1393,"s":"oil"},{"n":59,"t":"Flame Detector","c":"شرکت بهره‌برداری نفت و گاز کارون","y":1393,"s":"oil"},{"n":60,"t":"ساخت کارت لرزش","c":"شرکت بهره‌برداری نفت و گاز مارون","y":1393,"s":"oil"},{"n":61,"t":"تأمین، نصب و راه‌اندازی سیستم‌های قابل برنامه ریزی میکرو رایانه ای اندازه‌گیری ونمایش دیجیتال نقاط دمایی","c":"شرکت آب منطقه‌ای تهران","y":1393,"s":"power"},{"n":62,"t":"تأمین یک دستگاه سیستم HIPPS LOGIC SOLVER","c":"شرکت صنایع فلزی کوشا","y":1393,"s":"oil"},{"n":63,"t":"تأمین تجهیزات و طراحی و مونتاژ سه دستگاه آژیر سیرن مدل P-4500","c":"کارگاه ایران فنون","y":1393,"s":"industry"},{"n":64,"t":"مطالعه، امکان سنجی و بررسی فنی سیستم تحریک دینامیک نیروگاه سد امیرکبیر جهت بروزرسانی با","c":"شرکت آب منطقه‌ای تهران","y":1393,"s":"power"},{"n":65,"t":"تست و کالیبراسیون کارت‌های سیستم تحریک ژنراتور واحد 2 نیروگاه لتیان","c":"شرکت آب منطقه‌ای تهران","y":1393,"s":"power"},{"n":66,"t":"قطعات تابلوی هشداردهنده","c":"شرکت بهره‌برداری نفت و گاز آغاجاری","y":1394,"s":"oil"},{"n":67,"t":"Flame Relay FR-430E","c":"شرکت بهره‌برداری نفت و گاز کارون","y":1394,"s":"oil"},{"n":68,"t":"ساخت کارت الکترونیکی فالت آنانسیتور","c":"شرکت بهره‌برداری نفت و گاز مارون","y":1394,"s":"oil"},{"n":69,"t":"Flame Detector FDU-300","c":"شرکت بهره‌برداری نفت و گاز کارون","y":1394,"s":"oil"},{"n":70,"t":"اجرای عملیات تأسیسات برق و آبیاری بوستان نگین","c":"سازمان عمرانی مناطق شهرداری تهران","y":1394,"s":"industry"},{"n":71,"t":"Flame Detector FDU-300","c":"شرکت بهره‌برداری نفت و گاز کارون","y":1394,"s":"oil"},{"n":72,"t":"ساخت Power Supply پنل اخطار جدید توربین رستون","c":"شرکت بهره‌برداری نفت و گاز مارون","y":1394,"s":"oil"},{"n":73,"t":"ساخت آمپلی فایر 24 ولت DC","c":"شرکت بهره‌برداری نفت و گاز مارون","y":1394,"s":"oil"},{"n":74,"t":"ساخت تابلوی هشدار دهنده توربین رستون","c":"شرکت بهره‌برداری نفت و گاز مارون","y":1394,"s":"oil"},{"n":75,"t":"Pressure Pump","c":"شرکت بهره‌برداری نفت و گاز مارون","y":1394,"s":"oil"},{"n":76,"t":"Flame Detector FDU-300","c":"شرکت بهره‌برداری نفت و گاز کارون","y":1394,"s":"oil"},{"n":77,"t":"لامپ UV و Flame Relay","c":"شرکت بهره‌برداری نفت و گاز کارون","y":1394,"s":"oil"},{"n":78,"t":"تأمین یکدستگاه تابلوی سلکتوری 127VDC","c":"شرکت آب منطقه‌ای گیلان","y":1394,"s":"power"},{"n":79,"t":"سیستم اعلام‌گر آلارم","c":"شرکت بهره‌برداری نفت و گاز آغاجاری","y":1394,"s":"oil"},{"n":80,"t":"نصب و راه‌اندازی شیر سه راهه به همراه سیستم مدار فرمان جهت سیل شیرهای کروی نیروگاه سد امیرکبیر","c":"شرکت آب منطقه‌ای تهران","y":1394,"s":"power"},{"n":81,"t":"تأمین، نصب و راه‌اندازی یکدستگاه ارتفاع سنج سد اصلی امیرکبیر","c":"شرکت آب منطقه‌ای تهران","y":1394,"s":"power"},{"n":82,"t":"Flame Detector FDU-300","c":"شرکت بهره‌برداری نفت و گاز کارون","y":1395,"s":"oil"},{"n":83,"t":"ساخت 4 عدد کارت الکترونیکی CUAL یو پی اس 10KVA تزریق گاز کوپال","c":"شرکت بهره‌برداری نفت و گاز مارون","y":1395,"s":"oil"},{"n":84,"t":"تابلو اخطار 32 پنجره پمپ P35 نمکزدایی مارون 4","c":"شرکت بهره‌برداری نفت و گاز مارون","y":1395,"s":"oil"},{"n":85,"t":"شعله یاب 24 ولت","c":"شرکت بهره‌برداری نفت و گاز کارون","y":1395,"s":"oil"},{"n":86,"t":"مبدل فشار به جریان ( Pressure To Current Transmitter)","c":"شرکت بهره‌برداری نفت و گاز مارون","y":1395,"s":"oil"},{"n":87,"t":"کارت‌های الکترونیکی هشدار دهنده","c":"شرکت بهره‌برداری نفت و گاز آغاجاری","y":1395,"s":"oil"},{"n":88,"t":"تأمین 4 دستگاه آلارم پنل","c":"شرکت بهره‌برداری نفت و گاز آغاجاری","y":1395,"s":"oil"},{"n":89,"t":"تأمین 4 عدد فلیم رله","c":"شرکت بهره‌برداری نفت و گاز کارون","y":1395,"s":"oil"},{"n":90,"t":"۴ عدد فلیم رله با سنسور میله‌ای (ROD)","c":"شرکت بهره‌برداری نفت و گاز کارون","y":1396,"s":"oil"},{"n":91,"t":"تأمین 120 دستگاه مبدل فشار به جریان","c":"شرکت بهره‌برداری نفت و گاز مارون","y":1396,"s":"oil"},{"n":92,"t":"چهل دستگاه یونیت کنترل تحریک موتور سنکرون 3.5 مگا واتی کارت سینکرایت 2","c":"شرکت بهره‌برداری نفت و گاز آغاجاری","y":1396,"s":"oil"},{"n":93,"t":"تأمین رله شعله یاب همراه با چشم الکترونیکی","c":"شرکت بهره‌برداری نفت و گاز کارون","y":1396,"s":"oil"},{"n":94,"t":"فلیم رله و راد","c":"شرکت بهره‌برداری نفت و گاز کارون","y":1396,"s":"oil"},{"n":95,"t":"تأمین 5 شمع جرقه زن با الکترودهای بلند","c":"شرکت بهره‌برداری نفت و گاز کارون","y":1396,"s":"oil"},{"n":96,"t":"تأمین، نصب و راه‌اندازی دو دستگاه کنترلر هوشمند باطری شارژر مدل SBC-620","c":"شرکت تولید و بهره‌برداری سد و نیروگاه شهید عباسپور","y":1396,"s":"power"},{"n":97,"t":"تأمین 5 عدد شعله یاب","c":"شرکت بهره‌برداری نفت و گاز کارون","y":1396,"s":"oil"},{"n":98,"t":"طراحی و ساخت سیستم جرقه زن GE","c":"مدیریت نیروگاه برق شهید رجائی","y":1397,"s":"power"},{"n":99,"t":"طراحی و ساخت کویل 20CB","c":"مدیریت نیروگاه برق شهید رجائی","y":1396,"s":"power"},{"n":100,"t":"طراحی و ساخت یونیت جرقه زن HI-Energy","c":"مدیریت نیروگاه برق شهید رجائی","y":1396,"s":"power"},{"n":101,"t":"سیستم کنترلر باطری شارژر","c":"نیروگاه لوشان","y":1396,"s":"power"},{"n":102,"t":"فلیم راد KRNW320","c":"شرکت بهره‌برداری نفت و گاز کارون","y":1397,"s":"oil"},{"n":103,"t":"جرقه زن سیار پری هیتر نمکزدایی ها","c":"شرکت بهره‌برداری نفت و گاز مارون","y":1397,"s":"oil"},{"n":104,"t":"طراحی و تولید قطعات توربین گازی Ignition Cable","c":"شرکت ملی مناطق نفت‌خیز جنوب","y":1396,"s":"oil"},{"n":105,"t":"طراحی و تولید 14 دستگاه شعله یاب U.V توربین","c":"شرکت بهره‌برداری نفت و گاز مارون","y":1397,"s":"oil"},{"n":106,"t":"ثبت کننده بدون کاغذ و مبدل هوا به جریان","c":"شرکت بهره‌برداری نفت و گاز کارون","y":1397,"s":"oil"},{"n":107,"t":"سیستم کنترل توربین سولار","c":"شرکت ملی مناطق نفت‌خیز جنوب","y":1397,"s":"oil"},{"n":108,"t":"سیستم کنترل و لرزه سنج توربین سولار","c":"شرکت ملی مناطق نفت‌خیز جنوب","y":1397,"s":"oil"},{"n":109,"t":"باطری شارژر 24Vdc/100A توربین رستون","c":"شرکت بهره‌برداری نفت و گاز مارون","y":1397,"s":"oil"},{"n":110,"t":"کابل و شمع توربین‌های رولزرویس","c":"شرکت بهره‌برداری نفت و گاز گچساران","y":1398,"s":"oil"},{"n":111,"t":"ساخت 20 عدد مبدل هوا به جریان (PtoI)","c":"شرکت بهره‌برداری نفت و گاز مارون","y":1398,"s":"oil"},{"n":112,"t":"ساخت 15 دستگاه پنجره آلارم","c":"شرکت نواندیشان","y":1398,"s":"industry"},{"n":113,"t":"سیستم هوشمند باطری شارژر","c":"نیروگاه لوشان","y":1398,"s":"power"},{"n":114,"t":"مبدل فشار به جریان","c":"شرکت بهره‌برداری نفت و گاز آغاجاری","y":1399,"s":"oil"},{"n":115,"t":"کارت الکترونیک PAN ALARM","c":"شرکت نواندیشان","y":1399,"s":"industry"},{"n":116,"t":"Pulse Ignition Prob (سیستم کامل جرقه زن فلر)","c":"دریلینگ اینترنشنال لیمیتد","y":1399,"s":"oil"},{"n":117,"t":"سیستم باطری شارژر سوئیچینگ 24V/20A","c":"شرکت بهره‌برداری نفت و گاز آغاجاری","y":1400,"s":"oil"},{"n":118,"t":"Ignition Exciter Solar Turbine","c":"شرکت خطوط لوله و مخابرات نفت ایران","y":1400,"s":"oil"},{"n":119,"t":"سنسور اندازه‌گیری موقعیت وضعیت گایدون توربین زیمنس SGT-200","c":"شرکت نفت فلات مرکزی – جزیره سیری","y":1400,"s":"oil"},{"n":120,"t":"یونیت‌های ZBOX کنترل سرعت و دمای توربین سولار (طی سه قرارداد)","c":"شرکت ملی مناطق نفت‌خیز جنوب","y":1399,"s":"oil"},{"n":121,"t":"به‌روزرسانی سیستم کنترل باطری شارژرهای سد و نیروگاه عباسپور","c":"شرکت تولید و بهره‌برداری سد و نیروگاه شهید عباسپور","y":1400,"s":"power"},{"n":122,"t":"به‌روزرسانی سیستم کنترل باطری شارژر پتروشیمی خراسان","c":"پتروشیمی خراسان","y":1400,"s":"industry"},{"n":123,"t":"به‌روزرسانی سیستم تحریک ژنراتور پتروشیمی خراسان","c":"پتروشیمی خراسان","y":1400,"s":"industry"},{"n":124,"t":"به‌روزرسانی سیستم کنترل کلر زنی","c":"نیروگاه لوشان","y":1400,"s":"power"},{"n":125,"t":"تجهیزات شعله یاب و جرقه زن توربین گازی","c":"نیروگاه لوشان","y":1400,"s":"power"},{"n":126,"t":"به‌روزرسانی سیستم کنترل دریچه‌های آب بر سد لتیان به تهران","c":"سد و نیروگاه لتیان","y":1400,"s":"power"},{"n":127,"t":"سیستم اندازه‌گیری 32 کاناله دمای ژنراتور","c":"نیروگاه کلان","y":1400,"s":"power"},{"n":128,"t":"تجهیزات سیستم شعله یاب طی دو قرارداد","c":"شرکت بهره‌برداری نفت و گاز کارون","y":1400,"s":"oil"},{"n":129,"t":"سیستم اعلام‌گر آلارم توربین رستون","c":"شرکت بهره‌برداری نفت و گاز کارون","y":1400,"s":"oil"},{"n":130,"t":"ساخت نمایشگر سرعت توربین","c":"شرکت بهره‌برداری نفت و گاز کارون","y":1400,"s":"oil"},{"n":131,"t":"تکمیل به‌روزرسانی سیستم کنترل باطری شارژر پتروشیمی خراسان","c":"پتروشیمی خراسان","y":1401,"s":"industry"},{"n":132,"t":"ساخت دو مدل مبدل و درایور سوئیچینگ خاص","c":"مپنا لوکوموتیو","y":1401,"s":"industry"},{"n":133,"t":"ساخت سیستم تحریک ژنراتور لوکوموتیو","c":"مپنا لوکوموتیو","y":1401,"s":"industry"},{"n":134,"t":"Chart Driver","c":"شرکت بهره‌برداری نفت و گاز گچساران","y":1401,"s":"oil"},{"n":135,"t":"تأمین تجهیزات ابزار دقیق تولید شرکت هورپندار","c":"شرکت بهره‌برداری نفت و گاز گچساران","y":1401,"s":"oil"},{"n":136,"t":"مبدل فشار به جریان","c":"پالایشگاه گاز هاشمیان","y":1401,"s":"oil"},{"n":137,"t":"کارت شارژ","c":"شرکت بهره‌برداری نفت و گاز آغاجاری","y":1401,"s":"oil"},{"n":138,"t":"قطعات ابزار دقیق توربین سولزر","c":"شرکت بهره‌برداری نفت و گاز آغاجاری","y":1401,"s":"oil"}];
+
+const SECTORS = {
+  oil:      {label:'نفت و گاز',       color:'var(--oil)'},
+  power:    {label:'آب، سد و نیروگاه', color:'var(--power)'},
+  industry: {label:'پتروشیمی و صنایع', color:'var(--industry)'}
+};
+const fa = n => String(n).replace(/\d/g, d => '۰۱۲۳۴۵۶۷۸۹'[d]);
+const norm = s => s.replace(/[يى]/g,'ی').replace(/ك/g,'ک').replace(/‌/g,' ').replace(/\s+/g,' ').toLowerCase();
+// Persian digits for standalone numbers only; model codes like PAL625 or SGT-200 stay Latin
+const faText = s => s.replace(/(^|[^A-Za-z\d\-\/])(\d+(?:\.\d+)?)(?![A-Za-z\d\-\/])/g, (m, a, n) => a + fa(n).replace('.', '٫'));
+const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+let active = 'all';
+const body = document.getElementById('pBody');
+const search = document.getElementById('search');
+
+function summary(){
+  const years = PROJECTS.map(p => p.y);
+  const clients = new Set(PROJECTS.map(p => p.c)).size;
+  const counts = Object.fromEntries(Object.keys(SECTORS).map(k => [k, PROJECTS.filter(p => p.s === k).length]));
+  document.getElementById('statProjects').textContent = fa(PROJECTS.length);
+  document.getElementById('pSummary').innerHTML = [
+    [fa(PROJECTS.length), 'پروژه و قرارداد'],
+    [fa(Math.min(...years)) + '–' + fa(Math.max(...years)), 'بازه‌ی زمانی'],
+    [fa(counts.oil), 'پروژه در صنعت نفت و گاز'],
+    [fa(counts.power), 'پروژه در آب، سد و نیروگاه']
+  ].map(([b,s]) => `<div class="card"><b>${b}</b><span>${s}</span></div>`).join('');
+
+  const f = document.getElementById('filters');
+  const btn = (k, label, n) => `<button type="button" class="filter" data-k="${k}" aria-pressed="${k===active}">${label}<span class="c">(${fa(n)})</span></button>`;
+  f.innerHTML = btn('all','همه',PROJECTS.length) + Object.entries(SECTORS).map(([k,v]) => btn(k, v.label, counts[k])).join('');
+  f.addEventListener('click', e => {
+    const b = e.target.closest('.filter'); if(!b) return;
+    active = b.dataset.k;
+    f.querySelectorAll('.filter').forEach(x => x.setAttribute('aria-pressed', x.dataset.k === active));
+    render();
+  });
+}
+
+function render(){
+  const q = norm(search.value.trim());
+  const rows = PROJECTS.filter(p =>
+    (active === 'all' || p.s === active) &&
+    (!q || norm(p.t + ' ' + p.c).includes(q))
+  );
+  body.innerHTML = rows.map(p => {
+    const s = SECTORS[p.s];
+    return `<tr><td class="n">${fa(p.n)}</td><td class="t">${esc(faText(p.t))}</td><td class="cl">${esc(p.c)}</td><td class="y">${fa(p.y)}</td>` +
+           `<td class="s"><span class="sec-tag"><span class="dot" style="background:${s.color}"></span>${s.label}</span></td></tr>`;
+  }).join('');
+  document.getElementById('pEmpty').hidden = rows.length > 0;
+  document.getElementById('pCount').textContent = `نمایش ${fa(rows.length)} پروژه از ${fa(PROJECTS.length)} پروژه.`;
+}
+
+search.addEventListener('input', render);
+window.addEventListener('beforeprint', () => { active='all'; search.value=''; render(); });
+
+// theme toggle (remembered per browser)
+const root = document.documentElement;
+try { const t = localStorage.getItem('hp-theme'); if (t) root.dataset.theme = t; } catch(e) {}
+document.getElementById('themeBtn').addEventListener('click', () => {
+  const dark = root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+  root.dataset.theme = dark ? 'light' : 'dark';
+  try { localStorage.setItem('hp-theme', root.dataset.theme); } catch(e) {}
+});
+
+summary();
+render();
+</script>
+</body>
+</html>
