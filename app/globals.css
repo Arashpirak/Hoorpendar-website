@@ -1,0 +1,112 @@
+@import 'tailwindcss';
+
+/* `dark:` follows the resolved theme, which the inline script in the layout writes to <html data-theme>. */
+@custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
+
+:root {
+  --bg: #f6f8fb;
+  --surface: #ffffff;
+  --surface-2: #eef2f8;
+  --text: #0f1b2d;
+  --muted: #52607a;
+  --border: #dde4ee;
+  --brand: #0b2c57;
+  --accent: #1d5fae;
+  --accent-contrast: #ffffff;
+  --gold: #e3a008;
+  --grid-line: rgb(11 44 87 / 0.06);
+
+  /* Sector colors, shared by the map, lists and filters. */
+  --oil: #e8710a;
+  --power: #1d7fd6;
+  --industry: #7c4dcc;
+
+  --logo-fill: var(--brand);
+  --logo-ink: var(--surface);
+
+  --font-stack: var(--font-inter), var(--font-vazirmatn), ui-sans-serif, system-ui, sans-serif;
+  color-scheme: light;
+}
+
+html[lang='fa'] {
+  --font-stack: var(--font-vazirmatn), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg: #0a121e;
+    --surface: #101b2b;
+    --surface-2: #16243a;
+    --text: #e6edf7;
+    --muted: #9aa8bd;
+    --border: #22324a;
+    --brand: #dbe6f5;
+    --accent: #5b9be6;
+    --accent-contrast: #0a121e;
+    --grid-line: rgb(219 230 245 / 0.05);
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme='dark'] {
+  --bg: #0a121e;
+  --surface: #101b2b;
+  --surface-2: #16243a;
+  --text: #e6edf7;
+  --muted: #9aa8bd;
+  --border: #22324a;
+  --brand: #dbe6f5;
+  --accent: #5b9be6;
+  --accent-contrast: #0a121e;
+  --grid-line: rgb(219 230 245 / 0.05);
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-brand: var(--brand);
+  --color-accent: var(--accent);
+  --color-accent-contrast: var(--accent-contrast);
+  --color-gold: var(--gold);
+  --color-oil: var(--oil);
+  --color-power: var(--power);
+  --color-industry: var(--industry);
+  --font-sans: var(--font-stack);
+  --radius-card: 14px;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-stack);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Codes, units and phone numbers stay Latin and left-to-right inside Persian text. */
+.ltr {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

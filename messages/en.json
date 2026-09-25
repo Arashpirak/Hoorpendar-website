@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "siteName": "Hoorpendar",
+    "title": "Hoorpendar | Industrial Electronics, Control & Instrumentation",
+    "description": "Hoorpendar designs and manufactures industrial electronic equipment and delivers control, automation and instrumentation projects for oil & gas, water and power, and industry. Since 1999."
+  },
+  "a11y": {
+    "skipToContent": "Skip to content",
+    "home": "Hoorpendar home"
+  },
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "products": "Products",
+    "about": "About",
+    "contact": "Contact",
+    "menu": "Menu",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "primary": "Main navigation"
+  },
+  "header": {
+    "switchLocale": "فارسی",
+    "switchLocaleLabel": "نمایش سایت به فارسی",
+    "toggleTheme": "Switch between light and dark theme"
+  },
+  "footer": {
+    "tagline": "Design and manufacture of industrial electronic equipment, and delivery of control, automation and instrumentation projects.",
+    "contactTitle": "Contact",
+    "linksTitle": "Quick links",
+    "address": "Head office",
+    "phone": "Phone",
+    "fax": "Fax",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "instagram": "Instagram",
+    "since": "Since {year}",
+    "rights": "All rights reserved."
+  },
+  "home": {
+    "eyebrow": "Knowledge-based company · Since 1999",
+    "title": "Industrial electronics, control and instrumentation, designed and built in-house",
+    "lead": "Hoorpendar designs and manufactures industrial electronic equipment and delivers control, automation and instrumentation projects for oil & gas, water and power, and industry: from study and design to manufacturing, commissioning and long-term support.",
+    "ctaProducts": "Explore products",
+    "ctaProjects": "View projects",
+    "statsLabel": "Key figures",
+    "stats": {
+      "years": "years of experience",
+      "contracts": "contracts delivered",
+      "clients": "clients",
+      "flameUnits": "flame detection units in service"
+    }
+  },
+  "placeholder": {
+    "title": "Coming soon",
+    "body": "This section of the new website is being prepared.",
+    "back": "Back to home"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "The page you are looking for doesn't exist or has moved.",
+    "back": "Back to home"
+  },
+  "chat": {
+    "hint": "Have a question? Ask our online assistant."
+  }
+}
