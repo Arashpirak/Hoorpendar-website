@@ -21,3 +21,6 @@ next-env.d.ts
 *.pem
 npm-debug.log*
 REPORT.md
+
+# Internal review pages (contain client names from the resume)
+review/

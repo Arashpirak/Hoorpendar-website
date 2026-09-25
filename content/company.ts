@@ -1,4 +1,4 @@
-export type L = { fa: string; en: string };
+import type { L } from './types';
 
 export const company = {
   name: {
