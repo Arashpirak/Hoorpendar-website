@@ -1,0 +1,7 @@
+# Local-only archive of the old site (lives on branch local/site-archive as a worktree; never pushed)
+site-archive/
+
+node_modules/
+.next/
+.vercel/
+.env*.local
