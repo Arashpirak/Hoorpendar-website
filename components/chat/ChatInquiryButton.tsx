@@ -22,55 +22,30 @@ export function ChatInquiryButton({ className, children }: Props) {
   );
 }
 
-type Api = { open?: () => void; show?: () => void; toggle?: () => void };
+type AtirameApi = { open?: () => void; isReady?: () => boolean };
 
-// The widget is loaded lazily by components/chat/AtirameChat.tsx, so wait up to a few seconds for it.
-async function openAtirame(timeoutMs = 6000): Promise<boolean> {
+// The widget is loaded lazily by components/chat/AtirameChat.tsx, so wait a few seconds for it.
+async function openAtirame(timeoutMs = 10000): Promise<boolean> {
   const deadline = Date.now() + timeoutMs;
   while (Date.now() < deadline) {
-    if (callGlobalApi() || clickLauncher()) return true;
+    if (callApi() || clickLauncher()) return true;
     await new Promise((r) => setTimeout(r, 200));
   }
   return false;
 }
 
-// Use a JavaScript API if the embed script exposes one.
-function callGlobalApi(): boolean {
-  const w = window as unknown as Record<string, Api | undefined>;
-  for (const name of ['Atirame', 'atirame', 'AtirameChat', 'atirameChat', 'AtirameWidget']) {
-    const api = w[name];
-    const open = api?.open ?? api?.show ?? api?.toggle;
-    if (typeof open === 'function') {
-      open.call(api);
-      return true;
-    }
-  }
-  return false;
+// chatbot-widget.js (loaded by embed.js) exposes window.__ATIRAME_CHATBOT_API__.open().
+function callApi(): boolean {
+  const api = (window as unknown as { __ATIRAME_CHATBOT_API__?: AtirameApi }).__ATIRAME_CHATBOT_API__;
+  if (typeof api?.open !== 'function' || api.isReady?.() === false) return false;
+  api.open();
+  return true;
 }
 
-// Otherwise click the widget's own launcher button, which may sit inside a shadow root.
+// Older widget builds have no API; click their floating launcher instead.
 function clickLauncher(): boolean {
-  const hosts = document.querySelectorAll<HTMLElement>('[id*="atirame" i], [class*="atirame" i]');
-  for (const host of hosts) {
-    if (host.id === 'atirame-chat') continue; // our <script> tag
-    const roots: ParentNode[] = [host];
-    if (host.shadowRoot) roots.push(host.shadowRoot);
-    for (const root of roots) {
-      const candidates = [
-        ...(host.matches('button, [role="button"]') ? [host] : []),
-        ...root.querySelectorAll<HTMLElement>('button, [role="button"]'),
-      ];
-      const launcher = candidates.find(isVisible);
-      if (launcher) {
-        launcher.click();
-        return true;
-      }
-    }
-  }
-  return false;
-}
-
-function isVisible(el: HTMLElement): boolean {
-  const r = el.getBoundingClientRect();
-  return r.width > 0 && r.height > 0 && getComputedStyle(el).visibility !== 'hidden';
+  const launcher = document.getElementById('chatbot-toggle');
+  if (!launcher || launcher.getBoundingClientRect().width === 0) return false;
+  launcher.click();
+  return true;
 }

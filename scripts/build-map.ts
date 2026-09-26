@@ -140,7 +140,7 @@ for (const c of usedCities) {
   provinceOfCity.set(c.id, hit.properties.shapeName);
 }
 
-// Spread overlapping pins apart (Tehran/Lavasan/Karaj, Manjil/Loshan, …) with a small relaxation.
+// Spread overlapping pins apart (Tehran/Latian/Karaj, Manjil/Loshan, …) with a small relaxation.
 // A leader line in the component connects a moved pin to its true location.
 const pins = usedCities.map((c) => {
   const [x, y] = project([c.lng, c.lat]);

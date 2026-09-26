@@ -196,6 +196,57 @@
     "contactLead": "If you need new or replacement equipment, we will design and build it to your specification. You can also hand us a complete project.",
     "website": "Website"
   },
+  "about": {
+    "title": "We have designed and built industrial electronics since 1999",
+    "lead": "Hoorpendar is a knowledge-based company that designs and manufactures industrial electronic and control systems for power plants, dams, the oil and gas industry and heavy industry.",
+    "introTitle": "We handle every step from design to commissioning",
+    "intro1": "Our expertise covers power electronics, instrumentation, automation and industrial software. Circuit and firmware design, PCB assembly, testing, calibration and Factory Acceptance Testing (FAT) all happen in-house. This lets us fit each system to the project: supply voltage, mechanical dimensions, I/O count, communication interfaces and the standards that apply.",
+    "intro2": "Our head office is in Tehran. Equipment is built, assembled and tested at our workshop in the Payam Airport Special Economic Zone in Karaj.",
+    "statsLabel": "Hoorpendar in figures",
+    "servicesTitle": "Services",
+    "services": {
+      "engineering": {
+        "title": "Design and engineering",
+        "body": "We study the existing system, design the circuits and firmware, and deliver the technical documentation. Designs follow standards such as IEEE 421 for excitation systems and ISA-18.1 for alarm annunciators."
+      },
+      "manufacturing": {
+        "title": "Manufacturing and testing",
+        "body": "Boards are assembled in our own workshop. Every unit is tested and calibrated before shipping and signed off by the client in a Factory Acceptance Test."
+      },
+      "retrofit": {
+        "title": "Retrofit and modernization",
+        "body": "We document the circuits of ageing electronic systems, redesign them around current components and build the replacement units. We also install and commission them on site."
+      },
+      "turnkey": {
+        "title": "Turnkey projects",
+        "body": "We take a project from engineering studies and panel fabrication through PLC and HMI programming, installation, commissioning and operator training. After commissioning we supply spare parts and technical support."
+      }
+    },
+    "industriesTitle": "Industries we work for",
+    "industries": [
+      "Hydropower plants and dams",
+      "Thermal power plants",
+      "Refineries",
+      "Pumping and gas compressor stations",
+      "Offshore facilities",
+      "Petrochemicals",
+      "Steel",
+      "Rail",
+      "Mining",
+      "Water and wastewater"
+    ],
+    "whyTitle": "Why Hoorpendar",
+    "why": [
+      "Hoorpendar built Iran's first static generator excitation system and its first digital hydro-turbine governor. The governor performed as intended in a black-start test.",
+      "Design and manufacturing happen under one roof, and quality is checked at every stage, from component selection to the final test.",
+      "Our equipment is designed and tested for high temperatures and harsh industrial environments.",
+      "We supply spare parts on time, and our technical support continues for years after commissioning."
+    ],
+    "ctaTitle": "Tell us about your project",
+    "ctaBody": "Describe the unit or your technical requirement to Atirame in the online chat, or call our head office.",
+    "ctaChat": "Start a chat",
+    "ctaContact": "Contact details"
+  },
   "contact": {
     "title": "Get in touch",
     "lead": "Our head office is in Tehran, and equipment is built and tested at our workshop in the Payam Airport Special Economic Zone. For a quote or a technical question, call us, send an email or leave a message with Atirame in the chat.",

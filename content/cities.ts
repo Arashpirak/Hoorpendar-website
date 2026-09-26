@@ -2,6 +2,7 @@ import type { City } from './types';
 
 // Map pins. Coordinates are the town centers; they are checked again when the map is built.
 // This file is exempt from the place-name part of check-content, so it must hold city names only.
+// The ids 'lavasan' and 'poldasht' are kept from an earlier version; their pins now read Latian and Aras.
 export const cities: City[] = [
   { id: 'ahvaz', name: { fa: 'اهواز', en: 'Ahvaz' }, province: { fa: 'خوزستان', en: 'Khuzestan' }, lat: 31.32, lng: 48.67 },
   { id: 'aghajari', name: { fa: 'آغاجاری', en: 'Aghajari' }, province: { fa: 'خوزستان', en: 'Khuzestan' }, lat: 30.7, lng: 49.83 },
@@ -9,12 +10,12 @@ export const cities: City[] = [
   { id: 'andimeshk', name: { fa: 'اندیمشک', en: 'Andimeshk' }, province: { fa: 'خوزستان', en: 'Khuzestan' }, lat: 32.46, lng: 48.36 },
   { id: 'abadan', name: { fa: 'آبادان', en: 'Abadan' }, province: { fa: 'خوزستان', en: 'Khuzestan' }, lat: 30.35, lng: 48.29 },
   { id: 'tehran', name: { fa: 'تهران', en: 'Tehran' }, province: { fa: 'تهران', en: 'Tehran' }, lat: 35.69, lng: 51.39 },
-  { id: 'lavasan', name: { fa: 'لواسان', en: 'Lavasan' }, province: { fa: 'تهران', en: 'Tehran' }, lat: 35.82, lng: 51.63 },
+  { id: 'lavasan', name: { fa: 'لتیان', en: 'Latian' }, province: { fa: 'تهران', en: 'Tehran' }, lat: 35.79, lng: 51.68 },
   { id: 'karaj', name: { fa: 'کرج', en: 'Karaj' }, province: { fa: 'البرز', en: 'Alborz' }, lat: 35.84, lng: 50.97 },
   { id: 'manjil', name: { fa: 'منجیل', en: 'Manjil' }, province: { fa: 'گیلان', en: 'Gilan' }, lat: 36.74, lng: 49.4 },
   { id: 'loshan', name: { fa: 'لوشان', en: 'Loshan' }, province: { fa: 'گیلان', en: 'Gilan' }, lat: 36.63, lng: 49.51 },
   { id: 'rasht', name: { fa: 'رشت', en: 'Rasht' }, province: { fa: 'گیلان', en: 'Gilan' }, lat: 37.28, lng: 49.58 },
-  { id: 'poldasht', name: { fa: 'پلدشت', en: 'Poldasht' }, province: { fa: 'آذربایجان غربی', en: 'West Azerbaijan' }, lat: 39.35, lng: 45.07 },
+  { id: 'poldasht', name: { fa: 'ارس', en: 'Aras' }, province: { fa: 'آذربایجان غربی', en: 'West Azerbaijan' }, lat: 39.02, lng: 45.3 },
   { id: 'mahabad', name: { fa: 'مهاباد', en: 'Mahabad' }, province: { fa: 'آذربایجان غربی', en: 'West Azerbaijan' }, lat: 36.76, lng: 45.72 },
   { id: 'naqadeh', name: { fa: 'نقده', en: 'Naqadeh' }, province: { fa: 'آذربایجان غربی', en: 'West Azerbaijan' }, lat: 36.96, lng: 45.39 },
   { id: 'tabriz', name: { fa: 'تبریز', en: 'Tabriz' }, province: { fa: 'آذربایجان شرقی', en: 'East Azerbaijan' }, lat: 38.08, lng: 46.29 },
