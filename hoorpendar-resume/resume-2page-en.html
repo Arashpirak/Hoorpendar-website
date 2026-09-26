@@ -32,36 +32,40 @@ img{display:block;max-width:100%}
 .body{padding:0 14mm;flex:1;display:flex;flex-direction:column}
 
 /* ---------- header (page 1) ---------- */
-.hero{background:linear-gradient(120deg,var(--deep) 0%,#12427f 60%,var(--brand) 100%);color:#fff;padding:8mm 14mm 6.5mm;position:relative}
+.hero{background:linear-gradient(120deg,var(--deep) 0%,#12427f 60%,var(--brand) 100%);color:#fff;padding:6.5mm 14mm 5.5mm;position:relative}
 .hero::after{content:"";position:absolute;inset:auto 0 0 0;height:3px;background:var(--accent)}
 .hero-top{display:flex;align-items:center;gap:6mm}
 .hero svg{width:30mm;height:auto;flex:none}
 .hero h1{font-size:22pt;font-weight:800;line-height:1.2;letter-spacing:-.3px}
 .hero .legal{font-size:10pt;opacity:.92;font-weight:500}
-.hero .tag{margin-top:3.5mm;font-size:10.8pt;font-weight:500;max-width:170mm;line-height:1.55}
+.hero .tag{margin-top:2.8mm;font-size:10pt;font-weight:500;max-width:178mm;line-height:1.55}
+.pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:2.5mm;margin-top:3mm}
+.pillars div{border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.08);border-radius:2mm;padding:1.3mm 2.6mm;line-height:1.35}
+.pillars b{display:block;font-size:9.6pt;font-weight:800;color:var(--accent)}
+.pillars span{font-size:7.8pt;opacity:.9}
 
 /* ---------- common ---------- */
-h2{font-size:12pt;font-weight:800;color:var(--deep);margin:3.8mm 0 1.8mm;display:flex;align-items:center;gap:2.5mm;letter-spacing:-.1px}
+h2{font-size:12pt;font-weight:800;color:var(--deep);margin:3.2mm 0 1.6mm;display:flex;align-items:center;gap:2.5mm;letter-spacing:-.1px}
 h2::before{content:"";width:3.5mm;height:3.5mm;border-radius:1mm;background:var(--accent);flex:none}
-p.lead{text-align:justify;hyphens:auto}
+p.lead{text-align:justify;hyphens:auto;font-size:9pt;line-height:1.5}
 
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:3mm;margin-top:3.5mm}
-.stat{background:var(--soft);border:1px solid var(--line);border-radius:2.5mm;padding:2mm 3mm;text-align:center}
-.stat b{display:block;font-size:17pt;font-weight:800;color:var(--brand);line-height:1.3}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:3mm;margin-top:3mm}
+.stat{background:var(--soft);border:1px solid var(--line);border-radius:2.5mm;padding:1.2mm 3mm;text-align:center}
+.stat b{display:block;font-size:16pt;font-weight:800;color:var(--brand);line-height:1.3}
 .stat span{font-size:8.4pt;color:var(--muted)}
 
-.caps{display:grid;grid-template-columns:1fr 1fr;gap:1.9mm}
-.cap{border:1px solid var(--line);border-radius:2.5mm;padding:1.6mm 3.4mm;border-left:3px solid var(--brand)}
+.caps{display:grid;grid-template-columns:1fr 1fr;gap:1.6mm}
+.cap{border:1px solid var(--line);border-radius:2.5mm;padding:1.3mm 3.2mm;border-left:3px solid var(--brand)}
 .cap h3{font-size:9.8pt;font-weight:700;color:var(--deep);margin-bottom:.6mm}
-.cap p{font-size:8.6pt;color:#2c3a50;line-height:1.5}
+.cap p{font-size:8.3pt;color:#2c3a50;line-height:1.45}
 
 .row2{display:grid;grid-template-columns:1.05fr 1fr;gap:5mm}
 ul.ticks{list-style:none}
-ul.ticks li{position:relative;padding-left:4.5mm;margin-bottom:.9mm;font-size:8.9pt;line-height:1.5}
+ul.ticks li{position:relative;padding-left:4.5mm;margin-bottom:.8mm;font-size:8.6pt;line-height:1.45}
 ul.ticks li::before{content:"";position:absolute;left:0;top:1.6mm;width:2mm;height:2mm;border-radius:50%;background:var(--brand)}
-.chips{display:flex;flex-wrap:wrap;gap:1.8mm}
-.chips span{background:var(--soft);border:1px solid var(--line);border-radius:10mm;padding:.5mm 3mm;font-size:8.5pt}
-.firsts{background:linear-gradient(135deg,#fff8e6,#fff);border:1px solid #f0dca6;border-radius:2.5mm;padding:2.4mm 3.5mm;margin-top:2.8mm;font-size:8.8pt;line-height:1.5}
+.chips{display:flex;flex-wrap:wrap;gap:1.5mm}
+.chips span{background:var(--soft);border:1px solid var(--line);border-radius:10mm;padding:.3mm 2.6mm;font-size:8.2pt}
+.firsts{background:linear-gradient(135deg,#fff8e6,#fff);border:1px solid #f0dca6;border-radius:2.5mm;padding:1.8mm 3.2mm;margin-top:2.2mm;font-size:8.5pt;line-height:1.45}
 .firsts b{color:#b07c00;font-weight:800}
 
 /* ---------- products (page 2) ---------- */
@@ -121,18 +125,24 @@ ul.ticks li::before{content:"";position:absolute;left:0;top:1.6mm;width:2mm;heig
         <div class="legal">Hoorpendar Computer Technology Industries · Knowledge-based company · Est. 1999</div>
       </div>
     </div>
-    <p class="tag">We design and manufacture industrial electronics and deliver control, automation and instrumentation projects for oil and gas, water, power and heavy industry. We take each project from engineering study and design through commissioning and long-term support.</p>
+    <p class="tag">Hoorpendar designs and manufactures industrial electronic systems and delivers control, automation and instrumentation solutions for power generation, oil &amp; gas, water and heavy industries. From engineering and system design to manufacturing, commissioning and long-term support, we provide integrated solutions tailored to demanding industrial environments.</p>
+    <div class="pillars">
+      <div><b>Engineering</b><span>Studies, circuit, firmware &amp; system design</span></div>
+      <div><b>Manufacturing</b><span>PCB assembly, testing, calibration &amp; FAT</span></div>
+      <div><b>Retrofit</b><span>Modernization of obsolete electronic systems</span></div>
+      <div><b>System integration</b><span>Turnkey control &amp; instrumentation projects</span></div>
+    </div>
   </header>
 
   <div class="body">
     <h2>About us</h2>
-    <p class="lead">Since 1999, Hoorpendar’s engineers have worked in power electronics, control systems and industrial software. Every stage happens in-house, from circuit and firmware design to PCB assembly, factory acceptance testing and calibration. That is why most products can be built to a project’s supply voltage, dimensions, output type and standard, and why equipment that has lost manufacturer support can be rebuilt or redesigned. The head office is in Tehran and the production workshop is in the Payam Airport Special Economic Zone.</p>
+    <p class="lead">Since 1999, Hoorpendar has been engineering and manufacturing industrial electronic and control systems for critical infrastructure and process industries, with expertise spanning power electronics, instrumentation, automation and industrial software. Our engineering and manufacturing capabilities are vertically integrated, covering electronic and firmware design, PCB assembly, testing, calibration and Factory Acceptance Testing (FAT). Our systems can therefore be engineered and customized to meet project-specific requirements, including supply voltage, mechanical dimensions, I/O configuration, communication interfaces and applicable standards.</p>
 
     <div class="stats">
       <div class="stat"><b>25+</b><span>years in industry</span></div>
       <div class="stat"><b>138</b><span>contracts completed</span></div>
       <div class="stat"><b>25</b><span>industrial clients</span></div>
-      <div class="stat"><b>200+</b><span>flame detectors in service</span></div>
+      <div class="stat"><b>200+</b><span>flame detectors deployed</span></div>
     </div>
 
     <h2>Capabilities</h2>
@@ -162,12 +172,12 @@ ul.ticks li::before{content:"";position:absolute;left:0;top:1.6mm;width:2mm;heig
         <p>Reservoir level measurement, dam safety instrumentation and deflection monitoring, gate position indication, master clock systems and frequency meters.</p>
       </div>
       <div class="cap">
-        <h3>Legacy system retrofit &amp; renewal</h3>
-        <p>We inspect legacy cards and systems, capture their schematics, redesign them with components available today, then build, test and install them.</p>
+        <h3>Legacy system retrofit &amp; modernization</h3>
+        <p>We modernize obsolete industrial electronics by documenting legacy designs, redesigning circuits around current components, manufacturing replacement units and supporting site commissioning.</p>
       </div>
       <div class="cap">
         <h3>Turnkey project delivery</h3>
-        <p>Engineering studies, system design, panel building, PLC and HMI programming, installation, commissioning, training and after-sales support.</p>
+        <p>From engineering studies and system design to panel fabrication, PLC/HMI programming, installation, commissioning, operator training and long-term technical support.</p>
       </div>
     </div>
 
@@ -179,19 +189,19 @@ ul.ticks li::before{content:"";position:absolute;left:0;top:1.6mm;width:2mm;heig
           <span>Pumping &amp; gas compressor stations</span><span>Offshore facilities</span><span>Petrochemicals</span>
           <span>Steel</span><span>Rail</span><span>Mining</span><span>Water &amp; wastewater</span>
         </div>
-        <div class="firsts">
-          <b>Firsts:</b> Hoorpendar built Iran’s first static generator excitation system and first digital hydro-turbine governor. The governor performed successfully in a black-start test.
-        </div>
       </div>
       <div>
         <h2>Why Hoorpendar</h2>
         <ul class="ticks">
-          <li>In-house design and manufacturing with full quality control</li>
-          <li>Built to each project’s technical specification</li>
+          <li>Vertically integrated engineering and manufacturing</li>
+          <li>Engineered to meet project-specific requirements</li>
           <li>Designed to standards such as IEEE 421 and ISA-18.1</li>
-          <li>Fast spare-parts supply and long-term technical support</li>
+          <li>Responsive spare-parts and long-term technical support</li>
           <li>Proven in harsh, high-temperature environments</li>
         </ul>
+        <div class="firsts">
+          <b>Firsts:</b> Hoorpendar manufactured Iran’s first static generator excitation system and first digital hydro-turbine governor, proven in a black-start test.
+        </div>
       </div>
     </div>
   </div>
@@ -229,7 +239,7 @@ ul.ticks li::before{content:"";position:absolute;left:0;top:1.6mm;width:2mm;heig
         <div>
           <h3>Alarm annunciator</h3>
           <div class="model">PAL750 · PAL625 · SAL-82</div>
-          <p>Modular and programmable, it handles 2 to 512 alarm points with ISA-18.1 sequences. It offers Modbus communication, first-out indication and high-brightness LED windows.</p>
+          <p>Modular and programmable, it supports 2 to 512 alarm points with ISA-18.1 sequences. It offers Modbus communication, first-out indication and high-brightness LED windows.</p>
         </div>
       </div>
       <div class="prod">
@@ -245,7 +255,7 @@ ul.ticks li::before{content:"";position:absolute;left:0;top:1.6mm;width:2mm;heig
         <div>
           <h3>Gas turbine flame detector</h3>
           <div class="model">FDU-300 · FDU-320 · FR-430E</div>
-          <p>Detects flame in gas turbines, boilers and burners with a UV sensor, and trips on flame loss. More than 200 units are in service.</p>
+          <p>Detects flame in gas turbines, boilers and burners with a UV sensor, and trips on flame loss. More than 200 units are in operation.</p>
         </div>
       </div>
       <div class="prod">
@@ -266,7 +276,7 @@ ul.ticks li::before{content:"";position:absolute;left:0;top:1.6mm;width:2mm;heig
 
     <h2>Selected projects</h2>
     <div class="projects">
-      <div class="pj"><i>Power</i><span>Static excitation system for a hydropower generator, the first built in Iran</span></div>
+      <div class="pj"><i>Power</i><span>Static excitation system for a hydropower generator, the first of its kind manufactured in Iran</span></div>
       <div class="pj"><i>Power</i><span>Digital hydro-turbine governor, proven in a black-start test</span></div>
       <div class="pj"><i>Water</i><span>Fully redundant intelligent control of water flow from a dam into a metropolitan supply network</span></div>
       <div class="pj"><i class="oil">Oil &amp; Gas</i><span>Excitation control and starters for 3.5 MW synchronous motors at an oil pumping station</span></div>

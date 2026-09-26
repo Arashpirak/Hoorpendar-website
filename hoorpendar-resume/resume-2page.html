@@ -32,37 +32,41 @@ img{display:block;max-width:100%}
 .body{padding:0 14mm;flex:1;display:flex;flex-direction:column}
 
 /* ---------- header (page 1) ---------- */
-.hero{background:linear-gradient(120deg,var(--deep) 0%,#12427f 60%,var(--brand) 100%);color:#fff;padding:8mm 14mm 6.5mm;position:relative}
+.hero{background:linear-gradient(120deg,var(--deep) 0%,#12427f 60%,var(--brand) 100%);color:#fff;padding:6.5mm 14mm 5.5mm;position:relative}
 .hero::after{content:"";position:absolute;inset:auto 0 0 0;height:3px;background:var(--accent)}
 .hero-top{display:flex;align-items:center;gap:6mm}
 .hero svg{width:30mm;height:auto;flex:none}
 .hero h1{font-size:21pt;font-weight:800;line-height:1.3}
 .hero .legal{font-size:10pt;opacity:.9;font-weight:500}
 .hero .en{font-size:9pt;opacity:.75;direction:ltr;text-align:right;letter-spacing:.3px}
-.hero .tag{margin-top:3mm;font-size:11pt;font-weight:500;max-width:165mm;line-height:1.9}
+.hero .tag{margin-top:2.6mm;font-size:10.4pt;font-weight:500;max-width:178mm;line-height:1.8}
+.pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:2.5mm;margin-top:3mm}
+.pillars div{border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.08);border-radius:2mm;padding:1.2mm 2.6mm;line-height:1.55}
+.pillars b{display:block;font-size:9.8pt;font-weight:800;color:var(--accent)}
+.pillars span{font-size:8pt;opacity:.9}
 
 /* ---------- common ---------- */
-h2{font-size:12.5pt;font-weight:800;color:var(--deep);margin:4.2mm 0 2mm;display:flex;align-items:center;gap:2.5mm}
+h2{font-size:12.5pt;font-weight:800;color:var(--deep);margin:3.2mm 0 1.6mm;display:flex;align-items:center;gap:2.5mm}
 h2::before{content:"";width:3.5mm;height:3.5mm;border-radius:1mm;background:var(--accent);flex:none}
-p.lead{text-align:justify}
+p.lead{text-align:justify;font-size:9.3pt;line-height:1.7}
 
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:3mm;margin-top:3.5mm}
-.stat{background:var(--soft);border:1px solid var(--line);border-radius:2.5mm;padding:1.6mm 3mm;text-align:center}
-.stat b{display:block;font-size:17pt;font-weight:800;color:var(--brand);line-height:1.35}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:3mm;margin-top:3mm}
+.stat{background:var(--soft);border:1px solid var(--line);border-radius:2.5mm;padding:1mm 3mm;text-align:center}
+.stat b{display:block;font-size:16pt;font-weight:800;color:var(--brand);line-height:1.35}
 .stat span{font-size:8.6pt;color:var(--muted)}
 
-.caps{display:grid;grid-template-columns:1fr 1fr;gap:2.2mm}
-.cap{border:1px solid var(--line);border-radius:2.5mm;padding:1.8mm 3.4mm;border-right:3px solid var(--brand)}
+.caps{display:grid;grid-template-columns:1fr 1fr;gap:1.6mm}
+.cap{border:1px solid var(--line);border-radius:2.5mm;padding:1.3mm 3.2mm;border-right:3px solid var(--brand)}
 .cap h3{font-size:10.2pt;font-weight:700;color:var(--deep);margin-bottom:.6mm}
-.cap p{font-size:8.8pt;color:#2c3a50;line-height:1.6}
+.cap p{font-size:8.5pt;color:#2c3a50;line-height:1.55}
 
 .row2{display:grid;grid-template-columns:1.05fr 1fr;gap:5mm}
 ul.ticks{list-style:none}
-ul.ticks li{position:relative;padding-right:4.5mm;margin-bottom:.6mm;font-size:9.1pt;line-height:1.65}
+ul.ticks li{position:relative;padding-right:4.5mm;margin-bottom:.5mm;font-size:8.9pt;line-height:1.6}
 ul.ticks li::before{content:"";position:absolute;right:0;top:2.3mm;width:2mm;height:2mm;border-radius:50%;background:var(--brand)}
-.chips{display:flex;flex-wrap:wrap;gap:1.8mm}
-.chips span{background:var(--soft);border:1px solid var(--line);border-radius:10mm;padding:.5mm 3mm;font-size:8.8pt}
-.firsts{background:linear-gradient(135deg,#fff8e6,#fff);border:1px solid #f0dca6;border-radius:2.5mm;padding:2.2mm 3.5mm;margin-top:2.5mm;font-size:9pt;line-height:1.7}
+.chips{display:flex;flex-wrap:wrap;gap:1.5mm}
+.chips span{background:var(--soft);border:1px solid var(--line);border-radius:10mm;padding:.2mm 2.6mm;font-size:8.5pt}
+.firsts{background:linear-gradient(135deg,#fff8e6,#fff);border:1px solid #f0dca6;border-radius:2.5mm;padding:1.6mm 3.2mm;margin-top:2mm;font-size:8.7pt;line-height:1.6}
 .firsts b{color:var(--accent);font-weight:800}
 
 /* ---------- products (page 2) ---------- */
@@ -124,18 +128,24 @@ ul.ticks li::before{content:"";position:absolute;right:0;top:2.3mm;width:2mm;hei
         <div class="en">Hoorpendar Computer Technology Industries · since 1999</div>
       </div>
     </div>
-    <p class="tag">تجهیزات الکترونیک صنعتی طراحی و تولید می‌کنیم و پروژه‌های کنترل، اتوماسیون و ابزار دقیق را در نفت و گاز، آب و نیرو و صنایع سنگین، از طراحی تا راه‌اندازی و پشتیبانی، اجرا می‌کنیم.</p>
+    <p class="tag">هورپندار سیستم‌های الکترونیک صنعتی را طراحی و تولید می‌کند و راهکارهای کنترل، اتوماسیون و ابزار دقیق را برای نیروگاه‌ها، نفت و گاز، آب و صنایع سنگین اجرا می‌کند. هر پروژه را از مهندسی و طراحی سیستم تا ساخت، راه‌اندازی و پشتیبانی بلندمدت یکپارچه پیش می‌بریم و آن را برای شرایط سخت محیط صنعتی آماده می‌کنیم.</p>
+    <div class="pillars">
+      <div><b>مهندسی</b><span>مطالعات و طراحی مدار، فِرم‌ور و سیستم</span></div>
+      <div><b>تولید</b><span>مونتاژ برد، آزمون، کالیبراسیون و <bdi>FAT</bdi></span></div>
+      <div><b>نوسازی</b><span>بازطراحی سیستم‌های الکترونیکی منسوخ</span></div>
+      <div><b>یکپارچه‌سازی سیستم</b><span>پروژه‌های کلیدتحویل کنترل و ابزار دقیق</span></div>
+    </div>
   </header>
 
   <div class="body">
     <h2>درباره‌ی ما</h2>
-    <p class="lead">مهندسان هورپندار از سال ۱۳۷۸ در الکترونیک قدرت، سیستم‌های کنترل و نرم‌افزار صنعتی کار می‌کنند. همه‌ی مراحل، از طراحی مدار و فِرم‌ور تا مونتاژ برد مدار چاپی، آزمون کارخانه‌ای و کالیبراسیون، در خود شرکت انجام می‌شود. به همین دلیل بیشتر محصولات را می‌توان با ولتاژ تغذیه، ابعاد، نوع خروجی و استاندارد مورد نیاز هر پروژه ساخت، و تجهیزات قدیمی‌ای را که دیگر پشتیبانی سازنده ندارند بازسازی یا بازطراحی کرد. دفتر مرکزی شرکت در تهران و کارگاه تولید آن در منطقه‌ی ویژه‌ی اقتصادی فرودگاه پیام است.</p>
+    <p class="lead">هورپندار از سال ۱۳۷۸ سیستم‌های الکترونیک و کنترل صنعتی را برای زیرساخت‌های حیاتی و صنایع فرایندی طراحی و تولید می‌کند و در الکترونیک قدرت، ابزار دقیق، اتوماسیون و نرم‌افزار صنعتی تخصص دارد. مهندسی و تولید در یک مجموعه‌ی یکپارچه انجام می‌شود و طراحی مدار و فِرم‌ور، مونتاژ برد مدار چاپی، آزمون، کالیبراسیون و آزمون پذیرش کارخانه‌ای <bdi>(FAT)</bdi> را در بر می‌گیرد. به همین دلیل هر سیستم را می‌توان مطابق نیاز پروژه مهندسی و سفارشی کرد، از ولتاژ تغذیه و ابعاد مکانیکی تا پیکربندی ورودی و خروجی <bdi>(I/O)</bdi>، درگاه‌های ارتباطی و استانداردهای لازم.</p>
 
     <div class="stats">
       <div class="stat"><b>+۲۵</b><span>سال تجربه‌ی صنعتی</span></div>
       <div class="stat"><b>۱۳۸</b><span>قرارداد اجراشده</span></div>
       <div class="stat"><b>۲۵</b><span>کارفرمای صنعتی</span></div>
-      <div class="stat"><b>+۲۰۰</b><span>شعله‌یاب در حال کار</span></div>
+      <div class="stat"><b>+۲۰۰</b><span>شعله‌یاب نصب‌شده</span></div>
     </div>
 
     <h2>توانمندی‌ها</h2>
@@ -165,12 +175,12 @@ ul.ticks li::before{content:"";position:absolute;right:0;top:2.3mm;width:2mm;hei
         <p>سطح‌سنج مخزن، ابزار دقیق رفتارنگاری و پایش انحراف بدنه‌ی سد، نمایش گشودگی دریچه‌ها، سیستم ساعت مادر و فرکانس‌متر.</p>
       </div>
       <div class="cap">
-        <h3>بازسازی و نوسازی تجهیزات قدیمی</h3>
-        <p>نقشه‌ی مدار کارت‌ها و سیستم‌های قدیمی را استخراج می‌کنیم و آن‌ها را با قطعات در دسترس دوباره می‌سازیم.</p>
+        <h3>بازسازی و نوسازی سیستم‌های منسوخ</h3>
+        <p>طرح سیستم‌های الکترونیکی منسوخ را مستند می‌کنیم، مدار را با قطعات امروزی بازطراحی می‌کنیم، واحد جایگزین را می‌سازیم و در نصب و راه‌اندازی در محل همراه کارفرما هستیم.</p>
       </div>
       <div class="cap">
         <h3>اجرای کامل پروژه (EPC کوچک و متوسط)</h3>
-        <p>مطالعات مهندسی، طراحی سیستم، ساخت تابلو، برنامه‌نویسی PLC و HMI، نصب، راه‌اندازی، آموزش و پشتیبانی.</p>
+        <p>از مطالعات مهندسی و طراحی سیستم تا ساخت تابلو، برنامه‌نویسی PLC/HMI، نصب، راه‌اندازی، آموزش اپراتورها و پشتیبانی فنی بلندمدت.</p>
       </div>
     </div>
 
@@ -182,19 +192,19 @@ ul.ticks li::before{content:"";position:absolute;right:0;top:2.3mm;width:2mm;hei
           <span>ایستگاه‌های پمپاژ و تقویت فشار گاز</span><span>تأسیسات فراساحل</span><span>پتروشیمی</span>
           <span>فولاد</span><span>حمل‌ونقل ریلی</span><span>معدن</span><span>آب و فاضلاب</span>
         </div>
-        <div class="firsts">
-          <b>نخستین‌ها:</b> نخستین سیستم تحریک استاتیک ژنراتور و نخستین گاورنر دیجیتال توربین آبی ایران را هورپندار ساخت؛ گاورنر در آزمون <bdi>Black Start</bdi> موفق بود.
-        </div>
       </div>
       <div>
         <h2>چرا هورپندار</h2>
         <ul class="ticks">
-          <li>طراحی و ساخت در خود شرکت و کنترل کیفیت در همه‌ی مراحل</li>
-          <li>ساخت سفارشی مطابق مشخصات فنی هر پروژه</li>
+          <li>مهندسی و تولید یکپارچه با کنترل کیفیت در همه‌ی مراحل</li>
+          <li>مهندسی و ساخت مطابق نیازهای هر پروژه</li>
           <li>طراحی مطابق استانداردهایی مانند IEEE 421 و ISA-18.1</li>
-          <li>تحویل سریع قطعات یدکی و پشتیبانی فنی بلندمدت</li>
+          <li>تأمین به‌موقع قطعات یدکی و پشتیبانی فنی بلندمدت</li>
           <li>کارکرد پایدار در دمای بالا و شرایط سخت محیطی</li>
         </ul>
+        <div class="firsts">
+          <b>نخستین‌ها:</b> نخستین سیستم تحریک استاتیک ژنراتور و نخستین گاورنر دیجیتال توربین آبی ایران را هورپندار تولید کرد. این گاورنر در آزمون <bdi>Black Start</bdi> موفق بود.
+        </div>
       </div>
     </div>
   </div>
@@ -232,7 +242,7 @@ ul.ticks li::before{content:"";position:absolute;right:0;top:2.3mm;width:2mm;hei
         <div>
           <h3>اعلام‌گر آلارم <bdi>(Alarm Annunciator)</bdi></h3>
           <div class="model">PAL750 · PAL625 · SAL-82</div>
-          <p>ماژولار و برنامه‌پذیر است و ۲ تا ۵۱۲ آلارم را با توالی‌های ISA-18.1 نمایش می‌دهد. ارتباط Modbus، تشخیص نخستین آلارم (First-Out) و پنجره‌های LED پرنور دارد.</p>
+          <p>ماژولار و برنامه‌پذیر است و از ۲ تا ۵۱۲ نقطه‌ی آلارم را با توالی‌های ISA-18.1 پشتیبانی می‌کند. ارتباط Modbus، تشخیص نخستین آلارم (First-Out) و پنجره‌های LED پرنور دارد.</p>
         </div>
       </div>
       <div class="prod">
@@ -248,7 +258,7 @@ ul.ticks li::before{content:"";position:absolute;right:0;top:2.3mm;width:2mm;hei
         <div>
           <h3>شعله‌یاب توربین گازی <bdi>(Flame Detector)</bdi></h3>
           <div class="model">FDU-300 · FDU-320 · FR-430E</div>
-          <p>شعله را در توربین گازی، بویلر و مشعل با سنسور UV آشکار می‌کند و اگر شعله خاموش شود، فرمان Trip می‌دهد. بیش از ۲۰۰ دستگاه از آن در حال کار است.</p>
+          <p>شعله را در توربین گازی، بویلر و مشعل با سنسور UV آشکار می‌کند و اگر شعله خاموش شود، فرمان Trip می‌دهد. بیش از ۲۰۰ دستگاه از آن در حال بهره‌برداری است.</p>
         </div>
       </div>
       <div class="prod">
@@ -269,7 +279,7 @@ ul.ticks li::before{content:"";position:absolute;right:0;top:2.3mm;width:2mm;hei
 
     <h2>نمونه‌ای از پروژه‌های اجراشده</h2>
     <div class="projects">
-      <div class="pj"><i>نیرو</i><span>طراحی و ساخت سیستم تحریک استاتیک ژنراتور نیروگاه آبی (نخستین نمونه‌ی ساخت داخل)</span></div>
+      <div class="pj"><i>نیرو</i><span>طراحی و ساخت سیستم تحریک استاتیک ژنراتور نیروگاه آبی (نخستین نمونه‌ی تولیدشده در ایران)</span></div>
       <div class="pj"><i>نیرو</i><span>گاورنر دیجیتال توربین آبی، آزموده در خودراه‌اندازی (<bdi>Black Start</bdi>)</span></div>
       <div class="pj"><i>آب</i><span>کنترل هوشمند با افزونگی کامل برای تنظیم دبی آب انتقالی از سد به شبکه‌ی آب یک کلان‌شهر</span></div>
       <div class="pj"><i class="oil">نفت و گاز</i><span>کنترل و راه‌انداز تحریک موتورهای سنکرون ۳٫۵ مگاواتی ایستگاه پمپاژ نفت</span></div>
