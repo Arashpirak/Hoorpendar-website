@@ -11,7 +11,7 @@ import type { Project } from './types';
 export const projects: Project[] = [
   {
     id: 'p001', cities: ['lavasan'], facility: 'hydro', sector: 'power', yearSH: 1380, productCategory: 'excitation-governor', highlight: true,
-    title: { fa: 'طراحی و ساخت یونیت تحریک استاتیک ژنراتور نیروگاه آبی', en: 'Static excitation unit for a hydroelectric generator' },
+    title: { fa: 'طراحی و ساخت واحد تحریک استاتیک ژنراتور نیروگاه آبی', en: 'Static excitation unit for a hydroelectric generator' },
     summary: {
       fa: 'نخستین سیستم تحریک استاتیک ژنراتور ساخت داخل. از آن پس هورپندار سیستم‌های تحریک استاتیک ژنراتورها و موتورهای سنکرون را طراحی و تولید کرده است.',
       en: 'The first static generator excitation system designed and built in Iran. Since then Hoorpendar has designed and produced static excitation systems for generators and synchronous motors.',
@@ -77,7 +77,7 @@ export const projects: Project[] = [
     id: 'p014', cities: ['aghajari'], facility: 'oil-gas-station', sector: 'oil', yearSH: 1386, productCategory: 'excitation-governor', highlight: true,
     title: { fa: 'سیستم کنترل و راه‌انداز تحریک موتورهای سنکرون ۳٫۵ مگاواتی ایستگاه پمپاژ', en: 'Excitation control and starter for 3.5 MW synchronous motors at pumping stations' },
     summary: {
-      fa: 'کنترل و راه‌انداز تحریک استاتیک موتورهای سنکرون ۳٫۵ مگاواتی در ایستگاه‌های پمپاژ و تقویت فشار. در سال‌های بعد ۴۰ یونیت کنترل تحریک دیگر برای همین موتورها تحویل شد.',
+      fa: 'کنترل و راه‌انداز تحریک استاتیک موتورهای سنکرون ۳٫۵ مگاواتی در ایستگاه‌های پمپاژ و تقویت فشار. در سال‌های بعد ۴۰ واحد کنترل تحریک دیگر برای همین موتورها تحویل شد.',
       en: 'Static excitation control and starting for 3.5 MW synchronous motors at pumping and compression stations. Forty more excitation control units followed for the same motors.',
     },
   },
@@ -143,7 +143,7 @@ export const projects: Project[] = [
   },
   {
     id: 'p030', cities: ['aghajari'], facility: 'oil-gas-station', sector: 'oil', yearSH: 1389, productCategory: 'power-supplies',
-    title: { fa: 'طراحی و اجرای سیستم کنترلر باطری شارژر', en: 'Battery charger controller' },
+    title: { fa: 'طراحی و اجرای سیستم کنترلر شارژر باتری', en: 'Battery charger controller' },
   },
   {
     id: 'p031', cities: ['aghajari'], facility: 'oil-gas-station', sector: 'oil', yearSH: 1389, productCategory: 'instrumentation',
@@ -199,7 +199,7 @@ export const projects: Project[] = [
   },
   {
     id: 'p042', cities: ['manjil'], facility: 'hydro', sector: 'power', yearSH: 1392, productCategory: 'power-supplies',
-    title: { fa: 'باطری شارژر سد و نیروگاه آبی', en: 'Battery charger for a dam and hydroelectric plant' },
+    title: { fa: 'شارژر باتری سد و نیروگاه آبی', en: 'Battery charger for a dam and hydroelectric plant' },
   },
   {
     id: 'p043', cities: ['poldasht'], facility: 'hydro', sector: 'power', yearSH: 1392, productCategory: 'dam-power-infrastructure',
@@ -207,7 +207,7 @@ export const projects: Project[] = [
   },
   {
     id: 'p044', cities: ['karaj'], facility: 'hydro', sector: 'power', yearSH: 1392, productCategory: 'dam-power-infrastructure',
-    title: { fa: 'تأمین، نصب و راه‌اندازی سیستم میکروپروسسوری گشودگی دریچه‌های سرریز سد', en: 'Microprocessor-based spillway gate opening system: supply, installation and commissioning' },
+    title: { fa: 'تأمین، نصب و راه‌اندازی سامانه‌ی ریزپردازنده‌ای اندازه‌گیری بازشدگی دریچه‌های سرریز سد', en: 'Microprocessor-based spillway gate opening system: supply, installation and commissioning' },
   },
   {
     id: 'p045', cities: ['karaj'], facility: 'hydro', sector: 'power', yearSH: 1392, productCategory: 'excitation-governor',
@@ -259,7 +259,7 @@ export const projects: Project[] = [
   },
   {
     id: 'p057', cities: ['ahvaz'], facility: 'oil-gas-operator', sector: 'oil', yearSH: 1393, productCategory: 'power-supplies',
-    title: { fa: 'یونیت کنترل باطری شارژر', en: 'Battery charger control unit' },
+    title: { fa: 'واحد کنترل شارژر باتری', en: 'Battery charger control unit' },
   },
   {
     id: 'p058', cities: ['ahvaz'], facility: 'oil-gas-operator', sector: 'oil', yearSH: 1393, productCategory: 'legacy-renewal',
@@ -403,7 +403,7 @@ export const projects: Project[] = [
   },
   {
     id: 'p092', cities: ['aghajari'], facility: 'oil-gas-station', sector: 'oil', yearSH: 1396, productCategory: 'excitation-governor',
-    title: { fa: '۴۰ یونیت کنترل تحریک موتور سنکرون ۳٫۵ مگاواتی', en: '40 excitation control units for 3.5 MW synchronous motors' },
+    title: { fa: '۴۰ واحد کنترل تحریک موتور سنکرون ۳٫۵ مگاواتی', en: '40 excitation control units for 3.5 MW synchronous motors' },
   },
   {
     id: 'p093', cities: ['ahvaz'], facility: 'oil-gas-operator', sector: 'oil', yearSH: 1396, productCategory: 'flame-detection',
@@ -419,7 +419,7 @@ export const projects: Project[] = [
   },
   {
     id: 'p096', cities: ['masjed-soleyman'], facility: 'hydro', sector: 'power', yearSH: 1396, productCategory: 'power-supplies',
-    title: { fa: 'تأمین، نصب و راه‌اندازی دو دستگاه کنترلر هوشمند باطری شارژر SBC-620', en: 'Two SBC-620 smart battery charger controllers: supply, installation and commissioning' },
+    title: { fa: 'تأمین، نصب و راه‌اندازی دو دستگاه کنترلر هوشمند شارژر باتری SBC-620', en: 'Two SBC-620 smart battery charger controllers: supply, installation and commissioning' },
   },
   {
     id: 'p097', cities: ['ahvaz'], facility: 'oil-gas-operator', sector: 'oil', yearSH: 1396, productCategory: 'flame-detection',
@@ -435,11 +435,11 @@ export const projects: Project[] = [
   },
   {
     id: 'p100', cities: ['qazvin'], facility: 'thermal', sector: 'power', yearSH: 1396, productCategory: 'ignition',
-    title: { fa: 'طراحی و ساخت یونیت جرقه‌زن Hi-Energy', en: 'High-energy ignition unit' },
+    title: { fa: 'طراحی و ساخت واحد جرقه‌زن Hi-Energy', en: 'High-energy ignition unit' },
   },
   {
     id: 'p101', cities: ['loshan'], facility: 'thermal', sector: 'power', yearSH: 1396, productCategory: 'power-supplies',
-    title: { fa: 'سیستم کنترلر باطری شارژر', en: 'Battery charger controller' },
+    title: { fa: 'سیستم کنترلر شارژر باتری', en: 'Battery charger controller' },
   },
   {
     id: 'p102', cities: ['ahvaz'], facility: 'oil-gas-operator', sector: 'oil', yearSH: 1397, productCategory: 'flame-detection',
@@ -471,7 +471,7 @@ export const projects: Project[] = [
   },
   {
     id: 'p109', cities: ['ahvaz'], facility: 'oil-gas-operator', sector: 'oil', yearSH: 1397, productCategory: 'power-supplies',
-    title: { fa: 'باطری شارژر 24V DC / 100A توربین گازی', en: '24 V DC / 100 A battery charger for a gas turbine' },
+    title: { fa: 'شارژر باتری 24V DC / 100A توربین گازی', en: '24 V DC / 100 A battery charger for a gas turbine' },
   },
   {
     id: 'p110', cities: ['gachsaran'], facility: 'oil-gas-operator', sector: 'oil', yearSH: 1398, productCategory: 'ignition',
@@ -487,7 +487,7 @@ export const projects: Project[] = [
   },
   {
     id: 'p113', cities: ['loshan'], facility: 'thermal', sector: 'power', yearSH: 1398, productCategory: 'power-supplies',
-    title: { fa: 'سیستم هوشمند باطری شارژر', en: 'Smart battery charger system' },
+    title: { fa: 'سیستم هوشمند شارژر باتری', en: 'Smart battery charger system' },
   },
   {
     id: 'p114', cities: ['aghajari'], facility: 'oil-gas-station', sector: 'oil', yearSH: 1399, productCategory: 'instrumentation',
@@ -503,11 +503,11 @@ export const projects: Project[] = [
   },
   {
     id: 'p117', cities: ['aghajari'], facility: 'oil-gas-station', sector: 'oil', yearSH: 1400, productCategory: 'power-supplies',
-    title: { fa: 'سیستم باطری شارژر سوئیچینگ 24V / 20A', en: '24 V / 20 A switching battery charger' },
+    title: { fa: 'سیستم شارژر باتری سوئیچینگ 24V / 20A', en: '24 V / 20 A switching battery charger' },
   },
   {
     id: 'p118', cities: ['tehran'], facility: 'oil-gas-station', sector: 'oil', yearSH: 1400, productCategory: 'ignition',
-    title: { fa: 'یونیت تحریک جرقه‌زن (Ignition Exciter) توربین گازی صنعتی', en: 'Ignition exciter for an industrial gas turbine' },
+    title: { fa: 'واحد تحریک جرقه‌زن (Ignition Exciter) توربین گازی صنعتی', en: 'Ignition exciter for an industrial gas turbine' },
   },
   {
     id: 'p119', cities: ['sirri'], facility: 'offshore', sector: 'oil', yearSH: 1400, productCategory: 'turbine-control', highlight: true,
@@ -519,15 +519,15 @@ export const projects: Project[] = [
   },
   {
     id: 'p120', cities: ['ahvaz'], facility: 'oil-gas-operator', sector: 'oil', yearSH: 1399, productCategory: 'turbine-control',
-    title: { fa: 'یونیت‌های کنترل سرعت و دمای توربین گازی صنعتی، طی سه قرارداد', en: 'Speed and temperature control units for industrial gas turbines, three contracts' },
+    title: { fa: 'واحدهای کنترل سرعت و دمای توربین گازی صنعتی، طی سه قرارداد', en: 'Speed and temperature control units for industrial gas turbines, three contracts' },
   },
   {
     id: 'p121', cities: ['masjed-soleyman'], facility: 'hydro', sector: 'power', yearSH: 1400, productCategory: 'power-supplies',
-    title: { fa: 'به‌روزرسانی سیستم کنترل باطری شارژرهای سد و نیروگاه آبی', en: 'Upgrade of battery charger control systems at a dam and hydroelectric plant' },
+    title: { fa: 'به‌روزرسانی سیستم کنترل شارژرهای باتری سد و نیروگاه آبی', en: 'Upgrade of battery charger control systems at a dam and hydroelectric plant' },
   },
   {
     id: 'p122', cities: ['bojnurd'], facility: 'petrochemical', sector: 'industry', yearSH: 1400, productCategory: 'power-supplies',
-    title: { fa: 'به‌روزرسانی سیستم کنترل باطری شارژر', en: 'Battery charger control system upgrade' },
+    title: { fa: 'به‌روزرسانی سیستم کنترل شارژر باتری', en: 'Battery charger control system upgrade' },
   },
   {
     id: 'p123', cities: ['bojnurd'], facility: 'petrochemical', sector: 'industry', yearSH: 1400, productCategory: 'excitation-governor',
@@ -563,7 +563,7 @@ export const projects: Project[] = [
   },
   {
     id: 'p131', cities: ['bojnurd'], facility: 'petrochemical', sector: 'industry', yearSH: 1401, productCategory: 'power-supplies',
-    title: { fa: 'تکمیل به‌روزرسانی سیستم کنترل باطری شارژر', en: 'Completion of the battery charger control system upgrade' },
+    title: { fa: 'تکمیل به‌روزرسانی سیستم کنترل شارژر باتری', en: 'Completion of the battery charger control system upgrade' },
   },
   {
     id: 'p132', cities: ['karaj'], facility: 'rail', sector: 'industry', yearSH: 1401, productCategory: 'power-supplies',
@@ -591,7 +591,7 @@ export const projects: Project[] = [
   },
   {
     id: 'p137', cities: ['aghajari'], facility: 'oil-gas-station', sector: 'oil', yearSH: 1401, productCategory: 'power-supplies',
-    title: { fa: 'کارت شارژ باطری', en: 'Battery charging card' },
+    title: { fa: 'کارت شارژ باتری', en: 'Battery charging card' },
   },
   {
     id: 'p138', cities: ['aghajari'], facility: 'oil-gas-station', sector: 'oil', yearSH: 1401, productCategory: 'turbine-control',

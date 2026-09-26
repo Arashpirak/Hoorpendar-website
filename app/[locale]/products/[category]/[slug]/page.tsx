@@ -7,10 +7,10 @@ import { routing, type Locale } from '@/i18n/routing';
 import { categoryBySlug, findProduct, products } from '@/content/products';
 import { projects } from '@/content/projects';
 import { cityById } from '@/content/cities';
-import { company } from '@/content/company';
 import { formatNumber } from '@/lib/format';
 import { ProductImage } from '@/components/products/ProductCard';
 import { bidi } from '@/lib/bidi';
+import { ChatInquiryButton } from '@/components/chat/ChatInquiryButton';
 
 export const dynamicParams = false;
 
@@ -47,8 +47,6 @@ export default async function ProductPage({ params }: PageProps<'/[locale]/produ
     .filter((p) => p !== undefined);
   const cityIds = [...new Set(related.flatMap((p) => p.cities))];
   const year = (sh: number) => formatNumber(locale, locale === 'fa' ? sh : sh + 621);
-  const name = product.model ? `${product.title[locale]} (${product.model})` : product.title[locale];
-  const mailto = `mailto:${company.contact.email}?subject=${encodeURIComponent(t('inquirySubject', { product: name }))}`;
 
   return (
     <article className="py-10 sm:py-14">
@@ -136,12 +134,9 @@ export default async function ProductPage({ params }: PageProps<'/[locale]/produ
 
             <div className="mt-10 rounded-[var(--radius-card)] border border-border bg-surface-2 p-5">
               <p className="text-sm leading-7 text-muted">{t('customNote')}</p>
-              <a
-                href={mailto}
-                className="mt-4 inline-block rounded-full bg-accent px-6 py-3 text-sm font-semibold text-accent-contrast hover:opacity-90"
-              >
+              <ChatInquiryButton className="mt-4 inline-block rounded-full bg-accent px-6 py-3 text-sm font-semibold text-accent-contrast hover:opacity-90">
                 {t('inquire')}
-              </a>
+              </ChatInquiryButton>
             </div>
           </div>
         </div>
