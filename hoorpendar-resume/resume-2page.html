@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>معرفی شرکت هورپندار</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0f1d33; --muted:#55647a; --line:#d9e1ec; --soft:#eef3fa;
+  --brand:#1d5fae; --deep:#0b2c57; --accent:#d99a06;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{background:#8a94a3;color:var(--ink);font-family:"Vazirmatn",Tahoma,sans-serif;font-size:9.6pt;line-height:1.75;-webkit-font-smoothing:antialiased}
+bdi,.ltr{unicode-bidi:isolate;direction:ltr;display:inline-block}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+
+/* ---------- A4 sheets ---------- */
+@page{size:A4;margin:0}
+.page{width:210mm;height:297mm;margin:10mm auto;background:#fff;position:relative;overflow:hidden;box-shadow:0 6px 30px rgba(0,0,0,.35);display:flex;flex-direction:column}
+@media print{
+  body{background:#fff}
+  .page{margin:0;box-shadow:none;page-break-after:always;break-after:page}
+  .page:last-child{page-break-after:auto;break-after:auto}
+  .hint{display:none}
+}
+.hint{max-width:210mm;margin:12px auto 0;color:#fff;font-size:10pt;text-align:center}
+.body{padding:0 14mm;flex:1;display:flex;flex-direction:column}
+
+/* ---------- header (page 1) ---------- */
+.hero{background:linear-gradient(120deg,var(--deep) 0%,#12427f 60%,var(--brand) 100%);color:#fff;padding:8mm 14mm 6.5mm;position:relative}
+.hero::after{content:"";position:absolute;inset:auto 0 0 0;height:3px;background:var(--accent)}
+.hero-top{display:flex;align-items:center;gap:6mm}
+.hero svg{width:30mm;height:auto;flex:none}
+.hero h1{font-size:21pt;font-weight:800;line-height:1.3}
+.hero .legal{font-size:10pt;opacity:.9;font-weight:500}
+.hero .en{font-size:9pt;opacity:.75;direction:ltr;text-align:right;letter-spacing:.3px}
+.hero .tag{margin-top:3mm;font-size:11pt;font-weight:500;max-width:165mm;line-height:1.9}
+
+/* ---------- common ---------- */
+h2{font-size:12.5pt;font-weight:800;color:var(--deep);margin:4.2mm 0 2mm;display:flex;align-items:center;gap:2.5mm}
+h2::before{content:"";width:3.5mm;height:3.5mm;border-radius:1mm;background:var(--accent);flex:none}
+p.lead{text-align:justify}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:3mm;margin-top:3.5mm}
+.stat{background:var(--soft);border:1px solid var(--line);border-radius:2.5mm;padding:1.6mm 3mm;text-align:center}
+.stat b{display:block;font-size:17pt;font-weight:800;color:var(--brand);line-height:1.35}
+.stat span{font-size:8.6pt;color:var(--muted)}
+
+.caps{display:grid;grid-template-columns:1fr 1fr;gap:2.2mm}
+.cap{border:1px solid var(--line);border-radius:2.5mm;padding:1.8mm 3.4mm;border-right:3px solid var(--brand)}
+.cap h3{font-size:10.2pt;font-weight:700;color:var(--deep);margin-bottom:.6mm}
+.cap p{font-size:8.8pt;color:#2c3a50;line-height:1.6}
+
+.row2{display:grid;grid-template-columns:1.05fr 1fr;gap:5mm}
+ul.ticks{list-style:none}
+ul.ticks li{position:relative;padding-right:4.5mm;margin-bottom:.6mm;font-size:9.1pt;line-height:1.65}
+ul.ticks li::before{content:"";position:absolute;right:0;top:2.3mm;width:2mm;height:2mm;border-radius:50%;background:var(--brand)}
+.chips{display:flex;flex-wrap:wrap;gap:1.8mm}
+.chips span{background:var(--soft);border:1px solid var(--line);border-radius:10mm;padding:.5mm 3mm;font-size:8.8pt}
+.firsts{background:linear-gradient(135deg,#fff8e6,#fff);border:1px solid #f0dca6;border-radius:2.5mm;padding:2.2mm 3.5mm;margin-top:2.5mm;font-size:9pt;line-height:1.7}
+.firsts b{color:var(--accent);font-weight:800}
+
+/* ---------- products (page 2) ---------- */
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:6mm 14mm 4mm;border-bottom:2px solid var(--deep)}
+.topbar .name{display:flex;align-items:center;gap:3mm;font-weight:800;color:var(--deep);font-size:12pt}
+.topbar svg{width:14mm;height:auto}
+.topbar .web{font-size:9pt;color:var(--brand);font-weight:700}
+
+.prods{display:grid;grid-template-columns:1fr 1fr;gap:3mm}
+.prod{display:flex;gap:3mm;border:1px solid var(--line);border-radius:2.5mm;padding:2.5mm;align-items:stretch}
+.prod .ph{width:30mm;height:30mm;flex:none;border-radius:1.8mm;overflow:hidden;background:var(--soft)}
+.prod .ph img{width:100%;height:100%;object-fit:cover}
+.prod h3{font-size:10pt;font-weight:700;color:var(--deep);line-height:1.5}
+.prod .model{font-size:8.2pt;color:var(--brand);font-weight:700;direction:ltr;text-align:right}
+.prod p{font-size:8.8pt;color:#2c3a50;line-height:1.65;margin-top:.5mm}
+
+.more{margin-top:3mm;background:var(--soft);border-radius:2.5mm;padding:2.6mm 4mm;font-size:8.9pt;line-height:1.85}
+.more b{color:var(--deep)}
+
+.projects{display:grid;grid-template-columns:1fr 1fr;gap:1.6mm 5mm}
+.pj{display:flex;gap:2.5mm;font-size:8.9pt;line-height:1.65;padding-bottom:1.4mm;border-bottom:1px dashed var(--line)}
+.pj i{font-style:normal;flex:none;font-size:7.6pt;font-weight:700;color:#fff;background:var(--brand);border-radius:1mm;padding:0 1.6mm;height:4.4mm;line-height:4.4mm;margin-top:.5mm}
+.pj i.oil{background:#b4540f}
+.pj i.ind{background:#6b4bb8}
+
+/* ---------- contact footer ---------- */
+.contact{margin-top:auto;background:var(--deep);color:#fff;padding:5mm 14mm 6mm;display:grid;grid-template-columns:1fr 1fr 1fr;gap:5mm;font-size:8.8pt;line-height:1.8}
+.contact h4{font-size:9.6pt;color:var(--accent);font-weight:700;margin-bottom:1mm}
+.contact a.site{display:inline-block;margin-top:1mm;background:var(--accent);color:var(--deep);font-weight:800;border-radius:1.5mm;padding:.6mm 3mm;font-size:10pt}
+.contact .ltr{opacity:.95}
+</style>
+</head>
+<body>
+
+<p class="hint">برای ذخیره به PDF: Ctrl+P ← Save as PDF ← اندازه A4، حاشیه None، گزینه‌ی Background graphics روشن.</p>
+
+<!-- ======================= PAGE 1 ======================= -->
+<section class="page">
+  <header class="hero">
+    <div class="hero-top">
+      <svg viewBox="3.5 6.5 121.5 63.5" aria-hidden="true">
+        <g fill="#fff">
+          <rect x="5.75" y="8.7" width="116.9" height="59.1" rx="7.6" fill="none" stroke="#fff" stroke-width="4"/>
+          <path fill-rule="evenodd" d="M18.69 38.3a44.28 27.69 0 1 0 88.56 0a44.28 27.69 0 1 0-88.56 0ZM30.12 51.4a35.3 19.3-21.4 1 0 65.73-25.76a35.3 19.3-21.4 1 0-65.73 25.76Z"/>
+          <g transform="matrix(1 0 -0.3 1 11.4 0)">
+            <rect x="43.64" y="23.54" width="7.01" height="29.7" rx="2.17"/>
+            <rect x="59.59" y="23.54" width="7.01" height="29.7" rx="2.17"/>
+            <rect x="75.2" y="23.54" width="7.01" height="29.7" rx="2.17"/>
+            <path d="M49.65 29.81C55.12 28.61 57.12 26.86 60.59 26.86V31.95C57.12 31.95 55.12 33.76 49.65 35.36Z"/>
+            <path d="M65.6 25.11H76.2V31.56H68.6C66.6 31.56 65.6 32.16 65.6 32.76Z"/>
+            <path fill-rule="evenodd" d="M76.2 25.11C86.3 25.11 90.3 27.61 90.3 32.83C90.3 38.83 86.3 41.93 81.71 44.43C77.2 46.03 73.54 48.44 70.54 48.44C70.14 46.64 71.54 45.44 77.2 39.33ZM82.71 35.48a0.99 3.4 0 1 0 1.98 0a0.99 3.4 0 1 0-1.98 0Z"/>
+            <path fill-rule="evenodd" d="M44.44 33.93C39.01 36.93 37.51 41.05 37.51 44.05C37.51 46.41 40.51 48.91 44.44 48.91ZM44.44 39.68C40.16 41.18 40.36 46.04 44.44 47.54Z"/>
+          </g>
+        </g>
+      </svg>
+      <div>
+        <h1>هورپندار</h1>
+        <div class="legal">شرکت دانش‌بنیان صنایع فن‌آوری رایانه هورپندار · تأسیس ۱۳۷۸</div>
+        <div class="en">Hoorpendar Computer Technology Industries · since 1999</div>
+      </div>
+    </div>
+    <p class="tag">تجهیزات الکترونیک صنعتی طراحی و تولید می‌کنیم و پروژه‌های کنترل، اتوماسیون و ابزار دقیق را در نفت و گاز، آب و نیرو و صنایع سنگین، از طراحی تا راه‌اندازی و پشتیبانی، اجرا می‌کنیم.</p>
+  </header>
+
+  <div class="body">
+    <h2>درباره‌ی ما</h2>
+    <p class="lead">مهندسان هورپندار از سال ۱۳۷۸ در الکترونیک قدرت، سیستم‌های کنترل و نرم‌افزار صنعتی کار می‌کنند. همه‌ی مراحل، از طراحی مدار و فِرم‌ور تا مونتاژ برد مدار چاپی، آزمون کارخانه‌ای و کالیبراسیون، در خود شرکت انجام می‌شود. به همین دلیل بیشتر محصولات را می‌توان با ولتاژ تغذیه، ابعاد، نوع خروجی و استاندارد مورد نیاز هر پروژه ساخت، و تجهیزات قدیمی‌ای را که دیگر پشتیبانی سازنده ندارند بازسازی یا بازطراحی کرد. دفتر مرکزی شرکت در تهران و کارگاه تولید آن در منطقه‌ی ویژه‌ی اقتصادی فرودگاه پیام است.</p>
+
+    <div class="stats">
+      <div class="stat"><b>+۲۵</b><span>سال تجربه‌ی صنعتی</span></div>
+      <div class="stat"><b>۱۳۸</b><span>قرارداد اجراشده</span></div>
+      <div class="stat"><b>۲۵</b><span>کارفرمای صنعتی</span></div>
+      <div class="stat"><b>+۲۰۰</b><span>شعله‌یاب در حال کار</span></div>
+    </div>
+
+    <h2>توانمندی‌ها</h2>
+    <div class="caps">
+      <div class="cap">
+        <h3>سیستم‌های تحریک و گاورنر</h3>
+        <p>سیستم تحریک استاتیک تریستوری با AVR دیجیتال برای ژنراتورهای سنکرون، تحریک موتورهای سنکرون و گاورنر دیجیتال توربین آبی.</p>
+      </div>
+      <div class="cap">
+        <h3>تجهیزات توربین گازی و مشعل</h3>
+        <p>شعله‌یاب، رله‌ی شعله، سیستم جرقه‌زن پرانرژی، کنترل شیر سوخت، پایش سرعت و دما و سنسور موقعیت بدون تماس.</p>
+      </div>
+      <div class="cap">
+        <h3>آلارم و ایمنی فرایند</h3>
+        <p>اعلام‌گر آلارم ماژولار مطابق ISA-18.1، پنل آلارم، آشکارساز آتش UV و سامانه‌ی حفاظت فشار با یکپارچگی بالا (HIPPS).</p>
+      </div>
+      <div class="cap">
+        <h3>ابزار دقیق و پایش فرایند</h3>
+        <p>مبدل فشار به جریان (P/I)، مانیتور چندکاناله‌ی فرایند، تقویت‌کننده‌ی کرنش‌سنج (استرین‌گیج)، ثبات بدون کاغذ و دیتالاگر.</p>
+      </div>
+      <div class="cap">
+        <h3>شارژر باتری و منابع تغذیه</h3>
+        <p>کنترلر هوشمند شارژر باتری، شارژر صنعتی و قابل‌حمل، تثبیت‌کننده‌ی ولتاژ DC و منبع تغذیه‌ی سفارشی.</p>
+      </div>
+      <div class="cap">
+        <h3>سد، نیروگاه و زیرساخت</h3>
+        <p>سطح‌سنج مخزن، ابزار دقیق رفتارنگاری و پایش انحراف بدنه‌ی سد، نمایش گشودگی دریچه‌ها، سیستم ساعت مادر و فرکانس‌متر.</p>
+      </div>
+      <div class="cap">
+        <h3>بازسازی و نوسازی تجهیزات قدیمی</h3>
+        <p>نقشه‌ی مدار کارت‌ها و سیستم‌های قدیمی را استخراج می‌کنیم و آن‌ها را با قطعات در دسترس دوباره می‌سازیم.</p>
+      </div>
+      <div class="cap">
+        <h3>اجرای کامل پروژه (EPC کوچک و متوسط)</h3>
+        <p>مطالعات مهندسی، طراحی سیستم، ساخت تابلو، برنامه‌نویسی PLC و HMI، نصب، راه‌اندازی، آموزش و پشتیبانی.</p>
+      </div>
+    </div>
+
+    <div class="row2">
+      <div>
+        <h2>صنایع و تأسیسات</h2>
+        <div class="chips">
+          <span>نیروگاه‌های آبی و سدها</span><span>نیروگاه‌های حرارتی</span><span>پالایشگاه‌ها</span>
+          <span>ایستگاه‌های پمپاژ و تقویت فشار گاز</span><span>تأسیسات فراساحل</span><span>پتروشیمی</span>
+          <span>فولاد</span><span>حمل‌ونقل ریلی</span><span>معدن</span><span>آب و فاضلاب</span>
+        </div>
+        <div class="firsts">
+          <b>نخستین‌ها:</b> نخستین سیستم تحریک استاتیک ژنراتور و نخستین گاورنر دیجیتال توربین آبی ایران را هورپندار ساخت؛ گاورنر در آزمون <bdi>Black Start</bdi> موفق بود.
+        </div>
+      </div>
+      <div>
+        <h2>چرا هورپندار</h2>
+        <ul class="ticks">
+          <li>طراحی و ساخت در خود شرکت و کنترل کیفیت در همه‌ی مراحل</li>
+          <li>ساخت سفارشی مطابق مشخصات فنی هر پروژه</li>
+          <li>طراحی مطابق استانداردهایی مانند IEEE 421 و ISA-18.1</li>
+          <li>تحویل سریع قطعات یدکی و پشتیبانی فنی بلندمدت</li>
+          <li>کارکرد پایدار در دمای بالا و شرایط سخت محیطی</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= PAGE 2 ======================= -->
+<section class="page">
+  <div class="topbar">
+    <div class="name">
+      <svg viewBox="3.5 6.5 121.5 63.5" aria-hidden="true">
+        <g fill="#0b2c57">
+          <rect x="5.75" y="8.7" width="116.9" height="59.1" rx="7.6" fill="none" stroke="#0b2c57" stroke-width="4"/>
+          <path fill-rule="evenodd" d="M18.69 38.3a44.28 27.69 0 1 0 88.56 0a44.28 27.69 0 1 0-88.56 0ZM30.12 51.4a35.3 19.3-21.4 1 0 65.73-25.76a35.3 19.3-21.4 1 0-65.73 25.76Z"/>
+          <g transform="matrix(1 0 -0.3 1 11.4 0)">
+            <rect x="43.64" y="23.54" width="7.01" height="29.7" rx="2.17"/>
+            <rect x="59.59" y="23.54" width="7.01" height="29.7" rx="2.17"/>
+            <rect x="75.2" y="23.54" width="7.01" height="29.7" rx="2.17"/>
+            <path d="M49.65 29.81C55.12 28.61 57.12 26.86 60.59 26.86V31.95C57.12 31.95 55.12 33.76 49.65 35.36Z"/>
+            <path d="M65.6 25.11H76.2V31.56H68.6C66.6 31.56 65.6 32.16 65.6 32.76Z"/>
+            <path fill-rule="evenodd" d="M76.2 25.11C86.3 25.11 90.3 27.61 90.3 32.83C90.3 38.83 86.3 41.93 81.71 44.43C77.2 46.03 73.54 48.44 70.54 48.44C70.14 46.64 71.54 45.44 77.2 39.33ZM82.71 35.48a0.99 3.4 0 1 0 1.98 0a0.99 3.4 0 1 0-1.98 0Z"/>
+            <path fill-rule="evenodd" d="M44.44 33.93C39.01 36.93 37.51 41.05 37.51 44.05C37.51 46.41 40.51 48.91 44.44 48.91ZM44.44 39.68C40.16 41.18 40.36 46.04 44.44 47.54Z"/>
+          </g>
+        </g>
+      </svg>
+      هورپندار · محصولات و پروژه‌ها
+    </div>
+    <a class="web ltr" href="https://hoorpendar.com">hoorpendar.com</a>
+  </div>
+
+  <div class="body">
+    <h2>محصولات شاخص</h2>
+    <div class="prods">
+      <div class="prod">
+        <div class="ph"><img src="img/annunciator.jpg" alt=""></div>
+        <div>
+          <h3>اعلام‌گر آلارم <bdi>(Alarm Annunciator)</bdi></h3>
+          <div class="model">PAL750 · PAL625 · SAL-82</div>
+          <p>ماژولار و برنامه‌پذیر است و ۲ تا ۵۱۲ آلارم را با توالی‌های ISA-18.1 نمایش می‌دهد. ارتباط Modbus، تشخیص نخستین آلارم (First-Out) و پنجره‌های LED پرنور دارد.</p>
+        </div>
+      </div>
+      <div class="prod">
+        <div class="ph"><img src="img/pit315n.jpg" alt=""></div>
+        <div>
+          <h3>مبدل فشار به جریان <bdi>(P/I)</bdi></h3>
+          <div class="model">PI-315 · PIT-315N</div>
+          <p>سیگنال پنوماتیک ۳ تا ۱۵ psi را به جریان ۴ تا ۲۰ میلی‌آمپر تبدیل می‌کند و تنظیم صفر و اسپن و نشانگر فشار دارد. برای نوسازی ابزار دقیق پنوماتیک مناسب است.</p>
+        </div>
+      </div>
+      <div class="prod">
+        <div class="ph"><img src="img/fdu320.jpg" alt=""></div>
+        <div>
+          <h3>شعله‌یاب توربین گازی <bdi>(Flame Detector)</bdi></h3>
+          <div class="model">FDU-300 · FDU-320 · FR-430E</div>
+          <p>شعله را در توربین گازی، بویلر و مشعل با سنسور UV آشکار می‌کند و اگر شعله خاموش شود، فرمان Trip می‌دهد. بیش از ۲۰۰ دستگاه از آن در حال کار است.</p>
+        </div>
+      </div>
+      <div class="prod">
+        <div class="ph"><img src="img/lvlm.jpg" alt=""></div>
+        <div>
+          <h3>سطح‌سنج / ارتفاع‌سنج مخزن سد</h3>
+          <div class="model">HP-LVLM100 · BLVM-100</div>
+          <p>تراز آب مخزن سد و کانال را با روش شناوری دیجیتال یا حبابی اندازه می‌گیرد و با خروجی آنالوگ و دیجیتال به اتاق کنترل و دیتالاگر می‌فرستد.</p>
+        </div>
+      </div>
+    </div>
+    <div class="more">
+      <b>محصولات دیگر:</b> سیستم تحریک استاتیک ژنراتور <bdi>SECON-2000</bdi> و گاورنر دیجیتال توربین آبی <bdi>DHTG-300</bdi> ·
+      جرقه‌زن پرانرژی <bdi>IGRU-200</bdi> و اکسایترهای ۱۸ کیلوولت · کنترلر هوشمند شارژر باتری <bdi>SBC-600/620</bdi> و شارژر <bdi>SMART-128</bdi> ·
+      پایش بدون تماس فلر <bdi>FMS-280</bdi> · مانیتور فرایند ۸ کاناله <bdi>MCI-870</bdi> · مولد شیب و کنترل شیر سوخت <bdi>RUG-280</bdi> ·
+      تثبیت‌کننده‌ی ولتاژ <bdi>STB-2408S</bdi> · سامانه‌ی HIPPS · ساعت مرکزی و فرکانس‌متر دیجیتال.
+    </div>
+
+    <h2>نمونه‌ای از پروژه‌های اجراشده</h2>
+    <div class="projects">
+      <div class="pj"><i>نیرو</i><span>طراحی و ساخت سیستم تحریک استاتیک ژنراتور نیروگاه آبی (نخستین نمونه‌ی ساخت داخل)</span></div>
+      <div class="pj"><i>نیرو</i><span>گاورنر دیجیتال توربین آبی، آزموده در خودراه‌اندازی (<bdi>Black Start</bdi>)</span></div>
+      <div class="pj"><i>آب</i><span>کنترل هوشمند با افزونگی کامل برای تنظیم دبی آب انتقالی از سد به شبکه‌ی آب یک کلان‌شهر</span></div>
+      <div class="pj"><i class="oil">نفت و گاز</i><span>کنترل و راه‌انداز تحریک موتورهای سنکرون ۳٫۵ مگاواتی ایستگاه پمپاژ نفت</span></div>
+      <div class="pj"><i class="oil">نفت و گاز</i><span>ساخت و تحویل اعلام‌گر آلارم با ۸۰۰ سیگنال برای واحدهای بهره‌برداری نفت</span></div>
+      <div class="pj"><i class="oil">نفت و گاز</i><span>اعلام‌گر آلارم و تابلوهای مربوط برای ۲۵ ایستگاه تقویت فشار گاز</span></div>
+      <div class="pj"><i class="oil">نفت و گاز</i><span>تأمین ۱۲۰ دستگاه مبدل فشار به جریان PI-315 برای نوسازی ابزار دقیق</span></div>
+      <div class="pj"><i class="oil">نفت و گاز</i><span>تأمین و راه‌اندازی شعله‌یاب FDU-300 برای توربین‌های گازی در چندین سایت</span></div>
+      <div class="pj"><i>نیرو</i><span>کریدوسکوپ لیزری برای پایش انحراف بدنه‌ی سد با دقت ۰٫۰۱ میلی‌متر</span></div>
+      <div class="pj"><i>نیرو</i><span>سطح‌سنج مخزن و نمایش گشودگی ۱۱ دریچه‌ی سد از فاصله‌ی حداکثر ۳ کیلومتر</span></div>
+      <div class="pj"><i class="ind">صنعت</i><span>سیستم تحریک ژنراتور کشش لوکوموتیو</span></div>
+      <div class="pj"><i class="ind">صنعت</i><span>شبکه‌ی جمع‌آوری و سوئیچینگ داده‌ی هواشناسی با ارتباط هم‌زمان بیش از ۲۵۶ ایستگاه</span></div>
+    </div>
+  </div>
+
+  <footer class="contact">
+    <div>
+      <h4>دفتر مرکزی</h4>
+      تهران، خیابان دکتر علی شریعتی، پلاک ۳۶۰<br>
+      تلفن: <span class="ltr">+98 21 7760 9951</span><br>
+      <span class="ltr">+98 21 7750 7665</span> · <span class="ltr">+98 21 7750 8054</span>
+    </div>
+    <div>
+      <h4>کارگاه تولید</h4>
+      منطقه‌ی ویژه‌ی اقتصادی فرودگاه پیام، کرج، استان البرز<br>
+      ساخت، مونتاژ، آزمون و کالیبراسیون محصولات
+    </div>
+    <div>
+      <h4>ارتباط آنلاین</h4>
+      ایمیل: <a class="ltr" href="mailto:info@hoorpendar.com">info@hoorpendar.com</a><br>
+      واتس‌اپ: <a class="ltr" href="https://wa.me/989903365549">+98 990 336 5549</a><br>
+      <a class="site ltr" href="https://hoorpendar.com">www.hoorpendar.com</a>
+    </div>
+  </footer>
+</section>
+
+</body>
+</html>

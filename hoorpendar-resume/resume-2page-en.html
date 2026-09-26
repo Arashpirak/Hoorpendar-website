@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hoorpendar Company Profile</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0f1d33; --muted:#55647a; --line:#d9e1ec; --soft:#eef3fa;
+  --brand:#1d5fae; --deep:#0b2c57; --accent:#d99a06;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{background:#8a94a3;color:var(--ink);font-family:"Inter","Segoe UI",Arial,sans-serif;font-size:9.4pt;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.nw{white-space:nowrap}
+
+/* ---------- A4 sheets ---------- */
+@page{size:A4;margin:0}
+.page{width:210mm;height:297mm;margin:10mm auto;background:#fff;position:relative;overflow:hidden;box-shadow:0 6px 30px rgba(0,0,0,.35);display:flex;flex-direction:column}
+@media print{
+  body{background:#fff}
+  .page{margin:0;box-shadow:none;page-break-after:always;break-after:page}
+  .page:last-child{page-break-after:auto;break-after:auto}
+  .hint{display:none}
+}
+.hint{max-width:210mm;margin:12px auto 0;color:#fff;font-size:10pt;text-align:center}
+.body{padding:0 14mm;flex:1;display:flex;flex-direction:column}
+
+/* ---------- header (page 1) ---------- */
+.hero{background:linear-gradient(120deg,var(--deep) 0%,#12427f 60%,var(--brand) 100%);color:#fff;padding:8mm 14mm 6.5mm;position:relative}
+.hero::after{content:"";position:absolute;inset:auto 0 0 0;height:3px;background:var(--accent)}
+.hero-top{display:flex;align-items:center;gap:6mm}
+.hero svg{width:30mm;height:auto;flex:none}
+.hero h1{font-size:22pt;font-weight:800;line-height:1.2;letter-spacing:-.3px}
+.hero .legal{font-size:10pt;opacity:.92;font-weight:500}
+.hero .tag{margin-top:3.5mm;font-size:10.8pt;font-weight:500;max-width:170mm;line-height:1.55}
+
+/* ---------- common ---------- */
+h2{font-size:12pt;font-weight:800;color:var(--deep);margin:3.8mm 0 1.8mm;display:flex;align-items:center;gap:2.5mm;letter-spacing:-.1px}
+h2::before{content:"";width:3.5mm;height:3.5mm;border-radius:1mm;background:var(--accent);flex:none}
+p.lead{text-align:justify;hyphens:auto}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:3mm;margin-top:3.5mm}
+.stat{background:var(--soft);border:1px solid var(--line);border-radius:2.5mm;padding:2mm 3mm;text-align:center}
+.stat b{display:block;font-size:17pt;font-weight:800;color:var(--brand);line-height:1.3}
+.stat span{font-size:8.4pt;color:var(--muted)}
+
+.caps{display:grid;grid-template-columns:1fr 1fr;gap:1.9mm}
+.cap{border:1px solid var(--line);border-radius:2.5mm;padding:1.6mm 3.4mm;border-left:3px solid var(--brand)}
+.cap h3{font-size:9.8pt;font-weight:700;color:var(--deep);margin-bottom:.6mm}
+.cap p{font-size:8.6pt;color:#2c3a50;line-height:1.5}
+
+.row2{display:grid;grid-template-columns:1.05fr 1fr;gap:5mm}
+ul.ticks{list-style:none}
+ul.ticks li{position:relative;padding-left:4.5mm;margin-bottom:.9mm;font-size:8.9pt;line-height:1.5}
+ul.ticks li::before{content:"";position:absolute;left:0;top:1.6mm;width:2mm;height:2mm;border-radius:50%;background:var(--brand)}
+.chips{display:flex;flex-wrap:wrap;gap:1.8mm}
+.chips span{background:var(--soft);border:1px solid var(--line);border-radius:10mm;padding:.5mm 3mm;font-size:8.5pt}
+.firsts{background:linear-gradient(135deg,#fff8e6,#fff);border:1px solid #f0dca6;border-radius:2.5mm;padding:2.4mm 3.5mm;margin-top:2.8mm;font-size:8.8pt;line-height:1.5}
+.firsts b{color:#b07c00;font-weight:800}
+
+/* ---------- products (page 2) ---------- */
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:6mm 14mm 4mm;border-bottom:2px solid var(--deep)}
+.topbar .name{display:flex;align-items:center;gap:3mm;font-weight:800;color:var(--deep);font-size:12pt}
+.topbar svg{width:14mm;height:auto}
+.topbar .web{font-size:9pt;color:var(--brand);font-weight:700}
+
+.prods{display:grid;grid-template-columns:1fr 1fr;gap:3mm}
+.prod{display:flex;gap:3mm;border:1px solid var(--line);border-radius:2.5mm;padding:2.5mm;align-items:stretch}
+.prod .ph{width:30mm;height:30mm;flex:none;border-radius:1.8mm;overflow:hidden;background:var(--soft)}
+.prod .ph img{width:100%;height:100%;object-fit:cover}
+.prod h3{font-size:9.8pt;font-weight:700;color:var(--deep);line-height:1.35}
+.prod .model{font-size:8pt;color:var(--brand);font-weight:700;margin-top:.4mm}
+.prod p{font-size:8.5pt;color:#2c3a50;line-height:1.5;margin-top:.8mm}
+
+.more{margin-top:3mm;background:var(--soft);border-radius:2.5mm;padding:2.6mm 4mm;font-size:8.6pt;line-height:1.65}
+.more b{color:var(--deep)}
+
+.projects{display:grid;grid-template-columns:1fr 1fr;gap:1.8mm 5mm}
+.pj{display:flex;gap:2.5mm;font-size:8.6pt;line-height:1.5;padding-bottom:1.6mm;border-bottom:1px dashed var(--line)}
+.pj i{font-style:normal;flex:none;width:15mm;text-align:center;font-size:7.2pt;font-weight:700;color:#fff;background:var(--brand);border-radius:1mm;height:4.2mm;line-height:4.2mm;margin-top:.3mm}
+.pj i.oil{background:#b4540f}
+.pj i.ind{background:#6b4bb8}
+
+/* ---------- contact footer ---------- */
+.contact{margin-top:auto;background:var(--deep);color:#fff;padding:5mm 14mm 6mm;display:grid;grid-template-columns:1fr 1fr 1fr;gap:5mm;font-size:8.6pt;line-height:1.65}
+.contact h4{font-size:9.4pt;color:var(--accent);font-weight:700;margin-bottom:1mm}
+.contact a.site{display:inline-block;margin-top:1.4mm;background:var(--accent);color:var(--deep);font-weight:800;border-radius:1.5mm;padding:.6mm 3mm;font-size:9.8pt}
+</style>
+</head>
+<body>
+
+<p class="hint">To save as PDF: Ctrl+P → Save as PDF → Paper A4, Margins None, Background graphics on.</p>
+
+<!-- ======================= PAGE 1 ======================= -->
+<section class="page">
+  <header class="hero">
+    <div class="hero-top">
+      <svg viewBox="3.5 6.5 121.5 63.5" aria-hidden="true">
+        <g fill="#fff">
+          <rect x="5.75" y="8.7" width="116.9" height="59.1" rx="7.6" fill="none" stroke="#fff" stroke-width="4"/>
+          <path fill-rule="evenodd" d="M18.69 38.3a44.28 27.69 0 1 0 88.56 0a44.28 27.69 0 1 0-88.56 0ZM30.12 51.4a35.3 19.3-21.4 1 0 65.73-25.76a35.3 19.3-21.4 1 0-65.73 25.76Z"/>
+          <g transform="matrix(1 0 -0.3 1 11.4 0)">
+            <rect x="43.64" y="23.54" width="7.01" height="29.7" rx="2.17"/>
+            <rect x="59.59" y="23.54" width="7.01" height="29.7" rx="2.17"/>
+            <rect x="75.2" y="23.54" width="7.01" height="29.7" rx="2.17"/>
+            <path d="M49.65 29.81C55.12 28.61 57.12 26.86 60.59 26.86V31.95C57.12 31.95 55.12 33.76 49.65 35.36Z"/>
+            <path d="M65.6 25.11H76.2V31.56H68.6C66.6 31.56 65.6 32.16 65.6 32.76Z"/>
+            <path fill-rule="evenodd" d="M76.2 25.11C86.3 25.11 90.3 27.61 90.3 32.83C90.3 38.83 86.3 41.93 81.71 44.43C77.2 46.03 73.54 48.44 70.54 48.44C70.14 46.64 71.54 45.44 77.2 39.33ZM82.71 35.48a0.99 3.4 0 1 0 1.98 0a0.99 3.4 0 1 0-1.98 0Z"/>
+            <path fill-rule="evenodd" d="M44.44 33.93C39.01 36.93 37.51 41.05 37.51 44.05C37.51 46.41 40.51 48.91 44.44 48.91ZM44.44 39.68C40.16 41.18 40.36 46.04 44.44 47.54Z"/>
+          </g>
+        </g>
+      </svg>
+      <div>
+        <h1>Hoorpendar</h1>
+        <div class="legal">Hoorpendar Computer Technology Industries · Knowledge-based company · Est. 1999</div>
+      </div>
+    </div>
+    <p class="tag">We design and manufacture industrial electronics and deliver control, automation and instrumentation projects for oil and gas, water, power and heavy industry. We take each project from engineering study and design through commissioning and long-term support.</p>
+  </header>
+
+  <div class="body">
+    <h2>About us</h2>
+    <p class="lead">Since 1999, Hoorpendar’s engineers have worked in power electronics, control systems and industrial software. Every stage happens in-house, from circuit and firmware design to PCB assembly, factory acceptance testing and calibration. That is why most products can be built to a project’s supply voltage, dimensions, output type and standard, and why equipment that has lost manufacturer support can be rebuilt or redesigned. The head office is in Tehran and the production workshop is in the Payam Airport Special Economic Zone.</p>
+
+    <div class="stats">
+      <div class="stat"><b>25+</b><span>years in industry</span></div>
+      <div class="stat"><b>138</b><span>contracts completed</span></div>
+      <div class="stat"><b>25</b><span>industrial clients</span></div>
+      <div class="stat"><b>200+</b><span>flame detectors in service</span></div>
+    </div>
+
+    <h2>Capabilities</h2>
+    <div class="caps">
+      <div class="cap">
+        <h3>Excitation systems &amp; governors</h3>
+        <p>Thyristor static excitation systems with digital AVR for synchronous generators, excitation for synchronous motors, and digital hydro-turbine governors.</p>
+      </div>
+      <div class="cap">
+        <h3>Gas turbine &amp; burner equipment</h3>
+        <p>Flame detectors, flame relays, high-energy ignition systems, fuel valve control, speed and temperature monitoring, and non-contact position sensors.</p>
+      </div>
+      <div class="cap">
+        <h3>Alarm systems &amp; process safety</h3>
+        <p>Modular alarm annunciators to ISA-18.1, alarm panels, UV fire detection and high-integrity pressure protection systems (HIPPS).</p>
+      </div>
+      <div class="cap">
+        <h3>Instrumentation &amp; process monitoring</h3>
+        <p>Pressure-to-current (P/I) converters, multi-channel process monitors, strain-gauge amplifiers, paperless recorders and data loggers.</p>
+      </div>
+      <div class="cap">
+        <h3>Battery chargers &amp; power supplies</h3>
+        <p>Smart battery charger controllers, industrial and portable chargers, DC voltage stabilisers and custom power supplies.</p>
+      </div>
+      <div class="cap">
+        <h3>Dams, power plants &amp; infrastructure</h3>
+        <p>Reservoir level measurement, dam safety instrumentation and deflection monitoring, gate position indication, master clock systems and frequency meters.</p>
+      </div>
+      <div class="cap">
+        <h3>Legacy system retrofit &amp; renewal</h3>
+        <p>We inspect legacy cards and systems, capture their schematics, redesign them with components available today, then build, test and install them.</p>
+      </div>
+      <div class="cap">
+        <h3>Turnkey project delivery</h3>
+        <p>Engineering studies, system design, panel building, PLC and HMI programming, installation, commissioning, training and after-sales support.</p>
+      </div>
+    </div>
+
+    <div class="row2">
+      <div>
+        <h2>Industries &amp; facilities</h2>
+        <div class="chips">
+          <span>Hydropower plants &amp; dams</span><span>Thermal power plants</span><span>Refineries</span>
+          <span>Pumping &amp; gas compressor stations</span><span>Offshore facilities</span><span>Petrochemicals</span>
+          <span>Steel</span><span>Rail</span><span>Mining</span><span>Water &amp; wastewater</span>
+        </div>
+        <div class="firsts">
+          <b>Firsts:</b> Hoorpendar built Iran’s first static generator excitation system and first digital hydro-turbine governor. The governor performed successfully in a black-start test.
+        </div>
+      </div>
+      <div>
+        <h2>Why Hoorpendar</h2>
+        <ul class="ticks">
+          <li>In-house design and manufacturing with full quality control</li>
+          <li>Built to each project’s technical specification</li>
+          <li>Designed to standards such as IEEE 421 and ISA-18.1</li>
+          <li>Fast spare-parts supply and long-term technical support</li>
+          <li>Proven in harsh, high-temperature environments</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= PAGE 2 ======================= -->
+<section class="page">
+  <div class="topbar">
+    <div class="name">
+      <svg viewBox="3.5 6.5 121.5 63.5" aria-hidden="true">
+        <g fill="#0b2c57">
+          <rect x="5.75" y="8.7" width="116.9" height="59.1" rx="7.6" fill="none" stroke="#0b2c57" stroke-width="4"/>
+          <path fill-rule="evenodd" d="M18.69 38.3a44.28 27.69 0 1 0 88.56 0a44.28 27.69 0 1 0-88.56 0ZM30.12 51.4a35.3 19.3-21.4 1 0 65.73-25.76a35.3 19.3-21.4 1 0-65.73 25.76Z"/>
+          <g transform="matrix(1 0 -0.3 1 11.4 0)">
+            <rect x="43.64" y="23.54" width="7.01" height="29.7" rx="2.17"/>
+            <rect x="59.59" y="23.54" width="7.01" height="29.7" rx="2.17"/>
+            <rect x="75.2" y="23.54" width="7.01" height="29.7" rx="2.17"/>
+            <path d="M49.65 29.81C55.12 28.61 57.12 26.86 60.59 26.86V31.95C57.12 31.95 55.12 33.76 49.65 35.36Z"/>
+            <path d="M65.6 25.11H76.2V31.56H68.6C66.6 31.56 65.6 32.16 65.6 32.76Z"/>
+            <path fill-rule="evenodd" d="M76.2 25.11C86.3 25.11 90.3 27.61 90.3 32.83C90.3 38.83 86.3 41.93 81.71 44.43C77.2 46.03 73.54 48.44 70.54 48.44C70.14 46.64 71.54 45.44 77.2 39.33ZM82.71 35.48a0.99 3.4 0 1 0 1.98 0a0.99 3.4 0 1 0-1.98 0Z"/>
+            <path fill-rule="evenodd" d="M44.44 33.93C39.01 36.93 37.51 41.05 37.51 44.05C37.51 46.41 40.51 48.91 44.44 48.91ZM44.44 39.68C40.16 41.18 40.36 46.04 44.44 47.54Z"/>
+          </g>
+        </g>
+      </svg>
+      Hoorpendar · Products &amp; Projects
+    </div>
+    <a class="web" href="https://hoorpendar.com">hoorpendar.com</a>
+  </div>
+
+  <div class="body">
+    <h2>Featured products</h2>
+    <div class="prods">
+      <div class="prod">
+        <div class="ph"><img src="img/annunciator.jpg" alt=""></div>
+        <div>
+          <h3>Alarm annunciator</h3>
+          <div class="model">PAL750 · PAL625 · SAL-82</div>
+          <p>Modular and programmable, it handles 2 to 512 alarm points with ISA-18.1 sequences. It offers Modbus communication, first-out indication and high-brightness LED windows.</p>
+        </div>
+      </div>
+      <div class="prod">
+        <div class="ph"><img src="img/pit315n.jpg" alt=""></div>
+        <div>
+          <h3>Pressure-to-current (P/I) converter</h3>
+          <div class="model">PI-315 · PIT-315N</div>
+          <p>Converts a 3–15 psi pneumatic signal to a 4–20 mA output, with zero and span adjustment and a pressure gauge. It suits upgrades of pneumatic instrumentation.</p>
+        </div>
+      </div>
+      <div class="prod">
+        <div class="ph"><img src="img/fdu320.jpg" alt=""></div>
+        <div>
+          <h3>Gas turbine flame detector</h3>
+          <div class="model">FDU-300 · FDU-320 · FR-430E</div>
+          <p>Detects flame in gas turbines, boilers and burners with a UV sensor, and trips on flame loss. More than 200 units are in service.</p>
+        </div>
+      </div>
+      <div class="prod">
+        <div class="ph"><img src="img/lvlm.jpg" alt=""></div>
+        <div>
+          <h3>Dam reservoir level meter</h3>
+          <div class="model">HP-LVLM100 · BLVM-100</div>
+          <p>Measures water level in dam reservoirs and canals with a digital float or an air-purge (bubbler) system, and sends it to the control room and data logger over analogue and digital outputs.</p>
+        </div>
+      </div>
+    </div>
+    <div class="more">
+      <b>Also available:</b> <span class="nw">SECON-2000</span> static excitation system and <span class="nw">DHTG-300</span> digital hydro-turbine governor ·
+      <span class="nw">IGRU-200</span> high-energy ignition unit and 18 kV ignition exciters · <span class="nw">SBC-600/620</span> smart battery charger controllers and <span class="nw">SMART-128</span> charger ·
+      <span class="nw">FMS-280</span> non-contact flare monitoring · <span class="nw">MCI-870</span> 8-channel process monitor · <span class="nw">RUG-280</span> ramp generator and fuel valve control ·
+      <span class="nw">STB-2408S</span> voltage stabiliser · HIPPS · master clock systems and digital frequency meters.
+    </div>
+
+    <h2>Selected projects</h2>
+    <div class="projects">
+      <div class="pj"><i>Power</i><span>Static excitation system for a hydropower generator, the first built in Iran</span></div>
+      <div class="pj"><i>Power</i><span>Digital hydro-turbine governor, proven in a black-start test</span></div>
+      <div class="pj"><i>Water</i><span>Fully redundant intelligent control of water flow from a dam into a metropolitan supply network</span></div>
+      <div class="pj"><i class="oil">Oil &amp; Gas</i><span>Excitation control and starters for 3.5 MW synchronous motors at an oil pumping station</span></div>
+      <div class="pj"><i class="oil">Oil &amp; Gas</i><span>Alarm annunciators covering 800 points for oil production units</span></div>
+      <div class="pj"><i class="oil">Oil &amp; Gas</i><span>Alarm annunciators and associated panels for 25 gas compressor stations</span></div>
+      <div class="pj"><i class="oil">Oil &amp; Gas</i><span>120 PI-315 pressure-to-current converters for an instrumentation upgrade</span></div>
+      <div class="pj"><i class="oil">Oil &amp; Gas</i><span>Supply and commissioning of FDU-300 flame detectors for gas turbines at multiple sites</span></div>
+      <div class="pj"><i>Power</i><span>Laser dam deflection monitoring with 0.01 mm resolution</span></div>
+      <div class="pj"><i>Power</i><span>Reservoir level measurement and position indication for 11 dam gates up to 3 km away</span></div>
+      <div class="pj"><i class="ind">Industry</i><span>Traction generator excitation system for a diesel-electric locomotive</span></div>
+      <div class="pj"><i class="ind">Industry</i><span>Data acquisition and switching network for meteorological centres, linking over 256 stations simultaneously</span></div>
+    </div>
+  </div>
+
+  <footer class="contact">
+    <div>
+      <h4>Head office</h4>
+      No. 360, Dr. Shariati St., Tehran, Iran<br>
+      Tel: +98 21 7760 9951<br>
+      +98 21 7750 7665 · +98 21 7750 8054
+    </div>
+    <div>
+      <h4>Production workshop</h4>
+      Payam Airport Special Economic Zone,<br>
+      Karaj, Alborz Province, Iran<br>
+      Manufacturing, assembly, testing &amp; calibration
+    </div>
+    <div>
+      <h4>Get in touch</h4>
+      Email: <a href="mailto:info@hoorpendar.com">info@hoorpendar.com</a><br>
+      WhatsApp: <a href="https://wa.me/989903365549">+98 990 336 5549</a><br>
+      <a class="site" href="https://hoorpendar.com">www.hoorpendar.com</a>
+    </div>
+  </footer>
+</section>
+
+</body>
+</html>
