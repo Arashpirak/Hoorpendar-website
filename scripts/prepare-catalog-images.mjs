@@ -134,7 +134,7 @@ for (const [name, src, edits = {}] of images) {
 // Masked photos that are also a product's main image.
 await sharp(`${OUT}flame-safeguard-card.jpg`).toFile('public/img/products/flame-safeguard-card.jpg');
 await sharp(`${OUT}alarm-card-1.jpg`).toFile('public/img/products/alarm-card.jpg');
-await sharp(`${OUT}position-transmitter-tcv.jpg`).toFile('public/img/products/position-transmitter.jpg');
+// public/img/products/position-transmitter.jpg is a hand-made cut-out of the TCV photo with the same blur.
 
 writeFileSync(
   'content/products/catalog-sizes.generated.ts',
