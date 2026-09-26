@@ -9,7 +9,7 @@ export const damPowerInfrastructure: Product[] = [
     title: { fa: 'سطح‌سنج دیجیتال شناوری', en: 'Digital float level meter' },
     summary: {
       fa: 'سطح آب را در سدها، ایستگاه‌های آب‌سنجی، کانال‌ها و رودخانه‌ها، و سطح مواد را در مخازن سوخت و سیلوهای آرد و سیمان اندازه می‌گیرد.',
-      en: 'Level measurement for dams, hydrometric stations, canals and rivers, fuel tanks, and flour and cement silos.',
+      en: 'Measures water level in dams, hydrometric stations, canals and rivers, and material level in fuel tanks and flour and cement silos.',
     },
     features: {
       fa: ['گستره‌ی 0 تا 100 متر با دقت ±1cm', 'ارتباط Modbus روی RS-485؛ انتقال داده تا ۱۶ کیلومتر', 'ثبت‌کننده‌ی داده، نمایشگر و نرم‌افزار ثبت و پایش برخط'],
@@ -30,7 +30,7 @@ export const damPowerInfrastructure: Product[] = [
     model: 'BLVM-100',
     title: { fa: 'سطح‌سنج حبابی (Bubbler)', en: 'Air-purge (bubbler) level meter' },
     summary: {
-      fa: 'هوای فشرده را به پایین‌ترین نقطه‌ی اندازه‌گیری می‌دمد و فشار برگشتی آن را می‌سنجد؛ این فشار با ارتفاع آب متناسب است. مناسب سدهای خاکی و بتنی که به سطح آب دسترسی عمودی ندارند، و برای پایش هم‌زمان چند چاه مشاهده‌ای.',
+      fa: 'هوای فشرده را به پایین‌ترین نقطه‌ی اندازه‌گیری می‌دمد و فشار برگشتی آن را می‌سنجد؛ این فشار با ارتفاع آب متناسب است. برای سدهای خاکی و بتنی که به سطح آب دسترسی عمودی ندارند مناسب است و می‌تواند چند چاه مشاهده‌ای را هم‌زمان پایش کند.',
       en: 'Purges compressed air to the lowest measuring point and reads its pressure, which is proportional to the water height. Suits earth and concrete dams without vertical access to the water, and can watch several observation wells at once.',
     },
     features: {
@@ -47,8 +47,8 @@ export const damPowerInfrastructure: Product[] = [
     model: 'HP-DS400 · HP-DS225 · HP-TF560',
     title: { fa: 'فرکانس‌متر دیجیتال و ترانسدیوسر فرکانس', en: 'Digital frequency meter and frequency transducer' },
     summary: {
-      fa: 'فرکانس شبکه را در نیروگاه‌ها و پست‌های برق با دقت اندازه می‌گیرد و نمایش می‌دهد؛ با نمایشگرهای بزرگ برای نصب روی تابلو، دیوار یا سقف.',
-      en: 'Precise frequency display and measurement for power plants and substations, with large displays for panels, walls or ceilings.',
+      fa: 'فرکانس شبکه را در نیروگاه‌ها و پست‌های برق با دقت اندازه می‌گیرد و نمایش می‌دهد. نمایشگرهای بزرگ آن را می‌توان روی تابلو، دیوار یا سقف نصب کرد.',
+      en: 'Measures and displays grid frequency precisely in power plants and substations. The large displays can be mounted on panels, walls or ceilings.',
     },
     features: {
       fa: ['جداسازی الکتریکی تا 1500V', 'خروجی 4-20mA یا 0-5Vdc', 'ارتباط Modbus روی RS-485/232'],
@@ -69,7 +69,7 @@ export const damPowerInfrastructure: Product[] = [
     title: { fa: 'سیستم ساعت مرکزی دیجیتال', en: 'Digital master clock system' },
     summary: {
       fa: 'ساعت همه‌ی بخش‌های نیروگاه، کارخانه یا ساختمان اداری را یکسان نگه می‌دارد. ساعت مادر (Master Clock) زمان و تاریخ را برای هر تعداد نمایشگر می‌فرستد.',
-      en: 'Time synchronization for power plants, factories and offices. One master clock drives the time and date on any number of displays.',
+      en: 'Keeps every part of a power plant, factory or office building on the same time. One master clock sends the time and date to any number of displays.',
     },
     features: {
       fa: ['تنظیم با GPS یا رایانه', 'RS-232، RS-485 و CL', 'ارتفاع ارقام 1.75 تا 22.5 اینچ؛ خوانا از ۵ تا ۱۰۰ متر'],
@@ -84,8 +84,8 @@ export const damPowerInfrastructure: Product[] = [
     category: 'dam-power-infrastructure',
     title: { fa: 'مقاومت‌های چدنی صنعتی', en: 'Industrial cast-iron resistors' },
     summary: {
-      fa: 'مقاومت‌های راه‌اندازی، تنظیم لغزش، ترمز، تخلیه، تحریک و حفاظت، و تجهیزات اتصال کوتاه، در توان‌های 10kW تا 3MW.',
-      en: 'Starting, slip, braking, discharge, excitation and protection resistors, and short-circuit equipment, from 10 kW to 3 MW.',
+      fa: 'مقاومت‌های راه‌اندازی، تنظیم لغزش، ترمز، تخلیه، تحریک و حفاظت و تجهیزات اتصال کوتاه را در توان‌های 10kW تا 3MW می‌سازیم.',
+      en: 'We build starting, slip, braking, discharge, excitation and protection resistors, and short-circuit equipment, from 10 kW to 3 MW.',
     },
     features: {
       fa: ['کارکرد کوتاه‌مدت، متناوب یا پیوسته', 'تحمل اضافه‌بار زیاد', 'عایق دولایه‌ی میکا و سرامیک'],
@@ -101,8 +101,8 @@ export const damPowerInfrastructure: Product[] = [
     category: 'dam-power-infrastructure',
     title: { fa: 'ابزار پایش ایمنی سد', en: 'Dam safety monitoring instruments' },
     summary: {
-      fa: 'شامل کریدوسکوپ لیزری دومحوره که جابه‌جایی بدنه‌ی سد را با دقت ۰٫۰۱ میلی‌متر اندازه می‌گیرد، سامانه‌ی اندازه‌گیری میزان بازشدن دریچه‌های سرریز و آبگیر (حتی زیر آب)، و ثبت خودکار داده‌های حدود ۱۰۰۰ سنسور بدنه‌ی سد.',
-      en: 'A two-axis laser crydoscope that measures dam-body deflection to 0.01 mm, opening measurement for spillway and intake gates (including submerged gates), and automatic logging from about 1000 dam-body sensors.',
+      fa: 'کریدوسکوپ لیزری دومحوره جابه‌جایی بدنه‌ی سد را با دقت ۰٫۰۱ میلی‌متر اندازه می‌گیرد. در این گروه سامانه‌ای هم برای اندازه‌گیری میزان بازشدن دریچه‌های سرریز و آبگیر (حتی زیر آب) و سامانه‌ای برای ثبت خودکار داده‌های حدود ۱۰۰۰ سنسور بدنه‌ی سد داریم.',
+      en: 'A two-axis laser crydoscope measures dam-body deflection to 0.01 mm. The group also includes opening measurement for spillway and intake gates (submerged gates too) and automatic logging from about 1,000 dam-body sensors.',
     },
     features: {
       fa: ['اندازه‌گیری جابه‌جایی بدون تماس، با دقت ۰٫۰۱ میلی‌متر', 'پایش بازشدن دریچه‌ها تا فاصله‌ی ۳ کیلومتر', 'ثبت و انتقال خودکار داده به رایانه'],

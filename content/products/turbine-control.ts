@@ -7,8 +7,8 @@ export const turbineControl: Product[] = [
     category: 'turbine-control',
     title: { fa: 'مانیتور سرعت و دمای توربین گازی', en: 'Gas turbine speed and temperature monitors' },
     summary: {
-      fa: 'واحدهای اندازه‌گیری سرعت توربین با سنسور مغناطیسی (Magnetic Pickup) و دمای توربین با ترموکوپل، با رله‌های حد و خروجی آنالوگ، در گستره‌های مختلف.',
-      en: 'Speed monitoring from a magnetic pickup and turbine temperature monitoring from thermocouples, with threshold relays and analog outputs, in several ranges.',
+      fa: 'این واحدها سرعت توربین را با سنسور مغناطیسی (Magnetic Pickup) و دمای آن را با ترموکوپل اندازه می‌گیرند. رله‌های حد و خروجی آنالوگ دارند و در گستره‌های مختلف ساخته می‌شوند.',
+      en: 'These units measure turbine speed with a magnetic pickup and temperature with thermocouples. They have threshold relays and analog outputs, and come in several ranges.',
     },
     features: {
       fa: ['سرعت: چهار رله‌ی حد', 'دما: سه رله‌ی حد', 'خروجی آنالوگ 0-5Vdc و 0-200µA'],
@@ -24,8 +24,8 @@ export const turbineControl: Product[] = [
     model: 'RUG-280',
     title: { fa: 'کنترل شیر سوخت و مولد شیب راه‌اندازی', en: 'Fuel valve controller and start-up ramp generator' },
     summary: {
-      fa: 'کنترلر شیر اصلی سوخت توربین بر پایه‌ی سرعت و دما (خروجی 0-50mA)، و مولد شیب (Ramp) RUG-280 که سیگنال مرحله‌ی راه‌اندازی توربین را تولید می‌کند.',
-      en: 'A main fuel valve controller driven by speed and temperature (0–50 mA output), and the RUG-280 ramp generator that produces the turbine’s start-up signal.',
+      fa: 'کنترلر، شیر اصلی سوخت توربین را بر اساس سرعت و دما تنظیم می‌کند (خروجی 0-50mA). مولد شیب (Ramp) RUG-280 هم سیگنال مرحله‌ی راه‌اندازی توربین را می‌سازد.',
+      en: 'The controller sets the turbine’s main fuel valve from speed and temperature (0–50 mA output), and the RUG-280 ramp generator produces the start-up signal.',
     },
     features: {
       fa: ['خروجی کنترل شیر 0-50mA', 'تغذیه‌ی مولد شیب +28Vdc', 'دو خروجی شیب مستقل'],
@@ -61,8 +61,8 @@ export const turbineControl: Product[] = [
     category: 'turbine-control',
     title: { fa: 'سنسور سرعت مغناطیسی و نمایشگر سرعت توربین', en: 'Magnetic speed pickups and turbine speed indicators' },
     summary: {
-      fa: 'سنسورهای مغناطیسی سرعت (Magnetic Speed Pickup) برای توربین و ژنراتور، و نمایشگرهای دیجیتال سرعت برای تابلوی توربین.',
-      en: 'Magnetic speed pickups for turbines and generators, and digital speed indicators for turbine panels.',
+      fa: 'سنسورهای مغناطیسی (Magnetic Speed Pickup) سرعت توربین و ژنراتور را می‌گیرند و نمایشگر دیجیتال آن را روی تابلوی توربین نشان می‌دهد.',
+      en: 'Magnetic pickups sense turbine and generator speed, and a digital indicator shows it on the turbine panel.',
     },
     features: {
       fa: ['سنسور مغناطیسی سرعت', 'نمایشگر دیجیتال با خروجی آلارم', 'ساخت مطابق نمونه'],

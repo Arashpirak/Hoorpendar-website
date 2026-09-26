@@ -8,8 +8,8 @@ export const excitationGovernor: Product[] = [
     model: 'SECON-2000',
     title: { fa: 'سیستم تحریک استاتیک تریستوری با AVR دیجیتال', en: 'Thyristor static excitation system with digital AVR' },
     summary: {
-      fa: 'سامانه‌ی کامل تحریک برای ژنراتورهای سنکرون: کنترل‌کننده‌ی دیجیتال بر پایه‌ی PLC، پل تریستوری، واحد آتش پالس، ترانسفورماتور تحریک، تجهیزات اندازه‌گیری و نمایشگر لمسی (HMI). طراحی‌شده مطابق استانداردهای IEEE 421.1 تا 421.5.',
-      en: 'A complete excitation system for synchronous generators: PLC-based digital controller, thyristor bridge, firing unit, excitation transformer, metering and a touch HMI. Designed to IEEE 421.1–421.5.',
+      fa: 'سامانه‌ی کامل تحریک برای ژنراتورهای سنکرون است و کنترل‌کننده‌ی دیجیتال بر پایه‌ی PLC، پل تریستوری، واحد آتش پالس، ترانسفورماتور تحریک، تجهیزات اندازه‌گیری و نمایشگر لمسی (HMI) را در بر می‌گیرد. طراحی آن مطابق استانداردهای IEEE 421.1 تا 421.5 است.',
+      en: 'A complete excitation system for synchronous generators, with a PLC-based digital controller, thyristor bridge, firing unit, excitation transformer, metering and a touch HMI. It is designed to IEEE 421.1–421.5.',
     },
     features: {
       fa: [
@@ -43,8 +43,8 @@ export const excitationGovernor: Product[] = [
     model: 'SECON-50 · SECON-30',
     title: { fa: 'تحریک موتورها و ژنراتورهای سنکرون بدون جاروبک', en: 'Excitation for brushless synchronous motors and generators' },
     summary: {
-      fa: 'سامانه‌های تحریک کم‌جریان برای موتورها و ژنراتورهای سنکرون بدون جاروبک و دومرحله‌ای، و کنترل و راه‌انداز تحریک موتورهای سنکرون پرقدرت در ایستگاه‌های پمپاژ.',
-      en: 'Low-current excitation systems for brushless and two-stage synchronous motors and generators, including excitation control and starting for high-power pumping-station motors.',
+      fa: 'این سامانه‌های کم‌جریان، موتورها و ژنراتورهای سنکرون بدون جاروبک و دومرحله‌ای را تحریک می‌کنند. کنترل و راه‌انداز تحریک موتورهای سنکرون پرقدرت ایستگاه‌های پمپاژ هم در همین خانواده است.',
+      en: 'These low-current systems excite brushless and two-stage synchronous motors and generators. The family also includes excitation control and starters for high-power pumping-station motors.',
     },
     features: {
       fa: [
@@ -70,8 +70,8 @@ export const excitationGovernor: Product[] = [
     model: 'DHTG-300',
     title: { fa: 'گاورنر دیجیتال توربین آبی', en: 'Digital hydro-turbine governor' },
     summary: {
-      fa: 'نخستین گاورنر دیجیتال توربین آبی ساخت ایران، بر پایه‌ی PLC. سرعت و بار توربین، سامانه‌ی هیدرولیک و شیرهای سروو را کنترل می‌کند. نیروگاهی که به این گاورنر و سیستم تحریک هورپندار مجهز است، در آزمون راه‌اندازی بدون برق شبکه (Black Start) بخشی از شبکه را به‌صورت جزیره‌ای برق‌دار کرد.',
-      en: 'The first digital hydro-turbine governor made in Iran, built on a PLC. It controls turbine speed and load, the hydraulic system and servo valves. A plant fitted with it and a Hoorpendar excitation system energized part of the grid in island mode during a black-start test.',
+      fa: 'نخستین گاورنر دیجیتال توربین آبی ساخت ایران است و بر پایه‌ی PLC کار می‌کند. سرعت و بار توربین، سامانه‌ی هیدرولیک و شیرهای سروو را کنترل می‌کند. نیروگاهی که به این گاورنر و سیستم تحریک هورپندار مجهز است، در آزمون راه‌اندازی بدون برق شبکه (Black Start) بخشی از شبکه را به‌صورت جزیره‌ای برق‌دار کرد.',
+      en: 'The first digital hydro-turbine governor made in Iran, running on a PLC. It controls turbine speed and load, the hydraulic system and servo valves. A plant fitted with it and a Hoorpendar excitation system energized part of the grid in island mode during a black-start test.',
     },
     features: {
       fa: [

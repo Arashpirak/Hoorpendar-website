@@ -41,8 +41,8 @@ export const instrumentation: Product[] = [
     model: 'MCI-870',
     title: { fa: 'مانیتور فرایند ۸ کاناله برای فضای باز', en: '8-channel outdoor process monitor' },
     summary: {
-      fa: 'هشت ورودی آنالوگ با جداسازی الکتریکی در جعبه‌ی فلزی IP54؛ هر کانال پردازنده‌ی مستقل و رله‌های آلارم و قطع (Trip) خود را دارد.',
-      en: 'Eight isolated analog inputs in an IP54 metal enclosure, with a processor per channel and alarm and trip relays.',
+      fa: 'هشت ورودی آنالوگ با جداسازی الکتریکی دارد و در جعبه‌ی فلزی IP54 عرضه می‌شود. هر کانال پردازنده و رله‌های آلارم و قطع (Trip) خودش را دارد.',
+      en: 'It has eight isolated analog inputs in an IP54 metal enclosure. Each channel has its own processor and its own alarm and trip relays.',
     },
     features: {
       fa: [
@@ -92,8 +92,8 @@ export const instrumentation: Product[] = [
     model: 'TSG-500',
     title: { fa: 'تقویت‌کننده‌ی استرین‌گیج', en: 'Strain gauge amplifier' },
     summary: {
-      fa: 'سیگنال سنسورهای کرنش‌سنج (استرین‌گیج) را برای اندازه‌گیری فشار، اختلاف فشار، وزن و سطح تقویت می‌کند؛ با خروجی 4-20mA و تنظیم صفر و دامنه (Zero و Span).',
-      en: 'Measures pressure, differential pressure, weight and level from strain-gauge sensors, with a 4–20 mA output and zero and span adjustment.',
+      fa: 'سیگنال سنسورهای کرنش‌سنج (استرین‌گیج) را برای اندازه‌گیری فشار، اختلاف فشار، وزن و سطح تقویت می‌کند. خروجی آن 4-20mA است و صفر و دامنه‌اش (Zero و Span) قابل تنظیم است.',
+      en: 'Amplifies strain-gauge signals to measure pressure, differential pressure, weight and level. It has a 4–20 mA output with adjustable zero and span.',
     },
     features: {
       fa: ['خروجی 4-20mA', 'تنظیم Zero و Span', 'بدنه‌ی مقاوم صنعتی'],
@@ -107,8 +107,8 @@ export const instrumentation: Product[] = [
     category: 'instrumentation',
     title: { fa: 'ثبات‌های بدون کاغذ و ثبت‌کننده‌های داده', en: 'Paperless recorders and data loggers' },
     summary: {
-      fa: 'ثبات بدون کاغذ ۱۲ کاناله، راه‌انداز ثبات‌های نموداری، ثبت‌کننده‌ی پارامترهای الکتریکی نیروگاه، و سامانه‌های جمع‌آوری داده از رله‌های حفاظتی و تحلیلگرهای توان.',
-      en: 'Twelve-channel paperless recorders, chart recorder drivers, power-plant electrical data loggers, and data acquisition from protection relays and power analyzers.',
+      fa: 'ثبات بدون کاغذ ۱۲ کاناله، راه‌انداز ثبات‌های نموداری و ثبت‌کننده‌ی پارامترهای الکتریکی نیروگاه می‌سازیم. داده‌های رله‌های حفاظتی و تحلیلگرهای توان را هم با سامانه‌های جمع‌آوری داده ثبت می‌کنیم.',
+      en: 'We build twelve-channel paperless recorders, chart recorder drivers and power-plant electrical data loggers, and collect data from protection relays and power analyzers.',
     },
     features: {
       fa: ['ثبات بدون کاغذ ۱۲ کاناله', 'جمع‌آوری داده از رله‌ها و تحلیلگرهای توان', 'نرم‌افزار ثبت داده و گزارش‌گیری'],

@@ -7,16 +7,16 @@ import type { L } from './types';
 export const catalog = {
   about: [
     {
-      fa: 'شرکت دانش‌بنیان صنایع فن‌آوری رایانه هورپندار از سال ۱۳۷۸ به‌عنوان یک مرکز تخصصی در طراحی و تولید تجهیزات الکترونیکی خاص و اجرای پروژه‌های برق، کنترل، اتوماسیون و ابزار دقیق فعالیت می‌کند. پروژه‌های متعددی را به‌صورت EPC در صنایع نفت و گاز، آب و برق و فولاد به پایان رسانده و در بیشتر آن‌ها سخت‌افزار مورد نیاز را نیز خود طراحی و ساخته است.',
-      en: 'Hoorpendar Computer Technology Industries, a knowledge-based company founded in 1999, designs and manufactures specialised electronic equipment and delivers electrical, control, automation and instrumentation projects. It has completed many EPC projects in oil and gas, water and power, and steel, and in most of them designed and built the hardware itself.',
+      fa: 'شرکت دانش‌بنیان صنایع فن‌آوری رایانه هورپندار از سال ۱۳۷۸ تجهیزات الکترونیکی خاص طراحی و تولید می‌کند و پروژه‌های برق، کنترل، اتوماسیون و ابزار دقیق را اجرا می‌کند. تا امروز پروژه‌های زیادی را به‌صورت EPC در نفت و گاز، آب و برق و فولاد تحویل داده‌ایم و در بیشتر آن‌ها سخت‌افزار را هم خودمان طراحی کرده‌ایم و ساخته‌ایم.',
+      en: 'Hoorpendar Computer Technology Industries, a knowledge-based company founded in 1999, designs and manufactures specialised electronic equipment and delivers electrical, control, automation and instrumentation projects. We have completed many EPC projects in oil and gas, water and power, and steel, and in most of them we designed and built the hardware ourselves.',
     },
     {
-      fa: 'مشتریان هورپندار سدها و نیروگاه‌ها، شرکت‌های بهره‌برداری نفت و گاز، شبکه‌ی ملی داده‌های هواشناسی و دیگر صنایع کلیدی هستند. بیشتر تجهیزات ما باید به‌طور دائم و مطمئن در شرایط سخت کار کنند: دمای بالا، لرزش، رطوبت، میدان‌های مغناطیسی قوی و اسپارک‌های ناشی از کلیدزنی و صاعقه؛ در جاهایی که توقف کار از نظر اقتصادی و راهبردی پرهزینه است، مانند کنترل نیروگاه‌ها، تأمین آب شرب و ایستگاه‌های پمپاژ نفت و گاز.',
-      en: 'Our clients are dams and power plants, oil and gas operators, the national meteorological network and other key industries. Most of our equipment has to run continuously and reliably in harsh conditions: heat, vibration, humidity, strong magnetic fields and surges from switching and lightning, in places where downtime is costly, such as power plant control, drinking water supply and oil and gas pumping stations.',
+      fa: 'کارفرمایان ما سدها و نیروگاه‌ها، شرکت‌های بهره‌برداری نفت و گاز، شبکه‌ی ملی داده‌های هواشناسی و صنایع کلیدی دیگرند. بیشتر دستگاه‌هایی که می‌سازیم باید بی‌وقفه و در شرایط سخت کار کنند: دمای بالا، لرزش، رطوبت، میدان مغناطیسی قوی و اضافه‌ولتاژ ناشی از کلیدزنی و صاعقه. در کنترل نیروگاه، تأمین آب شرب یا ایستگاه پمپاژ نفت و گاز، حتی توقف کوتاه هزینه‌ی زیادی دارد.',
+      en: 'Our clients are dams and power plants, oil and gas operators, the national meteorological network and other key industries. Most of what we build has to run continuously in harsh conditions: heat, vibration, humidity, strong magnetic fields and surges from switching and lightning. In power plant control, drinking water supply or an oil and gas pumping station, even a short stop is expensive.',
     },
     {
-      fa: 'بخش زیادی از پروژه‌های هورپندار ماهیت پژوهشی داشته و برای نخستین بار در کشور اجرا شده‌اند؛ از جمله سیستم تحریک ژنراتور نیروگاه، گاورنر دیجیتال توربین آبی، کریدوسکوپ لیزری دومحوره و شبکه‌ی سوئیچینگ داده‌های هواشناسی. هورپندار از معدود شرکت‌هایی است که هم پروژه‌های برق، ابزار دقیق و اتوماسیون را اجرا می‌کند و هم تجهیزات الکترونیک صنعتی را طراحی و به تولید انبوه می‌رساند.',
-      en: 'Many of our projects were research programs carried out for the first time in Iran, among them generator excitation for a power plant, a digital hydro-turbine governor, a two-axis laser crydoscope and a meteorological data switching network. Hoorpendar is one of the few companies that both delivers electrical, instrumentation and automation projects and designs industrial electronics for series production.',
+      fa: 'بسیاری از پروژه‌های ما پژوهشی بوده‌اند و برای نخستین بار در کشور اجرا شده‌اند، مانند سیستم تحریک ژنراتور نیروگاه، گاورنر دیجیتال توربین آبی، کریدوسکوپ لیزری دومحوره و شبکه‌ی سوئیچینگ داده‌های هواشناسی. کمتر شرکتی هم پروژه‌های برق، ابزار دقیق و اتوماسیون را اجرا می‌کند و هم تجهیزات الکترونیک صنعتی را برای تولید انبوه طراحی می‌کند. هورپندار هر دو کار را انجام می‌دهد.',
+      en: 'Many of our projects were research programs carried out for the first time in Iran, among them generator excitation for a power plant, a digital hydro-turbine governor, a two-axis laser crydoscope and a meteorological data switching network. Few companies both deliver electrical, instrumentation and automation projects and design industrial electronics for series production. Hoorpendar does both.',
     },
   ] satisfies L[],
 
@@ -51,8 +51,8 @@ export const catalog = {
     {
       title: { fa: 'طراحی و تولید تجهیزات', en: 'Equipment design and manufacture' },
       lead: {
-        fa: 'تجهیزات الکترونیک صنعتی، به‌ویژه برای توربین و ژنراتور.',
-        en: 'Industrial electronics, especially for turbines and generators.',
+        fa: 'تجهیزات الکترونیک صنعتی می‌سازیم، به‌ویژه برای توربین و ژنراتور.',
+        en: 'We build industrial electronics, especially for turbines and generators.',
       },
       items: [
         { fa: 'سیستم‌های تحریک و کنترل ژنراتور', en: 'Generator excitation and control systems' },
@@ -64,7 +64,7 @@ export const catalog = {
     },
     {
       title: { fa: 'اجرای پروژه‌های صنعتی', en: 'Industrial projects' },
-      lead: { fa: 'طراحی و اجرای پروژه‌ها به‌صورت EPC.', en: 'Projects designed and delivered as EPC.' },
+      lead: { fa: 'پروژه‌ها را به‌صورت EPC طراحی و اجرا می‌کنیم.', en: 'We design and deliver projects on an EPC basis.' },
       items: [
         { fa: 'اتوماسیون و کنترل مبتنی بر PLC', en: 'PLC-based automation and control' },
         { fa: 'مانیتورینگ و جمع‌آوری اطلاعات (SCADA/DCS)', en: 'Monitoring and data acquisition (SCADA/DCS)' },
@@ -76,8 +76,8 @@ export const catalog = {
     {
       title: { fa: 'بازسازی و نوسازی سیستم‌های قدیمی', en: 'Legacy system renewal' },
       lead: {
-        fa: 'افزایش عمر تجهیزاتی که دیگر پشتیبانی سازنده ندارند.',
-        en: 'Longer life for equipment that no longer has manufacturer support.',
+        fa: 'عمر تجهیزاتی را که دیگر پشتیبانی سازنده ندارند، افزایش می‌دهیم.',
+        en: 'We extend the life of equipment that no longer has manufacturer support.',
       },
       items: [
         { fa: 'بازسازی کارت‌ها و بردهای الکترونیکی', en: 'Rebuilding electronic cards and boards' },
@@ -88,7 +88,7 @@ export const catalog = {
     },
     {
       title: { fa: 'خدمات فنی و مهندسی', en: 'Engineering services' },
-      lead: { fa: 'خدمات تخصصی در کنار تولید.', en: 'Specialist services alongside manufacturing.' },
+      lead: { fa: 'در کنار تولید، این خدمات تخصصی را هم ارائه می‌دهیم.', en: 'Alongside manufacturing, we offer these specialist services.' },
       items: [
         { fa: 'تنظیم ضرایب PID سیستم‌های گاورنر و تحریک', en: 'PID tuning of governor and excitation systems' },
         { fa: 'تعمیر تجهیزات الکترونیکی خاص', en: 'Repair of specialised electronic equipment' },
@@ -105,8 +105,8 @@ export const catalog = {
       yearSH: 1380,
       title: { fa: 'نخستین سیستم تحریک استاتیک ساخت داخل', en: 'Iran’s first domestically built static excitation system' },
       body: {
-        fa: 'طراحی و ساخت واحد تحریک ژنراتور یک نیروگاه آبی. پس از آن هورپندار سیستم‌های تحریک استاتیک ژنراتورها و موتورهای سنکرون، از جمله سیستم تحریک ۱۲۰۰ آمپری، را طراحی و تولید کرده است.',
-        en: 'An excitation unit for a hydroelectric generator. Since then Hoorpendar has designed and built static excitation for generators and synchronous motors, including a 1,200 A system.',
+        fa: 'واحد تحریک ژنراتور یک نیروگاه آبی را طراحی کردیم و ساختیم. از آن زمان سیستم‌های تحریک استاتیک بسیاری برای ژنراتورها و موتورهای سنکرون تولید کرده‌ایم که یکی از آن‌ها ۱۲۰۰ آمپری است.',
+        en: 'We designed and built the excitation unit for a hydroelectric generator. Since then we have produced many static excitation systems for generators and synchronous motors, one of them rated at 1,200 A.',
       },
     },
     {
@@ -114,8 +114,8 @@ export const catalog = {
       toSH: 1382,
       title: { fa: 'کنترل هوشمند انتقال آب شرب', en: 'Intelligent control of drinking water transfer' },
       body: {
-        fa: 'سیستم کنترل Full-Redundant برای تنظیم خودکار دبی آب انتقالی از سد به یک کلان‌شهر، با تجهیزات ساخت شرکت.',
-        en: 'A fully redundant control system that automatically regulates water flow from a dam to a metropolitan area, built on Hoorpendar equipment.',
+        fa: 'سیستم کنترلی با افزونگی کامل (Full-Redundant) طراحی کردیم که دبی آب انتقالی از سد به یک کلان‌شهر را خودکار تنظیم می‌کند. تجهیزات آن را هم خودمان ساختیم.',
+        en: 'We designed a fully redundant control system that automatically regulates water flow from a dam to a metropolitan area, and built its equipment ourselves.',
       },
     },
     {
@@ -123,8 +123,8 @@ export const catalog = {
       toSH: 1385,
       title: { fa: 'کریدوسکوپ لیزری پایش بدنه‌ی سد', en: 'Laser crydoscope for dam monitoring' },
       body: {
-        fa: 'ثبت دقیق حرکات بدنه‌ی سد با دقت ۰٫۰۱ میلی‌متر در دو محور X و Y و بدون تماس فیزیکی.',
-        en: 'Records dam-body movement to 0.01 mm on two axes (X and Y) without physical contact.',
+        fa: 'این دستگاه حرکت بدنه‌ی سد را در دو محور X و Y، بدون تماس فیزیکی و با دقت ۰٫۰۱ میلی‌متر ثبت می‌کند.',
+        en: 'It records dam-body movement on two axes (X and Y) to within 0.01 mm, without touching the structure.',
       },
     },
     {
@@ -132,8 +132,8 @@ export const catalog = {
       toSH: 1390,
       title: { fa: 'تحریک و AVR موتورهای سنکرون ۳٫۵ مگاواتی', en: 'Excitation and AVR for 3.5 MW synchronous motors' },
       body: {
-        fa: 'کنترل و راه‌انداز تحریک استاتیک موتورهای سنکرون ایستگاه‌های پمپاژ و تقویت فشار نفت و گاز. در ۱۳۹۶ نیز ۴۰ واحد کنترل تحریک برای همین موتورها تحویل شد.',
-        en: 'Static excitation control and starters for synchronous motors at oil and gas pumping and compression stations. In 2017 another 40 excitation control units followed for the same motors.',
+        fa: 'کنترل و راه‌انداز تحریک استاتیک موتورهای سنکرون ایستگاه‌های پمپاژ و تقویت فشار نفت و گاز را ساختیم. در ۱۳۹۶ هم ۴۰ واحد کنترل تحریک دیگر برای همین موتورها تحویل دادیم.',
+        en: 'We built static excitation control and starters for synchronous motors at oil and gas pumping and compression stations. In 2017 we delivered 40 more excitation control units for the same motors.',
       },
     },
     {
@@ -141,16 +141,16 @@ export const catalog = {
       toSH: 1392,
       title: { fa: 'نخستین گاورنر دیجیتال توربین آبی کشور', en: 'Iran’s first digital hydro-turbine governor' },
       body: {
-        fa: 'پروژه‌ی پژوهشی طراحی و ساخت گاورنر دیجیتال مبتنی بر PLC (مدل DHTG-300)؛ با دستیابی به دانش فنی کنترل سرعت توربین، سیستم‌های هیدرولیک و شیرهای Servo Valve.',
-        en: 'A research program that produced the PLC-based DHTG-300 digital governor and the know-how for turbine speed control, hydraulics and servo valves.',
+        fa: 'در یک پروژه‌ی پژوهشی، گاورنر دیجیتال DHTG-300 را بر پایه‌ی PLC طراحی کردیم و ساختیم. دانش فنی کنترل سرعت توربین، سیستم هیدرولیک و شیرهای سروو (Servo Valve) هم از همین پروژه به دست آمد.',
+        en: 'In a research program we designed and built the PLC-based DHTG-300 digital governor, and gained our know-how in turbine speed control, hydraulics and servo valves along the way.',
       },
     },
     {
       yearSH: 1392,
       title: { fa: '۸۰۰ سیگنال اعلام‌گر آلارم', en: '800 alarm annunciator signals' },
       body: {
-        fa: 'تولید و تحویل ۸۰۰ سیگنال Alarm Annunciator برای کارخانه‌های یک شرکت بهره‌برداری نفت و گاز.',
-        en: 'Manufacture and delivery of 800 alarm annunciator signals for the plants of an oil and gas operator.',
+        fa: 'برای کارخانه‌های یک شرکت بهره‌برداری نفت و گاز، اعلام‌گرهای آلارم (Alarm Annunciator) با ۸۰۰ سیگنال ساختیم و تحویل دادیم.',
+        en: 'We built and delivered alarm annunciators covering 800 signals for the plants of an oil and gas operator.',
       },
     },
     {
@@ -165,8 +165,8 @@ export const catalog = {
       yearSH: 1396,
       title: { fa: '۱۲۰ مبدل فشار به جریان در یک قرارداد', en: '120 pressure-to-current converters in one contract' },
       body: {
-        fa: 'تحویل ۱۲۰ دستگاه PI-315 برای اتصال ابزارهای پنوماتیک قدیمی به سیستم‌های کنترل الکترونیکی.',
-        en: 'Delivery of 120 PI-315 units that connect older pneumatic instruments to electronic control systems.',
+        fa: '۱۲۰ دستگاه PI-315 تحویل دادیم تا ابزارهای پنوماتیک قدیمی به سیستم‌های کنترل الکترونیکی وصل شوند.',
+        en: 'We delivered 120 PI-315 units so that older pneumatic instruments could connect to electronic control systems.',
       },
     },
     {
@@ -174,24 +174,24 @@ export const catalog = {
       ongoing: true,
       title: { fa: 'واحدهای کنترل توربین گازی', en: 'Gas turbine control units' },
       body: {
-        fa: 'طراحی و تولید بیش از ۱۰ مدل واحد کنترل توربین گازی، شامل اندازه‌گیری سرعت و دما و کنترل شیر سوخت، برای یک شرکت بهره‌برداری نفت.',
-        en: 'More than ten models of gas turbine control units designed and built, covering speed and temperature measurement and fuel valve control, for an oil operator.',
+        fa: 'برای یک شرکت بهره‌برداری نفت بیش از ۱۰ مدل واحد کنترل توربین گازی طراحی و تولید کرده‌ایم که سرعت و دما را اندازه می‌گیرند و شیر سوخت را کنترل می‌کنند. این همکاری هنوز ادامه دارد.',
+        en: 'For an oil operator we have designed and built more than ten models of gas turbine control unit, which measure speed and temperature and control the fuel valve. The work is still going on.',
       },
     },
     {
       yearSH: 1400,
       title: { fa: 'سنسور موقعیت بدون تماس زیر فشار ۶۰ بار', en: 'Contactless position sensor at 60 bar' },
       body: {
-        fa: 'سنسور موقعیت پره‌های راهنمای ورودی توربین گازی که درون جک هیدرولیک و زیر فشار ۶۰ بار کار می‌کند، در یک تأسیسات فراساحل.',
-        en: 'An inlet guide vane position sensor that works inside the hydraulic actuator at 60 bar, at an offshore facility.',
+        fa: 'این سنسور موقعیت پره‌های راهنمای ورودی توربین گازی را اندازه می‌گیرد و در یک تأسیسات فراساحل، درون جک هیدرولیک و زیر فشار ۶۰ بار کار می‌کند.',
+        en: 'The sensor measures gas turbine inlet guide vane position and works inside the hydraulic actuator, at 60 bar, on an offshore facility.',
       },
     },
     {
       yearSH: 1401,
       title: { fa: 'سیستم تحریک ژنراتور لوکوموتیو', en: 'Locomotive generator excitation' },
       body: {
-        fa: 'طراحی و ساخت سیستم تحریک ژنراتور لوکوموتیو، همراه با مبدل‌ها و درایورهای سوئیچینگ خاص.',
-        en: 'Design and manufacture of a locomotive generator excitation system with purpose-built switching converters and drivers.',
+        fa: 'سیستم تحریک ژنراتور لوکوموتیو را همراه با مبدل‌ها و درایورهای سوئیچینگ مخصوص آن طراحی کردیم و ساختیم.',
+        en: 'We designed and built a locomotive generator excitation system, with switching converters and drivers made for it.',
       },
     },
   ] satisfies { yearSH?: number; toSH?: number; ongoing?: boolean; when?: L; title: L; body: L }[],

@@ -39,8 +39,8 @@ export const powerSupplies: Product[] = [
     model: 'SMART-128',
     title: { fa: 'شارژر هوشمند باتری تک‌فاز و سه‌فاز', en: 'Smart single- and three-phase battery charger' },
     summary: {
-      fa: 'شارژر باتری با کنترلر HP-PC128 که منحنی شارژ را متناسب با نوع و تعداد باتری‌ها دنبال می‌کند و ولتاژ مصرف‌کننده را با دیودهای افت ولتاژ چندپله‌ای تنظیم می‌کند.',
-      en: 'A charger built around the HP-PC128 controller, which follows the charging curve for the battery type and count and controls load voltage with multi-stage dropper diodes.',
+      fa: 'کنترلر HP-PC128 این شارژر منحنی شارژ را متناسب با نوع و تعداد باتری‌ها دنبال می‌کند و ولتاژ مصرف‌کننده را با دیودهای افت ولتاژ چندپله‌ای تنظیم می‌کند.',
+      en: 'Its HP-PC128 controller follows the charging curve for the battery type and count, and controls load voltage with multi-stage dropper diodes.',
     },
     features: {
       fa: [
@@ -64,7 +64,7 @@ export const powerSupplies: Product[] = [
     model: 'PSB-1000',
     title: { fa: 'شارژر سوئیچینگ قابل‌حمل باتری', en: 'Portable switching battery charger' },
     summary: {
-      fa: 'برای شارژ باتری‌های اسیدی و قلیایی ۲۴ ولتی؛ طراحی‌شده مطابق استاندارد صنایع پتروشیمی ایران برای شارژر باتری.',
+      fa: 'باتری‌های اسیدی و قلیایی ۲۴ ولتی را شارژ می‌کند و مطابق استاندارد صنایع پتروشیمی ایران برای شارژر باتری طراحی شده است.',
       en: 'Charges lead-acid and alkaline batteries in the 24 V range, designed to the Iranian petrochemical standard for battery chargers.',
     },
     features: {
@@ -106,8 +106,8 @@ export const powerSupplies: Product[] = [
     model: 'STB-2408S',
     title: { fa: 'تثبیت‌کننده‌ی ولتاژ ۲۴ ولت', en: '24 V voltage stabilizer' },
     summary: {
-      fa: 'ولتاژ پایدار برای PLC، HMI و تجهیزات حساس اتوماسیون فراهم می‌کند؛ با نصب روی ریل.',
-      en: 'Stable supply for PLCs, HMIs and sensitive automation equipment, DIN-rail mounted.',
+      fa: 'ولتاژ پایدار برای PLC، HMI و تجهیزات حساس اتوماسیون فراهم می‌کند و روی ریل نصب می‌شود.',
+      en: 'Provides a stable supply for PLCs, HMIs and sensitive automation equipment, and mounts on a DIN rail.',
     },
     features: {
       fa: ['ورودی 12 تا 36Vdc، خروجی تثبیت‌شده‌ی +24Vdc', 'جریان ۲ تا ۱۰ آمپر', 'حفاظت اضافه‌ولتاژ، اضافه‌جریان و اتصال کوتاه'],

@@ -8,8 +8,8 @@ export const ignition: Product[] = [
     model: 'IGRU-200',
     title: { fa: 'واحد جرقه‌زن پرانرژی (Hi-Energy) توربین گازی', en: 'High-energy gas turbine ignition unit' },
     summary: {
-      fa: 'واحد جرقه‌زن پرانرژی برای توربین‌های گازی صنعتی، در جعبه‌ی ضدانفجار.',
-      en: 'High-energy ignition unit for industrial gas turbines, in an explosion-proof enclosure.',
+      fa: 'مشعل توربین‌های گازی صنعتی را با جرقه‌ی پرانرژی روشن می‌کند و درون جعبه‌ی ضدانفجار نصب می‌شود.',
+      en: 'Lights industrial gas turbine combustors with a high-energy spark, and is housed in an explosion-proof enclosure.',
     },
     features: {
       fa: ['ورودی 24، 48، 110 یا 220V، DC یا AC', 'خروجی 2000Vdc با انرژی ۱۲ ژول', '۳ تا ۵ جرقه در ثانیه', 'جعبه‌ی ضدانفجار؛ کار تا دمای 85°C'],
@@ -30,8 +30,8 @@ export const ignition: Product[] = [
     model: 'IGN-2KRJ',
     title: { fa: 'اکسایتر جرقه‌ی پرانرژی توربین و بویلر', en: 'High-energy ignition exciter for turbines and boilers' },
     summary: {
-      fa: 'اکسایتر جرقه‌ی پرانرژی برای توربین‌ها و بویلرها، با بدنه‌ی فلزی که با رزین مخصوص پر شده است.',
-      en: 'High-energy ignition exciter in a metal housing filled with special resin, for turbines and boilers.',
+      fa: 'جرقه‌ی پرانرژی لازم برای روشن کردن توربین‌ها و بویلرها را تولید می‌کند. بدنه‌ی فلزی آن با رزین مخصوص پر شده است.',
+      en: 'Produces the high-energy spark that lights turbines and boilers. Its metal housing is filled with special resin.',
     },
     features: {
       fa: ['ورودی 230/115Vac یا +24Vdc', 'خروجی 2000Vdc، سه جرقه در ثانیه', 'بدنه‌ی فلزی پرشده با رزین'],
@@ -47,8 +47,8 @@ export const ignition: Product[] = [
     model: 'IGN-SL10',
     title: { fa: 'اکسایتر جرقه‌زن ۱۸ کیلوولت توربین گازی', en: '18 kV gas turbine ignition exciter' },
     summary: {
-      fa: 'اکسایتر جرقه‌زن ولتاژبالا برای توربین‌های گازی صنعتی، با بدنه‌ی کاملاً پرشده از رزین.',
-      en: 'Fully potted high-voltage ignition exciter for industrial gas turbines.',
+      fa: 'این اکسایتر ولتاژ ۱۸ کیلوولت را برای جرقه‌زنی توربین‌های گازی صنعتی تأمین می‌کند و بدنه‌اش کاملاً با رزین پر شده است.',
+      en: 'Supplies 18 kV for igniting industrial gas turbines, in a fully potted housing.',
     },
     features: {
       fa: ['ورودی 24Vdc', 'ولتاژ خروجی 18kV', 'جرقه‌ی پرانرژی، ۳ تا ۴ بار در ثانیه'],
@@ -67,8 +67,8 @@ export const ignition: Product[] = [
     model: 'HUP-18KD',
     title: { fa: 'جرقه‌زن قابل حمل مشعل', en: 'Portable burner igniter' },
     summary: {
-      fa: 'برای روشن کردن دستی مشعل کوره‌ها، بویلرها و پیش‌گرمکن‌ها؛ با دسته‌ی ۱۰۰ سانتی‌متری و محافظ در برابر برگشت شعله.',
-      en: 'For lighting furnace, boiler and preheater burners by hand. 100 cm lance with flashback guard.',
+      fa: 'با آن می‌توان مشعل کوره‌ها، بویلرها و پیش‌گرمکن‌ها را دستی روشن کرد. دسته‌ی آن ۱۰۰ سانتی‌متر است و در برابر برگشت شعله محافظ دارد.',
+      en: 'Used to light furnace, boiler and preheater burners by hand. It has a 100 cm lance with a flashback guard.',
     },
     features: {
       fa: ['تغذیه 220Vac یا 24Vdc', 'جرقه‌ی ۳ تا ۴ بار در ثانیه', 'دسته‌ی ۱۰۰ سانتی‌متری با محافظ برگشت شعله'],
@@ -84,8 +84,8 @@ export const ignition: Product[] = [
     model: 'HSB-619',
     title: { fa: 'ترانسفورماتور جرقه', en: 'Ignition transformer' },
     summary: {
-      fa: 'ترانسفورماتور جرقه برای مشعل‌های کوره و بویلر، با خروجی 15000Vac و جرقه‌ی پیوسته.',
-      en: 'Ignition transformer with a 15,000 V AC output and continuous spark, for furnace and boiler burners.',
+      fa: 'برای مشعل‌های کوره و بویلر جرقه‌ی پیوسته تولید می‌کند و ولتاژ خروجی آن 15000Vac است.',
+      en: 'Gives furnace and boiler burners a continuous spark from a 15,000 V AC output.',
     },
     features: {
       fa: ['اولیه 115Vac', 'ثانویه 15000Vac', 'جرقه‌ی پیوسته'],
@@ -101,8 +101,8 @@ export const ignition: Product[] = [
     model: 'IGRC-202 · IGSC-SL18 · IGNC-W72',
     title: { fa: 'کابل‌های جرقه‌زن توربین', en: 'Turbine ignition leads' },
     summary: {
-      fa: 'کابل‌های ولتاژبالای جرقه‌زن برای انواع توربین گازی صنعتی، در نوع زره‌دار و سیلیکونی و مطابق نمونه‌ی کارفرما.',
-      en: 'High-voltage ignition leads for a range of industrial gas turbines, in armoured and silicone versions, built to the customer’s sample.',
+      fa: 'کابل‌های ولتاژبالای جرقه‌زن را برای انواع توربین گازی صنعتی، در نوع زره‌دار و سیلیکونی و مطابق نمونه‌ی کارفرما می‌سازیم.',
+      en: 'We make high-voltage ignition leads for a range of industrial gas turbines, in armoured and silicone versions, built to the customer’s sample.',
     },
     features: {
       fa: [
@@ -126,8 +126,8 @@ export const ignition: Product[] = [
     model: 'IGRP-120 · HED614 · HSR514 · HNR-100 · HKR-600',
     title: { fa: 'شمع‌های جرقه‌زن توربین و کوره', en: 'Turbine and furnace spark plugs' },
     summary: {
-      fa: 'شمع‌های جرقه‌زن برای توربین‌های گازی، کوره‌ها و بویلرها، از جمله انواع پرانرژی (Hi-Energy) و الکترودبلند.',
-      en: 'Spark plugs for gas turbines, furnaces and boilers, including high-energy and long-electrode versions.',
+      fa: 'شمع جرقه‌زن برای توربین‌های گازی، کوره‌ها و بویلرها می‌سازیم، از جمله انواع پرانرژی (Hi-Energy) و الکترودبلند.',
+      en: 'We make spark plugs for gas turbines, furnaces and boilers, including high-energy and long-electrode versions.',
     },
     features: {
       fa: [
@@ -154,8 +154,8 @@ export const ignition: Product[] = [
     category: 'ignition',
     title: { fa: 'سامانه‌ی کامل جرقه‌زن فلر (Pulse Ignition Probe)', en: 'Complete flare ignition system (pulse ignition probe)' },
     summary: {
-      fa: 'سامانه‌ی جرقه‌زن پالسی که پایلوت فلر را روشن می‌کند و روشن نگه می‌دارد؛ همراه با تابلوی کنترل.',
-      en: 'Pulse ignition system for lighting and relighting flare pilots, supplied with its control panel.',
+      fa: 'این سامانه‌ی پالسی پایلوت فلر را روشن می‌کند و اگر خاموش شود، دوباره روشنش می‌کند. تابلوی کنترل هم همراه آن تحویل می‌شود.',
+      en: 'This pulse system lights the flare pilot and relights it if it goes out. It is supplied with its control panel.',
     },
     features: {
       fa: ['پروب جرقه‌زن پالسی', 'تابلوی کنترل و فرمان از راه دور', 'در صورت نیاز در جعبه‌ی ضدانفجار'],

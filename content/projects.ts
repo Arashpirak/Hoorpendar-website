@@ -13,16 +13,16 @@ export const projects: Project[] = [
     id: 'p001', cities: ['lavasan'], facility: 'hydro', sector: 'power', yearSH: 1380, productCategory: 'excitation-governor', highlight: true,
     title: { fa: 'طراحی و ساخت واحد تحریک استاتیک ژنراتور نیروگاه آبی', en: 'Static excitation unit for a hydroelectric generator' },
     summary: {
-      fa: 'نخستین سیستم تحریک استاتیک ژنراتور ساخت داخل. از آن پس هورپندار سیستم‌های تحریک استاتیک ژنراتورها و موتورهای سنکرون را طراحی و تولید کرده است.',
-      en: 'The first static generator excitation system designed and built in Iran. Since then Hoorpendar has designed and produced static excitation systems for generators and synchronous motors.',
+      fa: 'این نخستین سیستم تحریک استاتیک ژنراتور بود که در ایران ساخته شد. از آن پس هورپندار سیستم‌های تحریک استاتیک ژنراتورها و موتورهای سنکرون را طراحی و تولید کرده است.',
+      en: 'This was the first static generator excitation system designed and built in Iran. Since then Hoorpendar has designed and produced static excitation systems for generators and synchronous motors.',
     },
   },
   {
     id: 'p002', cities: ['lavasan'], facility: 'hydro', sector: 'power', yearSH: 1380, productCategory: 'dam-power-infrastructure', highlight: true,
     title: { fa: 'سیستم کنترل هوشمند Full-Redundant برای تنظیم خودکار دبی آب انتقالی از سد به یک کلان‌شهر', en: 'Fully redundant intelligent control of water flow from a dam to a metropolitan area' },
     summary: {
-      fa: 'کنترل هوشمند با افزونگی کامل برای تنظیم خودکار دبی آب انتقالی از یک سد به شبکه‌ی آب یک کلان‌شهر، با تجهیزات ساخت هورپندار و کنترلر PLC.',
-      en: 'Fully redundant intelligent control that automatically regulates water flow from a dam into a metropolitan supply network, built on Hoorpendar hardware and a PLC controller.',
+      fa: 'این سیستم با افزونگی کامل، دبی آب انتقالی از یک سد به شبکه‌ی آب یک کلان‌شهر را خودکار تنظیم می‌کند. کنترلر آن PLC است و بقیه‌ی تجهیزات را هورپندار ساخته است.',
+      en: 'This fully redundant system automatically regulates water flow from a dam into a metropolitan supply network. It runs on a PLC controller, and Hoorpendar built the rest of the hardware.',
     },
   },
   {
@@ -53,8 +53,8 @@ export const projects: Project[] = [
     id: 'p009', cities: ['manjil'], facility: 'hydro', sector: 'power', yearSH: 1384, productCategory: 'dam-power-infrastructure', highlight: true,
     title: { fa: 'کریدوسکوپ لیزری برای اندازه‌گیری و پایش دقیق انحراف بدنه‌ی سد', en: 'Laser crydoscope for precise dam-body deflection monitoring' },
     summary: {
-      fa: 'سیستم لیزری دومحوره برای پایش و ثبت حرکات بدنه‌ی سد با دقت ۰٫۰۱ میلی‌متر و بدون تماس فیزیکی.',
-      en: 'A two-axis laser system that tracks and records dam-body movement to 0.01 mm without physical contact.',
+      fa: 'این سیستم لیزری دومحوره حرکت بدنه‌ی سد را بدون تماس فیزیکی و با دقت ۰٫۰۱ میلی‌متر پایش و ثبت می‌کند.',
+      en: 'This two-axis laser system tracks and records dam-body movement to 0.01 mm without touching the structure.',
     },
   },
   {
@@ -77,8 +77,8 @@ export const projects: Project[] = [
     id: 'p014', cities: ['aghajari'], facility: 'oil-gas-station', sector: 'oil', yearSH: 1386, productCategory: 'excitation-governor', highlight: true,
     title: { fa: 'سیستم کنترل و راه‌انداز تحریک موتورهای سنکرون ۳٫۵ مگاواتی ایستگاه پمپاژ', en: 'Excitation control and starter for 3.5 MW synchronous motors at pumping stations' },
     summary: {
-      fa: 'کنترل و راه‌انداز تحریک استاتیک موتورهای سنکرون ۳٫۵ مگاواتی در ایستگاه‌های پمپاژ و تقویت فشار. در سال‌های بعد ۴۰ واحد کنترل تحریک دیگر برای همین موتورها تحویل شد.',
-      en: 'Static excitation control and starting for 3.5 MW synchronous motors at pumping and compression stations. Forty more excitation control units followed for the same motors.',
+      fa: 'کنترل و راه‌انداز تحریک استاتیک موتورهای سنکرون ۳٫۵ مگاواتی را برای ایستگاه‌های پمپاژ و تقویت فشار ساختیم. در سال‌های بعد ۴۰ واحد کنترل تحریک دیگر هم برای همین موتورها تحویل دادیم.',
+      en: 'We built static excitation control and starters for 3.5 MW synchronous motors at pumping and compression stations, and later delivered forty more excitation control units for the same motors.',
     },
   },
   {
@@ -169,8 +169,8 @@ export const projects: Project[] = [
     id: 'p036', cities: ['poldasht'], facility: 'research', sector: 'power', yearSH: 1391, productCategory: 'excitation-governor', highlight: true,
     title: { fa: 'پروژه‌ی پژوهشی سیستم کنترل دیجیتال گاورنر توربین آبی', en: 'Research program: digital governor control for a hydro turbine' },
     summary: {
-      fa: 'نخستین گاورنر دیجیتال توربین آبی ساخت داخل (DHTG-300) بر پایه‌ی PLC. این نیروگاه با سیستم تحریک و گاورنر هورپندار در آزمون خودراه‌اندازی (Black Start) بخشی از شبکه را به‌صورت جزیره‌ای برق‌دار کرد و بارهای پله‌ای تا ۲٫۵ مگاوات را با حفظ فرکانس و ولتاژ کنترل کرد.',
-      en: 'The first digital hydro-turbine governor made in Iran (DHTG-300), built on a PLC. With Hoorpendar excitation and governor systems, the plant later energized part of the grid in island mode during a black-start test, holding frequency and voltage under step loads of up to 2.5 MW.',
+      fa: 'مدل DHTG-300 نخستین گاورنر دیجیتال توربین آبی ساخت داخل است و بر پایه‌ی PLC کار می‌کند. این نیروگاه با سیستم تحریک و گاورنر هورپندار در آزمون خودراه‌اندازی (Black Start) بخشی از شبکه را به‌صورت جزیره‌ای برق‌دار کرد و بارهای پله‌ای تا ۲٫۵ مگاوات را با حفظ فرکانس و ولتاژ کنترل کرد.',
+      en: 'The DHTG-300 is the first digital hydro-turbine governor made in Iran, and runs on a PLC. With Hoorpendar excitation and governor systems, the plant later energized part of the grid in island mode during a black-start test, holding frequency and voltage under step loads of up to 2.5 MW.',
     },
   },
   {
@@ -189,8 +189,8 @@ export const projects: Project[] = [
     id: 'p040', cities: ['gachsaran'], facility: 'oil-gas-operator', sector: 'oil', yearSH: 1392, productCategory: 'alarm-safety', highlight: true,
     title: { fa: 'تولید ۸۰۰ سیگنال اعلام‌گر آلارم برای کارخانه‌های بهره‌برداری نفت', en: '800 alarm annunciator signals for oil production plants' },
     summary: {
-      fa: 'تولید و تحویل ۸۰۰ سیگنال اعلام‌گر آلارم برای کارخانه‌های مختلف یک بهره‌بردار نفت و گاز.',
-      en: '800 alarm annunciator signals produced and delivered for the production plants of an oil and gas operator.',
+      fa: 'برای کارخانه‌های یک بهره‌بردار نفت و گاز، اعلام‌گرهای آلارم با ۸۰۰ سیگنال ساختیم و تحویل دادیم.',
+      en: 'We built and delivered alarm annunciators covering 800 signals for the production plants of an oil and gas operator.',
     },
   },
   {
@@ -397,8 +397,8 @@ export const projects: Project[] = [
     id: 'p091', cities: ['ahvaz'], facility: 'oil-gas-operator', sector: 'oil', yearSH: 1396, productCategory: 'instrumentation', highlight: true,
     title: { fa: 'تأمین ۱۲۰ دستگاه مبدل فشار به جریان PI-315', en: '120 PI-315 pressure-to-current converters' },
     summary: {
-      fa: '۱۲۰ دستگاه مبدل فشار به جریان در یک قرارداد، برای اتصال ابزارهای پنوماتیک موجود به سیستم‌های کنترل الکترونیکی.',
-      en: '120 pressure-to-current converters in a single contract, connecting existing pneumatic instruments to electronic control systems.',
+      fa: 'در یک قرارداد ۱۲۰ مبدل فشار به جریان تحویل دادیم تا ابزارهای پنوماتیک موجود به سیستم‌های کنترل الکترونیکی وصل شوند.',
+      en: 'In a single contract we delivered 120 pressure-to-current converters, so existing pneumatic instruments could connect to electronic control systems.',
     },
   },
   {
@@ -513,8 +513,8 @@ export const projects: Project[] = [
     id: 'p119', cities: ['sirri'], facility: 'offshore', sector: 'oil', yearSH: 1400, productCategory: 'turbine-control', highlight: true,
     title: { fa: 'سنسور بدون تماس موقعیت پره‌های راهنمای ورودی توربین گازی', en: 'Contactless inlet guide vane position sensor for a gas turbine' },
     summary: {
-      fa: 'سنسور موقعیت بدون تماس که درون جک هیدرولیک و زیر فشار ۶۰ بار نصب می‌شود و در دمای بالا دقت و سرعت لازم برای کنترل پره‌های راهنمای ورودی توربین را دارد.',
-      en: "A contactless position sensor mounted inside the hydraulic actuator at 60 bar, with the accuracy and response needed to control the turbine's inlet guide vanes at high temperature.",
+      fa: 'این سنسور موقعیت بدون تماس درون جک هیدرولیک و زیر فشار ۶۰ بار نصب می‌شود. در دمای بالا هم دقت و سرعت لازم برای کنترل پره‌های راهنمای ورودی توربین را دارد.',
+      en: "This contactless position sensor sits inside the hydraulic actuator at 60 bar. Even at high temperature it keeps the accuracy and response needed to control the turbine's inlet guide vanes.",
     },
   },
   {
@@ -573,8 +573,8 @@ export const projects: Project[] = [
     id: 'p133', cities: ['karaj'], facility: 'rail', sector: 'industry', yearSH: 1401, productCategory: 'excitation-governor', highlight: true,
     title: { fa: 'سیستم تحریک ژنراتور لوکوموتیو', en: 'Locomotive traction-generator excitation system' },
     summary: {
-      fa: 'طراحی و ساخت سیستم تحریک ژنراتور کشش لوکوموتیو، همراه با مبدل‌ها و درایورهای سوئیچینگ ویژه.',
-      en: 'Excitation system for a locomotive traction generator, designed and built together with special switching converters and drivers.',
+      fa: 'سیستم تحریک ژنراتور کشش لوکوموتیو را همراه با مبدل‌ها و درایورهای سوئیچینگ مخصوص آن طراحی کردیم و ساختیم.',
+      en: 'We designed and built the excitation system for a locomotive traction generator, along with the switching converters and drivers it needs.',
     },
   },
   {
@@ -607,8 +607,8 @@ export const projects: Project[] = [
     id: 'x02', cities: ['tehran'], facility: 'meteorology', sector: 'industry', highlight: true,
     title: { fa: 'شبکه‌ی جمع‌آوری و سوئیچینگ داده‌ی مراکز هواشناسی با ارتباط هم‌زمان بیش از ۲۵۶ ایستگاه', en: 'Meteorological data collection and switching network linking more than 256 stations at once' },
     summary: {
-      fa: 'شبکه‌ی جمع‌آوری و سوئیچینگ داده برای مراکز هواشناسی، با ارتباط هم‌زمان و Online بیش از ۲۵۶ ایستگاه.',
-      en: 'Data collection and switching network for meteorological centers, with more than 256 stations connected online at the same time.',
+      fa: 'این شبکه داده‌های مراکز هواشناسی را جمع‌آوری و سوئیچ می‌کند و بیش از ۲۵۶ ایستگاه را هم‌زمان و به‌صورت Online به هم وصل می‌کند.',
+      en: 'This network collects and switches data for meteorological centers, keeping more than 256 stations connected online at the same time.',
     },
   },
   {

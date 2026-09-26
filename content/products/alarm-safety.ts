@@ -8,8 +8,8 @@ export const alarmSafety: Product[] = [
     model: 'PAL750 · PAL625',
     title: { fa: 'اعلام‌گر آلارم برنامه‌پذیر ماژولار', en: 'Modular programmable alarm annunciator' },
     summary: {
-      fa: 'یکی از باکیفیت‌ترین اعلام‌گرهای آلارم ساخت داخل که در بسیاری از تأسیسات نفت و گاز و نیروگاه‌ها کار می‌کند. هر ماژول پردازنده‌ی مستقل خود را دارد و به ماژول اصلی (Master) وابسته نیست؛ ماژول‌ها را می‌توان در هر آرایشی از سطر و ستون کنار هم چید.',
-      en: 'One of the most reliable annunciators made in Iran, in service at many oil and gas plants and power stations. Every module has its own processor (no master), and modules combine in any row and column layout.',
+      fa: 'این اعلام‌گر در بسیاری از تأسیسات نفت و گاز و نیروگاه‌ها کار می‌کند. هر ماژول پردازنده‌ی خودش را دارد و به ماژول اصلی (Master) وابسته نیست، پس ماژول‌ها را می‌توان در هر آرایشی از سطر و ستون کنار هم چید.',
+      en: 'This annunciator is in service at many oil and gas plants and power stations. Every module has its own processor and does not depend on a master, so modules can be combined in any row and column layout.',
     },
     features: {
       fa: [
@@ -43,8 +43,8 @@ export const alarmSafety: Product[] = [
     model: 'SAL-82',
     title: { fa: 'پنل آلارم جمع‌وجور', en: 'Compact alarm panel' },
     summary: {
-      fa: 'پنل آلارم پنجره‌ای و کم‌حجم برای تابلوهای محلی، با پنجره‌هایی که برچسبشان را می‌توان عوض کرد و دکمه‌های آزمون (Test)، تأیید (Acknowledge) و بازنشانی (Reset).',
-      en: 'A compact window-type alarm panel for local control panels, with labelled windows and test, acknowledge and reset buttons.',
+      fa: 'این پنل کوچک و پنجره‌ای برای تابلوهای محلی ساخته شده است. برچسب پنجره‌ها را می‌توان عوض کرد و دکمه‌های آزمون (Test)، تأیید (Acknowledge) و بازنشانی (Reset) روی خود پنل قرار دارند.',
+      en: 'This compact window-type panel is made for local control panels. The window labels can be changed, and the test, acknowledge and reset buttons are on the panel itself.',
     },
     features: {
       fa: ['برچسب پنجره‌ها قابل تعویض', 'دکمه‌های Test، Acknowledge و Reset', 'مناسب تابلوهای محلی و کنار تجهیزات'],
@@ -60,8 +60,8 @@ export const alarmSafety: Product[] = [
     model: 'HIPPS Logic Solver',
     title: { fa: 'سامانه‌ی حفاظت در برابر فشار زیاد (HIPPS)', en: 'High-integrity pressure protection system (HIPPS)' },
     summary: {
-      fa: 'سامانه‌ی ایمنی ابزاردقیقی (SIS) برای تأسیسات بالادستی نفت و گاز. پیش از آنکه فشار از حد مجاز بگذرد، جریان را قطع می‌کند؛ به همین دلیل لوله‌کشی پایین‌دست را می‌توان سبک‌تر و ارزان‌تر طراحی کرد و گاز کمتری به فلر فرستاده می‌شود.',
-      en: 'A safety instrumented system for upstream oil and gas. It reduces downstream piping cost and avoids flaring.',
+      fa: 'این سامانه‌ی ایمنی ابزاردقیقی (SIS) برای تأسیسات بالادستی نفت و گاز ساخته شده است. پیش از آنکه فشار از حد مجاز بگذرد، جریان را قطع می‌کند؛ به همین دلیل لوله‌کشی پایین‌دست را می‌توان سبک‌تر و ارزان‌تر طراحی کرد و گاز کمتری به فلر فرستاده می‌شود.',
+      en: 'A safety instrumented system for upstream oil and gas. It shuts off the flow before pressure exceeds the safe limit, so downstream piping can be designed lighter and cheaper, and less gas goes to the flare.',
     },
     features: {
       fa: ['محاسبه و صحه‌گذاری سطح یکپارچگی ایمنی (SIL)', 'اتصال به SCADA', 'کار تا دمای 60°C بدون تهویه؛ مصرف انرژی کم', 'قابل توسعه برای سامانه‌ی مدیریت مشعل (BMS) و شیرهای قطع خط (LBV)'],

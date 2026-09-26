@@ -42,7 +42,7 @@ export const flameDetection: Product[] = [
     title: { fa: 'رله‌ی آشکارساز شعله با سنسور UV یا یونیزاسیون', en: 'UV and ionization flame relay' },
     summary: {
       fa: 'وجود شعله را در توربین، کوره و بویلر تشخیص می‌دهد. مدل E با سنسور فرابنفش (UV) کار می‌کند و مدل D با الکترود میله‌ای (Flame Rod) که یونیزاسیون ناشی از احتراق را می‌سنجد. شمار زیادی از آن در صنایع نفت و گاز کار می‌کند.',
-      en: 'Flame detection for turbines, furnaces and boilers. The E model works with a UV sensor; the D model uses a flame rod that measures combustion ionization. Widely used in oil and gas plants.',
+      en: 'Detects flame in turbines, furnaces and boilers. The E model works with a UV sensor; the D model uses a flame rod that measures combustion ionization. Many are in service at oil and gas plants.',
     },
     features: {
       fa: ['خروجی رله با کنتاکت دوطرفه (Changeover)', 'تغذیه‌ی 220 یا 115Vac، به انتخاب خریدار', 'سازگار با سنسور UV و الکترود میله‌ای'],
@@ -77,8 +77,8 @@ export const flameDetection: Product[] = [
     model: 'UFD-760',
     title: { fa: 'آشکارساز آتش UV برای مناطق خطرناک', en: 'UV fire detector for hazardous areas' },
     summary: {
-      fa: 'محیط‌هایی را که خطر آتش‌سوزی دارند، مانند کمپرسورخانه‌ها و توربین‌های گازی، به‌طور پیوسته پایش می‌کند. حاصل دو سال پژوهش و توسعه در هورپندار.',
-      en: 'Continuous fire watch for high-risk areas such as gas compressors and gas turbines. The result of two years of in-house research and development.',
+      fa: 'محیط‌هایی را که خطر آتش‌سوزی دارند، مانند کمپرسورخانه‌ها و توربین‌های گازی، به‌طور پیوسته پایش می‌کند. طراحی آن دو سال پژوهش و توسعه در هورپندار زمان برد.',
+      en: 'Continuous fire watch for high-risk areas such as gas compressors and gas turbines. It took two years of in-house research and development.',
     },
     features: {
       fa: [
@@ -129,8 +129,8 @@ export const flameDetection: Product[] = [
     model: 'KRN-IN320',
     title: { fa: 'سنسورها و الکترودهای آشکارساز شعله', en: 'Flame sensors and electrodes' },
     summary: {
-      fa: 'الکترود میله‌ای یونیزاسیون (Flame Rod) با بدنه‌ی چینی لعاب‌دار، و سنسورهای فرابنفش (UV) و فروسرخ (IR) برای تشخیص انواع شعله. در شکل‌ها و اندازه‌های گوناگون و مطابق نمونه‌ی کارفرما ساخته می‌شوند.',
-      en: 'Ionization flame rods with glazed porcelain bodies, and UV and IR sensors for different flame types. Made in various sizes and shapes to match the customer’s sample.',
+      fa: 'الکترود میله‌ای یونیزاسیون (Flame Rod) با بدنه‌ی چینی لعاب‌دار و سنسورهای فرابنفش (UV) و فروسرخ (IR) را برای تشخیص انواع شعله می‌سازیم؛ در شکل‌ها و اندازه‌های گوناگون و مطابق نمونه‌ی کارفرما.',
+      en: 'We make ionization flame rods with glazed porcelain bodies, and UV and IR sensors for different flame types, in various shapes and sizes to match the customer’s sample.',
     },
     features: {
       fa: ['الکترود یونیزاسیون با بدنه‌ی چینی', 'سنسورهای UV و IR', 'ساخت مطابق نمونه'],
