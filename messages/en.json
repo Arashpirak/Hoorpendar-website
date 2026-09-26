@@ -141,6 +141,8 @@
     "model": "Model",
     "features": "Features",
     "specs": "Technical data",
+    "catalogTitle": "Catalogue and photos",
+    "catalogHint": "Select a sheet to open it at full size.",
     "applications": "Applications",
     "installedIn": "Installed in",
     "relatedProjects": "Related projects",
@@ -193,5 +195,20 @@
     "contactTitle": "Get in touch for advice, orders or a visit",
     "contactLead": "If you need new or replacement equipment, we will design and build it to your specification. You can also hand us a complete project.",
     "website": "Website"
+  },
+  "contact": {
+    "title": "Get in touch",
+    "lead": "Our head office is in Tehran, and equipment is built and tested at our workshop in the Payam Airport Special Economic Zone. For a quote or a technical question, call us, send an email or leave a message with Atirame in the chat.",
+    "locationsTitle": "Addresses",
+    "office": "Head office",
+    "workshop": "Workshop",
+    "officeNote": "Sales, engineering and support",
+    "workshopNote": "Manufacturing, assembly and testing",
+    "openMap": "Open in Google Maps",
+    "mapTitle": "Map of the {place}",
+    "channelsTitle": "Phone, email and messaging",
+    "chatTitle": "Request a quote in the chat",
+    "chatBody": "Send Atirame the model or part number of the unit and the specification you need. Our engineers will review the request and contact you.",
+    "chatCta": "Start a chat"
   }
 }

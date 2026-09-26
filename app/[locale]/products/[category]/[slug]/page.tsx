@@ -141,6 +141,38 @@ export default async function ProductPage({ params }: PageProps<'/[locale]/produ
           </div>
         </div>
 
+        {product.catalog && product.catalog.length > 0 && (
+          <section className="mt-14">
+            <h2 className="text-xl font-extrabold text-brand">{t('catalogTitle')}</h2>
+            <p className="mt-1 mb-5 text-sm text-muted">{t('catalogHint')}</p>
+            <ul className="grid gap-5 sm:grid-cols-2">
+              {product.catalog.map((im) => (
+                <li
+                  key={im.src}
+                  className={im.width > im.height * 1.6 ? 'sm:col-span-2' : undefined}
+                >
+                  <a
+                    href={im.src}
+                    target="_blank"
+                    rel="noopener"
+                    className="block overflow-hidden rounded-[var(--radius-card)] border border-border bg-white transition-shadow hover:shadow-lg focus-visible:outline-2 focus-visible:outline-accent"
+                  >
+                    <Image
+                      src={im.src}
+                      alt={im.alt[locale]}
+                      width={im.width}
+                      height={im.height}
+                      sizes="(min-width: 1152px) 560px, (min-width: 640px) 50vw, 100vw"
+                      className="h-auto w-full"
+                    />
+                  </a>
+                  <p className="mt-2 text-center text-xs text-muted">{bidi(locale, im.alt[locale])}</p>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
         {product.specs && (
           <section className="mt-14">
             <h2 className="mb-4 text-xl font-extrabold text-brand">{t('specs')}</h2>

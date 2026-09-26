@@ -1,5 +1,5 @@
 import type { Product } from '../types';
-import { apps, img } from './shared';
+import { apps, img, sheet } from './shared';
 
 export const powerSupplies: Product[] = [
   {
@@ -17,20 +17,29 @@ export const powerSupplies: Product[] = [
         'نمایشگر LCD گرافیکی، کنترل PID، ثبت خطاها با زمان رخداد',
         'Modbus RTU روی RS-485/232',
         'تقسیم بار میان شارژرها (Load Sharing) و کنترل دیودهای افت ولتاژ (Dropper) تا ۴ پله',
+        'کیس فلزی با کارت‌های ماژولار و صفحه‌کلید ضد آب و گرد و خاک',
+        'همه‌ی حفاظت‌های لازم شارژر، از جمله کاهش و افزایش ولتاژ و نشتی مثبت یا منفی به زمین',
       ],
       en: [
         '24 to 110 V DC battery voltage; 6- and 3-thyristor bridges',
         'Graphic LCD, PID control, time-stamped fault log',
         'Modbus RTU over RS-485/232',
         'Load sharing and dropper-diode control in up to 4 steps',
+        'Metal case with modular cards and a dust- and water-proof keypad',
+        'Every protection a charger needs: under- and over-voltage, and positive or negative earth leakage',
       ],
     },
     specs: [
-      { label: { fa: 'ولتاژ باتری', en: 'Battery voltage' }, value: '24 – 110 V DC' },
+      { label: { fa: 'ولتاژ باتری', en: 'Battery voltage' }, value: '24 – 110 V DC (SBC-600 up to 250 V DC)' },
+      { label: { fa: 'پل تریستوری', en: 'Thyristor bridge' }, value: '3- or 6-thyristor' },
       { label: { fa: 'ارتباط', en: 'Communication' }, value: 'Modbus RTU · RS-485/232' },
     ],
     applications: [apps.substation, apps.hydro, apps.thermal, apps.refinery],
     images: [img('battery-charger-controller', 'کنترلر هوشمند شارژر باتری SBC-600', 'SBC-600 smart charger controller')],
+    catalog: [
+      sheet('sbc-600-sheet', 'کاتالوگ کنترلر هوشمند SBC-600', 'SBC-600 smart controller catalogue sheet'),
+      sheet('smart-charger-sheet', 'کاتالوگ SBC-600 و شارژر SMART-128', 'SBC-600 and SMART-128 catalogue sheet'),
+    ],
     relatedProjectIds: ['p096', 'p121', 'p122', 'p131', 'p030', 'p057', 'p101'],
   },
   {
@@ -47,15 +56,22 @@ export const powerSupplies: Product[] = [
         'حالت‌های شارژ نگهداری (Float)، سریع (Boost)، اولیه (Initial) و دستی',
         'شارژ دومرحله‌ای جریان‌ثابت / ولتاژثابت با حفاظت‌های کامل',
         'ارسال وضعیت با Modbus؛ تقسیم بار برای کار موازی شارژرها',
+        'ثبت خطاها با ساعت و تاریخ، از جمله افت ولتاژ ورودی، اتصال کوتاه خروجی و شارژ بیش از حد',
+        'نمایشگر LCD بزرگ، نمایشگرهای دیجیتال و اعلام‌گر آلارم روی درب تابلو',
+        'ورودی تک‌فاز یا سه‌فاز و ساخت در توان‌ها و ولتاژهای خروجی مختلف',
       ],
       en: [
         'Float, boost, initial and manual modes',
         'Two-stage constant-current / constant-voltage charging with full protection',
         'Status over Modbus; load sharing for parallel chargers',
+        'Time-stamped fault log, including input under-voltage, output short circuit and overcharge',
+        'Large LCD, digital meters and an alarm annunciator on the door',
+        'Single- or three-phase input, built in a range of ratings and output voltages',
       ],
     },
     applications: [apps.substation, apps.thermal, apps.oilGas],
     images: [img('smart-battery-charger', 'شارژر هوشمند باتری SMART-128', 'SMART-128 smart battery charger')],
+    catalog: [sheet('smart-charger-sheet', 'کاتالوگ شارژر هوشمند SMART-128', 'SMART-128 catalogue sheet')],
     relatedProjectIds: ['p113', 'p042', 'p109'],
   },
   {
@@ -68,8 +84,20 @@ export const powerSupplies: Product[] = [
       en: 'Charges lead-acid and alkaline batteries in the 24 V range, designed to the Iranian petrochemical standard for battery chargers.',
     },
     features: {
-      fa: ['حالت‌های Initial، Boost، Float و کار دستی به‌عنوان منبع تغذیه', 'درجه‌ی حفاظت IP54', 'ابعاد 310×290×250mm؛ سبک و قابل‌حمل'],
-      en: ['Initial, boost, float and manual power-supply modes', 'IP54 protection', '310 × 290 × 250 mm, light and portable'],
+      fa: [
+        'حالت‌های Initial، Boost، Float و کار دستی به‌عنوان منبع تغذیه',
+        'تنظیمات از روی صفحه‌ی نمایش جلوی دستگاه انجام می‌شود و ولتاژ و جریان شارژ همیشه کنترل می‌شود',
+        'ثبت خطاهای سیستم و رله‌ی خروجی اعلام خرابی',
+        'درجه‌ی حفاظت IP54، تحمل رطوبت تا ۹۰٪ بدون بخار',
+        'ابعاد 310×290×250mm؛ کیس فلزی سبک و قابل‌حمل',
+      ],
+      en: [
+        'Initial, boost, float and manual power-supply modes',
+        'Set up from the front display; charge voltage and current stay under control throughout',
+        'Fault log and a fault relay output',
+        'IP54, up to 90 % non-condensing humidity',
+        '310 × 290 × 250 mm light, portable metal case',
+      ],
     },
     specs: [
       { label: { fa: 'خروجی', en: 'Output' }, value: '24 – 35 V DC, up to 30 A' },
@@ -77,7 +105,36 @@ export const powerSupplies: Product[] = [
     ],
     applications: [apps.oilGas, apps.substation],
     images: [img('portable-battery-charger', 'شارژر قابل‌حمل باتری PSB-1000', 'PSB-1000 portable battery charger')],
+    catalog: [sheet('psb-1000-sheet', 'کاتالوگ شارژر سوئیچینگ PSB-1000', 'PSB-1000 catalogue sheet')],
     relatedProjectIds: ['p117'],
+  },
+  {
+    slug: 'thyristor-battery-charger',
+    category: 'power-supplies',
+    title: { fa: 'باتری‌شارژر تریستوری تک‌فاز و سه‌فاز', en: 'Single- and three-phase thyristor battery chargers' },
+    summary: {
+      fa: 'باتری‌شارژرهای کم‌توان را معمولاً تک‌فاز می‌سازیم و جایی که برق سه‌فاز در دسترس نیست هم نوع تک‌فاز به کار می‌آید. نوع سه‌فاز صنعتی با کنترلر دیجیتال هوشمند ما کار می‌کند و حلقه‌های کنترل ولتاژ و جریان آن سریع و دقیق است. برای جاهایی که حجم و وزن مهم است، شارژر سوئیچینگ هم می‌سازیم.',
+      en: 'Low-power chargers are usually single-phase, and a single-phase unit also suits sites without three-phase power. The industrial three-phase chargers run on our smart digital controller, with fast, accurate voltage and current loops. Where size and weight matter, we build switching chargers too.',
+    },
+    features: {
+      fa: [
+        'تک‌فاز تریستوری: ولتاژ 6Vdc تا 250Vdc و توان تا 5kW، مطابق نیاز کارفرما',
+        'سه‌فاز صنعتی با کنترلر دیجیتال و نمایشگرهای جریان و ولتاژ روی درب تابلو',
+        'شارژر سوئیچینگ با حجم و وزن بسیار کمتر از نوع تریستوری',
+      ],
+      en: [
+        'Single-phase thyristor: 6 to 250 V DC and up to 5 kW, to the customer’s requirement',
+        'Industrial three-phase units with a digital controller and current and voltage meters on the door',
+        'Switching chargers, much smaller and lighter than thyristor units',
+      ],
+    },
+    specs: [
+      { label: { fa: 'ولتاژ خروجی (تک‌فاز)', en: 'Output voltage (single-phase)' }, value: '6 – 250 V DC' },
+      { label: { fa: 'توان (تک‌فاز)', en: 'Rating (single-phase)' }, value: 'up to 5 kW' },
+    ],
+    applications: [apps.substation, apps.thermal, apps.oilGas, apps.industry],
+    images: [img('thyristor-charger', 'تابلوی باتری‌شارژر تریستوری', 'Thyristor battery charger cabinet')],
+    catalog: [sheet('thyristor-charger-cabinet', 'تابلوی باتری‌شارژر تریستوری با کنترلر دیجیتال', 'Thyristor battery charger cabinet with digital controller')],
   },
   {
     slug: 'turbine-starting-battery-charger',

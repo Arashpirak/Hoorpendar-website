@@ -1,5 +1,5 @@
 import type { Product } from '../types';
-import { apps, img } from './shared';
+import { apps, img, sheet } from './shared';
 
 export const flameDetection: Product[] = [
   {
@@ -16,11 +16,15 @@ export const flameDetection: Product[] = [
         'قابل نصب روی انواع توربین گازی صنعتی',
         'کابل نسوز با روکش فلزی به طول ۵ تا ۱۵ متر، از سنسور تا واحد',
         'کار تا دمای 85°C در جعبه‌ی آلومینیومی آب‌بندی‌شده',
+        'رله‌ی خروجی خاموشی شعله با نمایشگر LED و پتانسیومتر تنظیم حساسیت',
+        'گلند فلزی روی هر ورودی؛ سنسور سوکتی است و جدا تعویض می‌شود',
       ],
       en: [
         'Fits a wide range of industrial gas turbines',
         'Sensor-to-unit cable of 5 to 15 m, fire-resistant with metal braid',
         'Operates up to 85 °C in a sealed aluminium housing',
+        'Flame-failure relay output with LED indicator and sensitivity potentiometer',
+        'Metal gland on every entry; the sensor plugs into a socket and is replaced on its own',
       ],
     },
     specs: [
@@ -32,6 +36,10 @@ export const flameDetection: Product[] = [
     images: [
       img('fdu-300', 'واحد آشکارساز شعله FDU-300', 'FDU-300 flame detection unit'),
       img('fdu-320', 'واحد آشکارساز شعله FDU-320', 'FDU-320 flame detection unit'),
+    ],
+    catalog: [
+      sheet('fdu-300-sheet', 'کاتالوگ FDU-300', 'FDU-300 catalogue sheet'),
+      sheet('fdu-320-sheet', 'کاتالوگ FDU-320', 'FDU-320 catalogue sheet'),
     ],
     relatedProjectIds: ['p069', 'p071', 'p076', 'p082', 'p055', 'p059', 'p105', 'p128'],
   },
@@ -45,15 +53,37 @@ export const flameDetection: Product[] = [
       en: 'Detects flame in turbines, furnaces and boilers. The E model works with a UV sensor; the D model uses a flame rod that measures combustion ionization. Many are in service at oil and gas plants.',
     },
     features: {
-      fa: ['خروجی رله با کنتاکت دوطرفه (Changeover)', 'تغذیه‌ی 220 یا 115Vac، به انتخاب خریدار', 'سازگار با سنسور UV و الکترود میله‌ای'],
-      en: ['Changeover relay contact output', '220 or 115 V AC supply, to order', 'Works with UV and flame-rod sensors'],
+      fa: [
+        'دو کنتاکت باز و بسته‌ی جدا با جریان نامی 2A',
+        'سوکت اندازه‌گیری جریان سنسور روی دستگاه، سیگنال شعله را برحسب میکروآمپر نشان می‌دهد',
+        'خطای شعله را در کمتر از ۲ ثانیه تشخیص می‌دهد',
+        'واحد کنترل ماژولار است و برای تعمیر یا تعویض از پایه جدا می‌شود',
+        'چراغ وضعیت رله و ترمینال‌های بزرگ در جعبه‌ی صنعتی',
+      ],
+      en: [
+        'Two separate NO/NC contacts rated 2 A',
+        'Current test socket on the unit shows the flame signal in microamps',
+        'Flame failure detected in under 2 seconds',
+        'Plug-in control unit that comes off its base for repair or replacement',
+        'Relay status lamp and large terminals in an industrial case',
+      ],
     },
     specs: [
-      { label: { fa: 'تغذیه', en: 'Supply' }, value: '220 / 115 V AC' },
-      { label: { fa: 'خروجی', en: 'Output' }, value: 'Changeover relay' },
+      { label: { fa: 'تغذیه', en: 'Supply' }, value: '115 or 220 V AC, 50/60 Hz' },
+      { label: { fa: 'خروجی', en: 'Output' }, value: '2 × NO/NC, 2 A' },
+      { label: { fa: 'جریان سیگنال شعله', en: 'Flame signal current' }, value: '3 – 6 µA (D), 3.5 – 7.5 µA (E)' },
+      { label: { fa: 'زمان تشخیص خطای شعله', en: 'Flame failure response' }, value: '< 2 s' },
+      { label: { fa: 'دمای کار', en: 'Operating temperature' }, value: '-10 to +60 °C' },
+      { label: { fa: 'رطوبت', en: 'Humidity' }, value: 'up to 90 % at 40 °C' },
+      { label: { fa: 'درجه‌ی حفاظت', en: 'Protection' }, value: 'IP40' },
     ],
     applications: [apps.gasTurbine, apps.boiler],
     images: [img('flame-relay', 'رله‌ی شعله FR-430E', 'FR-430E flame relay')],
+    catalog: [
+      sheet('fr-430e-sheet', 'کاتالوگ FR-430E با نقشه‌ی سیم‌بندی', 'FR-430E catalogue sheet with wiring'),
+      sheet('fr-430d-sheet', 'کاتالوگ FR-430D', 'FR-430D catalogue sheet'),
+      sheet('fr-430d-wiring', 'مشخصات فنی و سیم‌بندی FR-430D', 'FR-430D technical data and wiring'),
+    ],
     relatedProjectIds: ['p067', 'p077', 'p089', 'p090', 'p093', 'p094'],
   },
   {
@@ -70,6 +100,7 @@ export const flameDetection: Product[] = [
     },
     applications: [apps.boiler, apps.refinery],
     images: [img('flame-safeguard-card', 'کارت کنترلر ایمنی شعله', 'Flame safeguard controller card')],
+    catalog: [sheet('flame-safeguard-card', 'کارت رله‌ی آشکارساز شعله', 'Flame detector relay card')],
   },
   {
     slug: 'uv-fire-detector',
@@ -83,15 +114,21 @@ export const flameDetection: Product[] = [
     features: {
       fa: [
         'تشخیص شعله‌ای به اندازه‌ی ۱ سانتی‌متر مربع از فاصله‌ی ۵ متری',
-        'مدار منطقی CPLD؛ بدون واکنش به نور خورشید',
+        'مدار منطقی CPLD؛ به نور محیط و نور مستقیم خورشید واکنش نمی‌دهد',
         'کنتاکت NO/NC با منطق ایمن در خرابی (Fail-Safe)',
         'بدنه‌ی ضدانفجار از فولاد زنگ‌نزن یا آلومینیوم آنودایز',
+        'حساسیت و تأخیر فرمان خروجی قابل تنظیم است',
+        'خروجی آنالوگ متناسب با اندازه‌ی شعله، با LED وضعیت تغذیه و رله‌ی خطا',
+        'قطعات ماژولار دارد و قطعه و سنسور یدکی آن را خودمان تأمین می‌کنیم',
       ],
       en: [
         'Detects a 1 cm² flame at 5 m',
         'CPLD logic; blind to sunlight',
         'Fail-safe NO/NC contacts',
         'Explosion-proof stainless steel or anodized aluminium body',
+        'Adjustable sensitivity and output delay',
+        'Analog output proportional to flame size; LEDs for supply and fault relay',
+        'Modular parts; we supply spare parts and sensors ourselves',
       ],
     },
     specs: [
@@ -101,6 +138,7 @@ export const flameDetection: Product[] = [
     ],
     applications: [apps.gasTurbine, apps.compressor, apps.refinery],
     images: [img('uv-fire-detector', 'آشکارساز آتش UFD-760', 'UFD-760 UV fire detector')],
+    catalog: [sheet('ufd-760-sheet', 'کاتالوگ UFD-760', 'UFD-760 catalogue sheet')],
   },
   {
     slug: 'flare-pilot-monitor',
@@ -112,8 +150,20 @@ export const flameDetection: Product[] = [
       en: 'Measures flare flame status and size from a distance, reports it to the control room and raises audible and visual alarms on flame-out. Replaces thermocouples that wear out quickly. Installed about 400 m from the flare at a compression station.',
     },
     features: {
-      fa: ['دو رله‌ی خروجی برای خاموشی شعله (آنی و با تأخیر)', 'خروجی آنالوگ 4-20mA', 'درگاه سریال و نرم‌افزار ثبت داده'],
-      en: ['Two flame-out relays (instant and delayed)', '4–20 mA analog output', 'Serial port and logging software'],
+      fa: [
+        'دو رله‌ی خروجی برای خاموشی شعله (آنی و با تأخیر)',
+        'خروجی آنالوگ 4-20mA که اندازه‌ی شعله را نشان می‌دهد',
+        'درگاه سریال و نرم‌افزاری که تغییرات اندازه‌ی شعله را ثبت می‌کند',
+        'هشدار آن با سامانه‌های ابزار دقیق موجود واحد هماهنگ می‌شود',
+        'زمان پاسخ قابل تنظیم است و تعمیر پیشگیرانه هنگام روشن بودن مشعل ممکن است',
+      ],
+      en: [
+        'Two flame-out relays (instant and delayed)',
+        '4–20 mA analog output showing flame size',
+        'Serial port and software that logs flame-size changes',
+        'Alarms tie in with the plant’s existing instrumentation',
+        'Adjustable response time; preventive maintenance is possible while the flare burns',
+      ],
     },
     specs: [
       { label: { fa: 'فاصله‌ی نصب', en: 'Installation distance' }, value: '≈ 400 m (reference site)' },
@@ -121,6 +171,7 @@ export const flameDetection: Product[] = [
     ],
     applications: [apps.flare, apps.compressor, apps.refinery],
     images: [img('flare-monitor', 'سیستم پایش فلر نصب‌شده', 'Flare monitor on site')],
+    catalog: [sheet('fms-280-sheet', 'کاتالوگ FMS-280', 'FMS-280 catalogue sheet')],
     relatedProjectIds: ['p022'],
   },
   {
@@ -138,6 +189,7 @@ export const flameDetection: Product[] = [
     },
     applications: [apps.boiler, apps.gasTurbine],
     images: [img('flame-rod', 'الکترود یونیزاسیون شعله', 'Flame ionization electrode')],
+    catalog: [sheet('krn-in320-sheet', 'الکترود جمع‌کننده‌ی یون شعله KRN-IN320', 'KRN-IN320 flame ion collector electrode')],
     relatedProjectIds: ['p102', 'p090', 'p094'],
   },
 ];

@@ -22,6 +22,26 @@ export const company = {
     whatsapp: '+98 990 336 5549',
     instagram: 'hoorpendar',
   },
+  // Map queries: the office one is the query the old site used; the workshop points at the zone,
+  // since the old site's factory map showed the wrong place.
+  locations: [
+    {
+      key: 'office',
+      address: {
+        fa: 'تهران، خیابان دکتر علی شریعتی، پایین‌تر از بهار شیراز، پلاک ۳۶۰، واحد ۳',
+        en: 'Unit 3, No. 360, Dr. Shariati St. (below Bahar-e Shiraz), Tehran, Iran',
+      } satisfies L,
+      mapQuery: 'Hoorpendar company',
+    },
+    {
+      key: 'workshop',
+      address: {
+        fa: 'کرج، منطقه‌ی ویژه‌ی اقتصادی فرودگاه پیام',
+        en: 'Payam Airport Special Economic Zone, Karaj, Alborz, Iran',
+      } satisfies L,
+      mapQuery: 'Payam Special Economic Zone, Karaj',
+    },
+  ],
   stats: {
     years: 25,
     contracts: 138,

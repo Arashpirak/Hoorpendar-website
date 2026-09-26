@@ -6,7 +6,7 @@ import { Logo } from '@/components/ui/Logo';
 import { bidi } from '@/lib/bidi';
 
 export function ProductImage({ product, locale, sizes }: { product: Product; locale: Locale; sizes: string }) {
-  const image = product.images[0];
+  const image = product.images[0] ?? product.catalog?.[0];
   if (image) {
     return (
       <Image

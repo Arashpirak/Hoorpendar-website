@@ -1,5 +1,5 @@
 import type { Product } from '../types';
-import { apps, img } from './shared';
+import { apps, img, sheet } from './shared';
 
 export const excitationGovernor: Product[] = [
   {
@@ -35,6 +35,7 @@ export const excitationGovernor: Product[] = [
     ],
     applications: [apps.hydro, apps.thermal, apps.industry],
     images: [img('static-excitation', 'تابلوی سیستم تحریک استاتیک', 'Static excitation cabinet')],
+    catalog: [sheet('excitation-sheet', 'کاتالوگ سیستم‌های تحریک SECON', 'SECON excitation systems catalogue sheet')],
     relatedProjectIds: ['p001', 'p016', 'p065', 'x08', 'p123'],
   },
   {
@@ -62,7 +63,32 @@ export const excitationGovernor: Product[] = [
     },
     applications: [apps.syncMotor, apps.compressor, apps.industry],
     images: [],
+    catalog: [sheet('excitation-sheet', 'کاتالوگ سیستم‌های تحریک SECON-50 و SECON-30', 'SECON-50 and SECON-30 catalogue sheet')],
     relatedProjectIds: ['p014', 'p018', 'p092', 'p032'],
+  },
+  {
+    slug: 'rotor-crowbar-protection',
+    category: 'excitation-governor',
+    title: { fa: 'حفاظت Crowbar سیم‌پیچ روتور ژنراتور', en: 'Generator rotor crowbar protection' },
+    summary: {
+      fa: 'Crowbar سیم‌پیچ روتور ژنراتورهای سنکرون را در برابر اضافه‌ولتاژ حفاظت می‌کند و انرژی ذخیره‌شده در آن را تخلیه می‌کند. معمولاً بخشی از سیستم تحریک است و آن را مطابق سفارش و مشخصات سیم‌پیچ روتور هر ژنراتور طراحی و تولید می‌کنیم.',
+      en: 'A crowbar protects the rotor winding of a synchronous generator from over-voltage and dissipates the energy stored in it. It is usually part of the excitation system, and we design and build each one to order for the generator’s rotor winding.',
+    },
+    features: {
+      fa: [
+        'حفاظت اضافه‌ولتاژ سیم‌پیچ روتور',
+        'تخلیه‌ی سریع انرژی میدان (Field Discharge)',
+        'طراحی متناسب با مشخصات سیم‌پیچ روتور هر ژنراتور',
+      ],
+      en: [
+        'Rotor winding over-voltage protection',
+        'Fast field discharge',
+        'Designed to each generator’s rotor winding',
+      ],
+    },
+    applications: [apps.hydro, apps.thermal, apps.syncMotor],
+    images: [],
+    catalog: [sheet('excitation-sheet', 'کاتالوگ سیستم‌های تحریک و حفاظت Crowbar', 'Excitation and crowbar protection catalogue sheet')],
   },
   {
     slug: 'digital-hydro-governor',

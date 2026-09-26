@@ -1,5 +1,5 @@
 import type { Product } from '../types';
-import { apps, img } from './shared';
+import { apps, img, sheet } from './shared';
 
 export const alarmSafety: Product[] = [
   {
@@ -18,6 +18,9 @@ export const alarmSafety: Product[] = [
         'توالی‌های استاندارد ISA S18.1 (A، A4، M، R، F1A، F3A، F2M1) و First-Out',
         'ارتباط Modbus روی RS-485؛ رله‌ی تکرار آلارم',
         'درجه‌ی حفاظت IP54/IP65 و محفظه‌ی ضدانفجار',
+        'مدار ASIC، کار مطمئن در محیط‌های پرنویز و زمان پاسخ قابل تنظیم به سفارش خریدار',
+        'رله‌ی آژیر و رله‌ی جدا برای هر گروه آلارم؛ برنامه‌ریزی اولیه از جلوی پنل',
+        'عمق کم (129mm)؛ روی تابلو یا دیوار نصب می‌شود',
       ],
       en: [
         '2 to 512 alarms; all inputs isolated',
@@ -25,6 +28,9 @@ export const alarmSafety: Product[] = [
         'ISA S18.1 sequences (A, A4, M, R, F1A, F3A, F2M1) and first-out',
         'RS-485 Modbus; alarm repeat relays',
         'IP54/IP65 and explosion-proof enclosures',
+        'ASIC logic, reliable in electrically noisy plants, with response time set to order',
+        'Horn relay and a relay per alarm group; initial programming from the front',
+        'Only 129 mm deep; panel or wall mounting',
       ],
     },
     specs: [
@@ -35,6 +41,7 @@ export const alarmSafety: Product[] = [
     ],
     applications: [apps.oilGas, apps.thermal, apps.hydro, apps.controlRoom],
     images: [img('annunciator', 'اعلام‌گر آلارم PAL750', 'PAL750 alarm annunciator')],
+    catalog: [sheet('pal-annunciator-sheet', 'کاتالوگ اعلام‌گرهای آلارم برنامه‌پذیر HP-PAL625 و HP-PAL750', 'HP-PAL625 and HP-PAL750 programmable annunciator catalogue sheet')],
     relatedProjectIds: ['p019', 'p020', 'p040', 'p015', 'p050', 'p054', 'p079', 'p129', 'p084'],
   },
   {
@@ -43,16 +50,68 @@ export const alarmSafety: Product[] = [
     model: 'SAL-82',
     title: { fa: 'پنل آلارم جمع‌وجور', en: 'Compact alarm panel' },
     summary: {
-      fa: 'این پنل کوچک و پنجره‌ای برای تابلوهای محلی ساخته شده است. برچسب پنجره‌ها را می‌توان عوض کرد و دکمه‌های آزمون (Test)، تأیید (Acknowledge) و بازنشانی (Reset) روی خود پنل قرار دارند.',
-      en: 'This compact window-type panel is made for local control panels. The window labels can be changed, and the test, acknowledge and reset buttons are on the panel itself.',
+      fa: 'این پنل کوچک و پنجره‌ای برای تابلوهای محلی ساخته شده است و در دو مدل ساده و کنترل‌دار عرضه می‌شود. مدل ساده فقط پنجره‌های آلارم را با LED پرنور روشن می‌کند. در مدل کنترل‌دار، پردازنده‌ی داخلی سیگنال‌ها را می‌گیرد، آلارم را اعلام و ثبت می‌کند و توالی استاندارد ISA S18.1 را اجرا می‌کند. هر دو مدل ماژولارند و با هر تعداد پنجره ساخته می‌شوند.',
+      en: 'This compact window-type panel is made for local control panels and comes in a simple and a controller model. The simple model lights the alarm windows with bright LEDs. In the controller model, an internal processor reads the signals, announces and logs the alarms and runs ISA S18.1 sequences. Both are modular and built with any number of windows.',
     },
     features: {
-      fa: ['برچسب پنجره‌ها قابل تعویض', 'دکمه‌های Test، Acknowledge و Reset', 'مناسب تابلوهای محلی و کنار تجهیزات'],
-      en: ['Labelled alarm windows', 'Test, acknowledge and reset buttons', 'Suited to local and machine panels'],
+      fa: [
+        'برچسب پنجره‌ها به‌راحتی از جلو عوض می‌شود؛ ابعاد پنجره 60×30mm',
+        'دکمه‌های Test، Acknowledge و Reset و قطع آژیر (Horn Off)',
+        'ولتاژ ورودی آلارم قابل انتخاب: ۱۲، ۲۴، ۴۸، ۱۲۰ یا ۲۴۰ ولت؛ همه‌ی ورودی‌ها ایزوله',
+        'رنگ آلارم (قرمز، سبز یا زرد) و ورودی NO یا NC با دیپ‌سوئیچ از پشت دستگاه تنظیم می‌شود',
+        'مدل کنترل‌دار: سه رله‌ی خروجی آژیر، خطا و WDT؛ RS-232، RS-485 و Modbus (اختیاری)',
+        'کارت‌های ماژولار در Sub Rack استاندارد 3U و ترمینال‌های صنعتی',
+      ],
+      en: [
+        'Window labels change easily from the front; 60 × 30 mm windows',
+        'Test, acknowledge, reset and horn-off buttons',
+        'Selectable alarm input voltage: 12, 24, 48, 120 or 240 V; all inputs isolated',
+        'Alarm colour (red, green or amber) and NO or NC inputs set by DIP switches at the back',
+        'Controller model: horn, fault and WDT relays; optional RS-232, RS-485 and Modbus',
+        'Modular cards in a standard 3U sub-rack, with industrial terminals',
+      ],
     },
+    specs: [
+      { label: { fa: 'ولتاژ ورودی', en: 'Input voltage' }, value: '12 / 24 / 48 / 120 / 240 V' },
+      { label: { fa: 'اندازه‌ی پنجره', en: 'Window size' }, value: '60 × 30 mm' },
+      { label: { fa: 'استاندارد', en: 'Standard' }, value: 'ISA S18.1-1979 (R1992)' },
+    ],
     applications: [apps.hydro, apps.oilGas, apps.controlRoom],
     images: [img('alarm-panel-sal82', 'پنل آلارم SAL-82', 'SAL-82 alarm panel')],
+    catalog: [
+      sheet('sal-82-sheet', 'کاتالوگ پنل آلارم SAL-82', 'SAL-82 alarm annunciator catalogue sheet'),
+      sheet('sal-82-photo', 'پنل آلارم SAL-82', 'SAL-82 alarm panel'),
+    ],
     relatedProjectIds: ['p088', 'p112', 'p066'],
+  },
+  {
+    slug: 'alarm-annunciator-cards',
+    category: 'alarm-safety',
+    title: { fa: 'کارت‌های یدکی پنل آلارم', en: 'Replacement alarm annunciator cards' },
+    summary: {
+      fa: 'کارت‌های ورودی و فلاشر پنل‌های آلارم قدیمی را می‌سازیم تا پنل موجود بدون تغییر در تابلو و سیم‌کشی دوباره کار کند. کارت جدید همان اتصالات و ابعاد کارت قبلی را دارد و در همان رک نصب می‌شود.',
+      en: 'We build input and flasher cards for older alarm annunciators, so an existing panel works again with no change to the cabinet or wiring. Each new card keeps the connections and size of the original and fits the same rack.',
+    },
+    features: {
+      fa: [
+        'کارت ورودی آلارم با کلید انتخاب سیگنال NO یا NC',
+        'کارت فلاشر منطق منفی (Negative Logic Flasher)',
+        'تغذیه 24Vdc؛ پنل جلوی فلزی با برچسب مدل و ولتاژ',
+      ],
+      en: [
+        'Alarm input card with NO/NC signal selector',
+        'Negative-logic flasher board',
+        '24 V DC supply; metal front plate with model and voltage label',
+      ],
+    },
+    applications: [apps.oilGas, apps.thermal, apps.controlRoom],
+    images: [img('alarm-card', 'کارت ورودی پنل آلارم', 'Alarm annunciator input card')],
+    catalog: [
+      sheet('alarm-card-1', 'کارت ورودی آلارم', 'Alarm input card'),
+      sheet('alarm-card-3', 'کارت ورودی آلارم با کلید انتخاب NO/NC', 'Alarm input card with NO/NC selector'),
+      sheet('alarm-card-2', 'کارت فلاشر منطق منفی', 'Negative-logic flasher board'),
+      sheet('alarm-card-4', 'کارت فلاشر، نمای جانبی', 'Flasher board, side view'),
+    ],
   },
   {
     slug: 'hipps-logic-solver',
@@ -73,6 +132,7 @@ export const alarmSafety: Product[] = [
     ],
     applications: [apps.oilGas, apps.compressor],
     images: [img('hipps', 'تابلوی HIPPS Logic Solver', 'HIPPS logic solver panel')],
+    catalog: [sheet('hipps-sheet', 'کاتالوگ HIPPS Logic Solver', 'HIPPS logic solver catalogue sheet')],
     relatedProjectIds: ['p034', 'p062'],
   },
 ];

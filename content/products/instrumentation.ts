@@ -1,5 +1,5 @@
 import type { Product } from '../types';
-import { apps, img } from './shared';
+import { apps, img, sheet } from './shared';
 
 export const instrumentation: Product[] = [
   {
@@ -17,22 +17,33 @@ export const instrumentation: Product[] = [
         'تغذیه از خود حلقه‌ی جریان (Loop-Powered)، 12 تا 32Vdc',
         'پهنای فقط 19mm (مدل N)؛ نصب روی ریل',
         'تحمل تا دو برابر فشار نامی',
+        'PI-315: پهنای 32mm، سوکت پنوماتیک آب‌بندی‌شده، بدنه‌ی آلومینیومی و نمایشگر LED وضعیت فشار ورودی',
+        'ترمینال آزمون جریان خروجی بدون قطع مدار؛ تنظیم Zero و Span با پتانسیومتر چنددور',
+        'رزین‌ریزی کامل؛ نوع ضدانفجار هم ساخته می‌شود',
       ],
       en: [
         'Accuracy better than ±0.25 % FS',
         'Loop-powered, 12–32 V DC',
         'Only 19 mm wide (N model); DIN-rail mounting',
         'Withstands twice the rated pressure',
+        'PI-315: 32 mm wide, sealed pneumatic socket, aluminium body and an LED showing input pressure',
+        'Output test terminals that work without breaking the loop; multi-turn zero and span trimmers',
+        'Fully potted; an explosion-proof version is available',
       ],
     },
     specs: [
       { label: { fa: 'ورودی', en: 'Input' }, value: '3–15 psig (0.2–1 bar, 3–27 psig)' },
       { label: { fa: 'خروجی', en: 'Output' }, value: '4–20 mA' },
       { label: { fa: 'دقت', en: 'Accuracy' }, value: '±0.25 % FS' },
-      { label: { fa: 'تغذیه', en: 'Supply' }, value: '12 – 32 V DC, loop-powered' },
+      { label: { fa: 'تغذیه', en: 'Supply' }, value: '12 – 32 V DC, loop-powered (24 V DC nominal)' },
+      { label: { fa: 'بار مجاز', en: 'Load' }, value: '600 Ω at 24 V DC' },
+      { label: { fa: 'اثر ولتاژ تغذیه', en: 'Supply effect' }, value: '< ±0.01 % of span per volt' },
+      { label: { fa: 'دمای کار', en: 'Operating temperature' }, value: '0 – 50 °C' },
+      { label: { fa: 'ورودی هوا', en: 'Air supply' }, value: 'Instrument air only' },
     ],
     applications: [apps.oilGas, apps.refinery],
     images: [img('pi-converter', 'مبدل فشار به جریان PIT-315N', 'PIT-315N P/I converter')],
+    catalog: [sheet('pi-315-sheet', 'کاتالوگ مبدل فشار به جریان PI-315', 'PI-315 pressure-to-current converter catalogue sheet')],
     relatedProjectIds: ['p091', 'p035', 'p046', 'p051', 'p086', 'p111', 'p114', 'p136', 'p106'],
   },
   {
@@ -49,11 +60,19 @@ export const instrumentation: Product[] = [
         'ورودی‌ها: RTD، ترموکوپل، mV، 0-10V، 1-5V، 0/4-20mA',
         'پردازنده‌ی مستقل برای هر کانال؛ دو رله‌ی آلارم و قطع',
         'Modbus روی RS-485/232',
+        'نمایشگر هفت‌قطعه‌ای خوانا در روز، با چند حالت نمایش؛ واحد نمایش هر کانال انتخاب می‌شود',
+        'کالیبراسیون جداگانه‌ی هر ورودی؛ کانال‌های بی‌استفاده را می‌توان خاموش کرد',
+        'نوع و کانال خرابی را اعلام می‌کند؛ کارت‌های ورودی ماژولارند و زود تعویض می‌شوند',
+        'صفحه‌کلید ضد آب و گرد و خاک با درپوش محافظ، در بدنه‌ی آلومینیومی',
       ],
       en: [
         'Inputs: RTD, thermocouple, mV, 0–10 V, 1–5 V, 0/4–20 mA',
         'A processor per channel; two alarm and trip relays',
         'Modbus over RS-485/232',
+        'Seven-segment display readable in daylight, with several display modes and a unit per channel',
+        'Per-input calibration; unused channels can be switched off',
+        'Reports the fault type and channel; modular input cards swap out quickly',
+        'Dust- and water-proof keypad with a protective cover, in an aluminium body',
       ],
     },
     specs: [
@@ -63,6 +82,7 @@ export const instrumentation: Product[] = [
     ],
     applications: [apps.oilGas, apps.compressor],
     images: [img('process-monitor-8ch', 'مانیتور فرایند ۸ کاناله MCI-870', 'MCI-870 8-channel process monitor')],
+    catalog: [sheet('mci-870-sheet', 'کاتالوگ مانیتور فرایند ۸ کاناله MCI-870', 'MCI-870 catalogue sheet')],
     relatedProjectIds: ['p033', 'p031'],
   },
   {
@@ -75,14 +95,34 @@ export const instrumentation: Product[] = [
       en: 'Power plants and oil facilities often need to watch more than 60 temperature points. The MPS family takes up to 32 inputs, and 64-, 24-, 9- and 8-channel temperature monitors are also available.',
     },
     features: {
-      fa: ['ورودی RTD، TC، V و mA', 'نمایشگر لمسی یا دیجیتال MPS-D16؛ حالت‌های MNL، AUT و MAX', 'دو رله‌ی خروجی و ارتباط RS-485'],
-      en: ['RTD, TC, V and mA inputs', 'MPS-D16 touch or digital display; MNL, AUT and MAX modes', 'Two output relays and RS-485'],
+      fa: [
+        'ورودی RTD، TC، V و mA؛ هر کارت چهار ورودی آنالوگ دارد',
+        'نمایشگر LCD لمسی یا دیجیتال MPS-D16؛ حالت‌های MNL، AUT و MAX',
+        'دو رله‌ی آلارم در هر کارت با کنتاکت 3A@14Vdc یا 2A@120Vac، قابل برنامه‌ریزی برای گرمایش یا سرمایش',
+        'انتقال داده از کارت‌ها به نمایشگر با RS-485؛ نمایشگر را می‌توان دورتر از تابلو نصب کرد',
+      ],
+      en: [
+        'RTD, TC, V and mA inputs; four analog inputs per card',
+        'MPS-D16 touch LCD or digital display; MNL, AUT and MAX modes',
+        'Two alarm relays per card rated 3 A at 14 V DC or 2 A at 120 V AC, programmable for heating or cooling',
+        'RS-485 link from the cards to the display, which can sit away from the panel',
+      ],
     },
-    specs: [{ label: { fa: 'کانال‌ها', en: 'Channels' }, value: 'up to 32 (MPS), 8 – 64 (monitors)' }],
+    specs: [
+      { label: { fa: 'کانال‌ها', en: 'Channels' }, value: 'up to 64 (MPS), 8 – 64 (monitors)' },
+      { label: { fa: 'تغذیه', en: 'Supply' }, value: '18 – 36 V DC' },
+      { label: { fa: 'ابعاد نمایشگر', en: 'Display size' }, value: '144 × 72 mm (7-segment), 186 × 143 mm (HMI)' },
+    ],
     applications: [apps.hydro, apps.thermal, apps.oilGas],
     images: [
       img('multichannel-monitor', 'دماسنج چندکاناله', 'Multichannel temperature monitor'),
       img('multichannel-monitor-2', 'تابلوی پایش چندکاناله', 'Multichannel monitoring panel'),
+    ],
+    catalog: [
+      sheet('mps-sheet', 'کاتالوگ سیستم پردازش سیگنال MPS', 'MPS process monitor system catalogue sheet'),
+      sheet('mps-sheet-2', 'کاتالوگ مانیتور چندکاناله‌ی سری MPS', 'MPS series multichannel monitor catalogue sheet'),
+      sheet('mps-hmi-panel', 'تابلوی پایش دمای یاتاقان با چهار نمایشگر لمسی', 'Bearing temperature panel with four touch displays'),
+      sheet('mci-6447-panel', 'دماسنج ۶۴ کاناله MCI-6447', 'MCI-6447 64-channel temperature monitor'),
     ],
     relatedProjectIds: ['p127', 'p061', 'p031'],
   },
@@ -101,6 +141,7 @@ export const instrumentation: Product[] = [
     },
     applications: [apps.oilGas, apps.industry],
     images: [img('strain-gauge-amplifier', 'تقویت‌کننده‌ی استرین‌گیج TSG-500', 'TSG-500 strain gauge amplifier')],
+    catalog: [sheet('tsg-500', 'تقویت‌کننده‌ی استرین‌گیج TSG-500 با تنظیم Zero، Test و Span', 'TSG-500 with zero, test and span adjusters')],
   },
   {
     slug: 'paperless-recorders-data-loggers',
@@ -111,11 +152,70 @@ export const instrumentation: Product[] = [
       en: 'We build twelve-channel paperless recorders, chart recorder drivers and power-plant electrical data loggers, and collect data from protection relays and power analyzers.',
     },
     features: {
-      fa: ['ثبات بدون کاغذ ۱۲ کاناله', 'جمع‌آوری داده از رله‌ها و تحلیلگرهای توان', 'نرم‌افزار ثبت داده و گزارش‌گیری'],
-      en: ['12-channel paperless recorder', 'Data acquisition from relays and power analyzers', 'Logging and reporting software'],
+      fa: [
+        'ثبات بدون کاغذ ۱۲ کاناله',
+        'جمع‌آوری داده از رله‌ها و تحلیلگرهای توان',
+        'دیتالاگر قابل‌حمل ماژولار: ۱۶ ورودی آنالوگ تا 100Hz و ۸ ورودی دیجیتال ایزوله',
+        'دو خروجی آنالوگ (DC، سینوسی، مربعی و دندان‌اره‌ای تا 1kHz) و ۸ خروجی دیجیتال ترانزیستوری یا رله‌ای',
+        'ماژول‌های ورودی برای ولتاژ DC و RMS، جریان و دما، با ایزولاتور اختیاری',
+        'نرم‌افزار: نام‌گذاری سیگنال‌ها، ضریب و Offset، آلارم حد، نمایش برخط و ذخیره با دو نرخ نمونه‌برداری',
+        'بازخوانی و چاپ داده‌ها به‌صورت نمودار برحسب تاریخ و ساعت',
+      ],
+      en: [
+        '12-channel paperless recorder',
+        'Data acquisition from relays and power analyzers',
+        'Modular portable data logger: 16 analog inputs up to 100 Hz and 8 isolated digital inputs',
+        'Two analog outputs (DC, sine, square and sawtooth up to 1 kHz) and 8 transistor or relay outputs',
+        'Input modules for DC and RMS voltage, current and temperature, with optional isolators',
+        'Software: signal names, gain and offset, limit alarms, live display and logging at two sample rates',
+        'Stored data can be replayed and printed as charts by date and time',
+      ],
     },
+    specs: [
+      { label: { fa: 'ورودی آنالوگ', en: 'Analog inputs' }, value: '16, up to 100 Hz sampling' },
+      { label: { fa: 'ورودی دیجیتال', en: 'Digital inputs' }, value: '8, isolated' },
+      { label: { fa: 'خروجی', en: 'Outputs' }, value: '2 analog (up to 1 kHz) · 8 digital' },
+    ],
     applications: [apps.thermal, apps.hydro, apps.refinery],
     images: [],
+    catalog: [sheet('data-logger-sheet', 'کاتالوگ دیتالاگر قابل‌حمل ماژولار', 'Modular portable data logger catalogue sheet')],
     relatedProjectIds: ['p053', 'p106', 'p134', 'p024', 'p006'],
+  },
+  {
+    slug: 'vibration-monitoring',
+    category: 'instrumentation',
+    title: { fa: 'کارت‌ها، نمایشگرها و کابل‌های پایش ارتعاش', en: 'Vibration monitoring cards, readouts and cables' },
+    summary: {
+      fa: 'ارتعاش و جابه‌جایی محوری (Thrust) ماشین‌های دوار را با این تجهیزات پایش می‌کنیم. کارت‌های اندازه‌گیری و کنترل، نمایشگرهای آنالوگ و دیجیتال و کابل‌های رابط سنسور را برای سامانه‌های پایش ارتعاش موجود می‌سازیم تا از نظر اتصال و عملکرد با سامانه‌ی قبلی یکی باشند.',
+      en: 'This equipment watches vibration and axial (thrust) position on rotating machines. We build measurement and control cards, analog and digital readouts and sensor extension cables for existing vibration-monitoring systems, matching the original connections and behaviour.',
+    },
+    features: {
+      fa: [
+        'نمایشگر ارتعاش و جابه‌جایی محوری چهارکاناله با دکمه‌ی انتخاب کانال و Reset',
+        'نمایشگر دیجیتال شش‌کاناله با وضعیت OK، Alert و Danger برای هر کانال و خروجی سیگنال و Keyphasor',
+        'کارت کنترل با رله‌های Shutdown، Danger، Alert و خرابی و خروجی نمایشگر راه دور',
+        'کابل رابط سنسور با کانکتورهای روکش‌طلا',
+        'همه‌ی کارت‌ها پیش از تحویل آزمون کیفیت می‌شوند',
+      ],
+      en: [
+        'Four-channel vibration and thrust readouts with channel select and reset',
+        'Six-channel digital display with OK, alert and danger status per channel, plus signal and keyphasor outputs',
+        'Controller card with shutdown, danger, alert and malfunction relays and remote meter outputs',
+        'Sensor extension cables with gold-plated connectors',
+        'Every card passes a quality test before delivery',
+      ],
+    },
+    applications: [apps.compressor, apps.gasTurbine, apps.thermal, apps.oilGas],
+    images: [img('vibration-display', 'نمایشگر دیجیتال ارتعاش', 'Digital vibration display')],
+    catalog: [
+      sheet('vibration-readout', 'نمایشگر ارتعاش چهارکاناله', 'Four-channel vibration readout'),
+      sheet('thrust-readout', 'نمایشگر جابه‌جایی محوری (Thrust)', 'Thrust position readout'),
+      sheet('vibration-display', 'نمایشگر دیجیتال ارتعاش شش‌کاناله', 'Six-channel digital vibration display'),
+      sheet('vibration-controller-card', 'کارت کنترل و رله‌های حفاظتی ارتعاش', 'Vibration controller and protection relay card'),
+      sheet('vibration-card-1', 'کارت اندازه‌گیری ارتعاش', 'Vibration measurement card'),
+      sheet('vibration-card-2', 'کارت اندازه‌گیری ارتعاش', 'Vibration measurement card'),
+      sheet('vibration-cable-2', 'کابل رابط سنسور ارتعاش', 'Vibration sensor extension cable'),
+      sheet('vibration-cable-1', 'کانکتورهای روکش‌طلای کابل ارتعاش', 'Gold-plated vibration cable connectors'),
+    ],
   },
 ];

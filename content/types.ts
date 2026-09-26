@@ -45,8 +45,12 @@ export type Product = {
   /** Generic application areas, never a brand. */
   applications: L[];
   images: { src: string; alt: L }[];
+  /** Full catalogue sheets and extra photos, shown uncropped on the product page. */
+  catalog?: CatalogImage[];
   relatedProjectIds?: string[];
 };
+
+export type CatalogImage = { src: string; alt: L; width: number; height: number };
 
 export type City = {
   id: string;

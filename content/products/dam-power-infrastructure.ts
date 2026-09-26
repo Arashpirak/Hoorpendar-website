@@ -1,5 +1,5 @@
 import type { Product } from '../types';
-import { apps, img } from './shared';
+import { apps, img, sheet } from './shared';
 
 export const damPowerInfrastructure: Product[] = [
   {
@@ -12,16 +12,30 @@ export const damPowerInfrastructure: Product[] = [
       en: 'Measures water level in dams, hydrometric stations, canals and rivers, and material level in fuel tanks and flour and cement silos.',
     },
     features: {
-      fa: ['گستره‌ی 0 تا 100 متر با دقت ±1cm', 'ارتباط Modbus روی RS-485؛ انتقال داده تا ۱۶ کیلومتر', 'ثبت‌کننده‌ی داده، نمایشگر و نرم‌افزار ثبت و پایش برخط'],
-      en: ['0–100 m range, ±1 cm accuracy', 'RS-485 Modbus; data transmission up to 16 km', 'Data recorder, display and online logging software'],
+      fa: [
+        'گستره‌ی ۰ تا ۱۰۰ متر با دقت ±1cm',
+        'ارتباط Modbus روی RS-485 با نرخ و آدرس قابل انتخاب؛ انتقال داده تا ۱۶ کیلومتر',
+        'ثبت‌کننده‌ی داده، نمایشگر، مبدل رابط و نرم‌افزار ثبت و پایش برخط',
+        'جعبه‌ی ضد آب و گرد و خاک، تنظیم از صفحه‌کلید و حفاظت با رمز',
+        'ذخیره و بازیابی داده و اتصال به رایانه‌ی مرکزی',
+      ],
+      en: [
+        '0–100 m range, ±1 cm accuracy',
+        'RS-485 Modbus with selectable baud rate and address; data sent up to 16 km',
+        'Data recorder, display, interface converter and online logging software',
+        'Waterproof, dustproof case; keypad set-up with password protection',
+        'Data saving and restore, and a host computer connection',
+      ],
     },
     specs: [
       { label: { fa: 'گستره', en: 'Range' }, value: '0 – 100 m' },
       { label: { fa: 'دقت', en: 'Accuracy' }, value: '±1 cm' },
       { label: { fa: 'انتقال داده', en: 'Data link' }, value: 'RS-485 Modbus, up to 16 km' },
+      { label: { fa: 'تغذیه', en: 'Supply' }, value: '220 V AC' },
     ],
     applications: [apps.dam, apps.water],
     images: [img('level-meter', 'سطح‌سنج دیجیتال HP-LVLM100', 'HP-LVLM100 digital level meter')],
+    catalog: [sheet('level-meter-sheet', 'کاتالوگ سطح‌سنج‌های دیجیتال HP-LVLM', 'HP-LVLM digital level meters catalogue sheet')],
     relatedProjectIds: ['p081', 'l01', 'l02', 'l03', 'l04', 'l05'],
   },
   {
@@ -34,11 +48,30 @@ export const damPowerInfrastructure: Product[] = [
       en: 'Purges compressed air to the lowest measuring point and reads its pressure, which is proportional to the water height. Suits earth and concrete dams without vertical access to the water, and can watch several observation wells at once.',
     },
     features: {
-      fa: ['تا ۱۰۰ متر با دقت سانتی‌متر', 'سنسور با آب تماس ندارد؛ گل‌ولای و جلبک روی اندازه‌گیری اثر نمی‌گذارد', 'اتصال به رایانه و DCS'],
-      en: ['Up to 100 m with centimetre accuracy', 'No sensor contact with water; unaffected by silt and algae', 'Connects to PCs and DCS'],
+      fa: [
+        'تا ۱۰۰ متر با دقت سانتی‌متر؛ برای سدها و مخازنی که سطح آبشان بیش از ۲۰ متر تغییر می‌کند',
+        'سنسور با آب تماس ندارد؛ گل‌ولای و جلبک روی اندازه‌گیری اثر نمی‌گذارد',
+        'به دسترسی عمودی به سطح آب نیاز ندارد و با لوله‌ی شیب‌دار هم کار می‌کند',
+        'کنترلر با نمایشگر LCD رنگی و نمایشگر دیجیتال شش‌رقمی برای اتاق فرمان',
+        'اتصال به رایانه و DCS، ثبت و نمایش برخط',
+        'کاربرد: تراز آب سد و دریاچه، ارتفاع آب دریا در اسکله و بندر، عمق چاه‌های مشاهده‌ای',
+      ],
+      en: [
+        'Up to 100 m with centimetre accuracy; for dams and reservoirs whose level moves more than 20 m',
+        'No sensor contact with water; unaffected by silt and algae',
+        'Needs no vertical access to the water and works through an inclined pipe',
+        'Controller with a colour LCD, plus a six-digit display for the control room',
+        'Connects to PCs and DCS, with online logging and display',
+        'Uses: dam and lake levels, sea level at ports and jetties, observation well depth',
+      ],
     },
     applications: [apps.dam, apps.water],
     images: [img('bubbler-level-meter', 'سطح‌سنج حبابی BLVM-100', 'BLVM-100 bubbler level meter')],
+    catalog: [
+      sheet('blvm-100-sheet', 'کاتالوگ سطح‌سنج حبابی BLVM-100', 'BLVM-100 catalogue sheet'),
+      sheet('blvm-100-hmi-1', 'صفحه‌ی اصلی نرم‌افزار BLVM-100', 'BLVM-100 main screen'),
+      sheet('blvm-100-hmi-2', 'صفحه‌ی جزئیات و شیرهای BLVM-100', 'BLVM-100 detail and valve screen'),
+    ],
     relatedProjectIds: ['x16'],
   },
   {
@@ -51,15 +84,28 @@ export const damPowerInfrastructure: Product[] = [
       en: 'Measures and displays grid frequency precisely in power plants and substations. The large displays can be mounted on panels, walls or ceilings.',
     },
     features: {
-      fa: ['جداسازی الکتریکی تا 1500V', 'خروجی 4-20mA یا 0-5Vdc', 'ارتباط Modbus روی RS-485/232'],
-      en: ['Isolation up to 1500 V', '4–20 mA or 0–5 V DC output', 'Modbus over RS-485/232'],
+      fa: [
+        'نمایشگر HP-DS400 و HP-DS225: ریزپردازنده‌ای، پروتکل Modbus یا باینری، خوانا از فاصله‌ی دور',
+        'تنظیم شدت روشنایی، کلید تست چراغ‌ها و آدرس ۰ تا ۲۵۶ و نرخ ارتباط با دیپ‌سوئیچ',
+        'ترانسدیوسر HP-TF560: جداسازی الکتریکی تا 1500V، خروجی 4-20mA یا 0-5Vdc و خروجی سریال برای نمایشگر',
+        'ارتباط Modbus روی RS-485/232؛ ترانسدیوسر روی ریل نصب می‌شود',
+      ],
+      en: [
+        'HP-DS400 and HP-DS225 displays: microprocessor-based, Modbus or binary protocol, readable from far away',
+        'Adjustable brightness, lamp test key, DIP-switch address (0–256) and baud rate',
+        'HP-TF560 transducer: isolation up to 1500 V, 4–20 mA or 0–5 V DC output and a serial output for the display',
+        'Modbus over RS-485/232; the transducer mounts on a DIN rail',
+      ],
     },
     specs: [
       { label: { fa: 'بازه', en: 'Range' }, value: '5 – 95 Hz or 5 – 1000 Hz' },
       { label: { fa: 'دقت', en: 'Resolution' }, value: '0.01 or 0.001 Hz' },
+      { label: { fa: 'تغذیه', en: 'Supply' }, value: '+24 V DC (transducer) · 24 V DC or 220 V AC (display)' },
+      { label: { fa: 'ابعاد ترانسدیوسر', en: 'Transducer size' }, value: '110 × 24 × 82 mm' },
     ],
     applications: [apps.hydro, apps.thermal, apps.substation],
     images: [img('frequency-meter', 'فرکانس‌متر دیجیتال', 'Digital frequency meter')],
+    catalog: [sheet('frequency-meter-sheet', 'کاتالوگ فرکانس‌متر و ترانسدیوسر فرکانس', 'Frequency meter and transducer catalogue sheet')],
     relatedProjectIds: ['p012'],
   },
   {
@@ -88,28 +134,68 @@ export const damPowerInfrastructure: Product[] = [
       en: 'We build starting, slip, braking, discharge, excitation and protection resistors, and short-circuit equipment, from 10 kW to 3 MW.',
     },
     features: {
-      fa: ['کارکرد کوتاه‌مدت، متناوب یا پیوسته', 'تحمل اضافه‌بار زیاد', 'عایق دولایه‌ی میکا و سرامیک'],
-      en: ['Short-time, intermittent or continuous duty', 'High overload capacity', 'Double mica and ceramic insulation'],
+      fa: [
+        'کارکرد کوتاه‌مدت، متناوب یا پیوسته',
+        'تحمل اضافه‌بار زیاد و نیاز کم به نگهداری',
+        'عایق دولایه‌ی میکا و سرامیک',
+        'المنت‌ها با پیچ به هم وصل می‌شوند و ترکیب‌بندی آن‌ها مطابق نیاز تنظیم می‌شود',
+        'در قفسه‌ی مشبک چرخ‌دار هم عرضه می‌شود',
+      ],
+      en: [
+        'Short-time, intermittent or continuous duty',
+        'High overload capacity and low maintenance',
+        'Double mica and ceramic insulation',
+        'Bolted elements, combined to suit the required rating',
+        'Also supplied in a perforated cabinet on castors',
+      ],
     },
     specs: [{ label: { fa: 'توان', en: 'Rating' }, value: '10 kW – 3 MW' }],
     applications: [apps.hydro, apps.syncMotor, apps.industry],
     images: [img('cast-iron-resistor', 'مقاومت چدنی صنعتی', 'Industrial cast-iron resistor')],
+    catalog: [sheet('cast-iron-resistor-sheet', 'کاتالوگ مقاومت‌های چدنی صنعتی', 'Industrial cast-iron resistors catalogue sheet')],
     relatedProjectIds: ['p027'],
   },
   {
     slug: 'dam-safety-instruments',
     category: 'dam-power-infrastructure',
+    model: 'PDML-4800',
     title: { fa: 'ابزار پایش ایمنی سد', en: 'Dam safety monitoring instruments' },
     summary: {
-      fa: 'کریدوسکوپ لیزری دومحوره جابه‌جایی بدنه‌ی سد را با دقت ۰٫۰۱ میلی‌متر اندازه می‌گیرد. در این گروه سامانه‌ای هم برای اندازه‌گیری میزان بازشدن دریچه‌های سرریز و آبگیر (حتی زیر آب) و سامانه‌ای برای ثبت خودکار داده‌های حدود ۱۰۰۰ سنسور بدنه‌ی سد داریم.',
-      en: 'A two-axis laser crydoscope measures dam-body deflection to 0.01 mm. The group also includes opening measurement for spillway and intake gates (submerged gates too) and automatic logging from about 1,000 dam-body sensors.',
+      fa: 'جابه‌جایی بدنه‌ی سد زیر بارهای مختلف یکی از مهم‌ترین پارامترهای پایداری آن است. سیستم قرائت خودکار لیزری انحراف پاندول PDML-4800 موقعیت سیم پاندول را در دو جهت X و Y با دقت ۰٫۰۱ میلی‌متر اندازه می‌گیرد، روی حافظه ثبت می‌کند و برای نرم‌افزارهای تحلیل پایداری سد به رایانه می‌فرستد. سامانه‌ای هم برای اندازه‌گیری میزان بازشدن دریچه‌های سرریز و آبگیر (حتی زیر آب) و سامانه‌ای برای ثبت خودکار داده‌های حدود ۱۰۰۰ سنسور بدنه‌ی سد داریم.',
+      en: 'How a dam body moves under load is one of the key measures of its stability. The PDML-4800 automatic laser pendulum reader measures the pendulum wire position on the X and Y axes to 0.01 mm, stores it and sends it to a PC for the dam stability software. The group also includes opening measurement for spillway and intake gates (submerged gates too) and automatic logging from about 1,000 dam-body sensors.',
     },
     features: {
-      fa: ['اندازه‌گیری جابه‌جایی بدون تماس، با دقت ۰٫۰۱ میلی‌متر', 'پایش بازشدن دریچه‌ها تا فاصله‌ی ۳ کیلومتر', 'ثبت و انتقال خودکار داده به رایانه'],
-      en: ['Deflection to 0.01 mm, contactless', 'Gate opening over distances up to 3 km', 'Automatic logging and transfer to a PC'],
+      fa: [
+        'اندازه‌گیری لیزری و بدون تماس، با دقت ۰٫۰۱ میلی‌متر در دو جهت X و Y',
+        'مناسب پاندول مستقیم و معکوس؛ روی پایه‌ی موجود بدنه‌ی سد نصب می‌شود',
+        'حافظه‌ی MMC، ساعت و تاریخ داخلی و نگه‌داشتن داده‌ها هنگام قطع برق',
+        'نمایشگر LCD، صفحه‌کلید ضد آب و گرد و خاک و رمز ورود برای تغییر تنظیمات',
+        'پورت سریال RS-485 با پروتکل Modbus برای شبکه‌ی جمع‌آوری داده و پایش مرکزی',
+        'تعریف حد مجاز و بحرانی انحراف و اعلام خودکار شرایط اضطراری، مثلاً هنگام سیل و زلزله',
+        'پایش بازشدن دریچه‌ها تا فاصله‌ی ۳ کیلومتر',
+      ],
+      en: [
+        'Contactless laser measurement to 0.01 mm on the X and Y axes',
+        'Works with direct and inverted pendulums; mounts on the existing base in the dam body',
+        'MMC memory, internal clock and data kept through power cuts',
+        'LCD, dust- and water-proof keypad, and a password for settings',
+        'RS-485 Modbus port for data-acquisition networks and central monitoring',
+        'Allowed and critical deflection limits, with automatic alarms, for example during floods and earthquakes',
+        'Gate opening measured over distances up to 3 km',
+      ],
     },
+    specs: [
+      { label: { fa: 'دقت', en: 'Accuracy' }, value: '±0.01 mm (X, Y)' },
+      { label: { fa: 'تغذیه', en: 'Supply' }, value: '220 V AC' },
+      { label: { fa: 'ارتباط', en: 'Communication' }, value: 'RS-485 · Modbus' },
+    ],
     applications: [apps.dam, apps.hydro],
     images: [],
+    catalog: [
+      sheet('pdml-4800-sheet-1', 'کاتالوگ سیستم قرائت لیزری انحراف پاندول PDML-4800', 'PDML-4800 laser pendulum reader catalogue'),
+      sheet('pdml-4800-sheet-2', 'اهداف طراحی و مشخصات عمومی PDML-4800', 'PDML-4800 design goals and general data'),
+      sheet('pdml-4800-sheet-3', 'مشخصات الکتریکی، نرم‌افزاری و مکانیکی PDML-4800', 'PDML-4800 electrical, software and mechanical data'),
+    ],
     relatedProjectIds: ['p009', 'p043', 'p004', 'p005', 'p044', 'x12'],
   },
 ];

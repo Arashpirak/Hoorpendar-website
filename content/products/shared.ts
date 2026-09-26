@@ -1,4 +1,5 @@
-import type { L } from '../types';
+import type { CatalogImage, L } from '../types';
+import { catalogSizes } from './catalog-sizes.generated';
 
 // Generic application areas used across product pages. No brands.
 export const apps = {
@@ -20,3 +21,10 @@ export const apps = {
 } satisfies Record<string, L>;
 
 export const img = (name: string, fa: string, en: string) => ({ src: `/img/products/${name}.jpg`, alt: { fa, en } });
+
+// A sheet from public/img/catalog, produced by scripts/prepare-catalog-images.mjs.
+export const sheet = (name: string, fa: string, en: string): CatalogImage => {
+  const size = catalogSizes[name];
+  if (!size) throw new Error(`Unknown catalogue image: ${name}`);
+  return { src: `/img/catalog/${name}.jpg`, alt: { fa, en }, width: size[0], height: size[1] };
+};

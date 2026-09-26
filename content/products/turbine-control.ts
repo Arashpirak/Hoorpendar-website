@@ -1,5 +1,5 @@
 import type { Product } from '../types';
-import { apps, img } from './shared';
+import { apps, img, sheet } from './shared';
 
 export const turbineControl: Product[] = [
   {
@@ -40,8 +40,8 @@ export const turbineControl: Product[] = [
     category: 'turbine-control',
     title: { fa: 'ترانسدیوسر موقعیت بدون تماس', en: 'Contactless position transducer' },
     summary: {
-      fa: 'موقعیت شیر سوخت و پره‌های راهنمای ورودی هوای توربین (IGV) را بدون تماس و بدون فرسایش مکانیکی اندازه می‌گیرد. نوعی از آن درون جک هیدرولیک و زیر فشار ۶۰ بار کار می‌کند.',
-      en: 'Measures fuel valve and inlet guide vane position with no mechanical wear. One version works inside the hydraulic actuator at 60 bar.',
+      fa: 'موقعیت شیر سوخت و پره‌های راهنمای ورودی هوای توربین (IGV) را بدون تماس و بدون فرسایش مکانیکی اندازه می‌گیرد. در دو نوع TCV و NGV با بدنه‌ی ایمن ذاتی (EEx ib) ساخته می‌شود. نوعی از آن درون جک هیدرولیک دریچه‌های راهنما نصب می‌شود: در روغن هیدرولیک با فشار ۶۰ بار و دمای بالا کار می‌کند، دقت و سرعت لازم برای کنترل موقعیت را دارد و سیگنالش از داخل جک به بیرون منتقل می‌شود.',
+      en: 'Measures fuel valve and inlet guide vane position with no mechanical wear. It comes in TCV and NGV types with an intrinsically safe (EEx ib) housing. One version sits inside the guide-vane hydraulic actuator: it works in 60 bar hydraulic oil at high temperature, is fast and accurate enough for position control, and brings its signal out through the actuator wall.',
     },
     features: {
       fa: ['زاویه‌ی ±45°', 'خروجی 4-20mA با تنظیم Zero و Span', 'تغذیه‌ی +24Vdc؛ بدنه‌ی ضدانفجار از آلومینیوم آنودایز'],
@@ -53,7 +53,11 @@ export const turbineControl: Product[] = [
       { label: { fa: 'فشار کاری (نوع داخل جک)', en: 'Pressure (in-actuator version)' }, value: '60 bar' },
     ],
     applications: [apps.gasTurbine],
-    images: [],
+    images: [img('position-transmitter', 'ترانسمیتر جابه‌جایی نوع TCV', 'TCV displacement transmitter')],
+    catalog: [
+      sheet('position-transmitter-tcv', 'ترانسمیتر جابه‌جایی نوع TCV', 'TCV displacement transmitter'),
+      sheet('position-transmitter-ngv', 'ترانسمیتر جابه‌جایی نوع NGV', 'NGV displacement transmitter'),
+    ],
     relatedProjectIds: ['p119'],
   },
   {
