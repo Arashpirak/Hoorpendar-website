@@ -19,7 +19,11 @@ import { pageMetadata } from '@/lib/seo';
 export async function generateMetadata({ params }: PageProps<'/[locale]/projects'>): Promise<Metadata> {
   const locale = (await params).locale as Locale;
   const t = await getTranslations({ locale, namespace: 'projects' });
-  return pageMetadata(locale, '/projects', { title: t('title'), description: t('lead') });
+  return pageMetadata(locale, '/projects', {
+    title: t('metaTitle'),
+    description: t('metaDescription'),
+    image: photos.refineryNight.src,
+  });
 }
 
 // Stock photo on each highlighted project's card.

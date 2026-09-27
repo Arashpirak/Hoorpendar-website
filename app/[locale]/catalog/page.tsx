@@ -23,7 +23,11 @@ import { pageMetadata } from '@/lib/seo';
 export async function generateMetadata({ params }: PageProps<'/[locale]/catalog'>): Promise<Metadata> {
   const locale = (await params).locale as Locale;
   const t = await getTranslations({ locale, namespace: 'catalog' });
-  return pageMetadata(locale, '/catalog', { title: t('metaTitle'), description: t('lead') });
+  return pageMetadata(locale, '/catalog', {
+    title: t('metaTitle'),
+    description: t('metaDescription'),
+    image: photos.powerPlantNight.src,
+  });
 }
 
 const sectionIds = ['about', 'services', 'milestones', 'products', 'industries', 'projects', 'standards', 'contact'] as const;

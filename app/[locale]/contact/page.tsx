@@ -10,7 +10,11 @@ import { pageMetadata } from '@/lib/seo';
 export async function generateMetadata({ params }: PageProps<'/[locale]/contact'>): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale: locale as Locale, namespace: 'contact' });
-  return pageMetadata(locale as Locale, '/contact', { title: t('title'), description: t('lead') });
+  return pageMetadata(locale as Locale, '/contact', {
+    title: t('metaTitle'),
+    description: t('metaDescription'),
+    image: photos.controlRoom.src,
+  });
 }
 
 const mapEmbed = (query: string, locale: Locale) =>

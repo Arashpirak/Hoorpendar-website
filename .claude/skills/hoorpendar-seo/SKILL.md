@@ -50,13 +50,19 @@ JSON-LD, the home page `WebSite`, category pages `BreadcrumbList`, product pages
 `BreadcrumbList`. Use these helpers for any new page. No `Offer` without a real price; no fake
 `AggregateRating`.
 
-- [ ] Titles: about 50-60 characters, keyword first, brand last (`%s | هورپندار` template already
-      exists). Descriptions: 120-155 characters, one concrete sentence with the keyword.
-- [ ] og:image for the 30 pages that have none (about, contact, projects, catalog, products without photos).
-- [ ] `areaServed` in `organizationJsonLd` could list Khuzestan and its main cities once the Khuzestan page exists.
+- [x] Titles at most 60 characters with the suffix, keyword first; descriptions at most 155. Search-result
+      copy for products and categories lives in `content/products/seo.ts`; static pages use
+      `metaTitle`/`metaDescription` in `messages/*.json`. Without an entry, a product title drops model
+      codes until it fits (`fitsTitle` in `lib/seo.ts`).
+- [x] og:image on every page: `pageMetadata()` falls back to `DEFAULT_OG_IMAGE`, and products without a
+      photo use their category banner.
+- [x] Khuzestan page at `/khuzestan` (`content/khuzestan.ts`), linked from the ignition and charger
+      category and product pages and the footer; `areaServed` lists Khuzestan and its cities.
+- [x] Category body text for ignition and power-supplies in `content/products/guides.ts` (claims confirmed
+      by the company, September 2026).
+- [x] 301 redirects for all 147 old WordPress URLs in `next.config.ts`. Old URLs ending in `/` take two
+      hops (Next's 308 trailing-slash redirect, then the 301).
 - [ ] Images: descriptive Persian alt text on the fa pages (already mostly present).
-- [ ] 301 redirects from the old WordPress URLs (list in `site-archive/crawl/index.json`), in
-      `next.config.ts`, so the old site's ranking passes to the new pages.
 - [ ] Core Web Vitals: check with PageSpeed Insights on mobile after deploy.
 
 ## Keywords and pages

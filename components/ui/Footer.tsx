@@ -36,6 +36,11 @@ export async function Footer() {
                 </Link>
               </li>
             ))}
+            <li>
+              <Link href="/khuzestan" className={linkClass}>
+                {t('footer.khuzestan')}
+              </Link>
+            </li>
           </ul>
         </div>
 

@@ -12,7 +12,8 @@ import { formatNumber } from '@/lib/format';
 import { ProductImage } from '@/components/products/ProductCard';
 import { bidi } from '@/lib/bidi';
 import { ChatInquiryButton } from '@/components/chat/ChatInquiryButton';
-import { breadcrumbJsonLd, jsonLd, pageMetadata, SITE_URL } from '@/lib/seo';
+import { breadcrumbJsonLd, jsonLd, pageMetadata, SITE_URL, fitsTitle } from '@/lib/seo';
+import type { Product } from '@/content/types';
 
 export const dynamicParams = false;
 
@@ -28,10 +29,19 @@ export async function generateMetadata({ params }: PageProps<'/[locale]/products
   if (!p) return {};
   const l = locale as Locale;
   return pageMetadata(l, `/products/${p.category}/${p.slug}`, {
-    title: p.model ? `${p.title[l]} (${p.model})` : p.title[l],
-    description: p.summary[l],
-    image: p.images[0]?.src,
+    title: p.seo?.title?.[l] ?? productTitle(p, l),
+    description: p.seo?.description?.[l] ?? p.summary[l],
+    // Products without a photo share their category's banner.
+    image: p.images[0]?.src ?? categoryBySlug.get(p.category)?.photo.src,
   });
+}
+
+// Title plus model codes, dropping codes when the search-result title would run past about 60
+// characters. Long product lines set a hand-written title in content/products/seo.ts instead.
+function productTitle(p: Product, l: Locale) {
+  const first = p.model?.split(' · ')[0];
+  const candidates = [p.model && `${p.title[l]} (${p.model})`, first && `${p.title[l]} (${first})`];
+  return candidates.find((t): t is string => !!t && fitsTitle(l, t)) ?? p.title[l];
 }
 
 export default async function ProductPage({ params }: PageProps<'/[locale]/products/[category]/[slug]'>) {
@@ -162,6 +172,15 @@ export default async function ProductPage({ params }: PageProps<'/[locale]/produ
                 {t('inquire')}
               </ChatInquiryButton>
             </div>
+
+            {(product.category === 'ignition' || product.category === 'power-supplies') && (
+              <p className="mt-4 text-sm leading-7 text-muted">
+                {t('khuzestanNote')}{' '}
+                <Link href="/khuzestan" className="font-semibold text-accent hover:underline">
+                  {t('khuzestanLink')}
+                </Link>
+              </p>
+            )}
           </div>
         </div>
 

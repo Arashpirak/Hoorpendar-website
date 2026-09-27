@@ -3,7 +3,7 @@ import { routing } from '@/i18n/routing';
 import { categories, products } from '@/content/products';
 import { languageAlternates, localeUrl } from '@/lib/seo';
 
-const staticPaths = ['', '/products', '/projects', '/about', '/contact', '/catalog'];
+const staticPaths = ['', '/products', '/projects', '/about', '/contact', '/catalog', '/khuzestan'];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const paths = [

@@ -1,4 +1,4 @@
-import type { L, Product, ProductCategorySlug } from '../types';
+import type { L, Product, ProductCategorySlug, Seo } from '../types';
 import { productCategories } from '../taxonomy';
 import { photos, type Photo } from '../photos';
 import { img } from './shared';
@@ -10,12 +10,14 @@ import { powerSupplies } from './power-supplies';
 import { alarmSafety } from './alarm-safety';
 import { instrumentation } from './instrumentation';
 import { damPowerInfrastructure } from './dam-power-infrastructure';
+import { categorySeo, productSeo } from './seo';
 
 export type Category = {
   slug: ProductCategorySlug;
   title: L;
   intro: L;
   photo: Photo;
+  seo?: Seo;
 };
 
 // Display order of the catalogue.
@@ -103,6 +105,8 @@ export const categories: Category[] = [
   },
 ];
 
+for (const c of categories) c.seo = categorySeo[c.slug];
+
 export const products: Product[] = [
   ...excitationGovernor,
   ...flameDetection,
@@ -112,7 +116,12 @@ export const products: Product[] = [
   ...alarmSafety,
   ...instrumentation,
   ...damPowerInfrastructure,
-];
+].map((p) => ({ ...p, seo: productSeo[`${p.category}/${p.slug}`] }));
+
+// A key in seo.ts that matches no product is a typo; fail the build instead of silently ignoring it.
+for (const key of Object.keys(productSeo)) {
+  if (!products.some((p) => `${p.category}/${p.slug}` === key)) throw new Error(`seo.ts: unknown product ${key}`);
+}
 
 export const categoryBySlug = new Map(categories.map((c) => [c.slug, c]));
 export const productsIn = (slug: ProductCategorySlug) => products.filter((p) => p.category === slug);

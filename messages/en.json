@@ -1,8 +1,8 @@
 {
   "meta": {
     "siteName": "Hoorpendar",
-    "title": "Hoorpendar | Industrial Electronics, Control & Instrumentation",
-    "description": "Since 1999, Hoorpendar has designed and manufactured industrial electronic equipment and delivered control, automation and instrumentation projects for oil and gas, water and power, and other industries."
+    "title": "Hoorpendar | Industrial Control & Instrumentation",
+    "description": "Since 1999 Hoorpendar has built igniters, industrial battery chargers, excitation systems and instruments for oil and gas, power plants and dams."
   },
   "a11y": {
     "skipToContent": "Skip to content",
@@ -29,6 +29,7 @@
     "tagline": "We build industrial electronic equipment and deliver control, automation and instrumentation projects.",
     "contactTitle": "Contact",
     "linksTitle": "Quick links",
+    "khuzestan": "Igniters and chargers in Khuzestan",
     "address": "Head office",
     "phone": "Phone",
     "fax": "Fax",
@@ -127,7 +128,9 @@
     "contracts": "{count} contracts",
     "empty": "No projects match these filters.",
     "closing": "We can send the records for any contract to prospective clients on request.",
-    "mapHint": "Select a city on the map to filter the list."
+    "mapHint": "Select a city on the map to filter the list.",
+    "metaTitle": "Control and instrumentation projects in Iran",
+    "metaDescription": "138 contracts since 2001 in oil and gas, water and power and other industries, from single devices to complete EPC projects, shown on a map of Iran."
   },
   "products": {
     "eyebrow": "Products",
@@ -148,12 +151,16 @@
     "relatedProjects": "Related projects",
     "inquire": "Request a quote",
     "customNote": "Need a different voltage, size or interface? We will design and build the unit to your specification. To request a quote, send your request through the Atirame chat.",
+    "khuzestanNote": "We install, commission and support this equipment in Ahvaz and across Khuzestan.",
+    "khuzestanLink": "Our projects and support in Khuzestan",
     "backToCategory": "All {category}",
     "viewProducts": "View products",
     "renewalStepsTitle": "How we renew a legacy system",
     "renewalExamplesTitle": "Examples of renewed equipment",
     "renewalCta": "Tell Atirame the part number or model of the unit in the chat, and our engineers will assess it.",
-    "noImage": "Photo on request"
+    "noImage": "Photo on request",
+    "metaTitle": "Industrial control and instrumentation products",
+    "metaDescription": "We supply support and spare parts for every product here ourselves. Most can be built to the voltage, size and specification a project needs."
   },
   "catalog": {
     "eyebrow": "Company profile & catalogue",
@@ -194,7 +201,8 @@
     "contactEyebrow": "Contact",
     "contactTitle": "Get in touch for advice, orders or a visit",
     "contactLead": "If you need new or replacement equipment, we will design and build it to your specification. You can also hand us a complete project.",
-    "website": "Website"
+    "website": "Website",
+    "metaDescription": "Hoorpendar’s company profile and catalogue: what we do, milestones, technical data for every product and our project record, ready to print or save."
   },
   "about": {
     "title": "We have designed and built industrial electronics since 1999",
@@ -245,7 +253,9 @@
     "ctaTitle": "Tell us about your project",
     "ctaBody": "Describe the unit or your technical requirement to Atirame in the online chat, or call our head office.",
     "ctaChat": "Start a chat",
-    "ctaContact": "Contact details"
+    "ctaContact": "Contact details",
+    "metaTitle": "About Hoorpendar, industrial electronics maker",
+    "metaDescription": "Hoorpendar is a knowledge-based company that designs and builds industrial electronics and control systems for power plants, dams and oil and gas."
   },
   "contact": {
     "title": "Get in touch",
@@ -260,6 +270,8 @@
     "channelsTitle": "Phone, email and messaging",
     "chatTitle": "Request a quote in the chat",
     "chatBody": "Send Atirame the model or part number of the unit and the specification you need. Our engineers will review the request and contact you.",
-    "chatCta": "Start a chat"
+    "chatCta": "Start a chat",
+    "metaTitle": "Contact Hoorpendar",
+    "metaDescription": "Hoorpendar’s head office is in Tehran and its workshop in the Payam Airport Special Economic Zone. Call or email us for a quote or a technical question."
   }
 }

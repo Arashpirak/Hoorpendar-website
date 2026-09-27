@@ -48,7 +48,12 @@ export type Product = {
   /** Full catalogue sheets and extra photos, shown uncropped on the product page. */
   catalog?: CatalogImage[];
   relatedProjectIds?: string[];
+  /** Search-result title and description when the defaults (title + model, summary) run too long. */
+  seo?: Seo;
 };
+
+/** Title: about 49 characters before the " | هورپندار" suffix. Description: at most 155 characters. */
+export type Seo = { title?: L; description?: L };
 
 export type CatalogImage = { src: string; alt: L; width: number; height: number };
 

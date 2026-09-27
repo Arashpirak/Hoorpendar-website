@@ -13,7 +13,11 @@ import { pageMetadata } from '@/lib/seo';
 export async function generateMetadata({ params }: PageProps<'/[locale]/products'>): Promise<Metadata> {
   const locale = (await params).locale as Locale;
   const t = await getTranslations({ locale, namespace: 'products' });
-  return pageMetadata(locale, '/products', { title: t('eyebrow'), description: t('lead') });
+  return pageMetadata(locale, '/products', {
+    title: t('metaTitle'),
+    description: t('metaDescription'),
+    image: photos.circuitBoard.src,
+  });
 }
 
 export default async function ProductsPage({ params }: PageProps<'/[locale]/products'>) {

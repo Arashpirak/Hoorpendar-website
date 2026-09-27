@@ -12,8 +12,11 @@ import { pageMetadata } from '@/lib/seo';
 export async function generateMetadata({ params }: PageProps<'/[locale]/about'>): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale: locale as Locale, namespace: 'about' });
-  const tn = await getTranslations({ locale: locale as Locale, namespace: 'nav' });
-  return pageMetadata(locale as Locale, '/about', { title: tn('about'), description: t('lead') });
+  return pageMetadata(locale as Locale, '/about', {
+    title: t('metaTitle'),
+    description: t('metaDescription'),
+    image: photos.substation.src,
+  });
 }
 
 const serviceKeys = ['engineering', 'manufacturing', 'retrofit', 'turnkey'] as const;

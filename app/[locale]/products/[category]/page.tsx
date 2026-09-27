@@ -5,6 +5,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { routing, type Locale } from '@/i18n/routing';
 import { categories, categoryBySlug, productsIn, renewal } from '@/content/products';
+import { categoryGuides } from '@/content/products/guides';
 import type { ProductCategorySlug } from '@/content/types';
 import { formatNumber } from '@/lib/format';
 import { Breadcrumbs, PageHero } from '@/components/ui/PageHero';
@@ -24,7 +25,11 @@ export async function generateMetadata({ params }: PageProps<'/[locale]/products
   const c = categoryBySlug.get(category as ProductCategorySlug);
   if (!c) return {};
   const l = locale as Locale;
-  return pageMetadata(l, `/products/${c.slug}`, { title: c.title[l], description: c.intro[l], image: c.photo.src });
+  return pageMetadata(l, `/products/${c.slug}`, {
+    title: c.seo?.title?.[l] ?? c.title[l],
+    description: c.seo?.description?.[l] ?? c.intro[l],
+    image: c.photo.src,
+  });
 }
 
 export default async function CategoryPage({ params }: PageProps<'/[locale]/products/[category]'>) {
@@ -37,6 +42,7 @@ export default async function CategoryPage({ params }: PageProps<'/[locale]/prod
   const tn = await getTranslations('nav');
   const items = productsIn(category.slug);
   const isRenewal = category.slug === 'legacy-renewal';
+  const guide = categoryGuides[category.slug];
 
   const breadcrumbs = breadcrumbJsonLd(locale, [
     { name: tn('products'), path: '/products' },
@@ -108,6 +114,27 @@ export default async function CategoryPage({ params }: PageProps<'/[locale]/prod
               ))}
             </ul>
             <p className="mt-10 text-sm text-muted">{t('customNote')}</p>
+          </div>
+        </section>
+      )}
+
+      {guide && (
+        <section className="border-t border-border bg-surface py-14 sm:py-16">
+          <div className="mx-auto max-w-3xl space-y-10 px-4 sm:px-6">
+            {guide.sections.map((s) => (
+              <div key={s.heading.en}>
+                <h2 className="mb-4 text-2xl font-extrabold text-brand">{s.heading[locale]}</h2>
+                {s.body.map((p) => (
+                  <p key={p.en} className="mb-4 leading-8 text-text">{bidi(locale, p[locale])}</p>
+                ))}
+              </div>
+            ))}
+            <p className="rounded-[var(--radius-card)] border border-border bg-surface-2 p-5 leading-8 text-text">
+              {t('khuzestanNote')}{' '}
+              <Link href="/khuzestan" className="font-semibold text-accent hover:underline">
+                {t('khuzestanLink')}
+              </Link>
+            </p>
           </div>
         </section>
       )}
