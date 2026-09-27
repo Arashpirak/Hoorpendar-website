@@ -10,6 +10,7 @@ import { Header } from '@/components/ui/Header';
 import { Footer } from '@/components/ui/Footer';
 import { AtirameChat } from '@/components/chat/AtirameChat';
 import { ThemeScript } from '@/components/ui/ThemeScript';
+import { jsonLd, organizationJsonLd, SITE_URL } from '@/lib/seo';
 import '../globals.css';
 
 const vazirmatn = Vazirmatn({
@@ -46,6 +47,7 @@ export async function generateMetadata({ params }: LayoutProps<'/[locale]'>): Pr
   if (!hasLocale(routing.locales, locale)) return {};
   const t = await getTranslations({ locale, namespace: 'meta' });
   return {
+    metadataBase: new URL(SITE_URL),
     title: { default: t('title'), template: `%s | ${t('siteName')}` },
     description: t('description'),
     applicationName: t('siteName'),
@@ -82,6 +84,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<'/[
           </main>
           <Footer />
         </NextIntlClientProvider>
+        <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(organizationJsonLd(locale))} />
         <AtirameChat locale={locale} />
         <Analytics />
       </body>

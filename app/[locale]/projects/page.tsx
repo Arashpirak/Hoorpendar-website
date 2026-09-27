@@ -14,11 +14,12 @@ import { bidi } from '@/lib/bidi';
 import { PageHero } from '@/components/ui/PageHero';
 import { ProvincesSvg } from '@/components/map/ProvincesSvg';
 import { ProjectsExplorer } from '@/components/projects/ProjectsExplorer';
+import { pageMetadata } from '@/lib/seo';
 
 export async function generateMetadata({ params }: PageProps<'/[locale]/projects'>): Promise<Metadata> {
   const locale = (await params).locale as Locale;
   const t = await getTranslations({ locale, namespace: 'projects' });
-  return { title: t('title'), description: t('lead') };
+  return pageMetadata(locale, '/projects', { title: t('title'), description: t('lead') });
 }
 
 // Stock photo on each highlighted project's card.

@@ -11,6 +11,7 @@ import { Breadcrumbs, PageHero } from '@/components/ui/PageHero';
 import { ProductCard } from '@/components/products/ProductCard';
 import { bidi } from '@/lib/bidi';
 import { ChatInquiryButton } from '@/components/chat/ChatInquiryButton';
+import { breadcrumbJsonLd, jsonLd, pageMetadata } from '@/lib/seo';
 
 export const dynamicParams = false;
 
@@ -22,7 +23,8 @@ export async function generateMetadata({ params }: PageProps<'/[locale]/products
   const { locale, category } = await params;
   const c = categoryBySlug.get(category as ProductCategorySlug);
   if (!c) return {};
-  return { title: c.title[locale as Locale], description: c.intro[locale as Locale] };
+  const l = locale as Locale;
+  return pageMetadata(l, `/products/${c.slug}`, { title: c.title[l], description: c.intro[l], image: c.photo.src });
 }
 
 export default async function CategoryPage({ params }: PageProps<'/[locale]/products/[category]'>) {
@@ -36,8 +38,14 @@ export default async function CategoryPage({ params }: PageProps<'/[locale]/prod
   const items = productsIn(category.slug);
   const isRenewal = category.slug === 'legacy-renewal';
 
+  const breadcrumbs = breadcrumbJsonLd(locale, [
+    { name: tn('products'), path: '/products' },
+    { name: category.title[locale], path: `/products/${category.slug}` },
+  ]);
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(breadcrumbs)} />
       <PageHero
         photo={category.photo}
         title={category.title[locale]}

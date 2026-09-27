@@ -18,11 +18,12 @@ import { bidi } from '@/lib/bidi';
 import { PageHero } from '@/components/ui/PageHero';
 import { ProductImage } from '@/components/products/ProductCard';
 import { PrintButton } from '@/components/catalog/PrintButton';
+import { pageMetadata } from '@/lib/seo';
 
 export async function generateMetadata({ params }: PageProps<'/[locale]/catalog'>): Promise<Metadata> {
   const locale = (await params).locale as Locale;
   const t = await getTranslations({ locale, namespace: 'catalog' });
-  return { title: t('metaTitle'), description: t('lead') };
+  return pageMetadata(locale, '/catalog', { title: t('metaTitle'), description: t('lead') });
 }
 
 const sectionIds = ['about', 'services', 'milestones', 'products', 'industries', 'projects', 'standards', 'contact'] as const;

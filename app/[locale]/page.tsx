@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
@@ -10,6 +11,15 @@ import type { Product } from '@/content/types';
 import { bidi } from '@/lib/bidi';
 import { formatNumber } from '@/lib/format';
 import { ProjectsMap } from '@/components/map/ProjectsMap';
+import { jsonLd, pageMetadata, SITE_URL } from '@/lib/seo';
+
+export async function generateMetadata({ params }: PageProps<'/[locale]'>): Promise<Metadata> {
+  const locale = (await params).locale as Locale;
+  const t = await getTranslations({ locale, namespace: 'meta' });
+  const meta = pageMetadata(locale, '', { title: t('title'), description: t('description'), image: photos.powerPlantNight.src });
+  // The layout's title template would append the site name a second time.
+  return { ...meta, title: { absolute: t('title') } };
+}
 
 // Flagship products shown on the home page, in display order.
 const featured = [
@@ -43,8 +53,18 @@ export default async function HomePage({ params }: PageProps<'/[locale]'>) {
     { key: 'flameUnits', value: company.stats.flameUnits },
   ] as const;
 
+  const website = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: company.name[locale],
+    url: `${SITE_URL}/${locale}`,
+    inLanguage: locale,
+    publisher: { '@id': `${SITE_URL}/#organization` },
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(website)} />
       {/* Hero: full-bleed photo, as on the previous site. */}
       <section className="relative isolate overflow-hidden bg-[#0a121e] text-white">
         <Image

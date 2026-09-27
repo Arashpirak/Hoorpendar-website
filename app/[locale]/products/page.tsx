@@ -8,11 +8,12 @@ import { photos } from '@/content/photos';
 import { PageHero } from '@/components/ui/PageHero';
 import { ProductSearch, type SearchItem } from '@/components/products/ProductSearch';
 import { bidi } from '@/lib/bidi';
+import { pageMetadata } from '@/lib/seo';
 
 export async function generateMetadata({ params }: PageProps<'/[locale]/products'>): Promise<Metadata> {
   const locale = (await params).locale as Locale;
   const t = await getTranslations({ locale, namespace: 'products' });
-  return { title: t('eyebrow'), description: t('lead') };
+  return pageMetadata(locale, '/products', { title: t('eyebrow'), description: t('lead') });
 }
 
 export default async function ProductsPage({ params }: PageProps<'/[locale]/products'>) {

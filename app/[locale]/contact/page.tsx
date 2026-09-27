@@ -5,11 +5,12 @@ import { company, instagramHref, telHref, whatsappHref } from '@/content/company
 import { photos } from '@/content/photos';
 import { PageHero } from '@/components/ui/PageHero';
 import { ChatInquiryButton } from '@/components/chat/ChatInquiryButton';
+import { pageMetadata } from '@/lib/seo';
 
 export async function generateMetadata({ params }: PageProps<'/[locale]/contact'>): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale: locale as Locale, namespace: 'contact' });
-  return { title: t('title'), description: t('lead') };
+  return pageMetadata(locale as Locale, '/contact', { title: t('title'), description: t('lead') });
 }
 
 const mapEmbed = (query: string, locale: Locale) =>

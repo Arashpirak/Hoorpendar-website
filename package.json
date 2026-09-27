@@ -10,7 +10,8 @@
     "start": "next start",
     "lint": "eslint",
     "check-content": "node scripts/check-content.ts",
-    "build-map": "node scripts/build-map.ts"
+    "build-map": "node scripts/build-map.ts",
+    "seo-audit": "node scripts/seo-audit.ts"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

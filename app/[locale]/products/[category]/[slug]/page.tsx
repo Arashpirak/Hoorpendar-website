@@ -7,10 +7,12 @@ import { routing, type Locale } from '@/i18n/routing';
 import { categoryBySlug, findProduct, products } from '@/content/products';
 import { projects } from '@/content/projects';
 import { cityById } from '@/content/cities';
+import { company } from '@/content/company';
 import { formatNumber } from '@/lib/format';
 import { ProductImage } from '@/components/products/ProductCard';
 import { bidi } from '@/lib/bidi';
 import { ChatInquiryButton } from '@/components/chat/ChatInquiryButton';
+import { breadcrumbJsonLd, jsonLd, pageMetadata, SITE_URL } from '@/lib/seo';
 
 export const dynamicParams = false;
 
@@ -25,11 +27,11 @@ export async function generateMetadata({ params }: PageProps<'/[locale]/products
   const p = findProduct(category, slug);
   if (!p) return {};
   const l = locale as Locale;
-  return {
+  return pageMetadata(l, `/products/${p.category}/${p.slug}`, {
     title: p.model ? `${p.title[l]} (${p.model})` : p.title[l],
     description: p.summary[l],
-    openGraph: p.images[0] ? { images: [p.images[0].src] } : undefined,
-  };
+    image: p.images[0]?.src,
+  });
 }
 
 export default async function ProductPage({ params }: PageProps<'/[locale]/products/[category]/[slug]'>) {
@@ -48,8 +50,30 @@ export default async function ProductPage({ params }: PageProps<'/[locale]/produ
   const cityIds = [...new Set(related.flatMap((p) => p.cities))];
   const year = (sh: number) => formatNumber(locale, locale === 'fa' ? sh : sh + 621);
 
+  const path = `/products/${product.category}/${product.slug}`;
+  const structuredData = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Product',
+      name: product.title[locale],
+      description: product.summary[locale],
+      ...(product.model && { model: product.model, mpn: product.model }),
+      image: product.images.map((im) => `${SITE_URL}${im.src}`),
+      category: cat.title[locale],
+      url: `${SITE_URL}/${locale}${path}`,
+      brand: { '@type': 'Brand', name: company.name[locale] },
+      manufacturer: { '@id': `${SITE_URL}/#organization` },
+    },
+    breadcrumbJsonLd(locale, [
+      { name: tn('products'), path: '/products' },
+      { name: cat.title[locale], path: `/products/${cat.slug}` },
+      { name: product.title[locale], path },
+    ]),
+  ];
+
   return (
     <article className="py-10 sm:py-14">
+      <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(structuredData)} />
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <nav aria-label="breadcrumb" className="mb-6 text-sm text-muted">
           <ol className="flex flex-wrap items-center gap-1.5">

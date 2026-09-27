@@ -7,12 +7,13 @@ import { photos } from '@/content/photos';
 import { formatNumber } from '@/lib/format';
 import { PageHero } from '@/components/ui/PageHero';
 import { ChatInquiryButton } from '@/components/chat/ChatInquiryButton';
+import { pageMetadata } from '@/lib/seo';
 
 export async function generateMetadata({ params }: PageProps<'/[locale]/about'>): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale: locale as Locale, namespace: 'about' });
   const tn = await getTranslations({ locale: locale as Locale, namespace: 'nav' });
-  return { title: tn('about'), description: t('lead') };
+  return pageMetadata(locale as Locale, '/about', { title: tn('about'), description: t('lead') });
 }
 
 const serviceKeys = ['engineering', 'manufacturing', 'retrofit', 'turnkey'] as const;
